@@ -1,0 +1,4154 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:40:03}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Guia 5 de Logica
+\end_layout
+
+\begin_layout Standard
+Nota:
+ Los ejercicios que tienen una S son para una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Segunda pasada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es decir ya sea son mas anecdoticos y menos importantes tematicamente,
+ o son de completar pruebas y tienen que ver mas con la parte teorica,
+ o son mas dificiles y conviene encararlos despues de una primera pasada por la guia (asi uno comienza a pensarlos con un poco mas de madurez sobre el tema).
+\end_layout
+
+\begin_layout Subsection*
+Reticulados acotados
+\end_layout
+
+\begin_layout Standard
+\noindent
+Por un 
+\shape italic
+reticulado acotado
+\shape default
+ entenderemos una 
+\begin_inset Formula $5$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+,
+ tal que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna,
+ 
+\begin_inset Formula $0,1\in L$
+\end_inset
+
+,
+ y ademas se cumplen las siguientes identidades
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(I8)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $0\mathsf{\;s\;}x=x$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(I9)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;s\;}1=1$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Por ejemplo 
+\begin_inset Formula $(\{4,56,449\},\max,\min,4,449)$
+\end_inset
+
+ es un reticulado acotado pero es facil ver que 
+\begin_inset Formula $(\{4,56,449\},\max,\min,449,56)$
+\end_inset
+
+ no lo es.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Reflexion Informatica
+\end_layout
+
+\begin_layout Standard
+Por supuesto,
+ en virtud de lo desarrollado en la Guia 3 se tiene que si 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ es reticulado par en el cual hay un maximo 
+\begin_inset Formula $1$
+\end_inset
+
+ y un minimo 
+\begin_inset Formula $0$
+\end_inset
+
+,
+ entonces si tomamos:
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \sup(\{a,b\})
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \inf(\{a,b\})
+\end{array}
+\]
+
+\end_inset
+
+tenemos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado.
+ Veamos que todo reticulado acotado se obtiene de esta forma.
+ Supongamos 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado.
+ Ya que por definicion tenemos que entonces 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna,
+ el teorema de Dedekind nos dice que el orden parcial 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{s}\;y=y\}$
+\end_inset
+
+ hace de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ un reticulado par en el cual
+\begin_inset Formula 
+\begin{align*}
+\sup(\{x,y\}) & =x\;\mathsf{s}\;y\\
+\inf(\{x,y\}) & =x\mathsf{\;i\;}y
+\end{align*}
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+ Ademas las propiedades (I8) y (I9) nos garantizan que 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ son maximo y minimo de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+.
+ O sea que a nivel de informacion,
+ un reticulado par que tiene 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ es exactamente lo mismo que un reticulado acotado.
+ O,
+ dicho de otra forma,
+ hay una biyeccion entre el conjunto de los reticulados pares con 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ y el conjunto de los reticulados acotados.
+\end_layout
+
+\begin_layout Subsubsection*
+El orden asociado a un reticulado acotado
+\end_layout
+
+\begin_layout Standard
+Dado un reticulado acotado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+,
+ llamaremos a 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{s}\;y=y\}$
+\end_inset
+
+ el 
+\shape italic
+orden parcial asociado a 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L\leq)$
+\end_inset
+
+ sera llamado el 
+\shape italic
+poset asociado a 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+ Notese que tambien tenemos que 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{i}\;y=x\}$
+\end_inset
+
+ (¿por que?).
+\end_layout
+
+\begin_layout Subsubsection*
+Convencion notacional
+\end_layout
+
+\begin_layout Standard
+Muchos conceptos definidos para posets o reticulados terna pueden aplicarse cuando tenemos un reticulado acotado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+ Por ejemplo,
+ si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es totalmente ordenado,
+ esto significara que el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ lo es.
+ Si decimos que en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ se da que el supremo de un conjunto 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $a$
+\end_inset
+
+,
+ nos estaremos refiriendo a que en su poset asociado 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ se da que el supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es distributivo nos estaremos refiriendo a que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ lo es.
+ Etc.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+ Pruebe que si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado entonces 
+\begin_inset Formula $0\mathsf{\;i\;}x=0$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 1,5:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Por definicion:
+ un reticulado acotado es un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ el cual cumple que tiene un elemento minimo 
+\begin_inset Formula $0$
+\end_inset
+
+ y un elemento maximo 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado,
+ entonces 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},1,0)$
+\end_inset
+
+ es un reticulado acotado
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado,
+ entonces 
+\begin_inset Formula $Ti(0)=\mathrm{NUMERO}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Subreticulados acotados
+\end_layout
+
+\begin_layout Standard
+Dados reticulados acotados 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ 
+\shape italic
+es un subreticulado acotado de 
+\shape default
+
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ si se dan las siguientes condiciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L\subseteq L^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}^{\prime}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $0=0^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $1=1^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathsf{s}=\mathsf{s}^{\prime}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{i}=\mathsf{i}^{\prime}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ un reticulado acotado.
+ Un conjunto 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+ es llamado 
+\shape italic
+subuniverso 
+\shape default
+de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ si 
+\begin_inset Formula $0,1\in S$
+\end_inset
+
+ y ademas 
+\begin_inset Formula $S$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+.
+ Es importante notar que si bien los conceptos de subreticulado acotado y subuniverso estan muy relacionados,
+ se trata de conceptos diferentes ya que los subreticulados acotados de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ son reticulados acotados,
+ es decir 
+\begin_inset Formula $5$
+\end_inset
+
+-uplas y los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ son conjuntos,
+ por lo cual no son 
+\begin_inset Formula $5$
+\end_inset
+
+-uplas.
+\end_layout
+
+\begin_layout Standard
+Es facil de chequear que si 
+\begin_inset Formula $S$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(S,\mathsf{s}\mathrm{\mid}_{S\times S},\mathsf{i}\mathrm{\mid}_{S\times S},0,1)$
+\end_inset
+
+ es un subreticulado acotado de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ y que todo subreticulado acotado de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ se obtiene en esta forma.
+ Es decir,
+ hay una biyeccion entre el conjunto de los subreticulados acotados de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ y el conjunto de los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ (cual es?).
+ Dicho de manera mas rapida:
+ los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ son ni mas ni menos que los universos de los subreticulados acotados de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado y 
+\begin_inset Formula $S_{1},S_{2}$
+\end_inset
+
+ son subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $S_{1}\cap S_{2}$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Homomorfismos de reticulados acotados
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ reticulados acotados.
+ Una funcion 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ sera llamada un 
+\shape italic
+homomorfismo de 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ si para todo 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ se cumple que
+\begin_inset Formula 
+\begin{align*}
+F(x\mathsf{\;s\;}y) & =F(x)\;\mathsf{s}^{\prime}\ F(y)\\
+F(x\mathsf{\;i\;}y) & =F(x)\;\mathsf{i}^{\prime}\ F(y)\\
+F(0) & =0^{\prime}\\
+F(1) & =1^{\prime}
+\end{align*}
+
+\end_inset
+
+Un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ sera llamado 
+\shape italic
+isomorfismo 
+\shape default
+cuando sea biyectivo y su inversa sea tambien un homomorfismo.
+ Escribiremos 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)\cong(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+cuando exista un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+.
+ Escribiremos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ un homomorfismo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+.
+ No hay que confundirse al leer esta notacion y pensar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es una funcion cuyo dominio es 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+,
+ lo cual por otra parte no tiene sentido ya que el dominio de una funcion nunca puede ser una 
+\begin_inset Formula $5$
+\end_inset
+
+-upla!
+\end_layout
+
+\begin_layout Standard
+Los lemas siguientes se prueban en la misma forma que sus analogos para reticulados terna de la Guia 4.
+ Los aceptaremos sin demostracion
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ un homomorfismo biyectivo,
+ entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ es un homomorfismo,
+ entonces 
+\begin_inset Formula $I_{F}$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $F$
+\end_inset
+
+ es tambien un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(I_{F},\mathsf{s}^{\prime}\mathrm{\mid}_{I_{F}\times I_{F}},\mathsf{i}^{\prime}\mathrm{\mid}_{I_{F}\times I_{F}},0^{\prime},1^{\prime})$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Congruencias de reticulados acotados
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ un reticulado acotado.
+ Una 
+\shape italic
+congruencia sobre
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ sera una relacion de equivalencia 
+\begin_inset Formula $\theta$
+\end_inset
+
+ la cual sea una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Tenemos definidas sobre 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+ dos operaciones binarias 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+,
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+x/\theta\mathsf{\tilde{s}}y/\theta & =(x\mathsf{\;s\;}y)/\theta\\
+x/\theta\mathsf{\tilde{\imath}}y/\theta & =(x\mathsf{\;i\;}y)/\theta
+\end{align*}
+
+\end_inset
+
+La 
+\begin_inset Formula $5$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},0/\theta,1/\theta)$
+\end_inset
+
+ es llamada el 
+\shape italic
+cociente de
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ 
+\shape italic
+sobre
+\shape default
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y la denotaremos con 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)/\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "cociente de reticulados acotados"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ un reticulado acotado y 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},0/\theta,1/\theta)$
+\end_inset
+
+ es un reticulado acotado.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\pi_{\theta}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},0/\theta,1/\theta)$
+\end_inset
+
+ cuyo nucleo es 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (a).
+ Es facil ver que 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},0/\theta,1/\theta)$
+\end_inset
+
+ cumple (I1),
+ (I2),...,(I9) dado que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ las cumple.
+\end_layout
+
+\begin_layout Standard
+(b).
+ Es directo de su analogo para reticulados terna.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+ es un homomorfismo de reticulados acotados,
+ entonces 
+\begin_inset Formula $\ker F$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Directo de su analogo para reticulados terna.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Reticulados complementados
+\end_layout
+
+\begin_layout Standard
+\noindent
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ un reticulado acotado.
+ Dado 
+\begin_inset Formula $a\in L$
+\end_inset
+
+,
+ diremos que 
+\begin_inset Formula $a$
+\end_inset
+
+ es 
+\shape italic
+complementado
+\shape default
+ cuando exista un elemento 
+\begin_inset Formula $b\in L$
+\end_inset
+
+ (llamado 
+\shape italic
+complemento de a
+\shape default
+) tal que:
+\begin_inset Formula 
+\begin{align*}
+a\;\mathsf{s\;}b & =1\\
+a\;\mathsf{i\;}b & =0
+\end{align*}
+
+\end_inset
+
+Notese que dicho elemento 
+\begin_inset Formula $b$
+\end_inset
+
+ puede no ser unico,
+ es decir 
+\begin_inset Formula $a$
+\end_inset
+
+ puede tener varios complementos.
+ Notese que si consideramos el reticulado acotado 
+\begin_inset Formula $(\mathcal{P}(\mathbf{N}),\cup,\cap,\emptyset,\mathbf{N})$
+\end_inset
+
+ entonces todo elemento 
+\begin_inset Formula $A\in\mathcal{P}(\mathbf{N})$
+\end_inset
+
+ es complementado y tiene un unico complemento,
+ a saber 
+\begin_inset Formula $\mathbf{N}-A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Dar un ejemplo de un reticulado acotado y un elemento que tenga mas de un complemento
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ un reticulado acotado.
+ Si 
+\begin_inset Formula $1$
+\end_inset
+
+ es un complemento de 
+\begin_inset Formula $a$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $a$
+\end_inset
+
+ es un complemento de 
+\begin_inset Formula $0$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $a=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordemos que una operacion unaria sobre un conjunto 
+\begin_inset Formula $L$
+\end_inset
+
+ es por definicion una funcion de 
+\begin_inset Formula $L$
+\end_inset
+
+ en 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Muchas veces si 
+\begin_inset Formula $s$
+\end_inset
+
+ denota una operacion unaria,
+ entonces escribiremos 
+\begin_inset Formula $x^{s}$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $s(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+reticulado complementado
+\shape default
+ entederemos una 
+\begin_inset Formula $6$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado y 
+\begin_inset Formula $^{c}$
+\end_inset
+
+ es una operacion unaria sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ tal que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I10)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;s\;}x^{c}=1$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I11)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}x^{c}=0$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un reticulado acotado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ puede haber mas de una operacion unaria 
+\begin_inset Formula $g$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},g,0,1)$
+\end_inset
+
+ resulte un reticulado complementado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\{1,2,3,5,30\},|)$
+\end_inset
+
+ (el diamante).
+ Es facil ver que es un reticulado par por lo cual 
+\begin_inset Formula $(\{1,2,3,5,30\},\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna,
+ donde 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ son las operaciones binarias definidas usando supremos e infimos en 
+\begin_inset Formula $(\{1,2,3,5,30\},|)$
+\end_inset
+
+.
+ Note que 
+\begin_inset Formula $(\{1,2,3,5,30\},\mathsf{s},\mathsf{i},1,30)$
+\end_inset
+
+ es un reticulado acotado.
+ Encuentre todas las operaciones unarias 
+\begin_inset Formula $g$
+\end_inset
+
+ que hacen que 
+\begin_inset Formula $(\{1,2,3,5,30\},\mathsf{s},\mathsf{i},g,1,30)$
+\end_inset
+
+ resulte un reticulado complementado.
+ Justifique por que son todas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Reflexion Informatica
+\end_layout
+
+\begin_layout Standard
+Notese que si tenemos un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ en el cual hay un maximo 
+\begin_inset Formula $1$
+\end_inset
+
+ y un minimo 
+\begin_inset Formula $0$
+\end_inset
+
+ y ademas tenemos una funcion 
+\begin_inset Formula $g:L\rightarrow L$
+\end_inset
+
+ tal que
+\begin_inset Formula 
+\begin{align*}
+\sup\{x,g(x)\} & =1\\
+\inf\{x,g(x)\} & =0
+\end{align*}
+
+\end_inset
+
+para cada 
+\begin_inset Formula $x\in L$
+\end_inset
+
+,
+ entonces podemos definir
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \sup(\{a,b\})
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \inf(\{a,b\})
+\end{array}
+\]
+
+\end_inset
+
+y se obtiene que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},g,0,1)$
+\end_inset
+
+ es un reticulado complementado.
+ Ademas todo reticulado complementado se obtiene de esta forma (por que?).
+ O sea que a nivel de informacion,
+ tener un reticulado par con 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ junto con una operacion unaria que da complementos,
+ es exactamente lo mismo que tener un reticulado complementado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+El orden asociado a un reticulado complementado
+\end_layout
+
+\begin_layout Standard
+Dado un reticulado complementado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+,
+ llamaremos a 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{s}\;y=y\}$
+\end_inset
+
+ el 
+\shape italic
+orden parcial asociado a 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L\leq)$
+\end_inset
+
+ sera llamado el 
+\shape italic
+poset asociado a 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+.
+ Notese que tambien tenemos que 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{i}\;y=x\}$
+\end_inset
+
+ (¿por que?).
+\end_layout
+
+\begin_layout Subsubsection*
+Convencion notacional
+\end_layout
+
+\begin_layout Standard
+Muchos conceptos definidos para posets,
+ reticulados terna o reticulados acotados,
+ pueden aplicarse cuando tenemos un reticulado complementado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+.
+ Por ejemplo,
+ si decimos que en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ el elemento 
+\begin_inset Formula $a$
+\end_inset
+
+ es cubierto por 
+\begin_inset Formula $b$
+\end_inset
+
+,
+ esto significara que en el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ el elemento 
+\begin_inset Formula $a$
+\end_inset
+
+ es cubierto por 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Si decimos que en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ se da que el supremo de un conjunto 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $a$
+\end_inset
+
+,
+ nos estaremos refiriendo a que en su poset asociado 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ se da que el supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ es distributivo nos estaremos refiriendo a que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ lo es.
+ Si decimos que en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ el elemento 
+\begin_inset Formula $a$
+\end_inset
+
+ es un complemento del elemento 
+\begin_inset Formula $b$
+\end_inset
+
+,
+ nos estaremos refiriendo a que esto sucede en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+ Aqui es importante notar que por el hecho de saber que 
+\begin_inset Formula $a$
+\end_inset
+
+ sea un complemento de 
+\begin_inset Formula $b$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ no podemos inferir que 
+\begin_inset Formula $a=b^{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Subreticulados complementados
+\end_layout
+
+\begin_layout Standard
+Dados reticulados complementados 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+es un subreticulado complementado de 
+\shape default
+
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ si se dan las siguientes condiciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L\subseteq L^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}^{\prime}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $^{c^{\prime}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $0=0^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $1=1^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathsf{s}=\mathsf{s}^{\prime}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}=\mathsf{i}^{\prime}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+ y 
+\begin_inset Formula $^{c}=\ ^{c^{\prime}}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ un reticulado complementado.
+ Un conjunto 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+ es llamado 
+\shape italic
+subuniverso 
+\shape default
+de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ si 
+\begin_inset Formula $0,1\in S$
+\end_inset
+
+ y ademas 
+\begin_inset Formula $S$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ y 
+\begin_inset Formula $^{c}$
+\end_inset
+
+.
+ Es importante notar que si bien los conceptos de subreticulado complementado y subuniverso estan muy relacionados,
+ se trata de conceptos diferentes ya que los subreticulados complementados de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ son reticulados complementados,
+ es decir 
+\begin_inset Formula $6$
+\end_inset
+
+-uplas y los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ son conjuntos,
+ por lo cual no son 
+\begin_inset Formula $6$
+\end_inset
+
+-uplas.
+\end_layout
+
+\begin_layout Standard
+Es facil de chequear que si 
+\begin_inset Formula $S$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(S,\mathsf{s}\mathrm{\mid}_{S\times S},\mathsf{i}\mathrm{\mid}_{S\times S},,^{c}\mathrm{\mid}_{S},0,1)$
+\end_inset
+
+ es un subreticulado complementado de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y que todo subreticulado complementado de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ se obtiene en esta forma.
+ Es decir,
+ hay una biyeccion entre el conjunto de los subreticulados complementados de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y el conjunto de los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ (cual es?).
+ Dicho de manera mas rapida:
+ los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ son ni mas ni menos que los universos de los subreticulados complementados de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Refute con un ejemplo el siguiente enunciado:
+ Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},f,0,1)$
+\end_inset
+
+ un reticulado complementado y supongamos 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ el cual cumple que para cada 
+\begin_inset Formula $x\in S$
+\end_inset
+
+,
+ existe un 
+\begin_inset Formula $y\in S$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x\mathsf{\;s\;}y=1$
+\end_inset
+
+ y 
+\begin_inset Formula $x\mathsf{\;i\;}y=0$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $S$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},f,0,1)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Homomorfismos de reticulados complementados
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ reticulados complementados.
+ Una funcion 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ sera llamada un 
+\shape italic
+homomorfismo de 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ si para todo 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ se cumple que
+\begin_inset Formula 
+\begin{align*}
+F(x\mathsf{\;s\;}y) & =F(x)\;\mathsf{s}^{\prime}\ F(y)\\
+F(x\mathsf{\;i\;}y) & =F(x)\;\mathsf{i}^{\prime}\ F(y)\\
+F(x^{c}) & =F(x)^{c^{\prime}}\\
+F(0) & =0^{\prime}\\
+F(1) & =1^{\prime}
+\end{align*}
+
+\end_inset
+
+Un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ sera llamado 
+\shape italic
+isomorfismo 
+\shape default
+cuando sea biyectivo y su inversa sea un homomorfismo.
+ Como es usual usaremos el simbolo 
+\begin_inset Formula $\cong$
+\end_inset
+
+ para denotar la relacion de isomorfismo.
+ Escribiremos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},^{c},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ un homomorfismo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+.
+ No hay que confundirse al leer esta notacion y pensar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es una funcion cuyo dominio es 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+,
+ lo cual por otra parte no tiene sentido ya que el dominio de una funcion nunca puede ser una 
+\begin_inset Formula $6$
+\end_inset
+
+-upla!
+\end_layout
+
+\begin_layout Standard
+Los lemas siguientes se prueban en la misma forma que sus analogos para reticulados acotados y los aceptaremos sin demostracion
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},^{c},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ un homomorfismo biyectivo,
+ entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},^{c},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime}$
+\end_inset
+
+,
+\begin_inset Formula $\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+es un homomorfismo,
+ entonces 
+\begin_inset Formula $I_{F}$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime}$
+\end_inset
+
+,
+\begin_inset Formula $\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $F$
+\end_inset
+
+ es tambien un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(I_{F},\mathsf{s}^{\prime}\mathrm{\mid}_{I_{F}\times I_{F}},\mathsf{i}^{\prime}\mathrm{\mid}_{I_{F}\times I_{F}},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Congruencias de reticulados complementados
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ un reticulado complementado.
+ Una 
+\shape italic
+congruencia sobre
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ sera una relacion de equivalencia sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ la cual cumpla:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x/\theta=y/\theta$
+\end_inset
+
+ implica 
+\begin_inset Formula $x^{c}/\theta=y^{c}/\theta$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Las condiciones anteriores nos permiten definir sobre 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+ dos operaciones binarias 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+,
+ y una operacion unaria 
+\begin_inset Formula $^{\tilde{c}}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+x/\theta\mathsf{\;\tilde{s}\;}y/\theta & =(x\mathsf{\;s\;}y)/\theta\\
+x/\theta\mathsf{\;\tilde{\imath}\;}y/\theta & =(x\mathsf{\;i\;}y)/\theta\\
+(x/\theta)^{\tilde{c}} & =x^{c}/\theta
+\end{align*}
+
+\end_inset
+
+La 
+\begin_inset Formula $6$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ es llamada el 
+\shape italic
+cociente de
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+sobre
+\shape default
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y la denotaremos con 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)/\theta$
+\end_inset
+
+.
+ Tal como era de esperar tenemos entonces
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ un reticulado complementado y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ es un reticulado complementado.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\pi_{\theta}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ cuyo nucleo es 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (a) Por un lema anterior ya sabemos que 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},0/\theta,1/\theta)$
+\end_inset
+
+ es un reticulado acotado.
+ Es decir que solo nos falta ver que 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ satisface las identidades (I10) y (I11).
+ Veamos por ejemplo que satisface la (I10).
+ Sea 
+\begin_inset Formula $x/\theta$
+\end_inset
+
+ un elemento cualquiera de 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ satisface la (I10),
+ tenemos que 
+\begin_inset Formula $x\mathsf{\;s\;}x^{c}=1$
+\end_inset
+
+.
+ O sea que 
+\begin_inset Formula $(x\mathsf{\;s\;}x^{c})/\theta=1/\theta$
+\end_inset
+
+ y por lo tanto 
+\begin_inset Formula $x/\theta\mathsf{\;\tilde{s}\;}x^{c}/\theta=1/\theta$
+\end_inset
+
+.
+ Pero por definicion de 
+\begin_inset Formula $^{\tilde{c}}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $(x/\theta)^{\tilde{c}}=x^{c}/\theta$
+\end_inset
+
+,
+ lo cual nos dice que 
+\begin_inset Formula $x/\theta\mathsf{\;\tilde{s}\;}(x/\theta)^{\tilde{c}}=1/\theta$
+\end_inset
+
+.
+ Dejamos al lector ver que 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ satisface la identidad (I11)
+\end_layout
+
+\begin_layout Standard
+(b) Por el resultado analogo para reticulados acotados tenemos que 
+\begin_inset Formula $\pi_{\theta}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},0/\theta,1/\theta)$
+\end_inset
+
+ cuyo nucleo es 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Notese que por definicion de 
+\begin_inset Formula $^{\tilde{c}}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $x^{c}/\theta=(x/\theta)^{\tilde{c}}$
+\end_inset
+
+,
+ es decir 
+\begin_inset Formula $\pi_{\theta}(x^{c})=(\pi_{\theta}(x))^{\tilde{c}}$
+\end_inset
+
+,
+ cualquiera sea 
+\begin_inset Formula $x\in L$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El lema siguiente se prueba en la misma forma que sus analogos y lo aceptaremos sin demostracion
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i},^{c},0,1)\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ es un homomorfismo de reticulados complementados,
+ entonces 
+\begin_inset Formula $\ker F$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Encontrar dos reticulados complementados 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{\mathbf{c}^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ y 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $F$
+\end_inset
+
+ sea homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},0^{\prime},1^{\prime})$
+\end_inset
+
+,
+ pero no sea homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{\mathbf{c}^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Algebras de Boole
+\end_layout
+
+\begin_layout Standard
+Como ya vimos en la Guia 4,
+ un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ se llama 
+\shape italic
+distributivo 
+\shape default
+cuando cumpla
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}(y\;\mathsf{s}\;z)=(x\mathsf{\;i\;}y)\;\mathsf{s}\;(x\mathsf{\;i\;}z)$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Diremos que un reticulado acotado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ (resp.
+ complementado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+) es 
+\shape italic
+distributivo
+\shape default
+ cuando 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ lo sea.
+ Consideremos la distributividad dual a Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+,
+ es decir
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Dis
+\begin_inset Formula $_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s}\;(y\mathsf{\;i\;}z)=(x\mathsf{\;s\;}y)\mathsf{\;i\;}(x\;\mathsf{s}\;z)$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna.
+ Entonces 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ satisface Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+ sii 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ satisface Dis
+\begin_inset Formula $_{2}$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Supongamos 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ satisface Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $a,b,c\in L$
+\end_inset
+
+ elementos fijos.
+ Por Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\[
+(a\mathsf{\;s\;}b)\mathsf{\;i\;}(a\;\mathsf{s}\;c)=((a\mathsf{\;s\;}b)\mathsf{\;i\;}a)\;\mathsf{s}\;((a\mathsf{\;s\;}b)\mathsf{\;i\;}c)
+\]
+
+\end_inset
+
+Pero por conmutatividad tenemos que
+\begin_inset Formula 
+\[
+((a\mathsf{\;s\;}b)\mathsf{\;i\;}a)\;\mathsf{s}\;((a\mathsf{\;s\;}b)\mathsf{\;i\;}c)=(a\mathsf{\;i\;}(a\mathsf{\;s\;}b))\;\mathsf{s}\;(c\mathsf{\;i\;}(a\mathsf{\;s\;}b))
+\]
+
+\end_inset
+
+Por (I7) tenemos que 
+\begin_inset Formula $a\mathsf{\;i\;}(a\mathsf{\;s\;}b)=a$
+\end_inset
+
+ y por Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $c\mathsf{\;i\;}(a\mathsf{\;s\;}b)=(c\mathsf{\;i\;}a)\mathsf{\;s\;}(c\mathsf{\;i\;}b)$
+\end_inset
+
+ por lo cual
+\begin_inset Formula 
+\[
+(a\mathsf{\;i\;}(a\mathsf{\;s\;}b))\;\mathsf{s}\;(c\mathsf{\;i\;}(a\mathsf{\;s\;}b))=a\;\mathsf{s}\;((c\mathsf{\;i\;}a)\mathsf{\;s\;}(c\mathsf{\;i\;}b))
+\]
+
+\end_inset
+
+Por asociatividad tenemos que
+\begin_inset Formula 
+\[
+a\;\mathsf{s}\;((c\mathsf{\;i\;}a)\mathsf{\;s\;}(c\mathsf{\;i\;}b))=(a\;\mathsf{s}\;(c\mathsf{\;i\;}a))\mathsf{\;s\;}(c\mathsf{\;i\;}b)
+\]
+
+\end_inset
+
+Pero por conmutatividad tenemos que
+\begin_inset Formula 
+\[
+(a\;\mathsf{s}\;(c\mathsf{\;i\;}a))\mathsf{\;s\;}(c\mathsf{\;i\;}b)=(a\;\mathsf{s}\;(a\mathsf{\;i\;}c))\mathsf{\;s\;}(b\mathsf{\;i\;}c)
+\]
+
+\end_inset
+
+Lo cual por (I6) nos dice que
+\begin_inset Formula 
+\[
+(a\;\mathsf{s}\;(a\mathsf{\;i\;}c))\mathsf{\;s\;}(b\mathsf{\;i\;}c)=a\mathsf{\;s\;}(b\mathsf{\;i\;}c)
+\]
+
+\end_inset
+
+Por transitividad de la igualdad,
+ las igualdades anteriores nos dicen que
+\begin_inset Formula 
+\[
+a\mathsf{\;s\;}(b\mathsf{\;i\;}c)=(a\mathsf{\;s\;}b)\mathsf{\;i\;}(a\;\mathsf{s}\;c)
+\]
+
+\end_inset
+
+Pero 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ eran elementos arbitrarios por lo que hemos probado que vale 
+\begin_inset Formula $Dis_{2}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+Algebra de Boole 
+\shape default
+entenderemos un reticulado complementado que es distributivo.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+E1
+\end_layout
+
+\end_inset
+
+Dado un conjunto no vacio 
+\begin_inset Formula $X$
+\end_inset
+
+,
+ la 
+\begin_inset Formula $6$
+\end_inset
+
+-upla 
+\begin_inset Formula $(X,\cup,\cap,^{c},\emptyset,X)$
+\end_inset
+
+ es un algebra de Boole
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+E2
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{1\},\max,\min,\{(1,1)\},1,1)$
+\end_inset
+
+ es un algebra de Boole
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+E3
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{0,1\},\max,\min,\{(0,1),(1,0)\},0,1)$
+\end_inset
+
+ es un algebra de Boole
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+E4
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{1,2,5,10\},mcm,mcd,c,0,1)$
+\end_inset
+
+ es un algebra de Boole,
+ donde 
+\begin_inset Formula $c(x)=10/x$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x\in\{1,2,5,10\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los dos siguientes lemas nos seran utiles para probar un teorema con propiedaes basicad de las algebras de Boole.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "complementos unicos"
+
+\end_inset
+
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ es un reticulado acotado y distributivo,
+ entonces todo elemento tiene a lo sumo un complemento.
+ Es decir,
+ si 
+\begin_inset Formula $x\;\mathsf{s\;}u=x\;\mathsf{s\;}v=1$
+\end_inset
+
+ y 
+\begin_inset Formula $x\;\mathsf{i\;}u=x\;\mathsf{i\;}v=0$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $u=v$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,u,v\in L$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $a,b,c\in L$
+\end_inset
+
+ elementos fijos.
+ Supongamos que
+\begin_inset Formula 
+\begin{align*}
+a\;\mathsf{s\;}b & =a\;\mathsf{s\;}c=1\\
+a\;\mathsf{i\;}b & =a\;\mathsf{i\;}c=0
+\end{align*}
+
+\end_inset
+
+(es decir 
+\begin_inset Formula $b$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ son ambos complementos de 
+\begin_inset Formula $a$
+\end_inset
+
+).
+ Veremos que entonces 
+\begin_inset Formula $b=c$
+\end_inset
+
+.
+ Notese que
+\begin_inset Formula 
+\[
+b=b\;\mathsf{i\;}1=b\;\mathsf{i\;}(a\;\mathsf{s\;}c)=....
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 7,5:
+\end_layout
+
+\end_inset
+
+Complete la prueba anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(B,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+ un álgebra de Boole.
+ Cualesquiera sean 
+\begin_inset Formula $x,y\in B$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $y=(y\;\mathsf{i\;}x)\;\mathsf{s\;}(y\mathsf{\;i\mathsf{\;}}x^{c})$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+Pruebe el lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+ un álgebra de Boole y sean 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+.
+ Se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}=a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(a\,\mathsf{s\,}b)^{c}=a^{c}\,\mathsf{i\,}b^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a^{cc}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b^{c}\leq a^{c}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (1) Es facil ver que 
+\begin_inset Formula $a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+ es un complemento de 
+\begin_inset Formula $a\,\mathsf{i\,}b$
+\end_inset
+
+ (hacer!).
+ Pero ya que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+ es un reticulado complementado,
+ tenemos que 
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}$
+\end_inset
+
+ es un complemento de 
+\begin_inset Formula $a\,\mathsf{i\,}b$
+\end_inset
+
+.
+ El Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "complementos unicos"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}$
+\end_inset
+
+ y 
+\begin_inset Formula $a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+ deben ser iguales.
+\end_layout
+
+\begin_layout Standard
+(2) y (3) se prueban en forma similar (hacer!)
+\end_layout
+
+\begin_layout Standard
+(4) Supongamos 
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+.
+ Se tiene
+\begin_inset Formula 
+\begin{align*}
+b & =(b\;\mathsf{i\;}a)\;\mathsf{s\;}(b\mathsf{\;i\mathsf{\;}}a^{c})\text{ (por lema anterior)}\\
+ & =(a\;\mathsf{i\;}b)\;\mathsf{s\;}(b\mathsf{\;i\mathsf{\;}}a^{c})\\
+ & =0\;\mathsf{s\;}(b\mathsf{\;i\mathsf{\;}}a^{c})\\
+ & =(b\mathsf{\;i\mathsf{\;}}a^{c})
+\end{align*}
+
+\end_inset
+
+lo cual dice que 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $a\,\mathsf{i\,}b\leq a\,\mathsf{i\,}a^{c}=0$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(5) Supongamos 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $a\,\mathsf{i\,}b=a$
+\end_inset
+
+,
+ lo cual por (1) nos dice que 
+\begin_inset Formula $a^{c}\,\mathsf{s\,}b^{c}=a^{c}$
+\end_inset
+
+ obteniendo que 
+\begin_inset Formula $b^{c}\leq a^{c}$
+\end_inset
+
+.
+ La resiproca es dejada al lector (hint:
+ use (3)) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Complete la prueba del lema anterior
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+Se cumplen las propiedades del teorema anterior en un reticulado complementado cualquiera?
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Convencion notacional:
+\end_layout
+
+\end_inset
+
+ Notese que hemos definido distintos tipos de estructuras (i.e.
+ posets,
+ reticulados terna,
+ etc) y en todas ellas su primera coordenada es llamada el 
+\shape italic
+universo
+\shape default
+ de dicha estructura.
+ En general usaremos letras mayusculas en bold para denotar una estructura dada y en tal caso usaremos la convension de que su correspondiente mayuscula en italica denotara el universo de dicha estructura.
+ Por ejemplo si decimos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+sea 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ un reticulado acotado
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+,
+ entonces ya queda implicita la informacion de que denotaremos con 
+\begin_inset Formula $L$
+\end_inset
+
+ al universo de 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+.
+ Ademas deberia quedar claro que en tal caso 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ es una 5-upla.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Tambien si 
+\begin_inset Formula $\mathbf{L}^{\prime}$
+\end_inset
+
+ denota una estructura,
+ 
+\begin_inset Formula $L^{\prime}$
+\end_inset
+
+ denotara su universo.
+ Similarmente si 
+\begin_inset Formula $\mathbf{\tilde{L}}$
+\end_inset
+
+ denota una estructura,
+ 
+\begin_inset Formula $\tilde{L}$
+\end_inset
+
+ denotara su universo,
+ etc.
+\end_layout
+
+\begin_layout Standard
+Notese que entonces,
+ si escribimos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:\mathbf{L}\rightarrow\mathbf{L}^{\prime}$
+\end_inset
+
+ es un homomorfismo de reticulados complementados
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+,
+ estaremos suponiendo que 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{L}^{\prime}$
+\end_inset
+
+ son reticulados complementados (i.e.
+ ciertas 6-uplas) y que 
+\begin_inset Formula $F$
+\end_inset
+
+ es una funcion de 
+\begin_inset Formula $L$
+\end_inset
+
+ en 
+\begin_inset Formula $L^{\prime}$
+\end_inset
+
+ la cual es un homomorfismo de 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{L}^{\prime}$
+\end_inset
+
+.
+ Aqui hay que tener cuidado ya que 
+\begin_inset Formula $D_{F}$
+\end_inset
+
+ es 
+\begin_inset Formula $L$
+\end_inset
+
+ y no 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ lo cual seria imposible ya que 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ no es un conjunto!
+\end_layout
+
+\begin_layout Standard
+Tambien notese que si 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ denota un reticulado acotado y 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia de 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{L}/\theta$
+\end_inset
+
+ denotara el cociente de 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+ sobre 
+\begin_inset Formula $\theta$
+\end_inset
+
+,
+ a saber cierto reticulado acotado cuyo universo es 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $Ti(\mathbf{L}/\theta)=5\mathrm{-UPLA}$
+\end_inset
+
+ y 
+\begin_inset Formula $Ti(L/\theta)=\mathrm{CONJUNTO}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

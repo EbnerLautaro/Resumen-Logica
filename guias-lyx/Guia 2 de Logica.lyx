@@ -1,0 +1,5511 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:38:19}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Guia 2 de Logica
+\end_layout
+
+\begin_layout Standard
+Nota: Los ejercicios que tienen una S son para una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Segunda pasada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es decir ya sea son mas anecdoticos y menos importantes tematicamente,
+ o son de completar pruebas y tienen que ver mas con la parte teorica, o
+ son mas dificiles y conviene encararlos despues de una primera pasada por
+ la guia (asi uno comienza a pensarlos con un poco mas de madurez sobre
+ el tema).
+\end_layout
+
+\begin_layout Section*
+Ordenes parciales
+\end_layout
+
+\begin_layout Standard
+En esta guia y en las proximas cuatro estudiaremos varias clases de estructuras
+ algebraicas en las cuales hay un orden parcial involucrado.
+ Esto tendra una triple utilidad.
+ Por un lado algunos de los resultados probados sobre algebras de Boole
+ seran utilizados mas adelante para la prueba del teorema de completitud
+ de la logica de primer orden.
+ Tambien el estudio de estos temas servira para volvernos algebristas maduros
+ (lo mas que se pueda) ya que esto sera util a la hora de hacer logica matematic
+a.
+ La logica matematica es 
+\shape italic
+matematica aplicada
+\shape default
+ al estudio de los matematicos, su lenguaje y sus metodos de demostracion,
+ y que mas comodo para hacer logica matematica que contar con un matematico
+ dentro de uno mismo para estudiarlo!
+\end_layout
+
+\begin_layout Standard
+Finalmente cabe destacar que los resultados cubiertos en estas primeras
+ 6 guias son importantes en si mismos fuera de su vinculacion con la logica
+ y tienen interesantes aplicaciones en otras disciplinas y ramas de la matematic
+a.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una relacion binaria 
+\begin_inset Formula $R$
+\end_inset
+
+ sobre un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ sera llamada un 
+\shape italic
+orden parcial sobre 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+si es reflexiva, transitiva y antisimetrica respecto de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(r,t)\in\mathbf{R}^{2}:r\leq t\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+, llamado el orden usual de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(1,2),(1,3),(1,1),(2,2),(3,3)\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(S,T)\in\mathcal{P}(\omega)^{2}:S\subseteq T\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\mathcal{P}(\omega)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\omega^{2}:$
+\end_inset
+
+ 
+\begin_inset Formula $x\leq y\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(1,1)\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\{1\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E6)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\{(a,b):a=b\}$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, cualesquiera sea el conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E7)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $S\subseteq\mathbf{N}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $R=\{(x,y)\in S^{2}:x|y\}$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\{1\leq2\leq3\}$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Las relaciones dadas en (E1) y (E4) son distintas
+\end_layout
+
+\begin_layout Enumerate
+La relacion dada en (E4) es un orden parcial sobre 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces hay 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ tales que no se da que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $e\in\mathrm{\leq}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $Ti(e)=2\mathrm{-UPLA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R=\{(x,y)\in\mathbf{Z}^{2}:x|y\}$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $\mathbf{Z}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muchas veces denotaremos con 
+\begin_inset Formula $\leq$
+\end_inset
+
+ a una relacion binaria que sea un orden parcial.
+ Esto hace mas intuitiva nuestra escritura pero siempre hay que tener en
+ cuenta que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ en estos casos esta denotando cierto conjunto de pares ordenados previamente
+ definido.
+\end_layout
+
+\begin_layout Standard
+Usaremos la siguiente
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Convencion notacional
+\end_layout
+
+\end_inset
+
+(A) Si hemos denotado con 
+\begin_inset Formula $\leq$
+\end_inset
+
+ a cierto orden parcial sobre un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Denotaremos con 
+\begin_inset Formula $<$
+\end_inset
+
+ a la relacion binaria 
+\begin_inset Formula $\{(a,b)\in A^{2}:a\leq b$
+\end_inset
+
+ y 
+\begin_inset Formula $a\neq b\}$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $\mathrm{<}=\{(a,b)\in A^{2}:a\leq b$
+\end_inset
+
+ y 
+\begin_inset Formula $a\neq b\}$
+\end_inset
+
+.
+ Cuando se de 
+\begin_inset Formula $a<b$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\shape italic
+es menor que 
+\shape default
+
+\begin_inset Formula $b$
+\end_inset
+
+ o que 
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\shape italic
+es mayor que 
+\shape default
+
+\begin_inset Formula $a$
+\end_inset
+
+ (
+\shape italic
+respecto de 
+\shape default
+
+\begin_inset Formula $\leq$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Denotaremos con 
+\begin_inset Formula $\prec$
+\end_inset
+
+ a la relacion binaria
+\begin_inset Formula 
+\[
+\{(a,b)\in A^{2}:a<b\text{ y no existe }z\text{ tal que }a<z<b\}
+\]
+
+\end_inset
+
+Cuando se de 
+\begin_inset Formula $a\prec b$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\shape italic
+es cubierto por 
+\shape default
+
+\begin_inset Formula $b$
+\end_inset
+
+ o que 
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\shape italic
+cubre a 
+\shape default
+
+\begin_inset Formula $a$
+\end_inset
+
+ (
+\shape italic
+respecto de 
+\shape default
+
+\begin_inset Formula $\leq$
+\end_inset
+
+) 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+(B) El mismo tipo de convencion notacional se hara cuando denotemos con
+ 
+\begin_inset Formula $\leq^{\prime}$
+\end_inset
+
+ (o 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{\leq}$
+\end_inset
+
+,
+\begin_inset Formula $\leq_{1}$
+\end_inset
+
+,
+\begin_inset Formula $\leq_{2}$
+\end_inset
+
+, etc) a un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Es decir tendremos dos relaciones binarias nuevas tacitamente definidas,
+ a saber:
+\begin_inset Formula 
+\begin{align*}
+ & \mathrm{<}^{\prime}=\{(a,b)\in A^{2}:a\leq^{\prime}b\text{ y }a\neq b\}\\
+ & \mathrm{\prec}^{\prime}=\{(a,b)\in A^{2}:a<^{\prime}b\text{ y no existe }z\text{ tal que }a<^{\prime}z<^{\prime}b\}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A=\mathbf{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{\leq}=\{(r,t)\in\mathbf{R}^{2}:r=t\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\mathrm{<}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A=\{1,2,3,4\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{\leq}=\{(1,2),(2,3),(1,3),(1,1),(2,2),(3,3),(4,4)\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\mathrm{<}=\{(1,2),(2,3),(1,3)\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{\prec}=\{(1,2),(2,3)\}$
+\end_inset
+
+.
+ En particular tenemos que 
+\begin_inset Formula $1\prec2$
+\end_inset
+
+, 
+\begin_inset Formula $1<3$
+\end_inset
+
+ pero no se da que 
+\begin_inset Formula $1\prec3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A=\mathbf{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{\leq}$
+\end_inset
+
+ es el orden usual de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\mathrm{\prec}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A=\mathcal{P}(\omega)$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{\leq}=\{(S,T)\in\mathcal{P}(\omega)^{2}:S\subseteq T\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\mathrm{<}=\{(S,T)\in\mathcal{P}(\omega)^{2}:S\subsetneq T\}$
+\end_inset
+
+ y ademas se tiene que 
+\begin_inset Formula $S\prec T$
+\end_inset
+
+ sii hay un 
+\begin_inset Formula $n\in T-S$
+\end_inset
+
+ tal que 
+\begin_inset Formula $T=S\cup\{n\}$
+\end_inset
+
+ (justifique) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ordenes totales:
+\series default
+ Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un conjunto cualquiera.
+ Por un 
+\shape italic
+orden total sobre
+\shape default
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos un orden parcial 
+\begin_inset Formula $\leq$
+\end_inset
+
+ sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ el cual cumple:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(C)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ o 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Es decir que ciertos ordenes parciales son llamados ordenes totales.
+ Dejamos al lector decidir cuales de los ejemplos anteriores son ordenes
+ totales
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+conjunto parcialmente ordenado
+\shape default
+ 
+\shape italic
+o poset
+\shape default
+ es un par 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ donde 
+\begin_inset Formula $P$
+\end_inset
+
+ es un conjunto no vacio cualquiera y 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Dado un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, el conjunto 
+\begin_inset Formula $P$
+\end_inset
+
+ sera llamado el 
+\shape italic
+universo
+\shape default
+ de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+ es un poset, donde 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es el orden usual de los numeros relales
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{1,2,3\},\{(1,2),(1,3),(1,1),(2,2),(3,3)\})$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+ es un poset, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(S,T)\in\mathcal{P}(\omega)^{2}:S\subseteq T\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{1\},\{(1,1)\})$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\mathbf{N},\leq)$
+\end_inset
+
+ es un poset, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y)\in\mathbf{N}^{2}:x|y\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+conjunto totalmente ordenado
+\shape default
+ es un par 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ donde 
+\begin_inset Formula $P$
+\end_inset
+
+ es un conjunto no vacio cualquiera y 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden total sobre 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Por supuesto todo conjunto totalmente ordenado es un poset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\emptyset,\emptyset)$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{\emptyset\},\{(\emptyset,\emptyset)\})$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,2\},\{1<2\})$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[\{1,2\},\{(1,1),(2,2)\}]$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es no vacio, entonces 
+\begin_inset Formula $(A,A\times A)$
+\end_inset
+
+ es un poset
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1\},\{(1,1)\})$
+\end_inset
+
+ es un conjunto totalmente ordenado
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es no vacio, entonces 
+\begin_inset Formula $(A,A\times A)$
+\end_inset
+
+ es un conjuno totalmente ordenado 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Diagramas de Hasse
+\end_layout
+
+\begin_layout Standard
+Dado un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, con 
+\begin_inset Formula $P$
+\end_inset
+
+ un conjunto finito, podemos realizar un diagrama llamado 
+\shape italic
+diagrama de Hasse,
+\shape default
+ siguiendo las siguientes instrucciones:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Asociar en forma inyectiva, a cada 
+\begin_inset Formula $a\in$
+\end_inset
+
+ 
+\begin_inset Formula $P$
+\end_inset
+
+ un punto 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+ del plano
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Trazar un segmento de recta uniendo los puntos 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+ y 
+\begin_inset Formula $p_{b}$
+\end_inset
+
+, cada vez que 
+\begin_inset Formula $a\prec b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Realizar lo indicado en los puntos (1) y (2) en tal forma que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $a\prec b$
+\end_inset
+
+, entonces 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+ esta por debajo de 
+\begin_inset Formula $p_{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+Si un punto 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+ ocurre en un segmento del diagrama entonces lo hace en alguno de sus extremos.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+La relacion de orden 
+\begin_inset Formula $\leq$
+\end_inset
+
+ puede ser facilmente obtenida a partir del diagrama, a saber, 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ sucedera si y solo si 
+\begin_inset Formula $p_{a}=p_{b}$
+\end_inset
+
+ o hay una sucesion de segmentos ascendentes desde 
+\begin_inset Formula $p_{a}$
+\end_inset
+
+ hasta 
+\begin_inset Formula $p_{b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Dar todos los posets con universo igual a 
+\begin_inset Formula $\{2,3,4\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3,3:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $S=\{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15\}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $R=\{(x,y)\in S^{2}:x|y\}$
+\end_inset
+
+.
+ Haga el digrama de Hasse del poset 
+\begin_inset Formula $(S,R)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3,6:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $S=\{x\in\mathbf{N}:x|60\}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $R=\{(x,y)\in S^{2}:x|y\}$
+\end_inset
+
+.
+ Haga el digrama de Hasse del poset 
+\begin_inset Formula $(S,R)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+De una prueba perfecta del siguiente enunciado: Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Se tiene que si 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ y 
+\begin_inset Formula $x\nless y$
+\end_inset
+
+, entonces 
+\begin_inset Formula $x=y$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 4,3:
+\end_layout
+
+\end_inset
+
+De una prueba perfecta del siguiente enunciado: Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Supongamos que 
+\begin_inset Formula $\left\vert P\right\vert \geq2$
+\end_inset
+
+.
+ Entonces hay 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ tales que 
+\begin_inset Formula $a\nleq b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces para cada 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $a\nless b$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces para cada 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $a\nleq b$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+ y 
+\begin_inset Formula $a\neq b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces para cada 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+ implica que 
+\begin_inset Formula $a\nless b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces si 
+\begin_inset Formula $a<b$
+\end_inset
+
+, hay un 
+\begin_inset Formula $z\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a\prec z\leq b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces 
+\begin_inset Formula $a\nprec b$
+\end_inset
+
+ sii ya sea 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+ o existe un 
+\begin_inset Formula $z\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a<z<b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+(S) Supongamos todos los elementos de 
+\begin_inset Formula $P$
+\end_inset
+
+ son conjuntos y sea 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in P^{2}:A\subseteq B\}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $A,B\in P$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $B$
+\end_inset
+
+ cubre a 
+\begin_inset Formula $A$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces hay un 
+\begin_inset Formula $b\in B-A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $B=A\cup\{b\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un conjunto totalmente ordenado, entonces para cada 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $a\nless b$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces para cada 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ hay un 
+\begin_inset Formula $b\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a\prec b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset, entonces para cada 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ hay a lo sumo un 
+\begin_inset Formula $b\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a\prec b$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\shape italic
+tapa 
+\shape default
+
+\begin_inset Formula $a$
+\end_inset
+
+ o que 
+\begin_inset Formula $a$
+\end_inset
+
+ es 
+\shape italic
+tapado
+\shape default
+ por 
+\begin_inset Formula $b$
+\end_inset
+
+ cuando se de que 
+\begin_inset Formula $a<b$
+\end_inset
+
+ y 
+\begin_inset Formula $b\leq c$
+\end_inset
+
+, para cada 
+\begin_inset Formula $c\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a<c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 5,5:
+\end_layout
+
+\end_inset
+
+Pruebe que si 
+\begin_inset Formula $b$
+\end_inset
+
+ tapa a 
+\begin_inset Formula $a$
+\end_inset
+
+, entonces 
+\begin_inset Formula $b$
+\end_inset
+
+ cubre a 
+\begin_inset Formula $a$
+\end_inset
+
+ pero que la resiproca no es cierta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Elementos maximales, maximos, minimales y minimos
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Diremos que 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ es un elemento 
+\shape italic
+maximo de 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+, para todo 
+\begin_inset Formula $b\in P$
+\end_inset
+
+.
+ En forma analoga se define el concepto de elemento 
+\shape italic
+minimo
+\shape default
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $1$
+\end_inset
+
+ es un elemento maximo del poset 
+\begin_inset Formula $(\{1,2\},\{(1,1),(2,2),(2,1)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $2$
+\end_inset
+
+ un elemento minimo de 
+\begin_inset Formula $(\{1,2\},\{(1,1),(2,2),(2,1)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\leq$
+\end_inset
+
+ el orden usual de los numeros reales.
+ El poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+ no tiene elemento maximo ni minimo.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+El poset 
+\begin_inset Formula $\mathbf{P}=(\{1,2,3\},\{(1,2),(1,3),(1,1),(2,2),(3,3)\})$
+\end_inset
+
+ no tiene elemento maximo.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ es un elemento minimo de 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $1$
+\end_inset
+
+ es un elemento maximo del poset 
+\begin_inset Formula $(\{1\},\{(1,1)\})$
+\end_inset
+
+.
+ Tambien 
+\begin_inset Formula $1$
+\end_inset
+
+ es un elemento minimo de 
+\begin_inset Formula $(\{1\},\{(1,1)\})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Como lo muestra el ejemplo (E2), no siempre hay elementos maximos o minimos
+ en un poset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Entonces 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tiene a lo sumo un elemento maximo 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En caso de existir el maximo (resp.
+ minimo) sera denotado con 
+\begin_inset Formula $1$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $0$
+\end_inset
+
+).
+ Tambien diremos que 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ 
+\shape italic
+tiene un
+\shape default
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $0$
+\end_inset
+
+) para expresar que 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tiene un elemento maximo (resp.
+ minimo).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Diremos que 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ es un elemento 
+\shape italic
+maximal de 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si no existe un 
+\begin_inset Formula $b\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ En forma analoga se define el concepto de elemento 
+\shape italic
+minimal
+\shape default
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\leq$
+\end_inset
+
+ el orden usual de los numeros reales.
+ El poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+ no tiene elementos maximales ni minimales.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{P}=(\{1,2,3\},\{(1,2),(1,3),(1,1),(2,2),(3,3)\})$
+\end_inset
+
+.
+ El unico elemento minimal de 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+ es 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Los elementos 
+\begin_inset Formula $2$
+\end_inset
+
+ y 
+\begin_inset Formula $3$
+\end_inset
+
+ son los unicos maximales de 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{P}=(\{1,2\},\{(1,1),(2,2)\})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ y 
+\begin_inset Formula $2$
+\end_inset
+
+ son elementos maximales de 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ y 
+\begin_inset Formula $2$
+\end_inset
+
+ son elementos minimales de 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Como lo muestra el ejemplo (E1), no siempre hay elementos maximales o minimales
+ en un poset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 6,3:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $S=\{2,3,4,5,6,7,8,9,10,11,12,13,14,15\}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $R=\{(x,y)\in S^{2}:x|y\}$
+\end_inset
+
+.
+ Encuentre los elementos maximales y minimales de 
+\begin_inset Formula $(S,R)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 6,6:
+\end_layout
+
+\end_inset
+
+Encuentre los elementos maximales de 
+\begin_inset Formula $(\mathcal{P}(\omega)-\{\omega\},\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(S,T)\in(\mathcal{P}(\omega)-\{\omega\})^{2}:S\subseteq T\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Todo elemento maximo (resp.
+ minimo) de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un elemento maximal (resp.
+ minimal) de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset y 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ no es un elemento maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a<b$
+\end_inset
+
+, para algun 
+\begin_inset Formula $b\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset sin elementos maximales, entonces 
+\begin_inset Formula $P$
+\end_inset
+
+ es infinito 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Supremos
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Dado 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+, diremos que un elemento 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ es 
+\shape italic
+cota superior de 
+\shape default
+
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ cuando 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+, para todo 
+\begin_inset Formula $b\in S$
+\end_inset
+
+.
+ Notese que todo elemento de 
+\begin_inset Formula $P$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Un elemento 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ sera llamado 
+\shape italic
+supremo de 
+\shape default
+
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ cuando se den las siguientes dos propiedades
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+ es a cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $b\in P$
+\end_inset
+
+, si 
+\begin_inset Formula $b$
+\end_inset
+
+ es una cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $S=\{x,y\}$
+\end_inset
+
+ y se da que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+, entonces 
+\begin_inset Formula $y$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es el orden usual de los numeros reales.
+ Notese que ningun elemento de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+ O sea que ningun elemento de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+es supremo de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\begin{align*}
+S & =\{-1/n:n\in\mathbf{N}\}\\
+ & =\{-1,-1/2,-1/3,...\}
+\end{align*}
+
+\end_inset
+
+Es facil ver que 
+\begin_inset Formula $0$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in\mathcal{P}(\omega)^{2}:A\subseteq B\}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $A,B\in\mathcal{P}(\omega)$
+\end_inset
+
+.
+ Es facil ver que 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $\{A,B\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como lo muestra el ejemplo (E1) no siempre existe un supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $a$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $a^{\prime}$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a=a^{\prime}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El ejercicio anterior nos permite hablar de EL supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, cuando exista.
+ Denotaremos con 
+\begin_inset Formula $\sup(S)$
+\end_inset
+
+ al supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, en caso de que exista.
+ A veces para hacer mas dinamicos los enunciados en lugar de escribir 
+\begin_inset Formula $z$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ escribiremos 
+\begin_inset Formula $z=\sup(S)$
+\end_inset
+
+ o 
+\begin_inset Formula $\sup(S)=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notese que (E1) nos muestra que no siempre el supremo de un conjunto pertenece
+ al conjunto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\sup\{a,b\}=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Encuentre 
+\begin_inset Formula $\{a\in P:a$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+En caso de existir, el supremo del conjunto 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un elemento minimo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+Dar un ejemplo de un poset finito en el cual haya elementos distintos 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+ tales que se den simultaneamente las siguientes tres condiciones
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ x_{1},x_{2},x_{3}\right\} $
+\end_inset
+
+ es una anticadena, es decir 
+\begin_inset Formula $x_{i}\nleqslant x_{j}$
+\end_inset
+
+, cada vez que 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+no existen 
+\begin_inset Formula $\sup\left\{ x_{1},x_{2}\right\} ,$
+\end_inset
+
+ 
+\begin_inset Formula $\sup\left\{ x_{1},x_{3}\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $\sup\left\{ x_{2},x_{3}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+existe 
+\begin_inset Formula $\sup\left\{ x_{1},x_{2},x_{3}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset y 
+\begin_inset Formula $a=\sup(S)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a=\sup(S\cup\{a\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset y sea 
+\begin_inset Formula $a\in P$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $a$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ sii 
+\begin_inset Formula $a=\sup(P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+V o F o I, justificar
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset y 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a=\sup(S)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ sii 
+\begin_inset Formula $a\in S$
+\end_inset
+
+ y 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+, para todo 
+\begin_inset Formula $b\in S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset y sean 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+ y 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ una cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $a$
+\end_inset
+
+ no es el supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ entonces hay alguna cota superior 
+\begin_inset Formula $b$
+\end_inset
+
+ de 
+\begin_inset Formula $S$
+\end_inset
+
+ tal que 
+\begin_inset Formula $b<a$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 14,5:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset, sea 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+ y sea 
+\begin_inset Formula $b\in P$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $a=\sup(S)$
+\end_inset
+
+ y existe 
+\begin_inset Formula $\sup(\{a,b\})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\sup(S\cup\{b\})=\sup(\{a,b\})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordemos que dados 
+\begin_inset Formula $x,y\in\mathbf{N}$
+\end_inset
+
+ decimos que 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\shape italic
+es multiplo de 
+\shape default
+
+\begin_inset Formula $y$
+\end_inset
+
+ cuando 
+\begin_inset Formula $y$
+\end_inset
+
+ divide a 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Ademas, por definicion, el 
+\shape italic
+minimo comun multiplo de 
+\shape default
+
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\shape italic
+e
+\shape default
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ es el menor elemento del conjunto 
+\begin_inset Formula $\{z\in\mathbf{N}:z$
+\end_inset
+
+ es multiplo de 
+\begin_inset Formula $x$
+\end_inset
+
+ y de 
+\begin_inset Formula $y\}$
+\end_inset
+
+.
+ El minimo comun multiplo de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ se denota con 
+\begin_inset Formula $mcm(x,y)$
+\end_inset
+
+.
+ Una propiedad importante es la siguiente:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(*)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $z$
+\end_inset
+
+ es multiplo de 
+\begin_inset Formula $x$
+\end_inset
+
+ y de 
+\begin_inset Formula $y$
+\end_inset
+
+, entonces 
+\begin_inset Formula $mcm(x,y)|z$
+\end_inset
+
+, es decir no solo 
+\begin_inset Formula $mcm(x,y)$
+\end_inset
+
+ es menor o igual a cada multiplo comun de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, sino que 
+\begin_inset Formula $mcm(x,y)$
+\end_inset
+
+ divide a cada multiplo comun de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Un ejemplo importante de existencia de supremos es el siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+, donde 
+\begin_inset Formula $D=\{(x,y)\in\mathbf{N}^{2}:x|y\}$
+\end_inset
+
+.
+ Dados 
+\begin_inset Formula $x,y\in\mathbf{N}$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $mcm(x,y)$
+\end_inset
+
+ es el supremo de 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+.
+ Es claro que 
+\begin_inset Formula $mcm(x,y)$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+.
+ Ademas la propiedad (*) nos asegura que la propiedad (2) de la definicion
+ de supremo se cumple.
+ Por que no es obvio que se cumpla (2) de la definicion de supremo? Por
+ que es necesario aplicar la propiedad (*)? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Infimos
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Dado 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+, diremos que un elemento 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ es 
+\shape italic
+cota inferior
+\shape default
+ 
+\shape italic
+de 
+\shape default
+
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, cuando 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+, para cada 
+\begin_inset Formula $b\in S$
+\end_inset
+
+.
+ Notese que todo elemento de 
+\begin_inset Formula $P$
+\end_inset
+
+ es cota inferior de 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Un elemento 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ sera llamado 
+\shape italic
+infimo de 
+\shape default
+
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ cuando se den las siguientes dos propiedades
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+ es a cota inferior de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $b\in P$
+\end_inset
+
+, si 
+\begin_inset Formula $b$
+\end_inset
+
+ es una cota inferior de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $S=\{x,y\}$
+\end_inset
+
+ y se da que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+, entonces 
+\begin_inset Formula $x$
+\end_inset
+
+ es infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es el orden usual de los numeros reales.
+ Notese que ningun elemento de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ es cota inferior de 
+\begin_inset Formula $\mathbf{Z}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+ O sea que ningun elemento de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+es infimo de 
+\begin_inset Formula $\mathbf{Z}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\begin{align*}
+S & =\{1/n:n\in\mathbf{N}\}\\
+ & =\{1,1/2,1/3,...\}
+\end{align*}
+
+\end_inset
+
+Es facil ver que 
+\begin_inset Formula $0$
+\end_inset
+
+ es infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in\mathcal{P}(\omega)^{2}:A\subseteq B\}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $A,B\in\mathcal{P}(\omega)$
+\end_inset
+
+.
+ Es facil ver que 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ es infimo de 
+\begin_inset Formula $\{A,B\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como lo muestra el ejemplo (E1) no siempre existe un infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $a$
+\end_inset
+
+ es infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $a^{\prime}$
+\end_inset
+
+ es infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a=a^{\prime}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El ejercicio anterior nos permite hablar de EL infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, cuando exista.
+ Denotaremos con 
+\begin_inset Formula $\inf(S)$
+\end_inset
+
+ al infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, en caso de que exista.
+ A veces para hacer mas dinamicos los enunciados en lugar de escribir 
+\begin_inset Formula $z$
+\end_inset
+
+ es infimo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ escribiremos 
+\begin_inset Formula $z=\inf(S)$
+\end_inset
+
+ o 
+\begin_inset Formula $\inf(S)=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notese que (E1) nos muestra que no siempre el infimo de un conjunto pertenece
+ al conjunto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\inf\{a,b\}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Encuentre 
+\begin_inset Formula $\{a\in P:a$
+\end_inset
+
+ es cota inferior de 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+En caso de existir, el infimo del conjunto 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 17:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $P=\{0\}\cup\{x\in\mathbf{R}:1<x\leq5\}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+
+\begin_inset Formula $=\{(x,y)\in P^{2}:x\leq y\}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $S=\{x\in\mathbf{Q}:1<x\leq5\}$
+\end_inset
+
+.
+ Tiene infimo 
+\begin_inset Formula $S$
+\end_inset
+
+ en el poset 
+\begin_inset Formula $(P,\text{\tilde{\leq}})$
+\end_inset
+
+? Tiene infimo en 
+\begin_inset Formula $(P,\text{\tilde{\leq}})$
+\end_inset
+
+ el conjunto 
+\begin_inset Formula $\{x\in\mathbf{Q}:2<x\leq5\}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 18:
+\end_layout
+
+\end_inset
+
+(S) V o F, Justificar.
+ Sea 
+\begin_inset Formula $D((x_{0},y_{0}),r)=\{(x,y)\in\mathbf{R}^{2}:(x-x_{0})^{2}+(y-y_{0})^{2}\leq r^{2}\}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $P=\{\emptyset\}\cup\{D((x_{0},y_{0}),r):x_{0},y_{0}\in\mathbf{R,\;}r>0\}$
+\end_inset
+
+.
+ En el poset 
+\begin_inset Formula $(P,\subseteq)$
+\end_inset
+
+ siempre existe 
+\begin_inset Formula $\inf\{D_{1},D_{2}\}$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $D_{1},D_{2}\in P.$
+\end_inset
+
+ (Ver video en granlogico resolviendo este ejercicio.) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordemos que dados 
+\begin_inset Formula $x,y\in\mathbf{N}$
+\end_inset
+
+, por definicion, el 
+\shape italic
+maximo comun divisor de 
+\shape default
+
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\shape italic
+e
+\shape default
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ es el mayor elemento del conjunto 
+\begin_inset Formula $\{z\in\mathbf{N}:z|x$
+\end_inset
+
+ y 
+\begin_inset Formula $z|y\}$
+\end_inset
+
+.
+ El maximo comun divisor de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ se denota con 
+\begin_inset Formula $mcd(x,y)$
+\end_inset
+
+.
+ Una propiedad importante es la siguiente:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(**)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $z|x$
+\end_inset
+
+ y 
+\begin_inset Formula $z|y$
+\end_inset
+
+, entonces 
+\begin_inset Formula $z|mcd(x,y)$
+\end_inset
+
+, es decir no solo 
+\begin_inset Formula $mcd(x,y)$
+\end_inset
+
+ es mayor o igual a cada divisor comun de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+, sino que 
+\begin_inset Formula $mcd(x,y)$
+\end_inset
+
+ es divisible por cada divisor comun de 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Un ejemplo importante de existencia de infimos es el siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+, donde 
+\begin_inset Formula $D=\{(x,y)\in\mathbf{N}^{2}:x|y\}$
+\end_inset
+
+.
+ Dados 
+\begin_inset Formula $x,y\in\mathbf{N}$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $mcd(x,y)$
+\end_inset
+
+ es el infimo de 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+.
+ Es claro que 
+\begin_inset Formula $mcd(x,y)$
+\end_inset
+
+ es cota inferior de 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+.
+ Ademas la propiedad (**) nos asegura que la propiedad (2) de la definicion
+ de infimo se cumple.
+ Por que no es obvio que se cumpla (2) de la definicion de infimo? Por que
+ es necesario aplicar la propiedad (**)? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Homomorfismos de posets
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ posets.
+ Una funcion 
+\begin_inset Formula $F:P\rightarrow P^{\prime}$
+\end_inset
+
+ sera llamada un 
+\shape italic
+homomorfismo de 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ si para todo 
+\begin_inset Formula $x,y\in P$
+\end_inset
+
+ se cumple que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ implica 
+\begin_inset Formula $F(x)\leq^{\prime}F(y)$
+\end_inset
+
+.
+ Escribiremos 
+\begin_inset Formula $F:(P,\leq)\rightarrow(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F:\mathbf{R}\rightarrow\mathbf{R}$
+\end_inset
+
+ dada por 
+\begin_inset Formula $F(r)=3.r$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathrm{\leq}=\{(n,m)\in\omega^{2}:n=m\}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ un poset cualquiera.
+ Entonces cualquier funcion 
+\begin_inset Formula $F:\omega\rightarrow P^{\prime}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(\omega,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ (glup!)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Consideremos el poset 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in\mathcal{P}(\omega)^{2}:A\subseteq B\}$
+\end_inset
+
+ y el poset 
+\begin_inset Formula $(\mathcal{P}(\{1,2,3,4\}),\leq^{\prime})$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}^{\prime}=\{(A,B)\in\mathcal{P}(\{1,2,3,4\})^{2}:A\subseteq B\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $F:\mathcal{P}(\omega)\rightarrow\mathcal{P}(1,2,3,4)$
+\end_inset
+
+ dada por 
+\begin_inset Formula $F(A)=A\cap\{1,2,3,4\}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathcal{P}(\{1,2,3,4\}),\leq^{\prime})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Una funcion 
+\begin_inset Formula $F:P\rightarrow P^{\prime}$
+\end_inset
+
+ sera llamada un 
+\shape italic
+isomorfismo de 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ si 
+\begin_inset Formula $F$
+\end_inset
+
+ es biyectiva, 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ y 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Escribiremos 
+\begin_inset Formula $(P,\leq)\cong(P^{\prime},\leq^{\prime})$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+cuando exista un isomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ y en tal caso diremos que 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+son 
+\shape italic
+isomorfos
+\shape default
+.
+ Ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F:\omega\rightarrow\mathbf{N}$
+\end_inset
+
+ dada por 
+\begin_inset Formula $F(x)=x+1$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(\omega,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{N},\leq^{\prime})$
+\end_inset
+
+, donde 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es el orden usual de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ y 
+\begin_inset Formula $\leq^{\prime}$
+\end_inset
+
+ es el orden usual de 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+Consideremos los posets 
+\begin_inset Formula $(\mathcal{P}(\{1,2\}),\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in\mathcal{P}(\{1,2\})^{2}:A\subseteq B\}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\{1,2,3,6\}),\leq^{\prime})$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}^{\prime}=\{(x,y)\in\{1,2,3,6\}^{2}:x|y\}$
+\end_inset
+
+.
+ Entonces la funcion 
+\begin_inset Formula $\{(\emptyset,1),(\{2\},2),(\{3\},3),(\{1,2\},6)\}$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(\mathcal{P}(\{1,2\}),\leq)$
+\end_inset
+
+, en 
+\begin_inset Formula $(\{1,2,3,6\}),\leq^{\prime})$
+\end_inset
+
+.
+ Se le ocurre otro isomorfismo de 
+\begin_inset Formula $(\mathcal{P}(\{1,2\}),\leq)$
+\end_inset
+
+, en 
+\begin_inset Formula $(\{1,2,3,6\}),\leq^{\prime})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 18,5:
+\end_layout
+
+\end_inset
+
+Refute con un contraejemplo la aparentemente verdadera propiedad:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+, entonces
+\begin_inset Formula 
+\[
+x<y\text{ implica }F(x)<^{\prime}F(y)\text{, cualesquiera sean }x,y\in P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 19:
+\end_layout
+
+\end_inset
+
+Encuentre un homomorfismo 
+\begin_inset Formula $F$
+\end_inset
+
+ de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ el cual sea biyectivo pero que no sea un isomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente lema aporta evidencia al hecho de que los isomorfismos preservan
+ todas las propiedades matematicas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+posets.
+ Supongamos 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Para 
+\begin_inset Formula $x,y\in P$
+\end_inset
+
+, tenemos que 
+\begin_inset Formula $x<y$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(x)<^{\prime}F(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $x\in P$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $x$
+\end_inset
+
+ es maximo (resp.
+ minimo) de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(x)$
+\end_inset
+
+ es maximo (resp.
+ minimo) de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $x\in P$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $x$
+\end_inset
+
+ es maximal (resp.
+ minimal) en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(x)$
+\end_inset
+
+ es maximal (resp.
+ minimal) en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+Para 
+\begin_inset Formula $x,y,z\in P$
+\end_inset
+
+, tenemos que 
+\begin_inset Formula $z=\sup\{x,y\}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(z)=\sup\{F(x),F(y)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+Para 
+\begin_inset Formula $x,y,z\in P$
+\end_inset
+
+, tenemos que 
+\begin_inset Formula $z=\inf\{x,y\}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(z)=\inf\{F(x),F(y)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(f)
+\end_layout
+
+\end_inset
+
+Para 
+\begin_inset Formula $x,y\in P$
+\end_inset
+
+, tenemos que 
+\begin_inset Formula $x\prec y$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(x)\prec^{\prime}F(y)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (b) Sea 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ un elemento fijo.
+ Supongamos 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Probaremos que 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $b$
+\end_inset
+
+ un elemento fijo pero arbitrario de 
+\begin_inset Formula $P^{\prime}$
+\end_inset
+
+.
+ Probaremos que 
+\begin_inset Formula $b\leq^{\prime}F(a)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $d\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $F(d)=b$
+\end_inset
+
+ (tal 
+\begin_inset Formula $d$
+\end_inset
+
+ existe y que 
+\begin_inset Formula $F$
+\end_inset
+
+ es sobreyectiva).
+ Ya que 
+\begin_inset Formula $a$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $d\leq a$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo tenemos que 
+\begin_inset Formula $F(d)\leq^{\prime}F(a)$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $b\leq^{\prime}F(a)$
+\end_inset
+
+ ya que 
+\begin_inset Formula $F(d)=b$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $b$
+\end_inset
+
+ era arbitrario hemos probado que 
+\begin_inset Formula $x\leq^{\prime}F(a)$
+\end_inset
+
+ para cada 
+\begin_inset Formula $x\in P^{\prime}$
+\end_inset
+
+, lo cual por definicion nos dice que 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ Supongamos ahora que 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ Probaremos que 
+\begin_inset Formula $a$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $b$
+\end_inset
+
+ un elemento fijo pero arbitrario de 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Probaremos que 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $F(b)\leq^{\prime}F(a)$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ es un homomorfismo tenemos que 
+\begin_inset Formula $F^{-1}(F(b))\leq F^{-1}(F(a))$
+\end_inset
+
+, por lo cual 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $b$
+\end_inset
+
+ era arbitrario hemos probado que 
+\begin_inset Formula $x\leq a$
+\end_inset
+
+ para cada 
+\begin_inset Formula $x\in P$
+\end_inset
+
+, lo cual por definicion nos dice que 
+\begin_inset Formula $a$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ya que 
+\begin_inset Formula $a$
+\end_inset
+
+ era fijo pero arbitrario hemos probado que cualquiera sea 
+\begin_inset Formula $x\in P$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $x$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(x)$
+\end_inset
+
+ es maximo de 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que en la prueba de (b) del lema anterior se uso tacitamente la siguiente
+ propiedad que es obvia pero clave en la demostracion:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $F$
+\end_inset
+
+ es una funcion y 
+\begin_inset Formula $b\in\operatorname{Im}(F)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $b=F(d)$
+\end_inset
+
+, para algun 
+\begin_inset Formula $d\in D_{F}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto da lugar a la siguiente regla la cual es muy util a la hora de hacer
+ pruebas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regla Pertenecer a la Imagen
+\end_layout
+
+\begin_layout Standard
+Si ud en el desarrollo de una prueba conoce que un elemento 
+\begin_inset Formula $b$
+\end_inset
+
+ esta en la imagen de una funcion 
+\begin_inset Formula $F$
+\end_inset
+
+, entonces escriba al elemento 
+\begin_inset Formula $b$
+\end_inset
+
+ en la forma 
+\begin_inset Formula $F(a)$
+\end_inset
+
+, donde 
+\begin_inset Formula $a$
+\end_inset
+
+ denota algun elemento fijo del dominio de 
+\begin_inset Formula $F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muchas veces tener presente dicha regla es la diferencia a que a uno le
+ salga o no una prueba determinada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 20:
+\end_layout
+
+\end_inset
+
+Hacer las pruebas de (a),(c), (d), (e) y (f) del lema anterior (la prueba
+ de (f) esta en video en granlogico) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que (f) nos garantiza que si dos posets finitos son isomorfos, entonces
+ pueden representarse con el mismo diagrama de Hasse.
+\end_layout
+
+\begin_layout Standard
+Un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ sera llamado 
+\shape italic
+denso
+\shape default
+ cuando cumpla:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $a<b$
+\end_inset
+
+, entonces hay un 
+\begin_inset Formula $c\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a<c$
+\end_inset
+
+ y 
+\begin_inset Formula $c<b$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 21:
+\end_layout
+
+\end_inset
+
+Pruebe que si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ son isomorfos, entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tiene exactamente tres elementos maximales, entonces tambien 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ tiene exactamente tres elementos maximales
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es denso, entonces 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ es denso
+\end_layout
+
+\begin_layout Enumerate
+Si cada elemento en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es cubierto por exactamente dos elementos, entonces cada elemento en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ es cubierto por exactamente dos elementos (Hint: primero escriba mas formalment
+e que significa que un elemento 
+\begin_inset Formula $a$
+\end_inset
+
+ sea cubierto en un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ por exactamente dos elementos) 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 21,3:
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ posets.
+ Supongamos 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $\{x\in P:a<x<b\}$
+\end_inset
+
+ tiene exactamente 4 elementos.
+ Pruebe que entonces 
+\begin_inset Formula $\{z\in P^{\prime}:F(a)<^{\prime}z<^{\prime}F(b)\}$
+\end_inset
+
+ tiene exactamente 4 elementos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 21,4:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:(P,\leq)\rightarrow(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ un isomorfismo de posets.
+ Pruebe que cualesquiera sean 
+\begin_inset Formula $x,y\in P$
+\end_inset
+
+, tenemos que 
+\begin_inset Formula $x$
+\end_inset
+
+ es tapado por 
+\begin_inset Formula $y$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(x)$
+\end_inset
+
+ es tapado por 
+\begin_inset Formula $F(y)$
+\end_inset
+
+ (antes del Ejercicio 5,5 esta la definicion de 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+es tapado por
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 21,5:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:(P,\leq)\rightarrow(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ un homomorfismo de posets.
+ Supongamos que 
+\begin_inset Formula $F$
+\end_inset
+
+ es suryectiva.
+ Entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un conjunto totalmente ordenado, 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ tambien lo es
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tiene un elemento maximo, 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ tiene un elemento maximo 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 22:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P,\leq^{\prime})$
+\end_inset
+
+ son posets finitos isomorfos, entonces 
+\begin_inset Formula $\mathrm{\leq}=\mathrm{\leq}^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset tal que toda funcion 
+\begin_inset Formula $F:P\rightarrow P$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\left\vert P\right\vert =1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $F:(P,\leq)\rightarrow(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ un homomorfismo de posets y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+ tiene un elemento maximo, entonces 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tiene un elemento maximo 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

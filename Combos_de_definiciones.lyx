@@ -1,0 +1,3928 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\bottommargin 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Combos de Definiciones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Primer Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $n(\mathbf{J})$
+\end_inset
+
+ (Para 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Dada 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+,
+ usaremos 
+\begin_inset Formula $n(\mathbf{J})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{J}_{1},...,\mathbf{J}_{n(\mathbf{J})}$
+\end_inset
+
+ para denotar los unicos 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{1},...,J_{n}$
+\end_inset
+
+ cuya existencia garantiza el siguiente lema.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+.
+ Hay unicos 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{1},...,J_{n}\in Just$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\mathbf{J}=J_{1}...J_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+par adecuado de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ (no hace falta que defina cuando
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ es balanceada)
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+par adecuado de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un par 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})\in S^{\tau+}\times Just^{+}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $n(\mathbf{\varphi})=n(\mathbf{J})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{J}$
+\end_inset
+
+ es balanceada.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $Mod_{T}(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Dada 
+\begin_inset Formula $\varphi\in S^{\tau}$
+\end_inset
+
+ definimos
+\begin_inset Formula 
+\[
+\mathrm{Mod}_{T}(\varphi)=\{\mathbf{A}:\mathbf{A}\text{ es modelo de }T\text{ y }\mathbf{A}\vDash\varphi\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Convencion Notacional 4
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{A}\models\varphi[a_{1}...,a_{n}]$
+\end_inset
+
+ significara que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}],$
+\end_inset
+
+ donde 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ es una asignacion tal que a cada 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ le asigna el valor 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+.
+ En general 
+\begin_inset Formula $\mathbf{A}\not\models\varphi[a_{1},....,a_{n}]$
+\end_inset
+
+ significara que no sucede 
+\begin_inset Formula $\mathbf{A}\models\varphi[a_{1},....,a_{n}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $(L,s,i,^{c},0,1)/θ$
+\end_inset
+
+ (
+\begin_inset Formula $θ$
+\end_inset
+
+ una congruencia del reticulado complementado 
+\begin_inset Formula $(L,s,i,^{c},0,1)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbf{L}=(L,s,i,^{c},0,1)$
+\end_inset
+
+ un reticulado complementado y 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una 
+\shape italic
+congruencia sobre
+\shape default
+ 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+,
+ definimos dos operaciones binarias 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+,
+ y una operacion unaria 
+\begin_inset Formula $^{\tilde{c}}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+x/\theta\mathsf{\;\tilde{s}\;}y/\theta & =(x\mathsf{\;s\;}y)/\theta\\
+x/\theta\mathsf{\;\tilde{\imath}\;}y/\theta & =(x\mathsf{\;i\;}y)/\theta\\
+(x/\theta)^{\tilde{c}} & =x^{c}/\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset Formula $6$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ es llamada el 
+\shape italic
+cociente de
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+sobre
+\shape default
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y la denotaremos con 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)/\theta$
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Segundo Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $(Σ,τ)\vDashφ$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dadad 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria,
+ escribiremos 
+\begin_inset Formula $(Σ,τ)\vDashφ$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sea verdadera en todo modelo de 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+Particion de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Formula $R_{\mathcal{P}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+Particion de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ por una 
+\shape italic
+particion de 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos un conjunto 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+Cada elemento de 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ es un subconjunto no vacio de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $S_{1},S_{2}\in\mathcal{P}$
+\end_inset
+
+ y 
+\begin_inset Formula $S_{1}\neq S_{2}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $S_{1}\cap S_{2}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\{a:a\in S$
+\end_inset
+
+,
+ para algun 
+\begin_inset Formula $S\in\mathcal{P}\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+La ultima condicion dice simplemente que la union de todos los elementos de 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ debe ser 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $R_{P}$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una particion 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ de un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ podemos definir una relacion binaria asociada a 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+R_{\mathcal{P}}=\{(a,b)\in A^{2}:a,b\in S\text{, para algun }S\in\mathcal{P}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defina cuando 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $φ_{i}$
+\end_inset
+
+ esta bajo la hipotesis 
+\begin_inset Formula $φ_{l}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+.
+ (no hace falta que defina
+\begin_inset Formula $\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Diremos que 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ 
+\shape italic
+esta bajo la hipotesis
+\shape default
+ 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ o que 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+ 
+\shape italic
+es una hipotesis de
+\shape default
+ 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ cuando haya en 
+\begin_inset Formula $\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+ un bloque de la forma 
+\begin_inset Formula $\left\langle l,j\right\rangle $
+\end_inset
+
+ el cual contenga a 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $(L,s,i)/θ$
+\end_inset
+
+ (
+\begin_inset Formula $θ$
+\end_inset
+
+ una congruencia del reticulado terna 
+\begin_inset Formula $(L,s,i)$
+\end_inset
+
+).
+ (No hace falta que defina el concepto de congruencia.)
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbf{L}=(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una 
+\shape italic
+congruencia sobre
+\shape default
+ 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+,
+ luego definimos dos operaciones binarias 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+,
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+x/\theta\mathsf{\;\tilde{s}\;}y/\theta & =(x\mathsf{\;s\;}y)/\theta\\
+x/\theta\mathsf{\;\tilde{\imath}\;}y/\theta & =(x\mathsf{\;i\;}y)/\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+La 
+\begin_inset Formula $3$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ es llamada el 
+\shape italic
+cociente de
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\shape italic
+sobre
+\shape default
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tercer Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Convencion Notacional 2
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+,
+ entonces con 
+\begin_inset Formula $t^{\mathbf{A}}[a_{1}...,a_{n}]$
+\end_inset
+
+ denotaremos al elemento 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{b}]$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ es una asignacion tal que a cada 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ le asigna el valor 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ reticulados complementados.
+ Una funcion 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ sera llamada un 
+\shape italic
+homomorfismo de 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ si para todo 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ se cumple que
+\begin_inset Formula 
+\begin{align*}
+F(x\mathsf{\;s\;}y) & =F(x)\;\mathsf{s}^{\prime}\ F(y)\\
+F(x\mathsf{\;i\;}y) & =F(x)\;\mathsf{i}^{\prime}\ F(y)\\
+F(x^{c}) & =F(x)^{c^{\prime}}\\
+F(0) & =0^{\prime}\\
+F(1) & =1^{\prime}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+filtro generado por 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,s,i)$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+,
+ definimos a el filtro generado por 
+\begin_inset Formula $S$
+\end_inset
+
+ el siguiente conjunto
+\begin_inset Formula 
+\[
+[S)=\{y\in L:y\geq s_{1}\;\mathsf{i\;}...\;\mathsf{i\;}s_{n}\text{, para algunos }s_{1},...,s_{n}\in S\text{, }n\geq1\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defina cuando 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ es 
+\shape italic
+balanceada (no hace falta que defina 
+\shape default
+
+\begin_inset Formula $\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Diremos que 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ es 
+\shape italic
+balanceada
+\shape default
+ si se dan las siguientes
+\end_layout
+
+\begin_layout Enumerate
+Por cada 
+\begin_inset Formula $k\in\mathbf{N}$
+\end_inset
+
+ a lo sumo hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ y a lo sumo hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ entonces hay un 
+\begin_inset Formula $l>i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{l}=\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+,
+ entonces hay un 
+\begin_inset Formula $l<i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{l}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $B_{1},B_{2}\in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $B_{1}\cap B_{2}=\emptyset$
+\end_inset
+
+ o 
+\begin_inset Formula $B_{1}\subseteq B_{2}$
+\end_inset
+
+ o 
+\begin_inset Formula $B_{2}\subseteq B_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cuarto Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ es un subreticulado complementado de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dados reticulados complementados 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+es un subreticulado complementado de 
+\shape default
+
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime},^{c^{\prime}},0^{\prime},1^{\prime})$
+\end_inset
+
+ si se dan las siguientes condiciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L\subseteq L^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}^{\prime}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $^{c^{\prime}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0=0^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $1=1^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{s}=\mathsf{s}^{\prime}$
+\end_inset
+
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}=\mathsf{i}^{\prime}$
+\end_inset
+
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+ y 
+\begin_inset Formula $^{c}=\ ^{c^{\prime}}$
+\end_inset
+
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\begin_inset Formula $_{L}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ (version absoluta,
+ no dependiente de una declaracion previa,
+ i.e 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ No hace falta definir 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ una asignacion y 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+.
+ Nuestra definicion matematica sera recursiva.
+ 
+\end_layout
+
+\begin_layout Standard
+Dada una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ una asignacion 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+ y 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\downarrow_{i}^{a}(\vec{a})$
+\end_inset
+
+ denotaremos la asignacion que resulta de reemplazar en 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ el 
+\begin_inset Formula $i$
+\end_inset
+
+-esimo elemento por 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Ahora si la definicion recursiva:
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(t\equiv s),$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=s^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=r(t_{1},...,t_{m})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(t_{1}^{\mathbf{A}}[\vec{a}],...,t_{m}^{\mathbf{A}}[\vec{a}])\in i(r)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si ya sea se dan 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+ o se dan 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=\lnot\varphi_{1},$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=\forall x_{i}\varphi_{1}$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si para cada 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ se da que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{i}^{a}(\vec{a})]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=\exists x_{i}\varphi_{1}$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si hay un 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{i}^{a}(\vec{a})]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Defina la relacion 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definamos recursivamente la relacion 
+\begin_inset Formula $"v\mathit{\ ocurre\ libremente\ en\ }\varphi\mathit{\ a\ partir\ de\ }i"$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $i\in\{1,...,\left\vert \varphi\right\vert \}$
+\end_inset
+
+,
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es atomica,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\eta\varphi_{2})$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii se da alguna de las siguientes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-\left\vert (\varphi_{1}\eta\right\vert $
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=\lnot\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=Qw\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii 
+\begin_inset Formula $v\neq w$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-\left\vert Qw\right\vert $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+Reticulado Cuaterna
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+reticulado cuaterna
+\shape default
+ entenderemos una 
+\begin_inset Formula $4$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto no vacio,
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ son operaciones binarias sobre 
+\begin_inset Formula $L$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ y se cumplen las siguientes propiedades:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq x$
+\end_inset
+
+,
+ cualesquiera sea 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq y\text{ y }y\leq z\text{ implican }x\leq z$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq y\text{ y }y\leq x\text{ implican }x=y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq x\;\mathsf{s}\;y\text{ y }y\leq x\;\mathsf{s}\;y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\leq z\text{ y }y\leq z\text{ implican }x\;\mathsf{s}\;y\leq z$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\;\mathsf{i}\;y\leq x\text{ y }x\;\mathsf{i}\;y\leq y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z\leq x\text{ y }z\leq y\text{ implican }z\leq x\;\mathsf{i}\;y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quinto Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Explique la notacion declaratoria para terminos con sus 3 convenciones notacionales (convenciones 1,2 y 5 de la Guia 11)
+\end_layout
+
+\begin_layout Subsubsection
+Notacion Declaratoria para terminos
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ es un termino de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces escribiremos 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})$
+\end_inset
+
+ para declarar que 
+\begin_inset Formula $v_{1},...,v_{n}$
+\end_inset
+
+ son variables distintas (con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+) y tales que toda variable que ocurre en 
+\begin_inset Formula $t$
+\end_inset
+
+ pertenece a 
+\begin_inset Formula $\{v_{1},...,v_{n}\}$
+\end_inset
+
+ (no necesariamente toda 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ debe ocurrir en 
+\begin_inset Formula $t$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+Convencion Notacional 1
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos hecho la declaracion 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $P_{1},...,P_{n}$
+\end_inset
+
+ son palabras cualesquiera (no necesariamente terminos),
+ entonces 
+\begin_inset Formula $t(P_{1},...,P_{n})$
+\end_inset
+
+ denotara la palabra que resulta de reemplazar (simultaneamente) cada ocurrencia de 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+,
+ cada ocurrencia de 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+,
+ etc.
+\end_layout
+
+\begin_layout Subsubsection
+Convencion Notacional 2
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+,
+ entonces con 
+\begin_inset Formula $t^{\mathbf{A}}[a_{1}...,a_{n}]$
+\end_inset
+
+ denotaremos al elemento 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{b}]$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ es una asignacion tal que a cada 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ le asigna el valor 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Convencion Notacional 5
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})$
+\end_inset
+
+ y 
+\begin_inset Formula $t=f(t_{1},...,t_{m})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $f\in\mathcal{F}_{m}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{m}\in T^{\tau}$
+\end_inset
+
+,
+ unicos,
+ supondremos tacitamente que tambien hemos hecho las declaraciones 
+\begin_inset Formula $t_{1}=_{d}t_{1}(v_{1},...,v_{n}),...,t_{m}=_{d}t_{m}(v_{1},...,v_{n})$
+\end_inset
+
+.
+ Esto lo podemos hacer ya que obviamente las variables que ocurren en cada uno de los 
+\begin_inset Formula $t_{i}^{\prime}s$
+\end_inset
+
+ estan en 
+\begin_inset Formula $\{v_{1},...,v_{n}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sexto Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Explique la notacion declaratoria para formulas con sus 3 convenciones notacionales (convenciones 3,4 y 6 de la Guia 11).
+ Puede asumir la notacion declaratoria para terminos.
+\end_layout
+
+\begin_layout Subsubsection
+Notacion declaratoria para formulas
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces escribiremos 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+ para declarar que 
+\begin_inset Formula $v_{1},...,v_{n}$
+\end_inset
+
+ son variables distintas (con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+) tales que 
+\begin_inset Formula $Li(\varphi)\subseteq\{v_{1},...,v_{n}\}$
+\end_inset
+
+.
+ Tal como para el caso de terminos,
+ el uso de declaraciones de la forma 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+ sera muy util cuando se convina con ciertas convenciones notacionales que describiremos a continuacion.
+\end_layout
+
+\begin_layout Subsubsection
+Convencion Notacional 3
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos hecho la declaracion 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $P_{1},...,P_{n}$
+\end_inset
+
+ son palabras cualesquiera,
+ entonces 
+\begin_inset Formula $\varphi(P_{1},...,P_{n})$
+\end_inset
+
+ denotara la palabra que resulta de reemplazar (simultaneamente) cada ocurrencia libre de 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+,
+ cada ocurrencia libre de 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+,
+ etc.
+\end_layout
+
+\begin_layout Subsubsection
+Convencion Notacional 4
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{A}\models\varphi[a_{1}...,a_{n}]$
+\end_inset
+
+ significara que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}],$
+\end_inset
+
+ donde 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ es una asignacion tal que a cada 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ le asigna el valor 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+.
+ En gral 
+\begin_inset Formula $\mathbf{A}\not\models\varphi[a_{1},....,a_{n}]$
+\end_inset
+
+ significara que no sucede 
+\begin_inset Formula $\mathbf{A}\models\varphi[a_{1},....,a_{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Convencion Notacional 6
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+,
+ entonces:
+\end_layout
+
+\begin_layout Description
+- Si 
+\begin_inset Formula $\varphi=(t\equiv s)$
+\end_inset
+
+,
+ supondremos tacitamente que tambien hemos hecho las declaraciones 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})$
+\end_inset
+
+ y 
+\begin_inset Formula $s=_{d}s(v_{1},...,v_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+- Si 
+\begin_inset Formula $\varphi=r(t_{1},...,t_{m})$
+\end_inset
+
+,
+ supondremos tacitamente que tambien hemos hecho las declaraciones 
+\begin_inset Formula $t_{1}=_{d}t_{1}(v_{1},...,v_{n}),...,t_{m}=_{d}t_{m}(v_{1},...,v_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+- Si 
+\begin_inset Formula $\varphi=\varphi_{1}\eta\varphi_{2}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\eta\in\{\land,\lor,\leftrightarrow,\rightarrow\}$
+\end_inset
+
+,
+ supondremos tacitamente que tambien hemos hecho las declaraciones 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n})$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}=_{d}\varphi_{2}(v_{1},...,v_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+- Si 
+\begin_inset Formula $\varphi=\lnot\varphi_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi=\forall v_{j}\varphi_{1}$
+\end_inset
+
+ o 
+\begin_inset Formula $\varphi=\exists v_{j}\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $v_{j}\in\{v_{1},...,v_{n}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{1}\in F^{\tau}$
+\end_inset
+
+,
+ unicas,
+ supondremos tacitamente que tambien hemos hecho la declaracion 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+- Si 
+\begin_inset Formula $\varphi=\exists v\varphi_{1}$
+\end_inset
+
+ o 
+\begin_inset Formula $\varphi=\forall v\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $v\in Var-\{v_{1},...,v_{n}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{1}\in F^{\tau}$
+\end_inset
+
+,
+ unicas,
+ supondremos tacitamente que tambien hemos hecho la declaracion 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n},v)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Septimo Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina recursivamente la relacion 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diremos que 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\shape italic
+es sustituible por 
+\shape default
+
+\begin_inset Formula $w$
+\end_inset
+
+
+\shape italic
+ en
+\shape default
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ cuando ninguna ocurrencia libre de 
+\begin_inset Formula $v$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sucede dentro de una ocurrencia de una subformula de la forma 
+\begin_inset Formula $Qw\psi$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Podemos definirlo de forma recursiva de la siguiente forma
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es atomica,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\eta\varphi_{2})$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ es substituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ es substituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=\lnot\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ es substituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=Qv\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=Qw\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $v\in Li(\varphi_{1}),$
+\end_inset
+
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ no es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=Qw\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $v\not\in Li(\varphi_{1}),$
+\end_inset
+
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi=Qu\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $u\neq v,w$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ es sustituible por 
+\begin_inset Formula $w$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defina cuando 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ es 
+\shape italic
+balanceada (no hace falta que defina 
+\shape default
+
+\begin_inset Formula $\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Diremos que 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ es 
+\shape italic
+balanceada
+\shape default
+ si se dan las siguientes
+\end_layout
+
+\begin_layout Enumerate
+Por cada 
+\begin_inset Formula $k\in\mathbf{N}$
+\end_inset
+
+ a lo sumo hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ y a lo sumo hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ entonces hay un 
+\begin_inset Formula $l>i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{l}=\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+,
+ entonces hay un 
+\begin_inset Formula $l<i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{l}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $B_{1},B_{2}\in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $B_{1}\cap B_{2}=\emptyset$
+\end_inset
+
+ o 
+\begin_inset Formula $B_{1}\subseteq B_{2}$
+\end_inset
+
+ o 
+\begin_inset Formula $B_{2}\subseteq B_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+filtro del reticulado terna (L,s,
+ i)
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+filtro 
+\shape default
+de un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ sera un subconjunto 
+\begin_inset Formula $F\subseteq L$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x,y\in F\Rightarrow x\;\mathsf{i\;}y\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in F$
+\end_inset
+
+ y 
+\begin_inset Formula $x\leq y\Rightarrow y\in F$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+Teoria elemental
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una 
+\shape italic
+teoria elemental
+\shape default
+ sera un par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo cualquiera y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es un conjunto de sentencias elementales puras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Un 
+\shape italic
+modelo de
+\shape default
+ 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ la cual haga verdaderos a todos los elementos de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Octavo Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $(L,s,i,^{c},0,1)/θ$
+\end_inset
+
+ (
+\begin_inset Formula $θ$
+\end_inset
+
+ una congruencia del reticulado complementado 
+\begin_inset Formula $(L,s,i,^{c},0,1)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbf{L}=(L,s,i,^{c},0,1)$
+\end_inset
+
+ un reticulado terna y 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una 
+\shape italic
+congruencia sobre
+\shape default
+ 
+\begin_inset Formula $\mathbf{L}$
+\end_inset
+
+,
+ definimos dos operaciones binarias 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+,
+ y una operacion unaria 
+\begin_inset Formula $^{\tilde{c}}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+x/\theta\mathsf{\;\tilde{s}\;}y/\theta & =(x\mathsf{\;s\;}y)/\theta\\
+x/\theta\mathsf{\;\tilde{\imath}\;}y/\theta & =(x\mathsf{\;i\;}y)/\theta\\
+(x/\theta)^{\tilde{c}} & =x^{c}/\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La 
+\begin_inset Formula $6$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}},^{\tilde{c}},0/\theta,1/\theta)$
+\end_inset
+
+ es llamada el 
+\shape italic
+cociente de
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ 
+\shape italic
+sobre
+\shape default
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y la denotaremos con 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)/\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Convencion Notacional 4
+\end_layout
+
+\begin_layout Standard
+Cuando hayamos declarado 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{A}\models\varphi[a_{1}...,a_{n}]$
+\end_inset
+
+ significara que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}],$
+\end_inset
+
+ donde 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ es una asignacion tal que a cada 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ le asigna el valor 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+.
+ En gral 
+\begin_inset Formula $\mathbf{A}\not\models\varphi[a_{1},....,a_{n}]$
+\end_inset
+
+ significara que no sucede 
+\begin_inset Formula $\mathbf{A}\models\varphi[a_{1},....,a_{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dado un poset 
+\begin_inset Formula $(P,≤)$
+\end_inset
+
+,
+ defina 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+ es supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,≤)$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un elemento 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ sera llamado 
+\shape italic
+supremo de 
+\shape default
+
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ cuando se den las siguientes dos propiedades
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a$
+\end_inset
+
+ es a cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Para cada 
+\begin_inset Formula $b\in P$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $b$
+\end_inset
+
+ es una cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $i$
+\end_inset
+
+ es anterior a 
+\begin_inset Formula $j$
+\end_inset
+
+ en 
+\begin_inset Formula $(φ,J)$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ (no hace falta que defina 
+\begin_inset Formula $\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Diremos que 
+\begin_inset Formula $i$
+\end_inset
+
+ es 
+\shape italic
+anterior
+\shape default
+ a 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ si 
+\begin_inset Formula $i<j$
+\end_inset
+
+ y ademas para todo 
+\begin_inset Formula $B\in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $i\in B\Rightarrow j\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Noveno Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ definamos recursivamente los conjuntos de palabras 
+\begin_inset Formula $T_{k}^{\tau}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+,
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+T_{0}^{\tau} & =Var\cup\mathcal{C}\\
+T_{k+1}^{\tau} & =T_{k}^{\tau}\cup\{f(t_{1},...,t_{n}):f\in\mathcal{F}_{n}\text{, }n\geq1\text{ y }t_{1},...,t_{n}\in T_{k}^{\tau}\}.
+\end{align*}
+
+\end_inset
+
+Sea
+\begin_inset Formula $T^{\tau}=\bigcup_{k\geq0}T_{k}^{\tau}$
+\end_inset
+
+.
+ Luego,
+ los elementos de 
+\begin_inset Formula $T^{\tau}$
+\end_inset
+
+ seran llamados 
+\shape italic
+terminos de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $⊣⊢T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Definimos la siguiente relacion binaria sobre 
+\begin_inset Formula $S^{\tau}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\varphi\dashv\vdash_{T}\psi\text{ si y solo si }T\vdash\left(\varphi\leftrightarrow\psi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $s^{T}$
+\end_inset
+
+(explique por que la definicion es inhambigua)
+\end_layout
+
+\begin_layout Standard
+Dada una teoria 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi\in S^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $[\varphi]_{T}$
+\end_inset
+
+ denotara la clase de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ con respecto a la relacion de equivalencia 
+\begin_inset Formula $\dashv\vdash_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Definiremos sobre 
+\begin_inset Formula $S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+ las siguiente operacion binaria 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+[\varphi]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\psi]_{T}=[(\varphi\vee\psi)]_{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observemos que la operacion 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+ es inambigua,
+ para eso probamos la siguiente propiedad:
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $[\varphi]_{T}=[\varphi^{\prime}]_{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $[\psi]_{T}=[\psi^{\prime}]_{T}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $[(\varphi\vee\psi)]_{T}=[(\varphi^{\prime}\vee\psi^{\prime})]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir debemos probar que si 
+\begin_inset Formula $T\vdash\left(\varphi\leftrightarrow\varphi^{\prime}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $T\vdash\left(\psi\leftrightarrow\psi^{\prime}\right)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $T\vdash((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi^{\prime}))$
+\end_inset
+
+.
+ A continuacion la prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & \left(\varphi\leftrightarrow\varphi^{\prime}\right) &  & \text{AXIOMAPROPIO}\\
+2.\; & \left(\psi\leftrightarrow\psi^{\prime}\right) &  & \text{AXIOMAPROPIO}\\
+3.\; & ((\varphi\vee\psi)\leftrightarrow(\varphi\vee\psi)) &  & \text{AXIOMALOGICO}\\
+4.\; & ((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi)) &  & \text{REEMPLAZO}(1,3)\\
+5.\; & ((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi^{\prime})) &  & \text{REEMPLAZO}(2,4)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una teoria 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+,
+ denotaremos con 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ al algebra de Boole 
+\begin_inset Formula $(S^{\tau}/\mathrm{\dashv\vdash}_{T},\mathsf{s}^{T},\mathsf{i}^{T},^{\mathsf{c}^{T}},0^{T},1^{T})$
+\end_inset
+
+.
+ El algebra 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ sera llamada el 
+\shape italic
+algebra de Lindenbaum de la teoria 
+\shape default
+
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Con las siguientes operaciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+[\varphi]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\psi]_{T} & =[(\varphi\vee\psi)]_{T}\\{}
+[\varphi]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\psi]_{T} & =[(\varphi\wedge\psi)]_{T}\\
+([\varphi]_{T})^{\mathsf{c}^{T}} & =[\lnot\varphi]_{T}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y los siguientes elementos distinguidos:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $0^{T}=\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es refutable en 
+\begin_inset Formula $T\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1^{T}=\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $S$
+\end_inset
+
+ es un subuniverso del reticulado complementado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un conjunto 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+ es llamado 
+\shape italic
+subuniverso 
+\shape default
+de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ si 
+\begin_inset Formula $0,1\in S$
+\end_inset
+
+ y ademas 
+\begin_inset Formula $S$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ y 
+\begin_inset Formula $^{c}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Decimo Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Defina 
+\begin_inset Quotes fld
+\end_inset
+
+tesis del bloque 
+\begin_inset Formula $\left\langle i,j\right\rangle $
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ un par adecuado de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\left\langle i,j\right\rangle \in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{\varphi}_{j}$
+\end_inset
+
+ sera la 
+\shape italic
+tesis
+\shape default
+ del bloque 
+\begin_inset Formula $\left\langle i,j\right\rangle $
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Defina cuando una teoria de primer orden 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+ es consistente
+\end_layout
+
+\begin_layout Standard
+Una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera 
+\shape italic
+inconsistente
+\shape default
+ cuando haya una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\wedge\lnot\varphi).$
+\end_inset
+
+ Una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera 
+\shape italic
+consistente
+\shape default
+ cuando no sea inconsistente.
+\end_layout
+
+\begin_layout Subsection
+Dada una teoria elemental 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+ y una sentencia elemental pura 
+\begin_inset Formula $φ$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $τ$
+\end_inset
+
+,
+ defina 
+\begin_inset Quotes fld
+\end_inset
+
+prueba elemental de φ en 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podemos generalizar el concepto de prueba elemental,
+ introducido en la Guia 7,
+ a cualquier teoria elemental.
+ Dada una teoria elemental 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ y una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ una 
+\shape italic
+prueba elemental de 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera una prueba de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ que posea las siguientes caracteristicas:
+\end_layout
+
+\begin_layout Enumerate
+En la prueba se parte de una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ fija pero arbitraria en el sentido que lo unico que sabemos es que ella satisface los axiomas de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ (i.e.
+ es un modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+) y ademas esta es la unica informacion particular que podemos usar.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Las deducciones en la prueba son muy simples y obvias de justificar con minimas fraces en castellano.
+\end_layout
+
+\begin_layout Enumerate
+En la escritura de la prueba lo concerniente a la matematica misma se expresa usando solo sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Decimo Primer Combo de Definiciones
+\end_layout
+
+\begin_layout Subsection
+Enuncie el programa de logica matematica dado al final de la Guia 8 y explique brevemente con que definiciones matematicas se van resolviendo los tres primeros puntos y que teoremas garantizan la resolucion del 4to punto de dicho programa.
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Programa de logica matematica
+\end_layout
+
+\begin_layout Enumerate
+Dar un modelo matematico del concepto de formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dar una definicion matematica de cuando una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es verdadera en una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ para una asignacion dada de valores a las variables libres y a los nombres de elementos fijos de dicha formula elemental
+\end_layout
+
+\begin_layout Enumerate
+(Plato gordo) Dar un modelo matematico del concepto de prueba elemental en una teoria elemental.
+ A estos objetos matematicos los llamaremos pruebas formales
+\end_layout
+
+\begin_layout Enumerate
+(Sublime) Intentar probar matematicamente que nuestro concepto de prueba formal es una correcta modelizacion matematica de la idea intuitiva de prueba elemental en una teoria elemental.
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Resolucion 1
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ es un tipo,
+ diremos que 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ es una 
+\shape italic
+extension de 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\shape italic
+ por nombres de constante
+\shape default
+ si 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ es de la forma 
+\begin_inset Formula $(\mathcal{C}^{\prime},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ con 
+\begin_inset Formula $\mathcal{C}^{\prime}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathcal{C}\subseteq\mathcal{C}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Las formulas de tipo 
+\begin_inset Formula $τ$
+\end_inset
+
+ son un modelo matematico de las formulas elementales puras de tipo 
+\begin_inset Formula $τ$
+\end_inset
+
+ (i.e.
+ en las que no ocurren nombres de elementos fijos).
+ Los nombres de elementos fijos se usan en las pruebas elementales para denotar elementos fijos (a veces arbitrarios y otras veces que cumplen alguna propiedad).
+ Cuando un matematico realiza una prueba elemental en una teoria
+\end_layout
+
+\begin_layout Standard
+elemental 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+ comienza la misma imaginando una estructura de tipo 
+\begin_inset Formula $τ$
+\end_inset
+
+ de la cual lo unico que sabe es que cumple las sentencias de 
+\begin_inset Formula $Σ$
+\end_inset
+
+.
+ Luego cuando fija un elemento y le pone nombre,
+ digamos 
+\begin_inset Formula $b$
+\end_inset
+
+,
+ podemos pensar que expandio su estructura imaginaria a una de tipo 
+\begin_inset Formula $(\mathcal{C}\text{\ensuremath{\cup}}{b},\mathcal{\mathcal{F}},\mathcal{R},a)$
+\end_inset
+
+ y continua su razonamiento.
+ Esto lo puede hacer muchas veces a lo largo de una prueba por lo cual su estructura imaginaria va cambiando de tipo.
+ Esta mecanica de prueba del matematico nos deja ver que es natural modelizar las formulas elementales de tipo 
+\begin_inset Formula $τ$
+\end_inset
+
+ con formulas de tipo 
+\begin_inset Formula $τ_{1}$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $τ_{1}$
+\end_inset
+
+ es alguna extension de 
+\begin_inset Formula $τ$
+\end_inset
+
+ por nombres de constante.
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Resolucion 2
+\end_layout
+
+\begin_layout Standard
+La definicion matematica de la relacion 
+\begin_inset Quotes fld
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ soluciona el punto (2).
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Resolucion 3
+\end_layout
+
+\begin_layout Standard
+La definicion de prueba formal en una teoria de primer orden soluciona el punto (3).
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Resolucion 4
+\end_layout
+
+\begin_layout Standard
+Este punto es resuelto por los teoremas de Correccion y Completitud.
+ 
+\end_layout
+
+\begin_layout Standard
+El Teorema de Correccion asegura que nuestro concepto de prueba formal no es demaciado permisivo como para permitir probar sentencias que son falsas en algun modelo de la teoria.
+ Pero dicho concepto podria ser incompleto en el sentido que podria pasar que un matematico diera una prueba elemental de una sentencia 
+\begin_inset Formula $φ$
+\end_inset
+
+ en una teoria 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+ pero que no haya una prueba formal de 
+\begin_inset Formula $φ$
+\end_inset
+
+ en 
+\begin_inset Formula $(Σ,τ)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+El Teorema de Completitud de Godel prueba que este no es el caso.
+\end_layout
+
+\end_body
+\end_document

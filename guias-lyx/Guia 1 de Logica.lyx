@@ -1,0 +1,2539 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:37:39}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Guia 1 de Logica
+\end_layout
+
+\begin_layout Standard
+Nota: Los ejercicios que tienen una S son para una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Segunda pasada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es decir ya sea son mas anecdoticos y menos importantes tematicamente,
+ o son de completar pruebas y tienen que ver mas con la parte teorica, o
+ son mas dificiles y conviene encararlos despues de una primera pasada por
+ la guia (asi uno comienza a pensarlos con un poco mas de madurez sobre
+ el tema).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Relaciones de equivalencia
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un conjunto.
+ Por una 
+\shape italic
+relacion binaria sobre 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos un subconjunto de 
+\begin_inset Formula $A^{2}$
+\end_inset
+
+.
+ Algunos ejemplos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(1,2),(2,3)\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\omega^{2}:$
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ divide a 
+\begin_inset Formula $y\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(r,t)\in\mathbf{R}^{2}:r\leq t\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, cualesquiera sea el conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\omega^{2}:x<y$
+\end_inset
+
+ o 
+\begin_inset Formula $y=0\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $\omega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Por ejemplo las relaciones dadas en los ejemplos (E1), (E2), (E4) y (E5)
+ tambien son relaciones binarias sobre 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+.
+ Sin envargo si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ entonces no necesariamente 
+\begin_inset Formula $R$
+\end_inset
+
+ sera una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ (por que?).
+\end_layout
+
+\begin_layout Standard
+Como es usual, cuando 
+\begin_inset Formula $R$
+\end_inset
+
+ sea una relacion binaria sobre un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+, escribiremos algunas veces 
+\begin_inset Formula $aRb$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $(a,b)\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hay algunas propiedades que pueden tener o no las relaciones binarias sobre
+ un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+, las cuales son muy importantes en matematica.
+ Algunas de estas son:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Reflexividad
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $xRx$
+\end_inset
+
+, cualesquiera sea 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Transitividad
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $xRy$
+\end_inset
+
+ y 
+\begin_inset Formula $yRz$
+\end_inset
+
+ implica 
+\begin_inset Formula $xRz$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Simetria
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $xRy$
+\end_inset
+
+ implica 
+\begin_inset Formula $yRx$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Antisimetria
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $xRy$
+\end_inset
+
+ y 
+\begin_inset Formula $yRx$
+\end_inset
+
+ implica 
+\begin_inset Formula $x=y$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Cuando 
+\begin_inset Formula $R$
+\end_inset
+
+ cumpla la primer propiedad diremos que 
+\begin_inset Formula $R$
+\end_inset
+
+ es 
+\shape italic
+reflexiva, con respecto a 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Analogamente diremos que 
+\begin_inset Formula $R$
+\end_inset
+
+ es 
+\shape italic
+transitiva, simetrica o antisimetrica, con respecto a 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+, cuando se den, respectivamente las otras propiedades.
+ Notese que estas propiedades dependen del conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+, por ejemplo si tomamos 
+\begin_inset Formula $R=\{(r,t)\in\mathbf{N}^{2}:r\leq t\}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+ y tambien es una relacion binaria sobre 
+\begin_inset Formula $\omega$
+\end_inset
+
+, pero es relexiva con respepcto a 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+ y no lo es con respecto a 
+\begin_inset Formula $\omega$
+\end_inset
+
+ ya que 
+\begin_inset Formula $(0,0)$
+\end_inset
+
+ no pertenece a 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Sin envargo 
+\begin_inset Formula $R$
+\end_inset
+
+ es transitiva con respecto a 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+ y tambien lo es con respecto a 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un conjunto cualquiera.
+ Por una 
+\shape italic
+relacion de equivalencia sobre 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ la cual es reflexiva, transitiva y simetrica, con respecto a 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(r,t)\in\mathbf{R}^{2}:r=t\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Dada una funcion 
+\begin_inset Formula $f:A\rightarrow B$
+\end_inset
+
+, el nucleo de 
+\begin_inset Formula $f$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $\ker(f)=\{(a,b)\in A^{2}:f(a)=f(b)\}$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(1,1),(2,2),(3,3),(1,2),(2,1)\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\omega^{2}:x=y\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(S,T)\in\mathcal{P}(\omega)^{2}:(S-T)\cup(T-S)$
+\end_inset
+
+ es finito
+\begin_inset Formula $\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\mathcal{P}(\omega)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E7)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(1,1)\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\{1\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E8)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\mathbf{Z}^{2}:x-y$
+\end_inset
+
+ es multiplo de 
+\begin_inset Formula $5\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\mathbf{Z}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1
+\end_layout
+
+\end_inset
+
+V o F o I justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $X$
+\end_inset
+
+ un conjunto cualquiera.
+ Entonces 
+\begin_inset Formula $R=\emptyset$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $X$
+\end_inset
+
+ la cual es transitiva, simetrica y antisimetrica, con respecto a 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $X$
+\end_inset
+
+, entonces si 
+\begin_inset Formula $R$
+\end_inset
+
+ no es antisimetrica con respecto a 
+\begin_inset Formula $X$
+\end_inset
+
+, se tiene que 
+\begin_inset Formula $R$
+\end_inset
+
+ es simetrica con respecto a 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto, entonces 
+\begin_inset Formula $A\times A$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto, entonces 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\mathbf{N}^{2}:x=y\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+, entonces 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Dada una relacion de equivalencia 
+\begin_inset Formula $R$
+\end_inset
+
+ sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, definimos:
+\begin_inset Formula 
+\[
+a/R=\{b\in A:aRb\}
+\]
+
+\end_inset
+
+El conjunto 
+\begin_inset Formula $a/R$
+\end_inset
+
+ sera llamado la 
+\shape italic
+clase de equivalencia de 
+\shape default
+
+\begin_inset Formula $a$
+\end_inset
+
+
+\shape italic
+, con respecto a 
+\shape default
+
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $R=\{(r,t)\in\mathbf{R}^{2}:r=t\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $r/R=\{r\}$
+\end_inset
+
+, cualesquier sea 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $R=\{(1,1),(2,2),(3,3),(1,2),(2,1)\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $1/R=2/R=\{1,2\}$
+\end_inset
+
+ y 
+\begin_inset Formula $3/R=\{3\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $R=\{(x,y)\in\mathbf{Z}^{2}:x-y$
+\end_inset
+
+ es multiplo de 
+\begin_inset Formula $5\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $0/R=\{5.t:t\in\mathbf{Z}\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 2
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y sea 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $a\in a/R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y sean 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $aRb$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $a/R=b/R$
+\end_inset
+
+.
+ Es decir que si 
+\begin_inset Formula $b\in a/R$
+\end_inset
+
+, entonces 
+\begin_inset Formula $b/R=a/R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y sean 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $a/R\cap b/R=\emptyset$
+\end_inset
+
+ o 
+\begin_inset Formula $a/R=b/R$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Denotaremos con 
+\begin_inset Formula $A/R$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $\{a/R:a\in A\}$
+\end_inset
+
+.
+ Llamaremos a 
+\begin_inset Formula $A/R$
+\end_inset
+
+ el 
+\shape italic
+cociente de 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\shape italic
+por 
+\shape default
+
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $R=\{(r,t)\in\mathbf{R}^{2}:r=t\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\mathbf{R}/R=\{\{r\}:r\in\mathbf{R}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $R=\{(1,1),(2,2),(3,3),(1,2),(2,1)\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\{1,2,3\}/R=\{\{1,2\},\{3\}\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\mathbf{Z}^{2}:x-y$
+\end_inset
+
+ es multiplo de 
+\begin_inset Formula $5\}$
+\end_inset
+
+.
+ Encuentre 
+\begin_inset Formula $\mathbf{Z}/R$
+\end_inset
+
+.
+ Cuantos elementos tiene?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\mathbf{N}^{2}:x,y\leq6\}\cup\{(x,y)\in\mathbf{N}^{2}:x>6$
+\end_inset
+
+ y 
+\begin_inset Formula $y>6\}$
+\end_inset
+
+.
+ Pruebe que 
+\begin_inset Formula $R$
+\end_inset
+
+ es relacion de equivalencia sobre 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+.
+ Encuentre 
+\begin_inset Formula $\mathbf{N}/R$
+\end_inset
+
+.
+ Cuantos elementos tiene?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7
+\end_layout
+
+\end_inset
+
+V o F o I justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre un conjunto no vacio 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\left\vert A/R\right\vert =1$
+\end_inset
+
+ sii 
+\begin_inset Formula $R=A\times A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces 
+\begin_inset Formula $A/R=\{\{a/R\}:a\in A\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A=\{1,2,3,4,5\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\left\vert \{i/R:i\in A\}\right\vert =5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A/\{(x,y)\in A^{2}:x=y\}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y sea 
+\begin_inset Formula $C$
+\end_inset
+
+ un subconjunto no vacio de 
+\begin_inset Formula $A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $xRy$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $C\in A/R$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, definamos la funcion 
+\begin_inset Formula $\pi_{R}:A\rightarrow A/R$
+\end_inset
+
+ por 
+\begin_inset Formula $\pi_{R}(a)=a/R$
+\end_inset
+
+, para cada 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ La funcion 
+\begin_inset Formula $\pi_{R}$
+\end_inset
+
+ es llamada la 
+\shape italic
+proyeccion canonica 
+\shape default
+(
+\shape italic
+respecto de 
+\shape default
+
+\begin_inset Formula $R$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 8
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\ker(\pi_{R})=R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\pi_{R}$
+\end_inset
+
+ es inyectiva sii 
+\begin_inset Formula $R=\{(x,y)\in A^{2}:x=y\}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Correspondencia entre relaciones de equivalencia y particiones
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ por una 
+\shape italic
+particion de 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos un conjunto 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada elemento de 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ es un subconjunto no vacio de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $S_{1},S_{2}\in\mathcal{P}$
+\end_inset
+
+ y 
+\begin_inset Formula $S_{1}\neq S_{2}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $S_{1}\cap S_{2}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A=\{a:a\in S$
+\end_inset
+
+, para algun 
+\begin_inset Formula $S\in\mathcal{P}\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+La ultima condicion dice simplemente que la union de todos los elementos
+ de 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ debe ser 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A=\{1,2,3,4,5\}$
+\end_inset
+
+, entonces
+\begin_inset Formula 
+\[
+\mathcal{P}=\{\{1,5\},\{2,3\},\{4\}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+es una particion de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathcal{P}=\{\mathbf{N},\mathbf{R}-\mathbf{N}\}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathcal{P}=\{\{0\},\{1,2\},\{3,4\},\{5,6\},\{7,8\},\{9,10\},...\}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $\omega$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Una observacion importante es
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 9
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces para cada 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ hay un unico 
+\begin_inset Formula $S\in\mathcal{P}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a\in S$
+\end_inset
+
+.
+ O sea que podemos hablar de EL elemento de 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ que contiene a 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una particion 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ de un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ podemos definir una relacion binaria asociada a 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+R_{\mathcal{P}}=\{(a,b)\in A^{2}:a,b\in S\text{, para algun }S\in\mathcal{P}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 10
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un conjunto cualquiera.
+ Entonces:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ una particion de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $R_{\mathcal{P}}$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $R$
+\end_inset
+
+ una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $A/R$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente teorema da una correspondencia natural entre relaciones de
+ equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y particiones de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un conjunto cualquiera.
+ Sean
+\begin_inset Formula 
+\begin{align*}
+Part & =\{\text{particiones de }A\}\\
+ReEq & =\{\text{relaciones de equivalencia sobre }A\}
+\end{align*}
+
+\end_inset
+
+Entonces las funciones:
+\begin_inset Formula 
+\[
+\begin{array}{rll}
+Part & \rightarrow & ReEq\\
+\mathcal{P} & \rightarrow & R_{\mathcal{P}}
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rll}
+ReEq & \rightarrow & Part\\
+R & \rightarrow & A/R
+\end{array}
+\]
+
+\end_inset
+
+son biyecciones una inversa de la otra.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ La prueba es rutinaria pero lo aceptaremos sin demostracion 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El teorema anterior muestra que a nivel de informacion es lo mismo tener
+ una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ que tener una particion de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Esto es muy util ya que muchas veces es mas facil especificar una relacion
+ de equivalencia via su particion asociada.
+ Por ejemplo si hablamos de la relacion de equivalencia sobre 
+\begin_inset Formula $\{1,2,3,4,5\}$
+\end_inset
+
+ dada por la particion
+\begin_inset Formula 
+\[
+\mathcal{P}=\{\{1,5\},\{4\},\{2,3\}\}
+\]
+
+\end_inset
+
+nos estaremos refiriendo a 
+\begin_inset Formula $R_{\mathcal{P}}$
+\end_inset
+
+, es decir a la relacion:
+\begin_inset Formula 
+\[
+\{(1,1),(2,2),(3,3),(4,4),(5,5),(1,5),(5,1),(2,3),(3,2)\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 11
+\end_layout
+
+\end_inset
+
+V o F o I.
+ Justificar
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $X$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in X$
+\end_inset
+
+, entonces 
+\begin_inset Formula $x/\mathcal{P}\in\mathcal{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{P}=\{1,3\ \ /\ \ 2,4\ \ /\ \ 5,6\}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $\{1,2,3,4,5,6\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\{1,3\},\{2,4\},\{5,6\}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $\{1,2,3,4,5,6\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ es una particion de 
+\begin_inset Formula $X$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\mathcal{P}\cap X=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces 
+\begin_inset Formula $A\cap A/R=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y hay una biyeccion entre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $A/R$
+\end_inset
+
+ entonces 
+\begin_inset Formula $R=\{(x,y)\in A^{2}:x=y\}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 11,5:
+\end_layout
+
+\end_inset
+
+Cuantas relaciones de equivalencia sobre 
+\begin_inset Formula $\{1,2,3,4\}$
+\end_inset
+
+ hay? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Definicion de funciones con dominio 
+\begin_inset Formula $A/R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supongamos 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ y supongamos definimos una funcion 
+\begin_inset Formula $f:\mathbf{R}/R\rightarrow\mathbf{R}$
+\end_inset
+
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+f(r/R)=r^{2}
+\]
+
+\end_inset
+
+A priori puede pareser que esta definicion es natural y que no esconde ninguna
+ posible complicacion.
+ Pero veamos que pueden surgir problemas dependiendo de como es 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $R$
+\end_inset
+
+ es tal que 
+\begin_inset Formula $2R6$
+\end_inset
+
+.
+ Entonces tendriamos que 
+\begin_inset Formula $2/R=6/R$
+\end_inset
+
+, lo cual nos diria obviamente que 
+\begin_inset Formula $f(2/R)=f(6/R)$
+\end_inset
+
+.
+ Pero 
+\begin_inset Formula $f(2/R)=2^{2}=4$
+\end_inset
+
+ y 
+\begin_inset Formula $f(6/R)=6^{2}=36$
+\end_inset
+
+, por lo cual deberia suceder que 
+\begin_inset Formula $4$
+\end_inset
+
+ sea igual a 
+\begin_inset Formula $36$
+\end_inset
+
+.
+ El problema aqui es que la ecuacion 
+\begin_inset Formula $f(r/R)=r^{2}$
+\end_inset
+
+ no esta definiendo en forma correcta o inhambigua una funcion ya que el
+ supuesto valor de la funcion en una clase de equivalencia dada depende
+ de que representante de la clase usamos para denotarla.
+ Si usamos el 2 la ecuacion nos dice que entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ debe valer 4 y si usamos el 6 la ecuacion nos dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ debe valer 36.
+ Claramente no estamos definiendo una funcion.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12
+\end_layout
+
+\end_inset
+
+V o F o I justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $R=\{(x,y)\in\mathbf{Z}^{2}:x-y$
+\end_inset
+
+ es multiplo de 
+\begin_inset Formula $2\}$
+\end_inset
+
+.
+ La ecuacion
+\begin_inset Formula 
+\[
+f(n/R)=1/(n^{2}+1)
+\]
+
+\end_inset
+
+define correctamente una funcion 
+\begin_inset Formula $f:\mathbf{Z}/R\rightarrow\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+, entonces la funcion
+\begin_inset Formula 
+\[
+\begin{array}{rll}
+A/R & \rightarrow & A\\
+a/R & \rightarrow & a
+\end{array}
+\]
+
+\end_inset
+
+es sobre 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si bien hemos visto ejemplos donde ecuaciones, en algun sentido naturales,
+ no definen correctamente una funcion, hay muchos casos en los que si sucede.
+ Veremos mediante ejercicios un tipo de situaciones en las cuales este tipo
+ de definicion resulta inhambigua.
+\end_layout
+
+\begin_layout Standard
+Recordemos que dada una funcion 
+\begin_inset Formula $F:A\rightarrow B$
+\end_inset
+
+, se define 
+\begin_inset Formula $\ker(F)=\{(a,b)\in A^{2}:F(a)=F(b)\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 13
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un alfabeto finito.
+ Sea 
+\begin_inset Formula $R=\{(\alpha,\beta)\in A^{\ast2}:\left\vert \alpha\right\vert =\left\vert \beta\right\vert \}$
+\end_inset
+
+.
+ Explique por que la ecuacion
+\begin_inset Formula 
+\[
+f(\alpha/R)=\left\vert \alpha\right\vert 
+\]
+
+\end_inset
+
+define inhambiguamente una funcion 
+\begin_inset Formula $f:A^{\ast}/R\rightarrow\omega$
+\end_inset
+
+.
+ Es inyectiva esta funcion? Es suryectiva?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 14
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:\mathbf{N}\rightarrow\{0,1,2,3\}$
+\end_inset
+
+ dada por 
+\begin_inset Formula $F(n)=$
+\end_inset
+
+ resto de dividir 
+\begin_inset Formula $n$
+\end_inset
+
+ por 
+\begin_inset Formula $4$
+\end_inset
+
+.
+ Explique por que la ecuacion
+\begin_inset Formula 
+\[
+f(n/\ker(F))=F(n)
+\]
+
+\end_inset
+
+define inhambiguamente una funcion 
+\begin_inset Formula $f$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbf{N}/\ker(F)$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+.
+ Es inyectiva esta funcion? Es suryectiva? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 15
+\end_layout
+
+\end_inset
+
+(S) Sea 
+\begin_inset Formula $F:A\rightarrow B$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pruebe entonces que la ecuacion
+\begin_inset Formula 
+\[
+f(a/\ker(F))=F(a)
+\]
+
+\end_inset
+
+define en forma inambigua una funcion 
+\begin_inset Formula $f$
+\end_inset
+
+ de 
+\begin_inset Formula $A/\ker(F)$
+\end_inset
+
+ en 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que 
+\begin_inset Formula $f$
+\end_inset
+
+ es inyectiva.
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que si 
+\begin_inset Formula $F$
+\end_inset
+
+ es sobreyectiva, entonces 
+\begin_inset Formula $f$
+\end_inset
+
+ es una biyeccion.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

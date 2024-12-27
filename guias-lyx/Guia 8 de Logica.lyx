@@ -1,0 +1,8601 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:40:55}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Logica matematica
+\end_layout
+
+\begin_layout Standard
+En el primer tercio de la materia nos focalizamos en aprender algebra con la intencion de volvernos lo mas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+algebristas profecionales
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ que podamos.
+ Para esto fuimos exigentes a la hora de delimitar y manejar nuestro lenguaje matematico y tambien a la hora de hacer pruebas pusimos mucha atencion en hacerlas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+perfectas
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ en el sentido de que sean similares a las que haria un algebrista formado.
+\end_layout
+
+\begin_layout Standard
+Pero para que hicimos esto?
+ Muy simple:
+ la logica matematica es 
+\shape italic
+matematica aplicada
+\shape default
+ al estudio de los matematicos,
+ su lenguaje y sus metodos de demostracion,
+ y que mas comodo para hacer logica matematica que contar con un matematico dentro de uno mismo para estudiarlo!
+ Tal como
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+un biologo estudia la estructura y funcionamiento de los seres vivos,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+un astronomo estudia los cuerpos celestes,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+un fisico estudia la materia y su comportamiento,
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+un logico matematico estudia con herramientas matematicas a los mismos matematicos en cuanto a sus caracteristicas en su roll haciendo matematica.
+ Es decir nos interesa dar un modelo matematico que describa en forma matematica precisa el funcionamiento de un matematico en cuanto a su lenguaje y sus metodos de demostracion.
+ Pero algo debe quedar muy claro:
+ haremos matematica aplicada,
+ es decir,
+ no es nuestra intencion decirle a un matematico como debe razonar!
+ Todo lo contrario,
+ sabemos que los matematicos profecionales actuales razonan correctamente y que su estilo de prueba es correcto,
+ dado el avansado estado actual de la disciplina y de sus profecionales.
+ Simplemente los estudiaremos con herramientas matematicas para tratar de dar una descripcion matematica de su lenguaje y de sus metodos de demostracion.
+\end_layout
+
+\begin_layout Standard
+Por supuesto hacer logica matematica puede ser muy dificil o escurridizo ya que como todos sabemos los matematicos tienen metodos dificiles de entender y un lenguaje verdaderamente complicado.
+\end_layout
+
+\begin_layout Standard
+La forma en la que encararemos el problema sera la siguiente.
+ En lugar de estudiar a un matematico en su actividad real crearemos un 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+contexto matematico simplificado
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ en el cual tambien tenga sentido hacer matematica profecional y luego estudiaremos a un matematico haciendo matematica en este contexto.
+ Por supueto esto baja mucho el nivel de nuestra ambicion cientifica como logicos matematicos ya que en lugar de estudiar a los matematicos en su vida real,
+ los estudiaremos en un contexto simplificado.
+ Sin envargo,
+ nuestra simplificacion no nos hara perder generalidad y los resultados obtenidos daran un modelo matematico fidedigno y completo del quehacer matematico real.
+ Este hecho es uno de los logros mas importantes de la ciencia moderna.
+ No lo veremos en esta materia pero cabe destacar que una ves aprendidos los contenidos de logica de esta materia,
+ si agregamos un curso basico de teoria de conjuntos axiomatica,
+ estaremos en condiciones de apreciar a pleno el logro intelectual que significa dar un modelo matematico pasmosamente fidedigno de la matematica misma.
+\end_layout
+
+\begin_layout Standard
+Para crear este 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+contexto matematico simplificado
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ nos serviran los conceptos de lenguaje elemental y prueba elemental.
+ Mas concretamente fijaremos un tipo de estructura,
+ por ejemplo los reticulados cuaterna,
+ y estudiaremos a un matematico profecional haciendo matematica en este contexto elemental.
+ Es decir le pediremos que realice pruebas de propiedades que valgan en todos los reticulados cuaterna pero lo restringirenos en su lenguaje,
+ es decir le pediremos que se limite a usar solo formulas elementales de reticulados cuaterna y que las pruebas que realice sean tambien elementales de reticulados cuaterna.
+ El matematico rapidamente entendera la consigna y posiblemente refunfuñe un poco porque claramente lo estamos restringiendo mucho en relacion a su manera de hacer matematica (por ejemplo no podra hablar de filtros primos,
+ etc).
+ De todas maneras las posibilidades de hacer matematica profunda e interesante aun con esta restriccion son inmensas,
+ es decir hay verdades de reticulados cuaterna que son elementales en enunciado y prueba pero son extremadamente dificiles,
+ ingeniosas y profundas.
+\end_layout
+
+\begin_layout Standard
+En este proyecto de hacer logica matematica estudiando a un matematico haciendo matematica elemental de reticulados cuaterna hay varias cosas para hacer y las establecemos a continuacion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programa de logica sobre reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Dar un modelo matematico del concepto de formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Dar una definicion matematica de cuando una formula elemental es verdadera en un reticulado cuaterna dado,
+ para una asignacion dada de valores a las variables libres y a los nombres de elementos fijos de dicha formula elemental
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+(Plato gordo) Dar un modelo matematico del concepto de prueba elemental de reticulados cuaterna.
+ A estos objetos matematicos que modelizaran a las pruebas elementales de los matematicos los llamaremos pruebas formales de reticulados cuaterna.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+(Sublime) Intentar probar matematicamente que nuestro concepto de prueba formal de reticulados cuaterna es una correcta modelizacion matematica del concepto intuitivo de prueba elemental de reticulados cuaterna.
+ 
+\end_layout
+
+\begin_layout Standard
+Como veremos,
+ los cuatro puntos anteriores pueden ser hechos satisfactoriamente y constituyen el comienzo de la logica matematica con cuantificadores.
+ Cabe aclarar que la realizacion del cuarto punto es realmente sorprendente ya que es un caso de una prueba matematica rigurosa de un enunciado que involucra un concepto intuitivo como lo es el de prueba elemental.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya que la realizacion de los 4 puntos anteriores no depende en absoluto de que hayamos elejido el tipo de estructura de los reticulados cuaterna (es decir,
+ el desarrollo que resuelve los 4 puntos anteriores para los reticulados cuaterna puede adaptarse facilmente para cualquiera de los otros tipos de estructuras descriptos en la Guia 7),
+ haremos las cosas con mas generalidad.
+\end_layout
+
+\begin_layout Standard
+Primero,
+ basados en la Guia 7,
+ generalizaremos el concepto de estructura.
+ La generalizacion que daremos del concepto de estructura es realmente muy amplia y nos llevara mucho trabajo de entrenamiento poder manejarla con madurez y naturalidad.
+ Luego en la ultima seccion de esta guia estableceremos para un tipo generico de estructura el programa de logica arriba escrito para el caso particular de los reticulados cuaterna.
+ En las subsiguientes guias nos dedicaremos a resolver dicho programa general.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Tipos
+\end_layout
+
+\begin_layout Standard
+Para generalizar el concepto de estructura es clave primero dar definiciones generales de los conceptos de operacion y de relacion sobre un conjunto.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ un conjunto y sea 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+.
+ Por una 
+\shape italic
+operacion 
+\shape default
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\shape italic
+-aria sobre 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos una funcion cuyo dominio es 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+ y cuya imagen esta contenida en 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Por una 
+\shape italic
+relacion 
+\shape default
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\shape italic
+-aria sobre 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos un subconjunto de 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+.
+ Notar que por la definicion anterior una relacion 1-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ no es ni mas ni menos que un subconjunto de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como venimos viendo,
+ hay una variedad de tipos de estructuras las cuales tienen un sentido o interes matematico claro y todas son de un formato similar,
+ a saber uplas formadas por una primera coordenada que es un conjunto no vacio (llamado el universo de la estructura) y luego ciertas operaciones,
+ relaciones y elementos distinguidos,
+ dependiendo del caso.
+ Otra cosa a notar es que para cada tipo de estructura hay ciertos simbolos fijos que usamos en forma generica para denotar sus relaciones,
+ operaciones y elementos distinguidos.
+ Por ejemplo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para los posets usamos el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ para denotar su relacion 2-aria de orden parcial,
+ en un sentido generico.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados terna usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones 2-arias de supremo e infimo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados acotados usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones 2-arias de supremo e infimo y los numerales 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ para denotar sus elementos distinguidos,
+ a saber minimo y maximo respectivamente.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados complementados usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones 2-arias de supremo e infimo,
+ el simbolo 
+\begin_inset Formula $c$
+\end_inset
+
+ para denotar su operacion 
+\begin_inset Formula $1$
+\end_inset
+
+-aria de complementacion y los numerales 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ para denotar sus elementos distinguidos,
+ a saber minimo y maximo respectivamente.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados cuaterna usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones 2-arias de supremo e infimo y el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ para denotar su relacion 2-aria de orden parcial
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para las median algebras usamos genericamente el simbolo 
+\begin_inset Formula $M$
+\end_inset
+
+ para denotar su operacion 
+\begin_inset Formula $3$
+\end_inset
+
+-aria.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para los grafos usamos el simbolo 
+\begin_inset Formula $r$
+\end_inset
+
+ para denotar en forma generica su relacion 2-aria.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para los grafos bicoloreados usamos el simbolo 
+\begin_inset Formula $r$
+\end_inset
+
+ para denotar en forma generica la relacion 2-aria del grafo y el simbolo 
+\begin_inset Formula $R$
+\end_inset
+
+ para denotar genericamente la relacion 1-aria que determina el bicoloreo 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O sea que para cada tipo de estructuras se distinguen tres conjuntos de simbolos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+un conjunto 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ formado por los simbolos que denotaran genericamente los elementos distinguidos de las estructuras
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+un conjunto 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ formado por los simbolos que denotaran genericamente las operaciones de las estructuras
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+un conjunto 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ formado por los simbolos que denotaran genericamente las relaciones de las estructuras
+\end_layout
+
+\begin_layout Standard
+Ademas otra informacion importante que se tiene para cada tipo de estructura es la aridad de las operaciones que denotan los simbolos de 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ y la aridad de las relaciones que denotan los simbolos de 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+.
+ A esto lo representaremos con una funcion 
+\begin_inset Formula $a:\mathcal{F}\cup\mathcal{R}\rightarrow\mathbf{N}$
+\end_inset
+
+ la cual le asocia a cada simbolo de 
+\begin_inset Formula $\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ la aridad del objeto que denota.
+\end_layout
+
+\begin_layout Standard
+Ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Posets:
+ 
+\begin_inset Formula $\mathcal{C}=\emptyset\ \ \ \ \ \mathcal{F}=\emptyset\ \ \ \ \ \mathcal{R}=\{\leq\}\ \ \ \ a=\{(\leq,2)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Reticulados terna:
+ 
+\begin_inset Formula $\mathcal{C}=\emptyset\ \ \ \ \ \mathcal{F}=\{\mathsf{s},\mathsf{i}\}\ \ \ \ \ \mathcal{R}=\emptyset\ \ \ \ \ a=\{(\mathsf{s},2),(\mathsf{i},2)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Reticulados acotados:
+ 
+\begin_inset Formula $\mathcal{C}=\{0,1\}\ \ \ \ \ \mathcal{F}=\{\mathsf{s},\mathsf{i}\}\ \ \ \ \ \mathcal{R}=\emptyset\ \ \ \ a=\{(\mathsf{s},2),(\mathsf{i},2)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Reticulados comp.:
+ 
+\begin_inset Formula $\mathcal{C}=\{0,1\}\ \ \ \ \ \mathcal{F}=\{\mathsf{s},\mathsf{i},c\}\ \ \ \ \ \mathcal{R}=\emptyset\ \ \ \ a=\{(\mathsf{s},2),(\mathsf{i},2),(c,1)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Reticulados cuaterna:
+ 
+\begin_inset Formula $\mathcal{C}=\emptyset\ \ \ \ \ \mathcal{F}=\{\mathsf{s},\mathsf{i}\}\ \ \ \ \ \mathcal{R}=\{\leq\}\ \ \ \ a=\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Median algebras:
+ 
+\begin_inset Formula $\mathcal{C}=\emptyset\ \ \ \ \ \mathcal{F}=\{M\}\ \ \ \ \ \mathcal{R}=\emptyset\ \ \ \ a=\{(M,3)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Grafos:
+ 
+\begin_inset Formula $\mathcal{C}=\emptyset\ \ \ \ \ \mathcal{F}=\emptyset\ \ \ \ \ \mathcal{R}=\{r\}\ \ \ \ a=\{(r,2)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Grafos bicoloreados:
+ 
+\begin_inset Formula $\mathcal{C}=\emptyset\ \ \ \ \ \mathcal{F}=\emptyset\ \ \ \ \ \mathcal{R}=\{r,R\}\ \ \ \ a=\{(r,2),(R,1)\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Por supuesto aqui es muy importante no confundir los simbolos con los objetos que eventualmente ellos denotan.
+ O sea en todos los ejemplos anteriores los elementos de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ son simbolos,
+ es decir su 
+\begin_inset Formula $Ti$
+\end_inset
+
+ es PALABRA.
+\end_layout
+
+\begin_layout Standard
+Lo anterior motiva la siguiente definicion de tipo (de estructura).
+ Antes de darla recordemos que si 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ son palabras cualesquiera,
+ decimos que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\shape italic
+es subpalabra (propia) de 
+\shape default
+
+\begin_inset Formula $\beta$
+\end_inset
+
+ cuando (
+\begin_inset Formula $\alpha\notin\{\varepsilon,\beta\}$
+\end_inset
+
+ y) existen palabras 
+\begin_inset Formula $\delta,\gamma$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\beta=\delta\alpha\gamma$
+\end_inset
+
+.
+ Ahora si,
+ nuestra definicion de tipo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+tipo
+\shape default
+ (
+\shape italic
+de primer orden
+\shape default
+) entenderemos una 4-upla 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Hay alfabetos finitos 
+\begin_inset Formula $\Sigma_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Sigma_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma_{3}$
+\end_inset
+
+ tales:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{C}\subseteq\Sigma_{1}^{+}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}\subseteq\Sigma_{2}^{+}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}\subseteq\Sigma_{3}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Sigma_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma_{3}$
+\end_inset
+
+ son disjuntos de a pares.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Sigma_{1}\cup\Sigma_{2}\cup\Sigma_{3}$
+\end_inset
+
+ no contiene ningun simbolo de la lista
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall\ \exists\;\lnot\;\vee\;\wedge\;\rightarrow\;\leftrightarrow\;(\;)\;,\;\equiv\;\mathsf{X\;}\mathit{0}\;\mathit{1\;}...\;\mathit{9}\;\mathbf{0}\;\mathbf{1}\ ...\;\mathbf{9}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a:\mathcal{F}\cup\mathcal{R}\rightarrow\mathbf{N}$
+\end_inset
+
+ es una funcion que a cada 
+\begin_inset Formula $p\in\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ le asocia un numero natural 
+\begin_inset Formula $a(p)$
+\end_inset
+
+,
+ llamado la 
+\shape italic
+aridad
+\shape default
+ de 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Ninguna palabra de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+) es subpalabra propia de otra palabra de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que los elementos de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ pueden ser palabras y no solo simbolos (como sucede en los casos de los tipos de estructuras conocidas).
+ Mas adelante cuando definamos las 
+\shape italic
+formulas de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ se entenderan las restricciones puestas en (c) de (1) y en (3).
+\end_layout
+
+\begin_layout Standard
+A los elementos de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+) los llamaremos 
+\shape italic
+nombres de constante 
+\shape default
+(resp.
+ 
+\shape italic
+nombres de funcion,
+ nombres de relacion
+\shape default
+) 
+\shape italic
+de tipo
+\shape default
+ 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Para cada 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+,
+ definamos
+\begin_inset Formula 
+\begin{align*}
+\mathcal{F}_{n} & =\{f\in\mathcal{F}:a(f)=n\}\\
+\mathcal{R}_{n} & =\{r\in\mathcal{R}:a(r)=n\}
+\end{align*}
+
+\end_inset
+
+Al tipo 
+\begin_inset Formula $(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+ lo llamaremos el 
+\shape italic
+tipo de los posets
+\shape default
+.
+ Al tipo 
+\begin_inset Formula $(\emptyset,\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})$
+\end_inset
+
+ lo llamaremos el 
+\shape italic
+tipo de los reticulados terna
+\shape default
+.
+ Al tipo
+\begin_inset Formula 
+\[
+(\{0,1\},\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})
+\]
+
+\end_inset
+
+lo llamaremos el 
+\shape italic
+tipo de los reticulados acotados
+\shape default
+.
+ Al tipo
+\begin_inset Formula 
+\[
+(\{0,1\},\{\mathsf{s},\mathsf{i},c\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2),(c,1)\})
+\]
+
+\end_inset
+
+lo llamaremos el 
+\shape italic
+tipo de los reticulados complementados
+\shape default
+.
+ Al tipo
+\begin_inset Formula 
+\[
+(\emptyset,\{\mathsf{s},\mathsf{i}\},\{\leq\},\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2)\})
+\]
+
+\end_inset
+
+lo llamaremos el 
+\shape italic
+tipo de los reticulados cuaterna
+\shape default
+.
+ Al tipo 
+\begin_inset Formula $(\emptyset,\{M\},\emptyset,\{(M,3)\})$
+\end_inset
+
+ lo llamaremos el 
+\shape italic
+tipo de las median algebras
+\shape default
+.
+ Al tipo 
+\begin_inset Formula $(\emptyset,\emptyset,\{r\},\{(r,2)\})$
+\end_inset
+
+ lo llamaremos el 
+\shape italic
+tipo de los grafos
+\shape default
+.
+ Al tipo
+\begin_inset Formula 
+\[
+(\emptyset,\emptyset,\{r,R\},\{(r,2),(R,1)\})
+\]
+
+\end_inset
+
+lo llamaremos el 
+\shape italic
+tipo de los grafos bicoloreados.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos de tipos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\mathrm{MAS})=4$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\mathrm{P})=1$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\mathrm{Her})=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{0,1\},\{+,\times\},\emptyset,a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(+)=2$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\times)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{\square\},\{\clubsuit\clubsuit,\mathrm{Pic}\},\{\vartriangleright,\Vert\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\clubsuit\clubsuit)=6$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\mathrm{Pic})=1$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\vartriangleright)=4$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\Vert)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{\mathrm{dod},\mathrm{dood},\mathrm{doood},...\},\{\mathrm{Fu}\},\{\mathrm{He}\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\mathrm{Fu})=1$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\mathrm{He})=3$
+\end_inset
+
+.
+ Notese que este tipo tiene infinitos nombres de constante.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\series bold
+Observacion:
+ 
+\series default
+No deberiamos confundir el concepto de tipo aqui desarrollado,
+ que esencialmente representa un 
+\begin_inset Quotes eld
+\end_inset
+
+tipo de estructuras
+\begin_inset Quotes erd
+\end_inset
+
+,
+ con el 
+\begin_inset Quotes eld
+\end_inset
+
+tipo de objeto matematico
+\begin_inset Quotes erd
+\end_inset
+
+ dado por la funcion 
+\begin_inset Formula $Ti$
+\end_inset
+
+.
+ Esta funcion asigna a cada objeto matematico una palabra que describe que tipo de objeto matematico es dentro de un menu bien definido de tipos de objetos matematicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ un tipo.
+ Entonces 
+\begin_inset Formula $Ti(\mathcal{F})=\mathrm{PALABRA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ un tipo.
+ Entonces si 
+\begin_inset Formula $f\in\mathcal{F}$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $Ti(f)=\mathrm{CONJUNTO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo y supongamos 
+\begin_inset Formula $f\in\mathcal{F}_{3}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Dom(f)=A^{3}$
+\end_inset
+
+,
+ para algun conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\tau=(\emptyset,\{+\},\emptyset,\{(+,2)\})$
+\end_inset
+
+ es un tipo y 
+\begin_inset Formula $e\in Dom(+)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Ti(e)=2\mathrm{-UPLA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\tau=(\mathcal{C},\{+\},\emptyset,\{(+,2)\})$
+\end_inset
+
+ es un tipo y 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Ti(c)=\mathrm{NUMERO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\emptyset,\emptyset,\emptyset,\emptyset)$
+\end_inset
+
+ es un tipo
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora si estamos en condiciones de dar una definicion general de estructura.
+ Daremos una definicion matematica de 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+.
+ En virtud de nuestras estructuras conocidas uno podria intentar definir estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ como cierta 
+\begin_inset Formula $n$
+\end_inset
+
+-upla pero esto trae problemas ya que en un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ los nombres de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ no tienen por que estar ordenados y aparte puede haber infinitos nombres.
+ De todas maneras la idea es muy similar y nos aproximaremos primero con ejemplos para entender mas facilmente el concepto.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(\mathrm{Her},3)\})
+\]
+
+\end_inset
+
+Intuitivamente hablando,
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ consiste en un conjunto no vacio 
+\begin_inset Formula $A$
+\end_inset
+
+ (que se llamara el universo de dicha estructura) junto con una interpretacion de cada uno de los nombres del conjunto 
+\begin_inset Formula $\{\mathrm{uno},\mathrm{doli},\mathrm{MAS},\mathrm{P},\mathrm{Her}\}$
+\end_inset
+
+.
+ Esta interpretacion debe asignarle
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+a 
+\begin_inset Formula $\mathrm{uno}$
+\end_inset
+
+ un elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+a 
+\begin_inset Formula $\mathrm{doli}$
+\end_inset
+
+ un elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+a 
+\begin_inset Formula $\mathrm{MAS}$
+\end_inset
+
+ una operacion 4-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+a 
+\begin_inset Formula $\mathrm{P}$
+\end_inset
+
+ una operacion 1-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+a 
+\begin_inset Formula $\mathrm{Her}$
+\end_inset
+
+ una relacion 3-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lo que debe quedar claro es que estos elementos,
+ operaciones y relaciones pueden ser cualesquiera,
+ es decir no deben cumplir nada en especial.
+ Por ejemplo si tomamos 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ como universo podemos interpretar
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{uno}$
+\end_inset
+
+ como el numero 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{doli}$
+\end_inset
+
+ como el numero 
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{MAS}$
+\end_inset
+
+ como la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R}^{4} & \rightarrow & \mathbf{R}\\
+(x,y,z,w) & \rightarrow & 2x+4y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{P}$
+\end_inset
+
+ como la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R} & \rightarrow & \mathbf{R}\\
+x & \rightarrow & 5^{x}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{Her}$
+\end_inset
+
+ como la relacion
+\begin_inset Formula 
+\[
+\{(x,y,z)\in\mathbf{R}^{3}:x.y.z=9\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analogamente,
+ si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo de los posets,
+ es decir 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+,
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ consistira de un conjunto no vacio 
+\begin_inset Formula $A$
+\end_inset
+
+ (que se llamara el universo de dicha estructura) junto con una interpretacion del simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+,
+ la cual nos dira que relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ denotara 
+\begin_inset Formula $\leq$
+\end_inset
+
+.
+ Pero esta relacion binaria puede ser cualquiera por lo cual habra muchas estructuras del tipo de los posets que no se corresponderan con posets.
+ Solo aquellas en las que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ se interpreta como un orden parcial sobre su universo se corresponderan con los posets.
+\end_layout
+
+\begin_layout Standard
+Ahora si daremos la definicion matematica de estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Una 
+\shape italic
+estructura o modelo de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ sera un par 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i$
+\end_inset
+
+ es una funcion con dominio 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R},$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(c)$
+\end_inset
+
+ es un elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(f)$
+\end_inset
+
+ es una operacion 
+\begin_inset Formula $n$
+\end_inset
+
+-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(r)$
+\end_inset
+
+ es una relacion 
+\begin_inset Formula $n$
+\end_inset
+
+-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ el conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+ es llamado el 
+\shape italic
+universo 
+\shape default
+de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y la funcion 
+\begin_inset Formula $i$
+\end_inset
+
+ es llamada la 
+\shape italic
+funcion interpretacion
+\shape default
+ de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $s\in\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+,
+ diremos que 
+\begin_inset Formula $i(s)$
+\end_inset
+
+ es la interpretacion del simbolo 
+\begin_inset Formula $s$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(\mathrm{Her},3)\})
+\]
+
+\end_inset
+
+entonces 
+\begin_inset Formula $(\mathbf{R},i)$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ si definimos 
+\begin_inset Formula $i$
+\end_inset
+
+ igual a la funcion con dominio 
+\begin_inset Formula $\{\mathrm{uno},\mathrm{doli},\mathrm{MAS},\mathrm{P},\mathrm{Her}\}$
+\end_inset
+
+ dada por
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $i(\mathrm{uno})=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i(\mathrm{doli})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i(\mathrm{MAS})$
+\end_inset
+
+ igual a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R}^{4} & \rightarrow & \mathbf{R}\\
+(x,y,z,w) & \rightarrow & 2x+4y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i(\mathrm{P})$
+\end_inset
+
+ igual a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R} & \rightarrow & \mathbf{R}\\
+x & \rightarrow & 5^{x}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i(\mathrm{Her})=\{(x,y,z)\in\mathbf{R}^{3}:x.y.z=9\}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+.
+ Notese que por definicion una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un par 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio y 
+\begin_inset Formula $i$
+\end_inset
+
+ es una funcion con dominio 
+\begin_inset Formula $\{\leq\}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $i(\leq)$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Algunos ejemplos de estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,2,3\},\{(\leq,\emptyset)\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,2,3\},\{(\leq,\{2,3\}\times\{1\})\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,\{2\},\emptyset\},\{(\leq,\{(1,\{2\})\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{N},i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i$
+\end_inset
+
+ dada por 
+\begin_inset Formula $i(\leq)=\{(1,2),(1000,1),(1,1)\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que aunque 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es llamado el tipo de los posets,
+ ninguna de las estructuras anteriores tiene mucho que ver con un poset.
+ Consideremos ahora la estructura 
+\begin_inset Formula $(\mathbf{N},i)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $i$
+\end_inset
+
+ es la funcion con dominio igual a 
+\begin_inset Formula $\{\leq\}$
+\end_inset
+
+ dada por
+\begin_inset Formula 
+\[
+i(\leq)=\{(x,y)\in\mathbf{N}^{2}:x|y\}
+\]
+
+\end_inset
+
+Notese que estrictamente hablando 
+\begin_inset Formula $(\mathbf{N},i)$
+\end_inset
+
+ no es un poset ya que 
+\begin_inset Formula $i$
+\end_inset
+
+ no es un orden parcial sobre 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+ pero es claro que a nivel de informacion 
+\begin_inset Formula $(\mathbf{N},i)$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{N},|)$
+\end_inset
+
+ son la misma cosa.
+ O sea que aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ en las cuales 
+\begin_inset Formula $\leq$
+\end_inset
+
+ se interpreta como un orden parcial sobre el universo de la estructura son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente posets
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente lema nos servira para contar estructuras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Dados 
+\begin_inset Formula $A,B$
+\end_inset
+
+ conjuntos finitos no vacios,
+ hay 
+\begin_inset Formula $\left\vert B\right\vert ^{\left\vert A\right\vert }$
+\end_inset
+
+ funciones tales que su dominio es 
+\begin_inset Formula $A$
+\end_inset
+
+ y su imagen esta contenida en 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+si 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto cualquiera,
+ entonces hay 
+\begin_inset Formula $2^{\left\vert A\right\vert }$
+\end_inset
+
+ subconjuntos de 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (1) Supongamos 
+\begin_inset Formula $A=\{a_{1},...,a_{n}\}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n=\left\vert A\right\vert $
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $Fu=\{f:D_{f}=A$
+\end_inset
+
+ y 
+\begin_inset Formula $I_{f}\subseteq B\}$
+\end_inset
+
+.
+ Es facil ver que la siguiente funcion es biyectiva
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+Fu & \rightarrow & B^{n}\\
+f & \rightarrow & (f(a_{1}),...,f(a_{n}))
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) Ya que los subconjuntos de 
+\begin_inset Formula $A$
+\end_inset
+
+ estan en correspondencia biunivoca con las funciones de 
+\begin_inset Formula $A$
+\end_inset
+
+ en 
+\begin_inset Formula $\{0,1\}$
+\end_inset
+
+ (por que?) podemos aplicar (1) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuantas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+ hay?
+\end_layout
+
+\begin_layout Enumerate
+¿Alguna de ellas es un poset?
+\end_layout
+
+\begin_layout Enumerate
+De una biyeccion entre el conjunto formado por todos los posets y un subconjunto del conjunto de todas las estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuantas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+ hay?
+\end_layout
+
+\begin_layout Enumerate
+¿Alguna de ellas es un reticulado terna?
+\end_layout
+
+\begin_layout Enumerate
+Cuales de ellas son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ reticulados terna
+\end_layout
+
+\begin_layout Enumerate
+De una biyeccion entre el conjunto formado por todos los reticulados terna y un subconjunto del conjunto de todas las estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{r,R\},\{(r,2),(R,1)\})$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+¿Cuantas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+ hay?
+\end_layout
+
+\begin_layout Enumerate
+¿Alguna de ellas es grafo bicoloreado?
+\end_layout
+
+\begin_layout Enumerate
+Cuales de ellas son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ grafos bicoloreados
+\end_layout
+
+\begin_layout Enumerate
+De una biyeccion entre el conjunto formado por todos los grafos bicoloreados y un subconjunto del conjunto de todas las estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{un},\mathrm{dos}\},\emptyset,\emptyset,\emptyset).$
+\end_inset
+
+ Cuantos modelos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3,4,5\}$
+\end_inset
+
+ hay?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{un},\mathrm{dos}\},\{\mathrm{FE}^{2}\},\emptyset,a).$
+\end_inset
+
+ Cuantos modelos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3,4,5\}$
+\end_inset
+
+ hay?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{un},\mathrm{dos}\},\{\mathrm{FE}^{2},\mathrm{GE}^{3}\},\{\mathrm{Ri}^{1},\mathrm{Ru}^{3}\},a).$
+\end_inset
+
+ Cuantos modelos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3,4,5\}$
+\end_inset
+
+ hay?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hay exactamente una estructura de tipo 
+\begin_inset Formula $(\emptyset,\{\max,\min\},\emptyset,\{(\max,2),(\min,2)\})$
+\end_inset
+
+ con universo igual a 
+\begin_inset Formula $\{1,2,3,4\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\emptyset,\{\sin\},\{\log\},\{(\sin,1),(\log,1)\})$
+\end_inset
+
+ es un tipo
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo y sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $f\in\mathcal{F}_{3}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Dom(f)=A^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo y 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+,
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $\alpha\in Dom(i)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Ti(\alpha)=\mathrm{CONJUNTO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ es un tipo y 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathcal{C}\subseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{ce},\mathrm{un},\mathrm{do},\mathrm{tr},\mathrm{cu},\mathrm{ci},\mathrm{se}\},\{\mathrm{F}\},\emptyset,\{(\mathrm{F},1)\})$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $D_{i(\mathrm{F})}=\{\mathrm{ce},\mathrm{un},\mathrm{do},\mathrm{tr},\mathrm{cu},\mathrm{ci},\mathrm{se}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{un},\mathrm{dos}\},\emptyset,\emptyset,\emptyset).$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $(\{\mathrm{un},\mathrm{dos}\},\{(\mathrm{un},\mathrm{un}),(\mathrm{dos},\mathrm{dos})\})$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\{\mathrm{fe}\},\emptyset,\{(\mathrm{fe},1)\}).$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $(\{1\},\{(\mathrm{fe},(1,1))\})$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Ti(\mathbf{A})=\tau$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Independencia entre sintaxis y semantica
+\end_layout
+
+\begin_layout Standard
+Notese que la definicion de tipo es muy libre en lo que respecta a que palabras componen los conjuntos 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+,
+ es decir salvo por ciertas restricciones leves,
+ ellas pueden ser cualquier palabra.
+ Ademas no es necesario que las palabras de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ se interpreten en la estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (via la funcion 
+\begin_inset Formula $i$
+\end_inset
+
+) como usualmente se interpretan en matematica.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\tau=(\{\leq\},\emptyset,\emptyset,\emptyset)$
+\end_inset
+
+ es un tipo y en las estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ se interpretara como un elemento del universo y no un orden parcial.
+ Por ejemplo 
+\begin_inset Formula $(\{1,2,3\},\{(\leq,2)\})$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\tau^{\prime}=(\emptyset,\emptyset,\{\leq\},\{(\leq,3)\})$
+\end_inset
+
+ es un tipo pero en las estructuras de tipo 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ se interpreta como una relacion 3-aria sobre el universo.
+ Por ejemplo 
+\begin_inset Formula $(\mathbf{N},i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i$
+\end_inset
+
+ dada por 
+\begin_inset Formula $i(\leq)=\{(x,y,z)\in\mathbf{N}^{3}:x=y=z\}$
+\end_inset
+
+,
+ es una estructura de tipo 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+.
+ En esta estructura el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ no se interpreta como un orden parcial sino como una relacion ternaria ya que en 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un simbolo de relacion de aridad 
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\tau^{\prime\prime}=(\emptyset,\{1\},\emptyset,\{(1,3)\})$
+\end_inset
+
+ es un tipo y en las estructuras de tipo 
+\begin_inset Formula $\tau^{\prime\prime}$
+\end_inset
+
+ el simbolo 
+\begin_inset Formula $1$
+\end_inset
+
+ se interpretara como una funcion 3-aria sobre el universo (tener cuidado al leer 
+\begin_inset Formula $(\emptyset,\{1\},\emptyset,\{(1,3)\})$
+\end_inset
+
+ ya que en esta expresion 
+\begin_inset Formula $1$
+\end_inset
+
+ es el 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+numeral uno
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset Formula $3$
+\end_inset
+
+ es el numero tres).
+ Por ejemplo si denotamos con 
+\begin_inset Formula $f$
+\end_inset
+
+ a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{Z}^{3} & \rightarrow & \mathbf{Z}\\
+(x,y,z) & \rightarrow & x+y+z
+\end{array}
+\]
+
+\end_inset
+
+entonces 
+\begin_inset Formula $(\mathbf{Z},i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i$
+\end_inset
+
+ dada por 
+\begin_inset Formula $i(1)=f$
+\end_inset
+
+,
+ es una estructura de tipo 
+\begin_inset Formula $\tau^{\prime\prime}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Esta libertad en la definicion de tipo y tambien en la definicion de estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (i.e.
+ las estructuras interpretan a los nombres de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ con total independencia de la fisonomia de dichos nombres) es clave a la hora de fortalecer la separacion entre sintaxis y semantica,
+ idea fundamental en el desarrollo de la logica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Un poco de arrogancia
+\end_layout
+
+\begin_layout Standard
+Hemos dado,
+ via las definiciones de 
+\shape italic
+tipo
+\shape default
+ y de 
+\shape italic
+estructura de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ un modelo matematico preciso del concepto intuitivo de estructura que veniamos acuñando en las guias anteriores.
+ Esto es un salto importante ya que ahora tenemos una definicion matematica de lo que es una estructura en general y no solo un puñado de definiciones matematicas de ciertas estructuras particulares.
+ Hemos encontrado la esencia del concepto intuitivo de estructura que veniamos trabajando con casos particulares en las primeras guias.
+ La modelizacion es bastante sofisticada al punto que ninguna de las estructuras concretas antes estudiadas es estrictamente hablando una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ aunque cada tipo de estructura concreta estudiada tiene su 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+version
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ dentro de esta definicion general de estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ version que es 
+\begin_inset Quotes eld
+\end_inset
+
+esencialmente
+\begin_inset Quotes erd
+\end_inset
+
+ el mismo objeto.
+ Por ejemplo,
+ para el tipo de los reticulados complementados
+\begin_inset Formula 
+\[
+\tau=(\{0,1\},\{\mathsf{s},\mathsf{i},c\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2),(c,1)\})
+\]
+
+\end_inset
+
+las estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ que modelizan a los reticulados complementados son precisamente aquellas estructuras 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ tales que
+\begin_inset Formula 
+\[
+(A,i(\mathsf{s}),i(\mathsf{i}),i(c),i(0),i(1))
+\]
+
+\end_inset
+
+es un reticulado complementado.
+ Obviamente estas estructuras no son estrictamente hablando reticulados complementados,
+ pero esencialmente son la misma cosa.
+\end_layout
+
+\begin_layout Standard
+La utilidad de este nuevo concepto general de estructura ira quedando clara a medida que avancemos.
+ Cabe destacar que este concepto general de estructura no solo ha sido clave en el desarrollo de la logica matematica sino que tambien ha sido crucial en el desarrollo de la informatica teorica,
+ mas precisamente en el area de las especificaciones algebraicas,
+ ya que la versatilidad del concepto de estructura eterogenea (una generalizacion natural de nuestro concepto de estructura) ha permitido crear una teoria de amplio alcance y modelizacion de la idea de la especificacion de tipos abstractos de datos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordemos que cada una de las estructuras consideradas en la Guia 7 tiene su tipo asociado.
+ Es decir:
+\begin_inset Formula 
+\begin{align*}
+\text{Tipo de los posets} & =(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})\\
+\text{Tipo de los ret. terna} & =(\emptyset,\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})\\
+\text{Tipo de los ret. acotados} & =(\{0,1\},\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})\\
+\text{Tipo de los ret. comp.} & =(\{0,1\},\{\mathsf{s},\mathsf{i},c\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2),(c,1)\})\\
+\text{Tipo de los ret. cuaterna} & =(\emptyset,\{\mathsf{s},\mathsf{i}\},\{\leq\},\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2)\})\\
+\text{Tipo de las median algebras} & =(\emptyset,\{M\},\emptyset,\{(M,3)\})\\
+\text{Tipo de los grafos} & =(\emptyset,\emptyset,\{r\},\{(r,2)\})\\
+\text{Tipo de los grafos bicoloreados} & =(\emptyset,\emptyset,\{r,R\},\{(r,2),(R,1)\})
+\end{align*}
+
+\end_inset
+
+Notese que en cada uno de los casos anteriores los simbolos de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ son los que se usan (junto con los simbolos logicos,
+ las variables y los nombres de elementos fijos) para formar sus correspondientes formulas elementales.
+ Es decir,
+ lo particular de las formulas elementales de cada tipo de estructura estaba dado por los correspondientes simbolos de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+.
+ Esto nos permite generalizar nuestro concepto intuitivo de formula elemental,
+ para el caso de cualquier tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ de estructuras.
+ Para esto primero definamos dado un tipo 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ los 
+\shape italic
+terminos elementales de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ por las siguientes clausulas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada palabra de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ es un termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Las variables 
+\begin_inset Formula $x,y,z,w,...$
+\end_inset
+
+ son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Los nombres de elementos fijos 
+\begin_inset Formula $a,b,c,d,...$
+\end_inset
+
+ son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}$
+\end_inset
+
+ son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $f(t_{1},...,t_{n})$
+\end_inset
+
+ es un termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es un termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Deberia quedar claro que un termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ como objeto matematico es una palabra.
+ Tambien deberia quedar claro que arriba 
+\begin_inset Formula $f(t_{1},...,t_{n})$
+\end_inset
+
+ denota el resultado de concatenar las 
+\begin_inset Formula $n+(n-1)+3$
+\end_inset
+
+ siguientes palabras
+\begin_inset Formula 
+\[
+f\;\;\;(\;\;\;t_{1}\;\;\;,\;\;\;t_{2}\;\;\;,\;\;\;...\;\;\;,\;\;\;t_{n}\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $f(t_{1},...,t_{n})$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|f\right|+\left|t_{1}\right|+...+\left|t_{n}\right|+(n-1)+2$
+\end_inset
+
+ (notar que 
+\begin_inset Formula $n-1$
+\end_inset
+
+ cuenta la cantidad de comas).
+ Veamos algunos ejemplos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{un},0\},\{\mathrm{MAS},\mathrm{P},+\},\{\mathrm{Verde}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(+,2),(\mathrm{Verde},1)\})
+\]
+
+\end_inset
+
+entonces las siguientes palabras son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{un}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{MAS}(a,b,\mathrm{un},z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{P}(\mathrm{P}(z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $+(+(0,x),\mathrm{P}(z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{MAS}(\mathrm{P}(0),+(0,b),\mathrm{un},\mathrm{MAS}(x,x,x,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por supuesto las aridades de los nombres de 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ son importantes y deben ser respetadas.
+ Por ejemplo
+\begin_inset Formula 
+\[
+\mathrm{P}(x,y)\ \ \ \ \ \ \mathrm{MAS}(a,b)\ \ \ \ \ \ +(x,y,z)
+\]
+
+\end_inset
+
+no son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo de los reticulados complementados
+\begin_inset Formula 
+\[
+(\{0,1\},\{\mathsf{s},\mathsf{i},c\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2),(c,1)\})
+\]
+
+\end_inset
+
+entonces las siguientes palabras son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{s}(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{s}(\mathsf{i}(x,0),z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c(\mathsf{s}(\mathsf{i}(x,0),c(z)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $c(\mathsf{s}(\mathsf{i}(0,0),0))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que no coinciden con los terminos elementales de reticulados complementados definidos en la Guia 7 ya que aqui usamos un formato mas general y usamos 
+\begin_inset Formula $\mathsf{s}(x,y)$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $(x\ \mathsf{s}\ y)$
+\end_inset
+
+,
+ etc.
+ Obviamente esto no cambia mucho las cosas y es hecho a los fines de homogeneisar la escritura y no hacer un uso distinto para las operaciones binarias.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es tal que 
+\begin_inset Formula $\mathcal{F}=\emptyset$
+\end_inset
+
+ entonces los terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son las variables,
+ los nombres de elementos fijos y los elementos de 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{1,\mathrm{er}\},\{+,\mathsf{s}\},\emptyset,\{(+,5),(\mathsf{s},3)\})
+\]
+
+\end_inset
+
+entonces las siguientes palabras son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{s}(x,z,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $+(1,1,1,1,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{s}(+(\mathrm{er},\mathrm{er},z,a,a),\mathrm{er},\mathsf{s}(x,x,x))$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+Tal como lo aclaramos anteriormente la definicion de tipo es muy libre en lo que respecta a que palabras componen los conjuntos 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+,
+ es decir salvo por ciertas restricciones leves,
+ ellas pueden ser cualquier palabra aunque a veces resulte chocante la eleccion de las mismas debido al uso y costumbre de los matematicos.
+ Por ejemplo si tomamos 
+\begin_inset Formula $\tau=(\{\leq\},\{1\},\emptyset,\{(1,3)\})$
+\end_inset
+
+,
+ obtenemos un tipo en el cual 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un nombre de constante y el numeral 
+\begin_inset Formula $1$
+\end_inset
+
+ es un nombre de funcion 
+\begin_inset Formula $3$
+\end_inset
+
+-aria (lo cual nos dice que en una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ debera interpretarse como un elemento del universo y el simbolo 
+\begin_inset Formula $1$
+\end_inset
+
+ debera interpretarse como una operacion 
+\begin_inset Formula $3$
+\end_inset
+
+-aria).
+ Algunos terminos elementales de este tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1(z,z,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1(x,a,1(\mathrm{\leq},\mathrm{\leq},\mathrm{\leq}))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Terminos elementales puros de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ sera llamado 
+\emph on
+puro
+\emph default
+ cuando en el no ocurran nombres de elementos fijos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora si usando el concepto de termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ podemos definir las 
+\shape italic
+formulas elementales de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ con las siguientes clausulas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces la palabra 
+\begin_inset Formula $(t=s)$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}$
+\end_inset
+
+ son terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $r(t_{1},...,t_{n})$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\lnot\varphi$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\forall x\varphi\;\;\;\forall y\varphi\;\;\;\forall z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\exists x\varphi\;\;\;\exists y\varphi\;\;\;\exists z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ si y solo si se puede construir usando las clausulas anteriores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Deberia quedar claro que una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ como objeto matematico es una palabra.
+ Tambien deberia quedar claro que arriba 
+\begin_inset Formula $r(t_{1},...,t_{n})$
+\end_inset
+
+ denota el resultado de concatenar las 
+\begin_inset Formula $n+(n-1)+3$
+\end_inset
+
+ siguientes palabras
+\begin_inset Formula 
+\[
+r\;\;\;(\;\;\;t_{1}\;\;\;,\;\;\;t_{2}\;\;\;,\;\;\;...\;\;\;,\;\;\;t_{n}\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $f(t_{1},...,t_{n})$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|r\right|+\left|t_{1}\right|+...+\left|t_{n}\right|+(n-1)+2$
+\end_inset
+
+ (notar que 
+\begin_inset Formula $n-1$
+\end_inset
+
+ cuenta la cantidad de comas).
+ Veamos algunos ejemplos
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{un},0\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her},\mathrm{Verde}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(\mathrm{Her},3),(\mathrm{Verde},1)\})
+\]
+
+\end_inset
+
+entonces las siguientes son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{Her}(x,y,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{Verde}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{Verde}(\mathrm{MAS}(a,b,\mathrm{un},z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{Her}(0,\mathrm{MAS}(a,b,\mathrm{un},z),\mathrm{P}(\mathrm{P}(z))))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{un}=\mathrm{P}(z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{Verde}(\mathrm{MAS}(a,b,\mathrm{un},z))\wedge(\mathrm{un}=\mathrm{P}(0)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{MAS}(a,b,\mathrm{un},z)=b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{MAS}(a,b,\mathrm{un},\mathrm{P}(z))=\mathrm{P}(\mathrm{P}(\mathrm{P}(z))))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists z(\mathrm{MAS}(a,b,\mathrm{un},z)=b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\mathrm{Her}(0,y,\mathrm{P}(\mathrm{P}(x)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall y\ ((\mathrm{P}(\mathrm{P}(z))=x)\rightarrow\exists z\ (\mathrm{Verde}(z)\wedge\mathrm{Her}(x,y,z)))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Por supuesto las aridades de los nombres de 
+\begin_inset Formula $\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ son importantes y deben ser respetadas.
+ Por ejemplo
+\begin_inset Formula 
+\[
+(\mathrm{P}(x,y)=x)\ \ \ \ \ \ \mathrm{Her}(x,y)\ \ \ \ \ \ \ \ \mathrm{Verde}(x,y)
+\]
+
+\end_inset
+
+no son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{0,1\},\{\mathsf{s},\bigtriangleup\},\{\leq,r\},\{(\mathsf{s},2),(\bigtriangleup,5),(\leq,2),(r,2)\})
+\]
+
+\end_inset
+
+entonces las siguientes son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r(x,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(\bigtriangleup(x,y,z,0,0),\mathsf{s}(x,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathsf{s}(a,b)=\bigtriangleup(x,y,z,0,0))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\bigtriangleup(x,y,z,0,0)=\bigtriangleup(1,1,0,x,z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathsf{s}(\bigtriangleup(x,y,z,0,0),z)=1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot r(x,\mathsf{s}(a,\mathsf{s}(a,b)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot\forall y(\mathsf{s}(x,y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists z\forall x\ (r(x,\mathsf{s}(z,z)\wedge\lnot\mathrm{\leq}(x,z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\;((r(x,y)\wedge r(y,z))\rightarrow r(x,z))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que hay algunas pequeñas diferencias con las formulas elementales de las estructuras clasicas ya que aqui respondemos a un formato mas general.
+ Por ejemplo hemos escrito 
+\begin_inset Formula $\mathrm{\leq}(x,y)$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{s}(x,y)$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $(x\ \mathsf{s}\ y)$
+\end_inset
+
+.
+ Esto es a los fines de homogeneisar la escritura y no hacer un uso distinto para las operaciones binarias y las relaciones binarias.
+\end_layout
+
+\begin_layout Standard
+Por supuesto las aridades de los nombres de 
+\begin_inset Formula $\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+ son importantes y deben ser respetadas.
+ Por ejemplo
+\begin_inset Formula 
+\[
+(+(x,y,z)=x)\ \ \ \ \ \ r(x,y,z)\ \ \ \ \ \ \ \ \mathrm{\leq}(x,y,z)
+\]
+
+\end_inset
+
+no son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{er}\},\{+\},\{\leq\},\{(+,4),(\leq,5)\})
+\]
+
+\end_inset
+
+entonces las siguientes son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(x,y,\mathrm{er},\mathrm{er},\mathrm{er})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(+(x,y,z,\mathrm{er}),+(x,x,\mathrm{er},x),a,b,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists z(+(x,z,x,+(x,x,x,x))=z)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{er}\},\{\leq\},\{+\},\{(\leq,3),(+,2)\})
+\]
+
+\end_inset
+
+entonces las siguientes son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{\leq}(x,y,\mathrm{er})=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $+(z,\mathrm{er})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists z\lnot\mathrm{+}(z,\mathrm{er})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(aqui hay que tener en cuenta que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un nombre de funcion de aridad 3 y que 
+\begin_inset Formula $+$
+\end_inset
+
+ es un nombre de relacion de aridad 2,
+ lo cual es inusual pero perfectamente posible en nuestra muy general definicion de tipo)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es el tipo
+\begin_inset Formula 
+\[
+(\{\leq\},\{+\},\emptyset,\{(+,3)\})
+\]
+
+\end_inset
+
+entonces las siguientes son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{\leq}=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(+(z,\leq,a)=\mathrm{\leq})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(+(+(z,\leq,\leq),x,a)=b)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(aqui hay que tener en cuenta que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un nombre de constante,
+ lo cual es inusual pero perfectamente posible)
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+\begin_inset VSpace bigskip
+\end_inset
+
+Formulas elementales puras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ sera llamada 
+\emph on
+pura
+\emph default
+ cuando en ella no ocurran nombres de elementos fijos.
+ Notese que en particular los terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ que ocurran en una formula elemental pura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ seran tambien puros.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Variables libres,
+ acotadas y alcance de un cuantificador
+\end_layout
+
+\begin_layout Standard
+Estos conceptos se definen para una formula elemental 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ cualquiera,
+ de la misma manera que lo hicimos en la Guia 6 para las formulas elementales de reticulados cuaterna.
+ Dejamos al lector que los repace.
+ Recordemos que una variable libre de una formula elemental era una que al menos una vez ocurria libremente (aunque tambien pudiera ocurrir acotadamente en dicha formula elemental).
+ Cuando una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ no tenga variables libres,
+ diremos que es una 
+\shape italic
+sentencia elemental de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Valores de terminos y formulas para una estructura dada
+\end_layout
+
+\begin_layout Standard
+Dada una estructura 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y un termino elemental 
+\begin_inset Formula $t$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ para que 
+\begin_inset Formula $t$
+\end_inset
+
+ represente un valor de 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ tenemos que asignarles valores concretos de 
+\begin_inset Formula $A$
+\end_inset
+
+ a las variables y a los nombres de elementos fijos que ocurren en 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Los nombres de funcion que ocurren en 
+\begin_inset Formula $t$
+\end_inset
+
+ obviamente se interpretaran segun manda la funcion 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Similarmente dada una estructura 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y una formula elemental 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ para que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sea verdadera o falsa tenemos que asignarle valores concretos de 
+\begin_inset Formula $A$
+\end_inset
+
+ a las variables libres de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ y a los nombres de elementos fijos que ocurren en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ y luego,
+ a los nombres de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+,
+ debemos interpretarlos usando la funcion 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Notemos que si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una sentencia elemental pura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sera verdadera o falsa en cada estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ sin necesidad de hacer asignaciones de valores a sus variables.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos:
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{un},0\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her},\mathrm{Verde}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(\mathrm{Her},3),(\mathrm{Verde},1)\})
+\]
+
+\end_inset
+
+y sea 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ la estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ dada por:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A=\mathbf{R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i(\mathrm{un})=\pi$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i(0)=0$
+\end_inset
+
+ (ojo que aqui el primer cero es un simbolo y el segundo un numero real!)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{array}[t]{rcl}
+i(\mathrm{MAS}):\mathbf{R}^{4} & \rightarrow & \mathbf{R}\\
+(x,y,z,w) & \rightarrow & x.y
+\end{array}\\
+ & \begin{array}[t]{rcl}
+i(\mathrm{P}):\mathbf{R} & \rightarrow & \mathbf{R}\\
+x & \rightarrow & x^{2}
+\end{array}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+i(\mathrm{Her}) & =\{(x,y,z)\in\mathbf{R}^{3}:x.y.z=9\}\\
+i(\mathrm{Verde}) & =\mathbf{Q}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces:
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $\mathrm{un}$
+\end_inset
+
+ asume o representa el valor 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $\mathrm{P}(z)$
+\end_inset
+
+ asume o representa el valor 
+\begin_inset Formula $25$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $\mathrm{MAS}(a,b,\mathrm{un},z)$
+\end_inset
+
+ asume o representa el valor 
+\begin_inset Formula $2$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+,
+ a 
+\begin_inset Formula $b$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ y a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $16$
+\end_inset
+
+ (o cualquier otro valor)
+\end_layout
+
+\begin_layout Enumerate
+La formula elemental 
+\begin_inset Formula $\mathrm{Her}(x,y,z)$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $9$
+\end_inset
+
+,
+ a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $1$
+\end_inset
+
+ y a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{Verde}(x)$
+\end_inset
+
+ es falsa en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{Verde}(\mathrm{MAS}(a,b,\mathrm{un},z))$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+,
+ a 
+\begin_inset Formula $b$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ y a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $16$
+\end_inset
+
+ (o cualquier otro valor)
+\end_layout
+
+\begin_layout Enumerate
+La formula elemental 
+\begin_inset Formula $\exists y\exists z\ \mathrm{Her}(a,y,z))$
+\end_inset
+
+ es una sentencia ya que no tiene variables libres y es veradera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando a 
+\begin_inset Formula $a$
+\end_inset
+
+ le asignamos un valor no nulo
+\end_layout
+
+\begin_layout Enumerate
+La formula elemental 
+\begin_inset Formula $\exists y\exists z\ \mathrm{Her}(x,y,z))$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando a 
+\begin_inset Formula $x$
+\end_inset
+
+ le asignamos un valor no nulo
+\end_layout
+
+\begin_layout Enumerate
+La formula elemental 
+\begin_inset Formula $\forall x\ (\lnot(x=0)\rightarrow\exists y\exists z\ \mathrm{Her}(x,y,z))$
+\end_inset
+
+ es una sentencia elemental ya que no tiene variables libres y es veradera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La formula elemental 
+\begin_inset Formula $\forall x\forall y\ ((\mathrm{Verde}(x)\wedge\mathrm{Verde}(y))\rightarrow\mathrm{Verde}(\mathrm{MAS}(x,y,\mathrm{un},z)))$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ independientemente de que valor le asignemos a 
+\begin_inset Formula $z$
+\end_inset
+
+,
+ ya que el producto de racionales es racional
+\end_layout
+
+\begin_layout Enumerate
+La formula elemental 
+\begin_inset Formula $\exists y(\mathrm{MAS}(z,z,y,\mathrm{un})=\mathrm{P}(z))$
+\end_inset
+
+ es veradera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cualquiera sea el valor que le asignemos a 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Error frecuente:
+
+\series default
+ En la estructura anterior hay varios elementos que tienen su notacion clasica en la matematica,
+ por ejemplo,
+ con la letra griega 
+\begin_inset Formula $\pi$
+\end_inset
+
+ denotamos la cantidad de veces que entra el diametro en la circunferencia o con el numeral 
+\begin_inset Formula $3$
+\end_inset
+
+ denotamos al numero entero tres.
+ Esto no debe confundirnos y pensar que por ejemplo las palabras
+\begin_inset Formula 
+\[
+\lnot\mathrm{Verde}(\pi)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \exists y\mathrm{Her}(3,3,y)
+\]
+
+\end_inset
+
+son formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (aunque es claro que son verdaderas en la estructura 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+) 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{er}\},\{+\},\{\leq\},\{(+,4),(\leq,5)\})
+\]
+
+\end_inset
+
+y sea 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ la estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ dada por:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A=\{1,2,3,4,5\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i(\mathrm{er})=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}[t]{rcl}
+i(+):A^{4} & \rightarrow & A\\
+(x,y,z,w) & \rightarrow & \max\{x,y,z,w\}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+i(\leq)=\{(x,y,z,u,v)\in A^{5}:x+y+z+u+v\geq17\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces:
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $\mathrm{er}$
+\end_inset
+
+ asume o representa el valor 
+\begin_inset Formula $4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $+(x,x,x,a)$
+\end_inset
+
+ asume o representa el valor 
+\begin_inset Formula $4$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $2$
+\end_inset
+
+ y a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(\mathrm{er},\mathrm{er},\mathrm{er},\mathrm{er},\mathrm{er})$
+\end_inset
+
+ es una sentencia elemental verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(x,y,\mathrm{er},\mathrm{er},\mathrm{er})$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a las variables 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ valores que sumados den al menos 
+\begin_inset Formula $5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\exists y\ \mathrm{\leq}(x,x,x,x,y)$
+\end_inset
+
+ es una sentencia elemental pura la cual es falsa en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+,
+ ya que la formula elemental 
+\begin_inset Formula $\exists y\ \mathrm{\leq}(x,x,x,x,y)$
+\end_inset
+
+ es falsa en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La sentencia elemental pura 
+\begin_inset Formula $\forall x\exists z\ \mathrm{\leq}(x,x,x,x,+(x,x,x,z))$
+\end_inset
+
+ es falsa en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{epa}\},\{\leq,r\},\emptyset,\{(\leq,1),(r,1)\})
+\]
+
+\end_inset
+
+y sea 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ la estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ dada por:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A=\omega$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i(\mathrm{epa})=71$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \begin{array}[t]{rcl}
+i(\mathrm{\leq}):\omega & \rightarrow & \omega\\
+x & \rightarrow & x^{2}
+\end{array}\\
+ & \begin{array}[t]{rcl}
+i(r):\omega & \rightarrow & \omega\\
+x & \rightarrow & \left\lfloor \sqrt{x}\right\rfloor 
+\end{array}
+\end{align*}
+
+\end_inset
+
+(Notese que aqui contrario al uso estandard en la matematica,
+ el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ se interpreta como una funcion.)
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $\mathrm{\leq}(x)$
+\end_inset
+
+ asume el valor 
+\begin_inset Formula $100$
+\end_inset
+
+ cuando a 
+\begin_inset Formula $x$
+\end_inset
+
+ le asignamos el valor 
+\begin_inset Formula $10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $r(\mathrm{\leq}(b))$
+\end_inset
+
+ asume el valor 
+\begin_inset Formula $11$
+\end_inset
+
+ cuando a 
+\begin_inset Formula $b$
+\end_inset
+
+ le asignamos el valor 
+\begin_inset Formula $11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+El termino elemental 
+\begin_inset Formula $\mathrm{\leq}(r(b))$
+\end_inset
+
+ asume el valor 
+\begin_inset Formula $9$
+\end_inset
+
+ cuando a 
+\begin_inset Formula $b$
+\end_inset
+
+ le asignamos el valor 
+\begin_inset Formula $11$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathrm{\leq}(\mathrm{epa})=x)$
+\end_inset
+
+ es veradera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a la variable 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $71^{2}$
+\end_inset
+
+ y falsa en caso contrario
+\end_layout
+
+\begin_layout Enumerate
+La sentencia elemental pura 
+\begin_inset Formula $\exists z(\mathrm{\leq}(z)=x)$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La sentencia elemental pura 
+\begin_inset Formula $\forall x\ (r(\mathrm{\leq}(x))=x)$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La sentencia elemental pura 
+\begin_inset Formula $\exists x\ \lnot(\mathrm{\leq}(r(x))=x)$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{un}\},\{\mathrm{F}\},\{\mathrm{Her},\mathrm{Verde}\},\{(\mathrm{F},1),(\mathrm{Her},2),(\mathrm{Verde},1)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{F})$
+\end_inset
+
+ es inyectiva.
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{F})$
+\end_inset
+
+ es suryectiva
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{F})$
+\end_inset
+
+ es biyectiva.
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{un})\in\operatorname{Im}(i(\mathrm{F}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual tenga a 
+\begin_inset Formula $x$
+\end_inset
+
+ como su unica variable libre y la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ que 
+\begin_inset Formula $x$
+\end_inset
+
+ pertenece a 
+\begin_inset Formula $\operatorname{Im}(i(\mathrm{F}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\operatorname{Im}(i(\mathrm{F}))=i(\mathrm{Verde})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Recordemos que dada una funcion 
+\begin_inset Formula $f$
+\end_inset
+
+ definiamos 
+\begin_inset Formula $\ker(f)=\{(x,y)\in D_{f}\times D_{f}:f(x)=f(y)\}$
+\end_inset
+
+.
+ De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\ker(i(\mathrm{F}))=i(\mathrm{Her})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\mathrm{R}\},\{(\mathrm{R},2)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{R})$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(A,i(\mathrm{R}))$
+\end_inset
+
+ es un grafo
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual cumpla que para cada estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{R})$
+\end_inset
+
+ es una relacion de equivalencia sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+De una formula elemental 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ pura la cual tenga como su unica variable libre a 
+\begin_inset Formula $x$
+\end_inset
+
+ y la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{R})$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $x$
+\end_inset
+
+ es un elemento minimo de 
+\begin_inset Formula $(A,i(\mathrm{R}))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+De una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual tenga como sus unicas variables libres a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ y la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{R})$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $x$
+\end_inset
+
+ es cubierto por 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{un}\},\{\mathrm{P}\},\{\mathrm{Moi}\},\{(\mathrm{P},2),(\mathrm{Moi},2)\})$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\mathbf{A}=(\omega,i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i(\mathrm{un})=1$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i(\mathrm{P})=$
+\end_inset
+
+ operacion producto de 
+\begin_inset Formula $\omega$
+\end_inset
+
+,
+ y 
+\begin_inset Formula $i(\mathrm{Moi})=\{(x,y)\in\omega:x\leq y\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual tenga como sus unicas variables libres a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ y la cual sea verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ cuando asignamos los valores 
+\begin_inset Formula $n,m$
+\end_inset
+
+ a las variables 
+\begin_inset Formula $x,y$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $n$
+\end_inset
+
+ divide a 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual tenga como su unica variable libre a 
+\begin_inset Formula $x$
+\end_inset
+
+ y la cual sea verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ cuando asignamos el valor 
+\begin_inset Formula $n$
+\end_inset
+
+ a la variable 
+\begin_inset Formula $x$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $n$
+\end_inset
+
+ es primo
+\end_layout
+
+\begin_layout Enumerate
+De una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual tenga como su unica variable libre a 
+\begin_inset Formula $x$
+\end_inset
+
+ y la cual sea verdadera en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ cuando asignamos el valor 
+\begin_inset Formula $n$
+\end_inset
+
+ a la variable 
+\begin_inset Formula $x$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $n=4$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\{\mathrm{M},\mathrm{J}\},\{\mathrm{L}\},\{(\mathrm{M},2),(\mathrm{J},2),(\mathrm{L},2)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual sea verdadera en una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(A,i(\mathrm{M}),i(\mathrm{J}),i(\mathrm{L}))$
+\end_inset
+
+ es un reticulado cuaterna
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ la cual sea verdadera en una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(A,i(\mathrm{M}),i(\mathrm{J}))$
+\end_inset
+
+ es un reticulado terna y 
+\begin_inset Formula $i(\mathrm{L})$
+\end_inset
+
+ es un orden total sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Si una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+satisface 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ podemos entonces asegurar que 
+\begin_inset Formula $(A,i(\mathrm{M}),i(\mathrm{J}),i(\mathrm{L}))$
+\end_inset
+
+ es un reticulado cuaterna?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Teorias elementales y pruebas elementales
+\end_layout
+
+\begin_layout Standard
+Tal como vimos en la Guia 7,
+ el concepto de prueba elemental dependia del tipo de estructura en cuestion y ademas de tener fijado un conjunto de sentencias elementales que llamabamos axiomas y eran el punto de partida de dichas pruebas.
+ Cabe destacar que dichos axiomas eran sentencias elementales puras,
+ i.e.
+ sin nombres de elementos fijos,
+ ya que estos se usaban solo en las pruebas elementales para denotar hipoteticos elementos dentro del argumento de la prueba misma.
+ Ademas cuando haciamos una prueba elemental teniamos en mente una estructura generica de la cual solo sabiamos que satisfacia los axiomas,
+ es decir solo podiamos usar la informacion particular que dichos axiomas nos proveian y pasos elementales obvios de los cuales nadie dudaria.
+ Esto nos inspira a hacer las siguientes dos definiciones.
+\end_layout
+
+\begin_layout Standard
+Una 
+\shape italic
+teoria elemental
+\shape default
+ sera un par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo cualquiera y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es un conjunto de sentencias elementales puras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Un 
+\shape italic
+modelo de
+\shape default
+ 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ la cual haga verdaderos a todos los elementos de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ Veamos algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los posets
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes tres sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ \mathrm{\leq}(x,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\;((\mathrm{\leq}(x,y)\wedge\mathrm{\leq}(y,z))\rightarrow\mathrm{\leq}(x,z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y((\mathrm{\leq}(x,y)\wedge\mathrm{\leq}(y,x))\rightarrow x=y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ posets.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los reticulados terna
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ (\mathsf{s}(x,x)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ (\mathsf{i}(x,x)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ (\mathsf{s}(x,y)=\mathsf{s}(y,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ (\mathsf{i}(x,y)=\mathsf{i}(y,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (\mathsf{s}(\mathsf{s}(x,y),z)=\mathsf{s}(x,\mathsf{s}(y,z)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (\mathsf{i}(\mathsf{i}(x,y),z)=\mathsf{i}(x,\mathsf{i}(y,z)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ \mathsf{s}(x,\mathsf{i}(x,y))=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ \mathsf{i}(x,\mathsf{s}(x,y))=x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ reticulados terna.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los reticulados cuaterna
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s},\mathsf{i}\},\{\leq\},\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\leq R}=\forall x\ \mathrm{\leq}(x,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\leq T}=\forall x\forall y\forall z\;((\mathrm{\leq}(x,y)\wedge\mathrm{\leq}(y,z))\rightarrow\mathrm{\leq}(x,z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\leq A}=\forall x\forall y\ ((\mathrm{\leq}(x,y)\wedge\mathrm{\leq}(y,x))\rightarrow x=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}=\forall x\forall y\;(\mathrm{\leq}(x,\mathsf{s}(x,y))\wedge\mathrm{\leq}(y,\mathsf{s}(x,y)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}=\forall x\forall y\forall z\;\left((\mathrm{\leq}(x,z)\wedge\mathrm{\leq}(y,z))\rightarrow\mathrm{\leq}(\mathsf{s}(x,y),z\right))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}esC}=\forall x\forall y\;(\mathrm{\leq}(\mathsf{i}(x,y),x)\wedge\mathrm{\leq}(\mathsf{i}(x,y),y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}=\forall x\forall y\forall z\;\left((\mathrm{\leq}(z,x)\wedge\mathrm{\leq}(z,y))\rightarrow\mathrm{\leq}(z,\mathsf{i}(x,y))\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ reticulados cuaterna.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los grafos
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{r\},\{(r,2)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\lnot r(x,x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow r(y,x))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ grafos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E5)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los grafos bicoloreados
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{r,R\},\{(r,2),(R,1)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\lnot r(x,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow r(y,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow((R(x)\wedge\lnot R(y))\vee(\lnot R(x)\wedge R(y))))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ grafos bicoloreados.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E6)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de las median algebras
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\{M\},\emptyset,\{(M,3)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z(M(x,y,z)=M(x,z,y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z(M(x,y,z)=M(y,z,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(M(x,x,y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\forall u\forall v(M(M(x,y,z),u,v))=M(x,M(y,u,v),M(z,u,v)))$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es muy importante notar que una teoria elemental 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es en algun sentido un objeto esencialmente sintactico ya que 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ son conjuntos de palabras y los elementos de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ tambien son palabras.
+ Los modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ constituyen la semantica de la teoria.
+\end_layout
+
+\begin_layout Standard
+Las anteriores son las teorias elementales que se corresponden con los tipos de estructuras consideradas en la Guia 7 pero nuestra definicion de teoria elemental es muy general y nos permite considerar una gran diversidad de teorias.
+ Veamos algunos ejemplos de teorias elementales interesantes y no consideradas en la Guia 7:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E7)
+\end_layout
+
+\end_inset
+
+Consideremos la teoria elemental 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\{\mathrm{ex}\},\{\mathrm{F}\},\emptyset,\{(\mathrm{F},1)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por las siguientes dos sentencias elementales:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\ (\lnot(x=y)\rightarrow\lnot(\mathrm{F}(x)=\mathrm{F}(y)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ \lnot(\mathrm{F}(x)=\mathrm{ex})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que una estructura 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $i(\mathrm{F})$
+\end_inset
+
+ es inyectiva y 
+\begin_inset Formula $i(\mathrm{ex})\notin\operatorname{Im}(i(\mathrm{F}))$
+\end_inset
+
+.
+ Esto obviamente nos dice que el universo de cada modelo de esta teoria es infinito.
+ Un modelo de la teoria es por ejemplo 
+\begin_inset Formula $(\omega,\{(\mathrm{ex},0),(\mathrm{F},Suc)\})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E8)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\{\times\},\{\mathrm{Com}\},\{(\times,2),(\mathrm{Com},1)\})$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (\times(\times(x,y),z)=\times(x,\times(y,z)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall z\ (\mathrm{Com}(z)\rightarrow\forall x\ (\times(x,z)=\times(z,x)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\exists z\ (x=\times(z,z)\wedge\mathrm{Com}(z))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Supongamos 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ es un modelo de la teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Notese que el primer axioma nos dice que 
+\begin_inset Formula $i(\times)$
+\end_inset
+
+ es una operacion binaria asociativa,
+ esto se ve mas facilmente si escribimos dicho axioma con la notacion mas usual para operaciones:
+\begin_inset Formula 
+\[
+\forall x\forall y\forall z\ (x\times y)\times z=x\times(y\times z)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El segundo axioma nos dice que si 
+\begin_inset Formula $a\in i(\mathrm{Com})$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $a\ i(\times)\ b=b\ i(\times)\ a$
+\end_inset
+
+,
+ cualesquiera sea 
+\begin_inset Formula $b\in A$
+\end_inset
+
+.
+ O sea nos dice que los elementos de 
+\begin_inset Formula $i(\mathrm{Com})$
+\end_inset
+
+ conmutan con todos los otros elementos relativo a la operacion 
+\begin_inset Formula $i(\times)$
+\end_inset
+
+.
+ El tercer axioma nos dice que cualquiera sea 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ debe haber un 
+\begin_inset Formula $b\in i(\mathrm{Com})$
+\end_inset
+
+ tal que 
+\begin_inset Formula $b\ i(\times)\ b=a$
+\end_inset
+
+.
+ En algun sentido nos dice que todo elemento de 
+\begin_inset Formula $A$
+\end_inset
+
+ tiene en el conjunto 
+\begin_inset Formula $i(\mathrm{Com})$
+\end_inset
+
+ una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+raiz cuadrada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ relativo a la operacion 
+\begin_inset Formula $i(\times)$
+\end_inset
+
+.
+ Ejemplos de modelos de esta teoria son:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{r\in\mathbf{R}:r\geq0\},i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i(\times)=$
+\end_inset
+
+ operacion producto usual de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ restringida a 
+\begin_inset Formula $\{r\in\mathbf{R}:r\geq0\}^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $i(\mathrm{Com})=\{r\in\mathbf{R}:r\geq0\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{R},i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i(\times)=\max$
+\end_inset
+
+ y 
+\begin_inset Formula $i(\mathrm{Com})=\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{R},i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i(\times)=\min$
+\end_inset
+
+ y 
+\begin_inset Formula $i(\mathrm{Com})=\mathbf{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathcal{P}(\{1,2,3\}),i)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i(\times)=\cup$
+\end_inset
+
+ y 
+\begin_inset Formula $i(\mathrm{Com})=\mathcal{P}(\{1,2,3\})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E9)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los reticulados cuaterna distributivos
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s},\mathsf{i}\},\{\leq\},\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por los axiomas de la teoria elemental de los reticulados cuaterna junto con el axioma
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (\mathsf{i}(x,\mathsf{s}(y,z))=\mathsf{s}(\mathsf{i}(x,y),\mathsf{i}(x,z)))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ reticulados cuaterna distributivos
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E10)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los reticulados terna distributivos
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por los axiomas de la teoria elemental de los reticulados terna junto con el axioma
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (\mathsf{i}(x,\mathsf{s}(y,z))=\mathsf{s}(\mathsf{i}(x,y),\mathsf{i}(x,z)))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ las cuales son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ reticulados terna distributivos 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E11)
+\end_layout
+
+\end_inset
+
+La 
+\shape italic
+teoria elemental de los reticulados cuaterna Booleanos
+\shape default
+ es el par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathsf{s},\mathsf{i},c\},\{\leq\},\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2),(c,1)\})$
+\end_inset
+
+ y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es el conjunto formado por los axiomas de la teoria elemental de reticulados cuaterna junto con las siguientes sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\;\leq(x,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\;\leq(0,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ (\mathsf{i}(x,c(x))=0\wedge\mathsf{s}(x,c(x))=1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (\mathsf{i}(x,\mathsf{s}(y,z))=\mathsf{s}(\mathsf{i}(x,y),\mathsf{i}(x,z)))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que los modelos de esta teoria elemental son exactamente aquellas estructuras 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tales que 
+\begin_inset Formula $(A,i(\mathsf{s}),i(\mathsf{i}),i(c),i(0),i(1))$
+\end_inset
+
+es un algebra de Boole cuyo orden asociado es 
+\begin_inset Formula $i(\leq)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales
+\end_layout
+
+\begin_layout Standard
+Podemos generalizar el concepto de prueba elemental,
+ introducido en la Guia 7,
+ a cualquier teoria elemental.
+ Dada una teoria elemental 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ y una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ una 
+\shape italic
+prueba elemental de 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera una prueba de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ que posea las siguientes caracteristicas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+En la prueba se parte de una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ fija pero arbitraria en el sentido que lo unico que sabemos es que ella satisface los axiomas de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ (i.e.
+ es un modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+) y ademas esta es la unica informacion particular que podemos usar.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Las deducciones en la prueba son muy simples y obvias de justificar con minimas fraces en castellano.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+En la escritura de la prueba lo concerniente a la matematica misma se expresa usando solo sentencias elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Notese que el punto (1) nos garantiza que una prueba elemental de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es una forma solida de justificar que 
+\shape italic
+cualquier
+\shape default
+ estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ que satisfaga los axiomas de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tambien satisfacera 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Por supuesto el concepto de prueba elemental en una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ no es un concepto definido en forma precisa sino mas bien una idea basada en ciertos ejemplos de la vida real de los matematicos.
+\end_layout
+
+\begin_layout Standard
+Veamos algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Consideremos la teoria elemental del ejemplo (E7) de teorias elementales.
+ Sea
+\begin_inset Formula 
+\[
+\varphi=\exists x\exists y\exists z\ (\lnot(x=y)\wedge\lnot(x=z)\wedge\lnot(y=z))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(
+\begin_inset Formula $\varphi$
+\end_inset
+
+ dice que el universo tiene al menos tres elementos.) Tenemos la siguiente:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Prueba elemental de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+:
+\end_layout
+
+\end_inset
+
+Por el segundo axioma tenemos que 
+\begin_inset Formula $\lnot(\mathrm{F}(\mathrm{ex})=\mathrm{ex})$
+\end_inset
+
+.
+ Obviamente entonces tenemos que
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(1) 
+\begin_inset Formula $\lnot(\mathrm{ex}=\mathrm{F}(\mathrm{ex}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por el segundo axioma tambien tenemos que 
+\begin_inset Formula $\lnot(\mathrm{F}(\mathrm{F}(\mathrm{ex}))=\mathrm{ex})$
+\end_inset
+
+ por lo que
+\end_layout
+
+\begin_layout Standard
+(2) 
+\begin_inset Formula $\lnot(\mathrm{ex}=\mathrm{F}(\mathrm{F}(\mathrm{ex})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya que se da (1),
+ el primer axioma nos dice que
+\end_layout
+
+\begin_layout Standard
+(3) 
+\begin_inset Formula $\lnot(\mathrm{F}(\mathrm{ex})=\mathrm{F}(\mathrm{F}(\mathrm{ex})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poniendo (1),
+ (2) y (3) juntos tenemos que
+\begin_inset Formula 
+\[
+\lnot(\mathrm{ex}=\mathrm{F}(\mathrm{ex}))\wedge\lnot(\mathrm{ex}=\mathrm{F}(\mathrm{F}(\mathrm{ex})))\wedge\lnot(\mathrm{F}(\mathrm{ex})=\mathrm{F}(\mathrm{F}(\mathrm{ex})))
+\]
+
+\end_inset
+
+de lo cual es obvio que vale 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Consideremos la teoria elemental del ejemplo (E8) de teorias elementales.
+ A continuacion daremos una prueba elemental de 
+\begin_inset Formula $\varphi=\forall x\forall y\ (\times(x,y)=\times(y,x))$
+\end_inset
+
+ en la teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Para facilitar la lectura usaremos la notacion clasica para operaciones binarias,
+ es decir escribiremos 
+\begin_inset Formula $x\times y$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $\times(y,x)$
+\end_inset
+
+,
+ etc.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Prueba elemental de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+:
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+,
+ fijos pero arbitrarios.
+ Por el tercer axioma tenemos que
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $\exists z\ (a=z\times z\wedge\mathrm{Com}(z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $c$
+\end_inset
+
+ tal que
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $a=c\times c\wedge\mathrm{Com}(c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nuevamente,
+ por el tercer axioma tenemos que
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $\exists z\ (b=z\times z\wedge\mathrm{Com}(z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $d$
+\end_inset
+
+ tal que
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\begin_inset Formula $b=d\times d\wedge\mathrm{Com}(d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya que vale 
+\begin_inset Formula $\mathrm{Com}(c)$
+\end_inset
+
+,
+ el segundo axioma nos dice que
+\end_layout
+
+\begin_layout Standard
+5.
+ 
+\begin_inset Formula $\forall x\ (x\times c=c\times x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya que 
+\begin_inset Formula $a=c\times c$
+\end_inset
+
+ y 
+\begin_inset Formula $b=d\times d$
+\end_inset
+
+,
+ tenemos que
+\end_layout
+
+\begin_layout Standard
+6.
+ 
+\begin_inset Formula $a\times b=(c\times c)\times(d\times d)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pero por el primer axioma (asociatividad) tenemos que
+\end_layout
+
+\begin_layout Standard
+7.
+ 
+\begin_inset Formula $(c\times c)\times(d\times d)=c\times(c\times(d\times d))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pero por 5.
+ tenemos que
+\end_layout
+
+\begin_layout Standard
+8.
+ 
+\begin_inset Formula $c\times(c\times(d\times d))=c\times((d\times d)\times c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por asociatividad
+\end_layout
+
+\begin_layout Standard
+9.
+ 
+\begin_inset Formula $c\times((d\times d)\times c)=(c\times(d\times d))\times c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por 5.
+ tenemos que
+\end_layout
+
+\begin_layout Standard
+10.
+ 
+\begin_inset Formula $(c\times(d\times d))\times c=((d\times d)\times c)\times c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por asociatividad tenemos que
+\end_layout
+
+\begin_layout Standard
+11.
+ 
+\begin_inset Formula $((d\times d)\times c)\times c=(d\times d)\times(c\times c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya que 
+\begin_inset Formula $a=c\times c$
+\end_inset
+
+ y 
+\begin_inset Formula $b=d\times d$
+\end_inset
+
+,
+ tenemos que
+\end_layout
+
+\begin_layout Standard
+12.
+ 
+\begin_inset Formula $(d\times d)\times(c\times c)=b\times a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Siguiendo la cadena de igualdades desde 6.
+ hasta 12.
+ tenemos que
+\end_layout
+
+\begin_layout Standard
+13.
+ 
+\begin_inset Formula $a\times b=b\times a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ya que 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ eran elementos arbitrarios,
+ hemos probado que 
+\begin_inset Formula $\forall x\forall y\ x\times y=y\times x$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Consideremos la teoria elemental del ejemplo (E11) de teorias elementales,
+ es decir la teoria elemental de los reticulados cuaterna Booleanos.
+ A continuacion daremos una prueba elemental de 
+\begin_inset Formula $\varphi=\forall x\forall y\ (\times(x,y)=\times(y,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1,\mathrm{mono}\},\{\mathsf{s}^{2},\mathsf{i}^{2}\},\{\leq^{2}\},a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ formado por los axiomas de la teoria elemental de reticulados cuaterna junto con los axiomas:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall x\;\leq(x,1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\;\leq(0,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lnot(\mathrm{mono}=0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\;(\lnot(x=0)\rightarrow\leq(\mathrm{mono},x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diga en forma hablada o mediante un grafico que son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ los modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De una prueba elemental de
+\begin_inset Formula 
+\[
+\forall x\ (\exists z(\mathsf{i}(x,z)=0\wedge\mathsf{s}(x,z)=1)\rightarrow(x=0\vee x=1))
+\]
+
+\end_inset
+
+en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Programa
+\end_layout
+
+\begin_layout Standard
+Ahora que hemos generalizado los conceptos de estructura,
+ formula elemental y prueba elemental via el concepto de tipo,
+ podemos enunciar en forma mucho mas general el programa de logica para reticulados cuaterna dado al principio de esta guia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Programa de logica matematica
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Dar un modelo matematico del concepto de formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Dar una definicion matematica de cuando una formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es verdadera en una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ para una asignacion dada de valores a las variables libres y a los nombres de elementos fijos de dicha formula elemental
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+(Plato gordo) Dar un modelo matematico del concepto de prueba elemental en una teoria elemental.
+ A estos objetos matematicos los llamaremos pruebas formales
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+(Sublime) Intentar probar matematicamente que nuestro concepto de prueba formal es una correcta modelizacion matematica de la idea intuitiva de prueba elemental en una teoria elemental
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como veremos,
+ los cuatro puntos anteriores pueden ser hechos satisfactoriamente y constituyen el comienzo de la logica matematica con cuantificadores.
+ Cabe aclarar que la realizacion del cuarto punto es realmente sorprendente ya que es un caso de una prueba matematica rigurosa de un hecho que involucra un concepto intuitivo como lo es el de prueba elemental.
+\end_layout
+
+\begin_layout Standard
+El punto (1) se resuelve en la Guia 9 y si bien produce interesantes conceptos y resultados matematicos su resolucion es rutinaria.
+ El punto (2) es resuelto por Tarski (Guia 10).
+ El punto (3) por Fregue (Guia 12).
+ El (4) es una concecuencia de dos importantes resultados probados en la Guia 14,
+ el Teorema de Correccion y el Teorema de Completitud de Godel.
+\end_layout
+
+\end_body
+\end_document

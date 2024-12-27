@@ -1,0 +1,4317 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:41:52}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Modelo matematico del valor de verdad de una formula
+\end_layout
+
+\begin_layout Standard
+En esta seccion daremos una definicion matematica que modeliza la idea intuitiva de cuando una formula de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es verdadera en una estructura dada para una asignacion de elementos a las variables libres de dicha formula.
+ Esto corresponde al punto (2) del programa de logica enunciado en la Guia 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+El valor de un termino en una estructura
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Una 
+\shape italic
+asignacion de 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ sera un elemento de 
+\begin_inset Formula $A^{\mathbf{N}}=\{$
+\end_inset
+
+infinituplas de elementos de 
+\begin_inset Formula $A\}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\vec{a}=(a_{1},a_{2},...)$
+\end_inset
+
+ es una asignacion,
+ entonces diremos que 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ 
+\shape italic
+es el valor que 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+
+\shape italic
+ le asigna a la variable 
+\shape default
+
+\begin_inset Formula $x_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dada una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ un termino 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y una asignacion 
+\begin_inset Formula $\vec{a}=(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+ definamos recursivamente 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+ de la siguiente manera
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t=x_{i}\in Var$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=a_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t=c\in\mathcal{C}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=i(c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $f\in\mathcal{F}_{n},\;n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=i(f)(t_{1}^{\mathbf{A}}[\vec{a}],...,t_{n}^{\mathbf{A}}[\vec{a}])$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+El elemento 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+ sera llamado el 
+\shape italic
+valor de 
+\shape default
+
+\begin_inset Formula $t$
+\end_inset
+
+
+\shape italic
+ en la estructura 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\shape italic
+ para la asignacion 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Veamos un ejemplo.
+ Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(\mathrm{Her},3)\})
+\]
+
+\end_inset
+
+y sea 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ la estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo 
+\begin_inset Formula $A=\mathbf{R}$
+\end_inset
+
+ y
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{uno})=9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{doli})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{MAS})$
+\end_inset
+
+ igual a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R}^{4} & \rightarrow & \mathbf{R}\\
+(x,y,z,w) & \rightarrow & 2x+4y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{P})$
+\end_inset
+
+ igual a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R} & \rightarrow & \mathbf{R}\\
+x & \rightarrow & 5^{x}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{Her})=\{(x,y,z)\in\mathbf{R}^{3}:x.y.z=9\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\vec{a}=(1,2,3,4,5,...)$
+\end_inset
+
+.
+ Claramente 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $t=\mathsf{X}\mathit{55}\mathbf{4}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=\mathsf{X}\mathit{55}\mathbf{4}^{\mathbf{A}}[\vec{a}]=554$
+\end_inset
+
+ (por (1) de la definicion recursiva de 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $t=\mathrm{uno}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=\mathrm{uno}^{\mathbf{A}}[\vec{a}]=9$
+\end_inset
+
+ (por (2) de la definicion recursiva de 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $t=\mathrm{P}(\mathsf{X}\mathbf{3})$
+\end_inset
+
+,
+ entonces
+\begin_inset Formula 
+\begin{align*}
+t^{\mathbf{A}}[\vec{a}] & =\mathrm{P}(\mathsf{X}\mathbf{3})^{\mathbf{A}}[\vec{a}]\\
+ & =i(\mathrm{P})(\mathsf{X}\mathbf{3}^{\mathbf{A}}[\vec{a}])\text{ (por (3) de la definicion de }t^{\mathbf{A}}[\vec{a}]\text{)}\\
+ & =i(\mathrm{P})(3)\\
+ & =5^{3}=125
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $t=\mathrm{MAS}(\mathsf{X}\mathbf{1},\mathrm{uno},\mathsf{X}\mathbf{3},\mathsf{X}\mathit{55}\mathbf{4})$
+\end_inset
+
+,
+ entonces
+\begin_inset Formula 
+\begin{align*}
+t^{\mathbf{A}}[\vec{a}] & =\mathrm{MAS}(\mathsf{X}\mathbf{1},\mathrm{uno},\mathsf{X}\mathbf{3},\mathsf{X}\mathit{55}\mathbf{4})^{\mathbf{A}}[\vec{a}]\\
+ & =i(\mathrm{MAS})(\mathsf{X}\mathbf{1}^{\mathbf{A}}[\vec{a}],\mathrm{uno}^{\mathbf{A}}[\vec{a}],\mathsf{X}\mathbf{3}^{\mathbf{A}}[\vec{a}],\mathsf{X}\mathit{55}\mathbf{4}^{\mathbf{A}}[\vec{a}])\\
+ & =i(\mathrm{MAS})(1,9,3,554)\\
+ & =2.1+4.9=38
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y sea 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+ son asignaciones tales que 
+\begin_inset Formula $a_{i}=b_{i},$
+\end_inset
+
+ cada vez que 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ocurra en 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=t^{\mathbf{A}}[\vec{b}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Sea
+\end_layout
+
+\begin_layout Proof
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+:
+ El lema vale para 
+\begin_inset Formula $t\in T_{k}^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Teo
+\begin_inset Formula $_{0}$
+\end_inset
+
+ es facil de probar.
+ Veamos Teo
+\begin_inset Formula $_{k}\Rightarrow$
+\end_inset
+
+Teo
+\begin_inset Formula $_{k+1}$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $t\in T_{k+1}^{\tau}-T_{k}^{\tau}$
+\end_inset
+
+ y sean 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+ asignaciones tales que 
+\begin_inset Formula $a_{i}=b_{i}$
+\end_inset
+
+,
+ cada vez que 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ocurra en 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+\begin_inset Formula $\;n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{k}^{\tau}$
+\end_inset
+
+.
+ Notese que para cada 
+\begin_inset Formula $j=1,...,n$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $a_{i}=b_{i},$
+\end_inset
+
+ cada vez que 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ ocurra en 
+\begin_inset Formula $t_{j}$
+\end_inset
+
+,
+ lo cual por Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ nos dice que
+\begin_inset Formula 
+\[
+t_{j}^{\mathbf{A}}[\vec{a}]=t_{j}^{\mathbf{A}}[\vec{b}]\text{, }j=1,...,n
+\]
+
+\end_inset
+
+Se tiene entonces que
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+t^{\mathbf{A}}[\vec{a}] & = & i(f)(t_{1}^{\mathbf{A}}[\vec{a}],...,t_{n}^{\mathbf{A}}[\vec{a}])\text{ (por def de }t^{\mathbf{A}}[\vec{a}]\text{)}\\
+ & = & i(f)(t_{1}^{\mathbf{A}}[\vec{b}],...,t_{n}^{\mathbf{A}}[\vec{b}])\\
+ & = & t^{\mathbf{A}}[\vec{b}]\text{ (por def de }t^{\mathbf{A}}[\vec{b}]\text{)}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathrm{por},+\},\{r\},\{(\mathrm{por},2),(+,2),(r,2)\})$
+\end_inset
+
+ y
+\begin_inset Formula 
+\[
+t=+(x_{1},\mathrm{por}(+(\mathrm{por}(x_{1000},0),x_{13}),+(\mathrm{por}(+(x_{2},x_{3}),1),x_{13})))
+\]
+
+\end_inset
+
+Dar 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+ para los siguientes modelos 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ y asignaciones 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\{1,2,3\},$
+\end_inset
+
+ 
+\begin_inset Formula $i(0)=1,$
+\end_inset
+
+ 
+\begin_inset Formula $i(1)=3,$
+\end_inset
+
+ 
+\begin_inset Formula $i(r)=\{(1,1),(2,2),(3,3),(1,3),(3,2)\}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{rlll}
+i(\mathrm{por}) & 1 & 2 & 3\\
+1 & 1 & 1 & 3\\
+2 & 1 & 2 & 3\\
+3 & 2 & 3 & 2
+\end{array}\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\begin{array}{rlll}
+i(+) & 1 & 2 & 3\\
+1 & 3 & 2 & 3\\
+2 & 2 & 3 & 3\\
+3 & 3 & 2 & 2
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(1,2,3,1,2,3,...)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(1,1,2,2,1,1,2,2,...)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\mathbf{R},\;i(0)=0,\;i(1)=1,\;i(\mathrm{por})(x,y)=x+y,\;i(+)(x,y)=x.y,$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $i(r)=\{(x,y):\left\vert x\right\vert =\left\vert y\right\vert \}$
+\end_inset
+
+ y:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(1,2,3,4,5,...)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(1,6,0,4,3,6,9,43,5,7,9,1,1,1,1,1,...)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(0,0,0,0,...)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(
+\begin_inset Formula $\left\vert x\right\vert $
+\end_inset
+
+ denota el modulo de un numero real 
+\begin_inset Formula $x$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=\mathcal{P}(\mathbf{N}),\;i(0)=\emptyset,\;i(1)=\mathbf{N,\;}i\mathbf{(}\mathrm{por})(x,y)=\{1,4,7\}\cup y,\;i(+)(x,y)=x-y\,,$
+\end_inset
+
+ 
+\begin_inset Formula $i(r)=\{(x,y):x\cup\{1\}=y\cup\{1\}\}$
+\end_inset
+
+ y:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(\{1\},\{2\},\{3\},\{4\},...)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(\mathbf{N}-\{1\},\mathbf{N}-\{1,2\},\mathbf{N}-\{1,2,3\},\mathbf{N}-\{1,2,3,4\},...)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}=(\emptyset,\emptyset,\emptyset,\emptyset,...)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ sea 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y supongamos que 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $Ti(t^{\mathbf{A}}[\vec{a}])=Ti(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ sea 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y supongamos que 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $Ti(t^{\mathbf{A}}[\vec{a}])=\mathrm{PALABRA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ sea 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y supongamos que 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Entonces si 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $Ti(t^{\mathbf{A}}[\vec{a}])=Ti(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ es un tipo,
+ 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $i(t)\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ sea 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y supongamos que 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $t(\vec{a})\in A$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una asignacion 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+ y 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\downarrow_{i}^{a}(\vec{a})$
+\end_inset
+
+ denotaremos la asignacion que resulta de reemplazar en 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ el 
+\begin_inset Formula $i$
+\end_inset
+
+-esimo elemento por 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Sea 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $t^{\prime}$
+\end_inset
+
+ el resultado de reemplazar toda ocurrencia de 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ en 
+\begin_inset Formula $t$
+\end_inset
+
+ por 
+\begin_inset Formula $x_{l}$
+\end_inset
+
+,
+ la cual no ocurre en 
+\begin_inset Formula $t.$
+\end_inset
+
+ Entonces para cualquier estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+,
+ cualquier asignacion 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+ y cualquier 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $t^{\prime\mathbf{A}}[\downarrow_{l}^{a}(\vec{a})]=t^{\mathbf{A}}[\downarrow_{i}^{a}(\vec{a})]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+La relacion 
+\begin_inset Formula $\models$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fijemos un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ A continuacion definiremos matematicamente una relacion 
+\begin_inset Formula $\mathbf{"A}\models\varphi[\vec{a}]"$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion y 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+.
+ Intuitivamente hablando 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ significara que la formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ cuando le asignamos a las variables libres de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ los valores que asigna 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+.
+ Escribiremos 
+\begin_inset Formula $\mathbf{A}\not\models\varphi[\vec{a}]$
+\end_inset
+
+ para expresar que no se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+.
+ Nuestra definicion matematica sera recursiva y mas abajo explicaremos por que la definicion es precisa o rigurosa matematicamente hablando.
+ Dada una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ una asignacion 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+ y 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\downarrow_{i}^{a}(\vec{a})$
+\end_inset
+
+ denotaremos la asignacion que resulta de reemplazar en 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ el 
+\begin_inset Formula $i$
+\end_inset
+
+-esimo elemento por 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Ahora si la definicion recursiva:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(t\equiv s),$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=s^{\mathbf{A}}[\vec{a}]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=r(t_{1},...,t_{m})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(t_{1}^{\mathbf{A}}[\vec{a}],...,t_{m}^{\mathbf{A}}[\vec{a}])\in i(r)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(6)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si ya sea se dan 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+ o se dan 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{2}[\vec{a}]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(7)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\lnot\varphi_{1},$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\not\models\varphi_{1}[\vec{a}]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(8)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\forall x_{i}\varphi_{1}$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si para cada 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ se da que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{i}^{a}(\vec{a})]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(9)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\exists x_{i}\varphi_{1}$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si hay un 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{i}^{a}(\vec{a})]$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\noindent
+Cuando se de 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ diremos que 
+\shape italic
+la estructura 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+satisface 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+en la asignacion 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ y en tal caso diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+es verdadera en 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\shape italic
+ para la asignacion 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+.
+ Cuando no se de 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ diremos que 
+\shape italic
+la estructura 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\shape italic
+ no satisface 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+en la asignacion 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ y en tal caso diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+es falsa en 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\shape italic
+ para la asignacion 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+.
+ Tambien hablaremos del 
+\shape italic
+valor de verdad de 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\shape italic
+ en 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\shape italic
+ para la asignacion 
+\shape default
+
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ el cual sera igual a 
+\begin_inset Formula $1$
+\end_inset
+
+ si se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $0$
+\end_inset
+
+ en caso contrario.
+\end_layout
+
+\begin_layout Standard
+Para ver que la definicion es correcta,
+ notemos que en (1) y (2) se dice cuando se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ y cuando no se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ para el caso en que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es atomica,
+ es decir el caso en que 
+\begin_inset Formula $\varphi\in F_{0}^{\tau}$
+\end_inset
+
+.
+ Las siguientes clausulas nos aseguran que si ya esta definido cuando se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ y cuando no se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ para el caso en que 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+,
+ entonces tambien queda definido cuando se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ y cuando no se da 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ para el caso en que 
+\begin_inset Formula $\varphi\in F_{k+1}^{\tau}$
+\end_inset
+
+.
+ De esta forma comensando desde la capa 
+\begin_inset Formula $0$
+\end_inset
+
+ vemos que se va determinando para todas las formulas de las distintas capas cuando vale y cuando no vale la relacion 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Veamos algunos ejemplos.
+ Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ el tipo
+\begin_inset Formula 
+\[
+(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},\{(\mathrm{MAS},4),(\mathrm{P},1),(\mathrm{Her},3)\})
+\]
+
+\end_inset
+
+y sea 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+ la estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con universo 
+\begin_inset Formula $A=\mathbf{R}$
+\end_inset
+
+ y
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{uno})=9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{doli})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{MAS})$
+\end_inset
+
+ igual a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R}^{4} & \rightarrow & \mathbf{R}\\
+(x,y,z,w) & \rightarrow & 2x+4y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{P})$
+\end_inset
+
+ igual a la operacion
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathbf{R} & \rightarrow & \mathbf{R}\\
+x & \rightarrow & 5^{x}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i(\mathrm{Her})=\{(x,y,z)\in\mathbf{R}^{3}:x.y.z=9\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\vec{a}=(1,2,3,4,5,...)$
+\end_inset
+
+.
+ Claramente 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ es una asignacion de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Consideremos los siguientes ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(\mathrm{MAS}(\mathsf{X}\mathbf{1},\mathrm{uno},\mathsf{X}\mathbf{3},\mathsf{X}\mathit{55}\mathbf{4})\equiv\mathrm{P}(\mathsf{X}\mathbf{3}))$
+\end_inset
+
+,
+ entonces ya que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{MAS}(\mathsf{X}\mathbf{1},\mathrm{uno},\mathsf{X}\mathbf{3},\mathsf{X}\mathit{55}\mathbf{4})^{\mathbf{A}}[\vec{a}]=38$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{P}(\mathsf{X}\mathbf{3})^{\mathbf{A}}[\vec{a}]=125$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+tenemos que (1) de la definicion nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $38=125$
+\end_inset
+
+ por lo cual se saca que 
+\begin_inset Formula $\mathbf{A}\not\models\varphi[\vec{a}]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\lnot\mathrm{Her}(\mathrm{P}(\mathrm{P}(\mathsf{X}\mathbf{6})),\mathsf{X}\mathbf{3},\mathrm{doli})$
+\end_inset
+
+,
+ entonces ya que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{P}(\mathrm{P}(\mathsf{X}\mathbf{6}))^{\mathbf{A}}[\vec{a}]=5^{(5^{6})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathsf{X}\mathbf{3}^{\mathbf{A}}[\vec{a}]=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{doli}^{\mathbf{A}}[\vec{a}]=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+tenemos que (7) de la definicion nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\not\models\mathrm{Her}(\mathrm{P}(\mathrm{P}(\mathsf{X}\mathbf{6})),\mathsf{X}\mathbf{3},\mathrm{doli})[\vec{a}]$
+\end_inset
+
+.
+ Pero (2) de la definicion nos dice que 
+\begin_inset Formula $\mathbf{A}\models\mathrm{Her}(\mathrm{P}(\mathrm{P}(\mathsf{X}\mathbf{6})),\mathsf{X}\mathbf{3},\mathrm{doli})[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(5^{(5^{6})},3,0)\in i(\mathrm{Her})$
+\end_inset
+
+ ya que no se da que 
+\begin_inset Formula $(5^{(5^{6})},3,0)\in i(\mathrm{Her})$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $\mathbf{A}\not\models\mathrm{Her}(\mathrm{P}(\mathrm{P}(\mathsf{X}\mathbf{6})),\mathsf{X}\mathbf{3},\mathrm{doli})[\vec{a}]$
+\end_inset
+
+ lo cual nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\exists\mathsf{X}\mathbf{3}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno})$
+\end_inset
+
+,
+ entonces por (9) de la definicion tenemos que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii hay un 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{A}\models\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno})[\downarrow_{3}^{r}(\vec{a})]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+es decir que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii hay un 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{A}\models\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno})[(1,2,r,4,5,6,...)]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Pero (2) de la definicion nos dice que cualquiera sea 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se tiene que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno})[(1,2,r,4,5,6,...)]$
+\end_inset
+
+ sii 
+\begin_inset Formula $(6,r,9)\in i(\mathrm{Her})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+O sea que obtenemos finalmente que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii hay un 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $6.r.9=9$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Lo cual claramente implica que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ ya que podemos tomar 
+\begin_inset Formula $r=1/6$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\forall\mathsf{X}\mathbf{3(}(\mathsf{X}\mathbf{4}\equiv\mathsf{X}\mathbf{3})\rightarrow\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))$
+\end_inset
+
+,
+ entonces por (8) de la definicion tenemos que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii para cada 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se da que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\mathbf{(}(\mathsf{X}\mathbf{4}\equiv\mathsf{X}\mathbf{3})\rightarrow\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))[\downarrow_{3}^{r}(\vec{a})]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+es decir que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii para cada 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se da que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\mathbf{(}(\mathsf{X}\mathbf{4}\equiv\mathsf{X}\mathbf{3})\rightarrow\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))[(1,2,r,4,5,6,...)]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pero entonces (5) de la definicion nos dice que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii para cada 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se da que
+\begin_inset Formula 
+\[
+\mathbf{A}\not\models(\mathsf{X}\mathbf{4}\equiv\mathsf{X}\mathbf{3})[(1,2,r,4,5,6,...)]\text{ o }\mathbf{A}\models\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))[(1,2,r,4,5,6,...)]
+\]
+
+\end_inset
+
+O sea que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii para cada 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se da que
+\begin_inset Formula 
+\[
+r\neq4\text{ o }\mathbf{A}\models\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))[(1,2,r,4,5,6,...)]
+\]
+
+\end_inset
+
+Es decir que debemos ver cuando se da que 
+\begin_inset Formula $\mathbf{A}\models\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))[(1,2,r,4,5,6,...)]$
+\end_inset
+
+.
+ Por (9) y (2) de la definicion tenemos que cualquiera sea el 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se da que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\exists\mathsf{X}\mathbf{6}\mathrm{Her}(\mathsf{X}\mathbf{6},\mathsf{X}\mathbf{3},\mathrm{uno}))[(1,2,r,4,5,6,...)]$
+\end_inset
+
+ sii hay un 
+\begin_inset Formula $s\in\mathbf{R}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $s.r.9=9$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Esto nos dice finalmente que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii para cada 
+\begin_inset Formula $r\in\mathbf{R}$
+\end_inset
+
+ se da que
+\begin_inset Formula 
+\[
+r\neq4\text{ o hay un }s\in\mathbf{R}\text{ tal que }s.r.9=9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pensando un poco esto nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ (separar los casos 
+\begin_inset Formula $r=4$
+\end_inset
+
+ y 
+\begin_inset Formula $r\neq4$
+\end_inset
+
+) 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ una asignacion y 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+.
+ Entonces no puede suceder que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}\models\lnot\varphi[\vec{a}]$
+\end_inset
+
+.
+ En particular esto nos dice que 
+\begin_inset Formula $\mathbf{A}\not\models(\varphi\wedge\lnot\varphi)[\vec{a}]$
+\end_inset
+
+.
+ Ademas claramente se da que ya sea 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ o 
+\begin_inset Formula $\mathbf{A}\models\lnot\varphi[\vec{a}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Sean
+\begin_inset Formula 
+\begin{align*}
+\varphi_{1} & =\exists x_{3}(r(\mathrm{por}(x_{1},x_{3}),+(0,\mathrm{por}(x_{8},x_{4})))\rightarrow(x_{1}\equiv1))\\
+\varphi_{2} & =(\exists x_{6}(x_{4}\equiv\mathrm{por}(x_{6},x_{6}))\wedge\exists x_{5}((x_{2}\equiv\mathrm{por}(x_{4},+(x_{5},0)))\wedge(x_{5}\equiv0)))\\
+\varphi_{3} & =\forall x_{1}\exists x_{2}(((\mathrm{por}(x_{1},x_{16})\equiv1)\wedge(+(x_{1},x_{2})\equiv0))\rightarrow r(x_{1},x_{16}))\\
+\varphi_{4} & =\forall x_{1}((\exists x_{2}(\mathrm{por}(x_{2},x_{16})\equiv1)\rightarrow(+(x_{1},x_{2})\equiv0))\rightarrow r(x_{1},x_{16}))\\
+\varphi_{5} & =(\exists x_{2}r(x_{2},x_{16})\rightarrow r(x_{2},x_{16}))
+\end{align*}
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+,
+ decidir si 
+\begin_inset Formula $\mathbf{A}\models\varphi_{i}[\vec{a}]$
+\end_inset
+
+,
+ para los modelos y asignaciones del Ejercicio 1 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "independencia1"
+
+\end_inset
+
+Supongamos que 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+ son asignaciones tales que si 
+\begin_inset Formula $x_{i}\in Li(\varphi),$
+\end_inset
+
+ entonces 
+\begin_inset Formula $a_{i}=b_{i}.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Probaremos por induccion en 
+\begin_inset Formula $k$
+\end_inset
+
+ que el lema vale para cada 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ El caso 
+\begin_inset Formula $k=0$
+\end_inset
+
+ se desprende del lema analogo para terminos.
+ Veamos que Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ implica Teo
+\begin_inset Formula $_{k+1}.$
+\end_inset
+
+ Sea 
+\begin_inset Formula $\varphi\in F_{k+1}^{\tau}-F_{k}^{\tau}.$
+\end_inset
+
+ Hay varios casos:
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\noindent
+Ya que 
+\begin_inset Formula $Li(\varphi_{i})\subseteq Li(\varphi)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+,
+ Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{i}[\vec{a}]$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathbf{A}\models\varphi_{i}[\vec{b}]$
+\end_inset
+
+,
+ para 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+.
+ Se tiene entonces que
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\mathbf{A}\models\varphi[\vec{a}]\\
+\ \ \Updownarrow\text{ (por (3) en la def de }\mathbf{A}\models\varphi[\vec{a}]\text{)}\\
+\mathbf{A}\models\varphi_{1}[\vec{a}]\text{ y }\mathbf{A}\models\varphi_{2}[\vec{a}]\\
+\ \ \Updownarrow\text{ (por Teo}_{k}\text{)}\\
+\mathbf{A}\models\varphi_{1}[\vec{b}]\text{ y }\mathbf{A}\models\varphi_{2}[\vec{b}]\\
+\ \ \Updownarrow\text{(por (3) en la def de }\mathbf{A}\models\varphi[\vec{a}]\text{)}\\
+\mathbf{A}\models\varphi[\vec{b}]
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=\lnot\varphi_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=\forall x_{j}\varphi_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\noindent
+Supongamos 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+.
+ Entonces por (8) en la def de 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{j}^{a}(\vec{a})]$
+\end_inset
+
+,
+ para todo 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $\downarrow_{j}^{a}(\vec{a})$
+\end_inset
+
+ y 
+\begin_inset Formula $\downarrow_{j}^{a}(\vec{b})$
+\end_inset
+
+ coinciden en toda 
+\begin_inset Formula $x_{i}\in Li(\varphi_{1})$
+\end_inset
+
+ ya que 
+\begin_inset Formula $Li(\varphi_{1})\subseteq Li(\varphi)\cup\{x_{j}\}$
+\end_inset
+
+.
+ O sea que por Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{j}^{a}(\vec{b})]$
+\end_inset
+
+,
+ para todo 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ lo cual por (8) en la def de 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+.
+ La prueba de que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+ implica que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ es similar.
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=\exists x_{j}\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es similar al anterior.
+\end_layout
+
+\begin_layout Corollary
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una sentencia,
+ entonces 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+,
+ cualesquiera sean las asignaciones 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En virtud del corolario anterior tenemos que el valor de verdad de una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en una estructura dada 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ para una asignacion 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ no depende de 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+,
+ es decir este valor es ya sea 
+\begin_inset Formula $1$
+\end_inset
+
+ para todas las asignaciones o 
+\begin_inset Formula $0$
+\end_inset
+
+ para todas las asignaciones.
+ En el primer caso diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+es verdadera en 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ (y escribiremos 
+\begin_inset Formula $\mathbf{A}\models\varphi$
+\end_inset
+
+) y en el segundo caso diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+es falsa en 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ (y escribiremos 
+\begin_inset Formula $\mathbf{A}\not\models\varphi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Para cada 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+ dar una sentencia 
+\begin_inset Formula $\varphi_{n}$
+\end_inset
+
+ tal que para todo modelo 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se cumpla 
+\begin_inset Formula $\mathbf{A}\models\varphi_{n}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $A$
+\end_inset
+
+ tiene exactamente 
+\begin_inset Formula $n$
+\end_inset
+
+ elementos
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una sentencia de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ sera llamada 
+\shape italic
+universalmente valida
+\shape default
+ si es verdadera en cada modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\varphi,\phi$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi$
+\end_inset
+
+ sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Las siguientes son universalmente válidas:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x_{1}\exists x_{2}(x_{1}\equiv x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\rightarrow(\psi\rightarrow\varphi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(((\varphi\rightarrow\psi)\wedge(\varphi\rightarrow(\psi\rightarrow\phi)))\rightarrow(\varphi\rightarrow\phi))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Strong responsability property:
+ 
+\begin_inset Formula $(((\varphi\wedge\psi)\rightarrow\phi))\rightarrow((\varphi\rightarrow\phi)\vee(\psi\rightarrow\phi)))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Equivalencia de formulas
+\end_layout
+
+\begin_layout Standard
+Dadas 
+\begin_inset Formula $\varphi,\psi\in F^{\tau}$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi$
+\end_inset
+
+ son 
+\shape italic
+equivalentes
+\shape default
+ cuando se de la siguiente condicion
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\psi[\vec{a}]$
+\end_inset
+
+,
+ para cada modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y cada 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Escribiremos 
+\begin_inset Formula $\varphi\thicksim\psi$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi$
+\end_inset
+
+ sean equivalentes.
+ Notese que
+\begin_inset Formula 
+\[
+\{(\varphi,\psi)\in F^{\tau}\times F^{\tau}:\varphi\thicksim\psi\}
+\]
+
+\end_inset
+
+es una relacion de equivalencia sobre 
+\begin_inset Formula $F^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+Se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $Li(\phi)\cup Li(\psi)\subseteq\{x_{i_{1}},...,x_{i_{n}}\},$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\phi\thicksim\psi$
+\end_inset
+
+ si y solo si la sentencia 
+\begin_inset Formula $\forall x_{i_{1}}...\forall x_{i_{n}}(\phi\leftrightarrow\psi)$
+\end_inset
+
+ es universalmente valida.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\phi_{i}\thicksim\psi_{i},$
+\end_inset
+
+ 
+\begin_inset Formula $i=1,2,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\lnot\phi_{1}\thicksim\lnot\psi_{1},$
+\end_inset
+
+ 
+\begin_inset Formula $(\phi_{1}\eta\phi_{2})\thicksim(\psi_{1}\eta\psi_{2})$
+\end_inset
+
+ y 
+\begin_inset Formula $Qv\phi_{1}\thicksim Qv\psi_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\phi\thicksim\psi$
+\end_inset
+
+ y 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ es el resultado de reemplazar en una formula 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ algunas (posiblemente 
+\begin_inset Formula $0$
+\end_inset
+
+) ocurrencias de 
+\begin_inset Formula $\phi$
+\end_inset
+
+ por 
+\begin_inset Formula $\psi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\alpha\thicksim\alpha^{\prime}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+(a) Tenemos que
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\varphi\thicksim\psi\\
+\ \ \Updownarrow\text{ (por (6) de la def de}\models\text{)}\\
+\mathbf{A}\models(\phi\leftrightarrow\psi)[\vec{a}]\text{, para todo }\mathbf{A}\text{ y toda }\vec{a}\in A^{\mathbf{N}}\\
+\ \ \Updownarrow\\
+\mathbf{A}\models(\phi\leftrightarrow\psi)[\downarrow_{i_{n}}^{a}(\vec{a})]\text{, para todo }\mathbf{A}\text{, }a\in A\text{ y toda }\vec{a}\in A^{\mathbf{N}}\\
+\ \ \Updownarrow(\text{por (8) de la def de}\models)\\
+\mathbf{A}\models\forall x_{i_{n}}(\phi\leftrightarrow\psi)[\vec{a}]\text{, para todo }\mathbf{A}\text{ y toda }\vec{a}\in A^{\mathbf{N}}\\
+\ \ \Updownarrow\\
+\mathbf{A}\models\forall x_{i_{n}}(\phi\leftrightarrow\psi)[\downarrow_{i_{n-1}}^{a}(\vec{a})]\text{, para todo }\mathbf{A}\text{, }a\in A\text{ y toda }\vec{a}\in A^{\mathbf{N}}\\
+\ \ \Updownarrow\text{ (por (8) de la def de}\models\text{)}\\
+\mathbf{A}\models\forall x_{i_{n-1}}\forall x_{i_{n}}(\phi\leftrightarrow\psi)[\vec{a}]\text{, para todo }\mathbf{A}\text{ y toda }\vec{a}\in A^{\mathbf{N}}\\
+\ \ \Updownarrow\\
+\ \ \ \ \vdots\\
+\ \ \Updownarrow\\
+\mathbf{A}\models\forall x_{i_{1}}...\forall x_{i_{n}}(\phi\leftrightarrow\psi)[\vec{a}]\text{, para todo }\mathbf{A}\text{ y toda }\vec{a}\in A^{\mathbf{N}}\\
+\ \ \Updownarrow\\
+\forall x_{i_{1}}...\forall x_{i_{n}}(\phi\leftrightarrow\psi)\text{ es universalmente valida}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+(b) Es dejado al lector.
+\end_layout
+
+\begin_layout Proof
+(c) Por induccion en el 
+\begin_inset Formula $k$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\alpha\in F_{k}^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathrm{por},+\},\{r\},\{(\mathrm{por},2),(+,2),(r,2)\})$
+\end_inset
+
+.
+ Decida si son equivalentes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x_{1}\forall x_{2}r(x_{1},x_{2})$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall x_{1}\exists x_{2}r(x_{1},x_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\exists x_{1}(\mathrm{por}(x_{5},x_{5})\equiv x_{1})\vee(x_{3}\equiv x_{3}))$
+\end_inset
+
+ y 
+\begin_inset Formula $\exists x_{1}(\mathrm{por}(x_{5},x_{5})\equiv x_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x_{1}\forall x_{1}r(x_{1},x_{1})$
+\end_inset
+
+ y 
+\begin_inset Formula $\exists x_{1}r(x_{1},x_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x_{1}\forall x_{1}r(x_{1},x_{1})$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall x_{1}r(x_{1},x_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x_{1}\ r(x_{1},x_{2})$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall x_{1}\ r(x_{1},x_{3})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Para 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ definimos 
+\begin_inset Formula $\varphi^{\prime}=\;$
+\end_inset
+
+resultado de reemplazar en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ toda ocurrencia de 
+\begin_inset Formula $\forall x_{1}\forall x_{2}\exists$
+\end_inset
+
+ por 
+\begin_inset Formula $\forall x_{2}\forall x_{1}\exists$
+\end_inset
+
+.
+ Pruebe que 
+\begin_inset Formula $\varphi^{\prime}\sim\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\alpha\in F^{\tau}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ es el resultado de remover de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ una ocurrencia de la palabra 
+\begin_inset Formula $\lnot\lnot$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\alpha^{\prime}$
+\end_inset
+
+ es equivalente a 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Un poco de semantica
+\end_layout
+
+\begin_layout Standard
+Dado que las estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ constituyen los 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+mundos posibles
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ donde las formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+interpretan
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ se suele llamar semantica al estudio general de las estructuras y su vinculacion con el lenguaje.
+ Aqui daremos algunas nociones basicas de semantica.
+\end_layout
+
+\begin_layout Subsection*
+Homomorfismos
+\end_layout
+
+\begin_layout Standard
+La nocion de homomorfismo estaba restringida a unos pocos casos particulares de estructuras estudiadas pero ahora con nuestra definicion general de estructura podemos generalizarla en forma natural.
+ Antes una notacion muy util.
+ Dado un modelo de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathbf{A}=(A,i)$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $s\in\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}$
+\end_inset
+
+,
+ usaremos 
+\begin_inset Formula $s^{\mathbf{A}}$
+\end_inset
+
+ para denotar a 
+\begin_inset Formula $i(s)$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ modelos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Una funcion 
+\begin_inset Formula $F:A\rightarrow B$
+\end_inset
+
+ sera un 
+\shape italic
+homomorfismo de 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ si se cumplen las siguientes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F(c^{\mathbf{A}})=c^{\mathbf{B}}$
+\end_inset
+
+,
+ para todo 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F(f^{\mathbf{A}}(a_{1},...,a_{n}))=f^{\mathbf{B}}(F(a_{1}),...,F(a_{n}))$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(a_{1},...,a_{n})\in r^{\mathbf{A}}$
+\end_inset
+
+ implica 
+\begin_inset Formula $(F(a_{1}),...,F(a_{n}))\in r^{\mathbf{B}}$
+\end_inset
+
+,
+ para todo 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a_{1},...,a_{n}\in A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Un 
+\shape italic
+isomorfismo de 
+\shape default
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ sera un un homomorfismo de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ el cual sea biyectivo y cuya inversa sea un homomorfismo de 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Diremos que los modelos 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ son 
+\shape italic
+isomorfos
+\shape default
+ (en simbolos:
+ 
+\begin_inset Formula $\mathbf{A}\cong\mathbf{B}$
+\end_inset
+
+),
+ cuando haya un isomorfismo 
+\begin_inset Formula $F$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+ Diremos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ 
+\shape italic
+es un homomorfismo
+\shape default
+ para expresar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+ Analogamente diremos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ 
+\shape italic
+es un isomorfismo
+\shape default
+ para expresar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tal como sucedia para el caso de las distintas estructuras reticuladas estudiadas en las primeras guias,
+ tenemos que cuando 
+\begin_inset Formula $\mathcal{R}=\emptyset$
+\end_inset
+
+,
+ la nocion de isomorfismo se simplifica
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+Supongamos 
+\begin_inset Formula $\mathcal{R}=\emptyset$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ un homomorfismo biyectivo.
+ Entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "F-respeta-term"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ un homomorfismo.
+ Entonces
+\begin_inset Formula 
+\[
+F(t^{\mathbf{A}}[(a_{1},a_{2},...)]=t^{\mathbf{B}}[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Sea
+\end_layout
+
+\begin_layout Proof
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+:
+ Si 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un homomorfismo,
+ entonces
+\begin_inset Formula 
+\[
+F(t^{\mathbf{A}}[(a_{1},a_{2},...)])=t^{\mathbf{B}}[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $t\in T_{k}^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Teo
+\begin_inset Formula $_{0}$
+\end_inset
+
+ es trivial.
+ Veamos que Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ implica Teo
+\begin_inset Formula $_{k+1}$
+\end_inset
+
+.
+ Supongamos que vale Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ y supongamos 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un homomorfismo,
+ 
+\begin_inset Formula $t\in T_{k+1}^{\tau}-T_{k}^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $\vec{a}=(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ Denotemos 
+\begin_inset Formula $(F(a_{1}),F(a_{2}),...)$
+\end_inset
+
+ con 
+\begin_inset Formula $F(\vec{a})$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $t\in T_{k+1}^{\tau}-T_{k}^{\tau}$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+,
+\begin_inset Formula $\;f\in\mathcal{F}_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{k}^{\tau}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+F(t^{\mathbf{A}}[\vec{a}]) & = & F(f(t_{1},...,t_{n})^{\mathbf{A}}[\vec{a}])\\
+ & = & F(f^{\mathbf{A}}(t_{1}^{\mathbf{A}}[\vec{a}],...,t_{n}^{\mathbf{A}}[\vec{a}]))\\
+ & = & f^{\mathbf{B}}(F(t_{1}^{\mathbf{A}}[\vec{a}]),...,F(t_{n}^{\mathbf{A}}[\vec{a}]))\\
+ & = & f^{\mathbf{B}}(t_{1}^{\mathbf{B}}[F(\vec{a})],...,t_{n}^{\mathbf{B}}[F(\vec{a})]))\\
+ & = & f(t_{1},...,t_{n})^{\mathbf{B}}[F(\vec{a})]\\
+ & = & t^{\mathbf{B}}[F(\vec{a})]
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Lemma
+Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo.
+ Sea 
+\begin_inset Formula $\varphi\in F^{\tau}.$
+\end_inset
+
+ Entonces
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ En particular 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ satisfacen las mismas sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Por induccion.
+ Sea
+\end_layout
+
+\begin_layout Proof
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+:
+ Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo.
+ Sea 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Prueba de Teo
+\begin_inset Formula $_{0}$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo,
+ 
+\begin_inset Formula $\varphi\in F_{0}^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ Probaremos que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+Hay dos casos.
+ Caso 
+\begin_inset Formula $\varphi=r(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+,
+\begin_inset Formula $\;r\in\mathcal{R}_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+.
+ Denotemos con 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ a 
+\begin_inset Formula $(a_{1},a_{2},...)$
+\end_inset
+
+ y con 
+\begin_inset Formula $F(\vec{a})$
+\end_inset
+
+ a 
+\begin_inset Formula $(F(a_{1}),F(a_{2}),...)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+\mathbf{A}\models\varphi[\vec{a}] & \text{sii} & (t_{1}^{\mathbf{A}}[\vec{a}],...,t_{m}^{\mathbf{A}}[\vec{a}])\in r^{\mathbf{A}}\text{ (def de }\models\text{)}\\
+ & \text{sii} & (F(t_{1}^{\mathbf{A}}[\vec{a}]),...,F(t_{n}^{\mathbf{A}}[\vec{a}]))\in r^{\mathbf{B}}\text{ (}F\text{ es iso)}\\
+ & \text{sii} & (t_{1}^{\mathbf{B}}[F(\vec{a})]),...,t_{n}^{\mathbf{B}}[F(\vec{a})])\in r^{\mathbf{B}}\text{ (Lema \ref{F-respeta-term})}\\
+ & \text{sii} & \mathbf{B}\models\varphi[F(\vec{a})]
+\end{array}
+\]
+
+\end_inset
+
+Dejamos al lector completar la prueba de que Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ implica Teo
+\begin_inset Formula $_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+Completar la prueba del lema anterior
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+Encuentre resultados probados o dejados como ejercicios en las guias de posets y reticulados,
+ los cuales sean consecuencia inmediata del lema anterior 
+\end_layout
+
+\end_body
+\end_document

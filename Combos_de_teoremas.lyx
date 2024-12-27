@@ -1,0 +1,4751 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Combos de Teoremas
+\end_layout
+
+\begin_layout Section
+Primer Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Teorema del Filtro Primo
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna distributivo y 
+\begin_inset Formula $F$
+\end_inset
+
+ un filtro.
+ Supongamos 
+\begin_inset Formula $x_{0}\in L-F$
+\end_inset
+
+.
+ Entonces hay un filtro primo 
+\begin_inset Formula $P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x_{0}\notin P$
+\end_inset
+
+ y 
+\begin_inset Formula $F\subseteq P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Standard
+Sea
+\begin_inset Formula 
+\[
+\mathcal{F}=\{F_{1}:F_{1}\text{ es un filtro, }x_{0}\notin F_{1}\text{ y }F\subseteq F_{1}\}.
+\]
+
+\end_inset
+
+Notese que 
+\begin_inset Formula $\mathcal{F}\neq\emptyset$
+\end_inset
+
+,
+ por lo cual 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ es un poset.
+ Veamos que cada cadena en 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ tiene una cota superior.
+ Sea 
+\begin_inset Formula $C$
+\end_inset
+
+ una cadena.
+ Si 
+\begin_inset Formula $C=\emptyset$
+\end_inset
+
+,
+ entonces cualquier elemento de 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ es cota de 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Supongamos entonces 
+\begin_inset Formula $C\neq\emptyset$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+G=\{x:x\in F_{1}\text{, para algun }F_{1}\in C\}.
+\]
+
+\end_inset
+
+Veamos que 
+\begin_inset Formula $G$
+\end_inset
+
+ es un filtro.
+ Es claro que 
+\begin_inset Formula $G$
+\end_inset
+
+ es no vacio.
+ Supongamos que 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $F_{1},F_{2}\in\mathcal{F}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $x\in F_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $y\in F_{2}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $F_{1}\subseteq F_{2}$
+\end_inset
+
+,
+ entonces ya que 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ es un filtro tenemos que 
+\begin_inset Formula $x\;\mathsf{i\;}y\in F_{2}\subseteq G$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $F_{2}\subseteq F_{1}$
+\end_inset
+
+,
+ entonces tenemos que 
+\begin_inset Formula $x\;\mathsf{i\;}y\in F_{1}\subseteq G$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $C$
+\end_inset
+
+ es una cadena,
+ tenemos que siempre 
+\begin_inset Formula $x\;\mathsf{i\;}y\in G$
+\end_inset
+
+.
+ En forma analoga se prueba la propiedad restante por lo cual tenemos que 
+\begin_inset Formula $G$
+\end_inset
+
+ es un filtro.
+ Ademas 
+\begin_inset Formula $x_{0}\notin G$
+\end_inset
+
+,
+ por lo que 
+\begin_inset Formula $G\in\mathcal{F}$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Por el lema de Zorn,
+ 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ tiene un elemento maximal 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Veamos que 
+\begin_inset Formula $P$
+\end_inset
+
+ es un filtro primo.
+ Supongamos 
+\begin_inset Formula $x\;\mathsf{s\;}y\in P$
+\end_inset
+
+ y 
+\begin_inset Formula $x,y\notin P$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $[P\cup\{x\})$
+\end_inset
+
+ es un filtro el cual contiene propiamente a 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Entonces ya que 
+\begin_inset Formula $P$
+\end_inset
+
+ es un elemento maximal de 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{x\})$
+\end_inset
+
+.
+ Analogamente tenemos que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{y\})$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{x\})$
+\end_inset
+
+,
+ tenemos que hay elementos 
+\begin_inset Formula $p_{1},...,p_{n}\in P$
+\end_inset
+
+,
+ tales que
+\begin_inset Formula 
+\[
+x_{0}\geq p_{1}\;\mathsf{i\;}...\;\mathsf{i\;}p_{n}\;\mathsf{i\;}x
+\]
+
+\end_inset
+
+(se deja como ejercicio justificar esto).
+ Ya que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{y\})$
+\end_inset
+
+,
+ tenemos que hay elementos 
+\begin_inset Formula $q_{1},...,q_{m}\in P$
+\end_inset
+
+,
+ tales que
+\begin_inset Formula 
+\[
+x_{0}\geq q_{1}\;\mathsf{i\;}...\;\mathsf{i\;}q_{m}\;\mathsf{i\;}y
+\]
+
+\end_inset
+
+Si
+\begin_inset space \space{}
+\end_inset
+
+llamamos 
+\begin_inset Formula $p$
+\end_inset
+
+ al siguiente elemento de 
+\begin_inset Formula $P$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{1}\;\mathsf{i\;}...\;\mathsf{i\;}p_{n}\;\mathsf{i\;}q_{1}\;\mathsf{i\;}...\;\mathsf{i\;}q_{m}
+\]
+
+\end_inset
+
+tenemos que
+\begin_inset Formula 
+\begin{align*}
+x_{0} & \geq p\;\mathsf{i\;}x\\
+x_{0} & \geq p\;\mathsf{i\;}y
+\end{align*}
+
+\end_inset
+
+Se tiene entonces que 
+\begin_inset Formula $x_{0}\geq(p\;\mathsf{i\;}x)\;\mathsf{s\;}(p\;\mathsf{i\;}y)=p\;\mathsf{i\;}(x\;\mathsf{s\;}y)\in P$
+\end_inset
+
+,
+ lo cual es absurdo ya que 
+\begin_inset Formula $x_{0}\notin P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Propiedades basicas de la consistencia
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es inconsistente,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+,
+ para toda sentencia 
+\begin_inset Formula $\varphi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente y 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ es consistente.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(\Sigma,\tau)\not\vdash\lnot\varphi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ es consistente.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es inconsistente,
+ entonces por definicion tenemos que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi\wedge\lnot\psi$
+\end_inset
+
+ para alguna sentencia 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Dada una sentencia cualquiera 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se deduce por la regla del absurdo a partir de 
+\begin_inset Formula $\psi\wedge\lnot\psi$
+\end_inset
+
+ con lo cual (2) del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Propiedades basicas de 
+\begin_inset Formula $\vdash$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Supongamos 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente y 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ fuera inconsistente,
+ entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi\wedge\lnot\psi$
+\end_inset
+
+,
+ para alguna sentencia 
+\begin_inset Formula $\psi$
+\end_inset
+
+,
+ lo cual por (1) del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Propiedades basicas de 
+\begin_inset Formula $\vdash$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+ nos diria que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi\wedge\lnot\psi$
+\end_inset
+
+,
+ es decir nos diria que 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es inconsistente.
+\end_layout
+
+\begin_layout Enumerate
+Es dejada al lector
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Segundo Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Teorema de Dedekind
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna.
+ La relacion binaria definida 
+\begin_inset Formula 
+\[
+x\leq y\text{ si y solo si }x\;\mathsf{s}\;y=y
+\]
+
+\end_inset
+
+es un orden parcial sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ para el cual se cumple que:
+\begin_inset Formula 
+\begin{align*}
+\sup(\{x,y\}) & =x\;\mathsf{s}\;y\\
+\inf(\{x,y\}) & =x\mathsf{\;i\;}y
+\end{align*}
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Dejamos como ejercicio para el lector probar que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es reflexiva y antisimetrica con respecto a 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Veamos que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es transitiva con respecto a 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ e 
+\begin_inset Formula $y\leq z$
+\end_inset
+
+.
+ Es decir que por definicion de 
+\begin_inset Formula $\leq$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\begin{align*}
+x\;\mathsf{s}\;y & =y\\
+y\;\mathsf{s}\;z & =z
+\end{align*}
+
+\end_inset
+
+Entonces
+\begin_inset Formula 
+\[
+x\;\mathsf{s\;}z=x\;\mathsf{s\;}(y\;\mathsf{s\;}z)=(x\;\mathsf{s\;}y)\;\mathsf{s\;}z=y\;\mathsf{s\;}z=z
+\]
+
+\end_inset
+
+por lo cual 
+\begin_inset Formula $x\leq z$
+\end_inset
+
+.
+ O sea que ya sabemos que 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ es un poset.
+ Veamos ahora que 
+\begin_inset Formula $\sup(\{x,y\})=x\;\mathsf{s\;}y$
+\end_inset
+
+.
+ Primero debemos ver que 
+\begin_inset Formula $x\;\mathsf{s\;}y$
+\end_inset
+
+ es una cota superior del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+,
+ es decir
+\begin_inset Formula 
+\begin{align*}
+x & \leq x\;\mathsf{s}\;y\\
+y & \leq x\;\mathsf{s}\;y
+\end{align*}
+
+\end_inset
+
+Por la definicion de 
+\begin_inset Formula $\leq$
+\end_inset
+
+ debemos probar que
+\begin_inset Formula 
+\begin{align*}
+x\ \mathsf{s}\;(x\;\mathsf{s}\;y) & =x\;\mathsf{s}\;y\\
+y\ \mathsf{s}\;(x\;\mathsf{s}\;y) & =x\;\mathsf{s}\;y
+\end{align*}
+
+\end_inset
+
+Estas igualdades se pueden probar usando (I1),
+ (I2) y (I4).
+ Dejamos al lector hacerlo como ejercicio.
+\end_layout
+
+\begin_layout Proof
+Nos falta ver entonces que 
+\begin_inset Formula $x\;\mathsf{s\;}y$
+\end_inset
+
+ es menor o igual que cualquier cota superior de 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $x,y\leq z$
+\end_inset
+
+.
+ Es decir que por definicion de 
+\begin_inset Formula $\leq$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\begin{align*}
+x\;\mathsf{s}\;z & =z\\
+y\;\mathsf{s}\;z & =z
+\end{align*}
+
+\end_inset
+
+Pero entonces
+\begin_inset Formula 
+\[
+(x\;\mathsf{s\;}y)\;\mathsf{s\;}z=x\;\mathsf{s\;}(y\;\mathsf{s\;}z)=x\;\mathsf{s\;}z=z
+\]
+
+\end_inset
+
+por lo que 
+\begin_inset Formula $x\;\mathsf{s\;}y\leq z$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $x\;\mathsf{s\;}y$
+\end_inset
+
+ es la menor cota superior.
+\end_layout
+
+\begin_layout Proof
+Para probar que 
+\begin_inset Formula $\inf(\{x,y\})=x\mathsf{\;i\;}y$
+\end_inset
+
+,
+ probaremos que para todo 
+\begin_inset Formula $u,v\in L$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+u\leq v\text{ si y solo si }u\mathsf{\;i\;}v=u
+\]
+
+\end_inset
+
+lo cual le permitira al lector aplicar un razonamiento similar al usado en la prueba de que 
+\begin_inset Formula $\sup(\{x,y\})=x\;\mathsf{s\;}y$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $u\leq v$
+\end_inset
+
+.
+ Por definicion tenemos que 
+\begin_inset Formula $u\;\mathsf{s}\;v=v$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+u\mathsf{\;i\;}v=u\mathsf{\;i\;}(u\;\mathsf{s}\;v)
+\]
+
+\end_inset
+
+Pero por (I7) tenemos que 
+\begin_inset Formula $u\mathsf{\;i\;}(u\;\mathsf{s}\;v)=u$
+\end_inset
+
+,
+ lo cual implica 
+\begin_inset Formula $u\mathsf{\;i\;}v=u$
+\end_inset
+
+.
+ Reciprocamente si 
+\begin_inset Formula $u\mathsf{\;i\;}v=u$
+\end_inset
+
+,
+ entonces
+\begin_inset Formula 
+\begin{align*}
+u\;\mathsf{s}\;v & =(u\mathsf{\;i\;}v)\;\mathsf{s}\;v\\
+ & =v\;\mathsf{s}\;(u\mathsf{\;i\;}v)\text{ (por (I2))}\\
+ & =v\;\mathsf{s}\;(v\mathsf{\;i\;}u)\text{ (por (I3))}\\
+ & =v\text{ (por (I6))}
+\end{align*}
+
+\end_inset
+
+lo cual nos dice que 
+\begin_inset Formula $u\leq v$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Lemma 25
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Supongamos que 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+ son asignaciones tales que si 
+\begin_inset Formula $x_{i}\in Li(\varphi),$
+\end_inset
+
+ entonces 
+\begin_inset Formula $a_{i}=b_{i}.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Probaremos por induccion en 
+\begin_inset Formula $k$
+\end_inset
+
+ que el lema vale para cada 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ El caso 
+\begin_inset Formula $k=0$
+\end_inset
+
+ se desprende del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Independencia del valor
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Veamos que Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ implica Teo
+\begin_inset Formula $_{k+1}.$
+\end_inset
+
+ Sea 
+\begin_inset Formula $\varphi\in F_{k+1}^{\tau}-F_{k}^{\tau}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Hay varios casos:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Ya que 
+\begin_inset Formula $Li(\varphi_{i})\subseteq Li(\varphi)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+,
+ Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{i}[\vec{a}]$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathbf{A}\models\varphi_{i}[\vec{b}]$
+\end_inset
+
+,
+ para 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+.
+ Se tiene entonces que
+\begin_inset Formula 
+\[
+\begin{array}{l}
+\mathbf{A}\models\varphi[\vec{a}]\\
+\ \ \Updownarrow\text{ (por (3) en la def de }\mathbf{A}\models\varphi[\vec{a}]\text{)}\\
+\mathbf{A}\models\varphi_{1}[\vec{a}]\text{ y }\mathbf{A}\models\varphi_{2}[\vec{a}]\\
+\ \ \Updownarrow\text{ (por Teo}_{k}\text{)}\\
+\mathbf{A}\models\varphi_{1}[\vec{b}]\text{ y }\mathbf{A}\models\varphi_{2}[\vec{b}]\\
+\ \ \Updownarrow\text{(por (3) en la def de }\mathbf{A}\models\varphi[\vec{a}]\text{)}\\
+\mathbf{A}\models\varphi[\vec{b}]
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=\lnot\varphi_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Es completamente similar al anterior.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=\forall x_{j}\varphi_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Supongamos 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+.
+ Entonces por (8) en la def de 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{j}^{a}(\vec{a})]$
+\end_inset
+
+,
+ para todo 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $\downarrow_{j}^{a}(\vec{a})$
+\end_inset
+
+ y 
+\begin_inset Formula $\downarrow_{j}^{a}(\vec{b})$
+\end_inset
+
+ coinciden en toda 
+\begin_inset Formula $x_{i}\in Li(\varphi_{1})$
+\end_inset
+
+ ya que 
+\begin_inset Formula $Li(\varphi_{1})\subseteq Li(\varphi)\cup\{x_{j}\}$
+\end_inset
+
+.
+ O sea que por Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $\mathbf{A}\models\varphi_{1}[\downarrow_{j}^{a}(\vec{b})]$
+\end_inset
+
+,
+ para todo 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ lo cual por (8) en la def de 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+.
+ La prueba de que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{b}]$
+\end_inset
+
+ implica que 
+\begin_inset Formula $\mathbf{A}\models\varphi[\vec{a}]$
+\end_inset
+
+ es similar.
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+CASO 
+\begin_inset Formula $\varphi=\exists x_{j}\varphi_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Es similar al anterior.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tercer Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Lectura unica de terminos
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Theorem
+
+\shape italic
+Dado 
+\shape default
+
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+
+\shape italic
+ se da una de las siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t\in Var\cup\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+Hay unicos 
+\shape default
+
+\begin_inset Formula $n\geq1$
+\end_inset
+
+,
+\begin_inset Formula $\;f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+\begin_inset Formula $\;t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+
+\shape italic
+ tales que 
+\shape default
+
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+En virtud del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Menu para terminos
+\begin_inset Quotes frd
+\end_inset
+
+ solo nos falta probar la unicidad en el punto (2).
+ 
+\end_layout
+
+\begin_layout Proof
+Supongamos que
+\begin_inset Formula 
+\[
+t=f(t_{1},...,t_{n})=g(s_{1},...,s_{m})
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $n,m\geq1,\;f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g\in\mathcal{F}_{m}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n},s_{1},...,s_{m}\in T^{\tau}$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $f=g$
+\end_inset
+
+.
+ O sea que 
+\begin_inset Formula $n=m=a(f)$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ es tramo inicial de 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ o 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ es tramo inicial de 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+,
+ lo cual por el lema anterior nos dice que 
+\begin_inset Formula $t_{1}=s_{1}$
+\end_inset
+
+.
+ Con el mismo razonamiento podemos probar que debera suceder 
+\begin_inset Formula $t_{2}=s_{2},...,t_{n}=s_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Lemma 27
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo.
+ Sea 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ En particular 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ satisfacen las mismas sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Por induccion.
+ Sea
+\end_layout
+
+\begin_layout Itemize
+Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+:
+ Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo.
+ Sea 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Prueba de Teo
+\begin_inset Formula $_{0}$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo,
+ 
+\begin_inset Formula $\varphi\in F_{0}^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ Probaremos que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+Hay dos casos.
+ Caso 
+\begin_inset Formula $\varphi=r(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+,
+\begin_inset Formula $\;r\in\mathcal{R}_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+.
+ Denotemos con 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ a 
+\begin_inset Formula $(a_{1},a_{2},...)$
+\end_inset
+
+ y con 
+\begin_inset Formula $F(\vec{a})$
+\end_inset
+
+ a 
+\begin_inset Formula $(F(a_{1}),F(a_{2}),...)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+\mathbf{A}\models\varphi[\vec{a}] & \text{sii} & (t_{1}^{\mathbf{A}}[\vec{a}],...,t_{m}^{\mathbf{A}}[\vec{a}])\in r^{\mathbf{A}}\text{ (def de }\models\text{)}\\
+ & \text{sii} & (F(t_{1}^{\mathbf{A}}[\vec{a}]),...,F(t_{n}^{\mathbf{A}}[\vec{a}]))\in r^{\mathbf{B}}\text{ (}F\text{ es iso)}\\
+ & \text{sii} & (t_{1}^{\mathbf{B}}[F(\vec{a})]),...,t_{n}^{\mathbf{B}}[F(\vec{a})])\in r^{\mathbf{B}}\text{ (Lema \ref{F-respeta-term})}\\
+ & \text{sii} & \mathbf{B}\models\varphi[F(\vec{a})]
+\end{array}
+\]
+
+\end_inset
+
+Dejamos al lector completar la prueba de que Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ implica Teo
+\begin_inset Formula $_{k+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Teorema 28
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Entonces 
+\begin_inset Formula $(S^{\tau}/\mathrm{\dashv\vdash}_{T},\mathsf{s}^{T},\mathsf{i}^{T},^{\mathsf{c}^{T}},0^{T},1^{T})$
+\end_inset
+
+ es un algebra de Boole.
+ Pruebe solo el item (6)
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Por definicion de algebra de Boole,
+ debemos probar que cualesquiera sean 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}\in S^{\tau}$
+\end_inset
+
+,
+ se cumplen todas las igualdades de algebras de Boole,
+ luego,
+ probamos solo la (6)
+\end_layout
+
+\begin_layout Proof
+es decir veamos que
+\begin_inset Formula 
+\[
+[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}([\varphi_{2}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T})=([\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{2}]_{T})\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T}
+\]
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}\in S^{\tau}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}\in S^{\tau}$
+\end_inset
+
+ fijas.
+ Por la definicion de la operacion 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+ debemos probar que
+\begin_inset Formula 
+\[
+[(\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))]_{T}=[((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})]_{T}
+\]
+
+\end_inset
+
+es decir,
+ debemos probar que
+\begin_inset Formula 
+\[
+T\vdash((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\leftrightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))
+\]
+
+\end_inset
+
+Notese que por (2) del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Propiedades basicas de 
+\begin_inset Formula $\vdash$
+\end_inset
+
+
+\begin_inset Quotes frd
+\end_inset
+
+,
+ basta con probar que
+\begin_inset Formula 
+\begin{align*}
+T & \vdash((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))\\
+T & \vdash(((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})\rightarrow(\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3})))
+\end{align*}
+
+\end_inset
+
+La siguiente es una prueba formal de 
+\begin_inset Formula $((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))$
+\end_inset
+
+ en 
+\begin_inset Formula $T$
+\end_inset
+
+ y dejamos al lector la otra prueba formal.
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1. & (\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3})) &  & \text{HIPOTESIS}1\\
+2. & \varphi_{1} &  & \text{HIPOTESIS}2\\
+3. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(2)\\
+4. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}2\text{DISJUNCIONINTRODUCCION}(3)\\
+5. & \varphi_{1}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+6. & (\varphi_{2}\vee\varphi_{3}) &  & \text{HIPOTESIS}3\\
+7. & \varphi_{2} &  & \text{HIPOTESIS}4\\
+8. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(6)\\
+9. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}4\text{DISJUNCIONINTRODUCCION}(7)\\
+10. & \varphi_{2}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+11. & \varphi_{3} &  & \text{HIPOTESIS}5\\
+12. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}5\text{DISJUNCIONINTRODUCCION}(11)\\
+13. & \varphi_{3}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+14. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}3\text{DIVISIONPORCASOS}(6,10,13)\\
+15. & (\varphi_{2}\vee\varphi_{3})\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+16. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}1\text{DIVISIONPORCASOS}(1,5,15)\\
+17. & (\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cuarto Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Propiedades basicas de la deduccion o Propiedades basicas de 
+\begin_inset Formula $\vdash$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+\end_layout
+
+\begin_layout Enumerate
+(Uso de Teoremas) Si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1},...,\varphi_{n}\},\tau)\vdash\varphi,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Supongamos 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una regla distinta de GENERALIZACION y ELECCION y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se deduce de 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ por la regla 
+\begin_inset Formula $R$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+1.
+ Notese que basta con hacer el caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ El caso con 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ se obtiene aplicando 
+\begin_inset Formula $n$
+\end_inset
+
+ veces el caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ Supongamos entonces que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1}\},\tau)\vdash\varphi$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(\alpha_{1}...\alpha_{h},I_{1}...I_{h})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(\psi_{1}...\psi_{m},J_{1}...J_{m})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1}\},\tau)$
+\end_inset
+
+.
+ Notese que por los Lemas 
+\begin_inset Quotes fld
+\end_inset
+
+Cambio de indice de hipotesis
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+Cambio de ctes auxiliares
+\begin_inset Quotes frd
+\end_inset
+
+ podemos suponer que estas dos pruebas no comparten ningun nombre de constante auxiliar y que tampoco comparten numeros asociados a hipotesis o tesis.
+ Para cada 
+\begin_inset Formula $i=1,...,m$
+\end_inset
+
+,
+ definamos 
+\begin_inset Formula $\widetilde{J_{i}}$
+\end_inset
+
+ de la siguiente manera.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{i}=\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{EVOCACION}(\overline{h})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{i}\notin\{\varphi_{1}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha R(\overline{l_{1}},...,\overline{l_{k}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha R(\overline{l_{1}+h},...,\overline{l_{k}+h})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es facil chequear que
+\begin_inset Formula 
+\[
+(\alpha_{1}...\alpha_{h}\psi_{1}...\psi_{m},I_{1}...I_{h}\widetilde{J_{1}}...\widetilde{J_{m}})
+\]
+
+\end_inset
+
+es una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+2.
+ Notese que
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & \varphi_{1} &  & \text{AXIOMAPROPIO}\\
+2.\; & \varphi_{2} &  & \text{AXIOMAPROPIO}\\
+\vdots & \vdots &  & \vdots\\
+n. & \varphi_{n} &  & \text{AXIOMAPROPIO}\\
+n+1. & \varphi &  & R(\bar{1},...,\bar{n})
+\end{array}
+\]
+
+\end_inset
+
+es una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1},...,\varphi_{n}\},\tau)$
+\end_inset
+
+,
+ lo cual por (1) nos dice que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+3.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+(
+\series default
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\series bold
+) 
+\series default
+Supongamos 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+.
+ Entonces tenemos que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash(\varphi\rightarrow\psi),\varphi$
+\end_inset
+
+,
+ lo cual por (2) nos dice que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+(
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+)
+\series default
+ Supongamos ahora que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(\varphi_{1}...\varphi_{n},J_{1}...,J_{n})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\psi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+.
+ Para cada 
+\begin_inset Formula $i=1,...,n$
+\end_inset
+
+,
+ definamos 
+\begin_inset Formula $\widetilde{J_{i}}$
+\end_inset
+
+ de la siguiente manera.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi_{i}=\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{EVOCACION}(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi_{i}\neq\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha R(\overline{l_{1}},...,\overline{l_{k}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha P(\overline{l_{1}+1},...,\overline{l_{k}+1})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+\noindent
+Sea 
+\begin_inset Formula $m$
+\end_inset
+
+ tal que ninguna 
+\begin_inset Formula $J_{i}$
+\end_inset
+
+ es igual a 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{m}$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $\widetilde{J_{n}}$
+\end_inset
+
+ no es de la forma 
+\begin_inset Formula $\mathrm{TESIS}\bar{k}\beta$
+\end_inset
+
+ ni de la forma 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ (por que?) por lo cual 
+\begin_inset Formula $\mathrm{TESIS}\bar{m}\widetilde{J_{n}}$
+\end_inset
+
+ es una justificacion.
+ Es facil chequear que
+\begin_inset Formula 
+\[
+(\varphi\varphi_{1}...\varphi_{n}(\varphi\rightarrow\psi),\text{HIPOTESIS}\bar{m}\widetilde{J_{1}}...\widetilde{J_{n-1}}\mathrm{TESIS}\bar{m}\widetilde{J_{n}}\text{CONCLUSION})
+\]
+
+\end_inset
+
+es una prueba formal de 
+\begin_inset Formula $(\varphi\rightarrow\psi)$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Theorem 30
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+ un álgebra de Boole y sean 
+\begin_inset Formula $a,b\in B$
+\end_inset
+
+.
+ Se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}=a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(a\,\mathsf{s\,}b)^{c}=a^{c}\,\mathsf{i\,}b^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a^{cc}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b^{c}\leq a^{c}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Probar solo 1.
+ (
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}=a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+) y 4.
+ (
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+1.
+ Es facil ver que 
+\begin_inset Formula $a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+ es un complemento de 
+\begin_inset Formula $a\,\mathsf{i\,}b$
+\end_inset
+
+ (hacer!).
+ Pero ya que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},^{\mathbf{c}},0,1)$
+\end_inset
+
+ es un reticulado complementado,
+ tenemos que 
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}$
+\end_inset
+
+ es un complemento de 
+\begin_inset Formula $a\,\mathsf{i\,}b$
+\end_inset
+
+.
+ El Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Complementos unicos
+\begin_inset Quotes frd
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $(a\,\mathsf{i\,}b)^{c}$
+\end_inset
+
+ y 
+\begin_inset Formula $a^{c}\,\mathsf{s\,}b^{c}$
+\end_inset
+
+ deben ser iguales.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+4.
+ Supongamos 
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+.
+ Se tiene
+\begin_inset Formula 
+\begin{align*}
+b & =(b\;\mathsf{i\;}a)\;\mathsf{s\;}(b\mathsf{\;i\mathsf{\;}}a^{c})\mathsf{\,}\\
+ & =(a\;\mathsf{i\;}b)\;\mathsf{s\;}(b\mathsf{\;i\mathsf{\;}}a^{c})\\
+ & =0\;\mathsf{s\;}(b\mathsf{\;i\mathsf{\;}}a^{c})\\
+ & =(b\mathsf{\;i\mathsf{\;}}a^{c})
+\end{align*}
+
+\end_inset
+
+lo cual dice que 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $b\leq a^{c}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $a\,\mathsf{i\,}b\leq a\,\mathsf{i\,}a^{c}=0$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $a\,\mathsf{i\,}b=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Lemma 31
+\end_layout
+
+\begin_layout Paragraph
+Enunciado 
+\end_layout
+
+\begin_layout Lemma
+Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ reticulados terna y sean 
+\begin_inset Formula $(L\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+ los posets asociados.
+ Sea 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ una funcion.
+ Entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Subparagraph
+Ida
+\end_layout
+
+\begin_layout Standard
+Supongamos 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+,
+ tales que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Tenemos que 
+\begin_inset Formula $y=x\mathsf{\;s\;}y$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $F(y)=F(x\mathsf{\;s\;}y)=F(x)\mathsf{\;s^{\prime}\;}F(y)$
+\end_inset
+
+,
+ produciendo 
+\begin_inset Formula $F(x)\leq^{\prime}F(y)$
+\end_inset
+
+.
+ En forma similar se puede ver que 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ es tambien un homomorfismo de 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Vuelta
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+,
+ entonces (g) y (h) del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Isomorfismos de posets
+\begin_inset Quotes frd
+\end_inset
+
+ nos dicen que 
+\begin_inset Formula $F$
+\end_inset
+
+ y 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ son homomorfismos (de reticulados terna terna) por lo cual 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quinto Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Teorema de Completitud
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria de primer orden.
+ Si 
+\begin_inset Formula $T\models\varphi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $T\vdash\varphi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Haga solo el caso en que 
+\begin_inset Formula $τ$
+\end_inset
+
+ tiene una cantidad infinita de nombres de cte que no ocurren en las sentencias de 
+\begin_inset Formula $Σ$
+\end_inset
+
+.
+ En la exposicion de la prueba no es necesario que demuestre los items (1) y (5).
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Lo probaremos por el absurdo,
+ es decir supongamos que hay una sentencia 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $T\models\varphi_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $T\not\vdash\varphi_{0}$
+\end_inset
+
+.
+ Notese que ya que 
+\begin_inset Formula $T\not\vdash\varphi_{0}$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $[\lnot\varphi_{0}]_{T}\not=0^{T}$
+\end_inset
+
+.
+ Sabemos por lema que hay una infinitupla 
+\begin_inset Formula $(\gamma_{1},\gamma_{2},...)\in F^{\tau\mathbf{N}}$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left\vert Li(\gamma_{j})\right\vert \leq1$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\left\vert Li(\gamma)\right\vert \leq1$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\gamma=\gamma_{j}$
+\end_inset
+
+,
+ para algun 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\noindent
+Para cada 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+,
+ sea 
+\begin_inset Formula $w_{j}\in Var$
+\end_inset
+
+ tal que 
+\begin_inset Formula $Li(\gamma_{j})\subseteq\{w_{j}\}$
+\end_inset
+
+.
+ Para cada 
+\begin_inset Formula $j$
+\end_inset
+
+,
+ declaremos 
+\begin_inset Formula $\gamma_{j}=_{d}\gamma_{j}(w_{j})$
+\end_inset
+
+.
+ Notese que por el Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Lema del infimo
+\begin_inset Quotes frd
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $\inf\{[\gamma_{j}(t)]_{T}:t\in T_{c}^{\tau}\}=[\forall w_{j}\gamma_{j}(w_{j})]_{T}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2,...$
+\end_inset
+
+.
+ Por el Teorema de Rasiova y Sikorski tenemos que hay un filtro primo 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+,
+ el cual cumple:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\lnot\varphi_{0}]_{T}\in\mathcal{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\{[\gamma_{j}(t)]_{T}:t\in T_{c}^{\tau}\}\subseteq\mathcal{U}$
+\end_inset
+
+ implica que 
+\begin_inset Formula $[\forall w_{j}\gamma_{j}(w_{j})]_{T}\in\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\noindent
+Ya que la infinitupla 
+\begin_inset Formula $(\gamma_{1},\gamma_{2},...)$
+\end_inset
+
+ cubre todas las formulas con a lo sumo una variable libre,
+ podemos reescribir la propiedad (b) de la siguiente manera:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\begin_inset Formula $^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v)\in F^{\tau}$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\{[\varphi(t)]_{T}:t\in T_{c}^{\tau}\}\subseteq\mathcal{U}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $[\forall v\varphi(v)]_{T}\in\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\noindent
+Definamos sobre 
+\begin_inset Formula $T_{c}^{\tau}$
+\end_inset
+
+ la siguiente relacion:
+\begin_inset Formula 
+\[
+t\bowtie s\text{ si y solo si }[(t\equiv s)]_{T}\in\mathcal{U}\text{.}
+\]
+
+\end_inset
+
+Veamos entonces que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\bowtie$
+\end_inset
+
+ es de equivalencia.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n},s_{1},...,s_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $t_{1}\bowtie s_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{2}\bowtie s_{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $...$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{n}\bowtie s_{n}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $[\varphi(s_{1},...,s_{n})]_{T}\in\mathcal{U}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n},s_{1},...,s_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+t_{1}\bowtie s_{1},t_{2}\bowtie s_{2},...,\;t_{n}\bowtie s_{n}\text{ implica }f(t_{1},...,t_{n})\bowtie f(s_{1},...,s_{n}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Probaremos (2).
+ Notese que
+\begin_inset Formula 
+\[
+T\vdash\left((t_{1}\equiv s_{1})\wedge(t_{2}\equiv s_{2})\wedge...\wedge(t_{n}\equiv s_{n})\wedge\varphi(t_{1},...,t_{n})\right)\rightarrow\varphi(s_{1},...,s_{n})
+\]
+
+\end_inset
+
+lo cual nos dice que
+\begin_inset Formula 
+\[
+[(t_{1}\equiv s_{1})]_{T}\;\mathsf{i}^{T}\mathsf{\;}[(t_{2}\equiv s_{2})]_{T}\;\mathsf{i}^{T}\mathsf{\;}...\;\mathsf{i}^{T}\mathsf{\;}[(t_{n}\equiv s_{n})]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi(t_{1},...,t_{n})]_{T}\leq^{T}[\varphi(s_{1},...,s_{n})]_{T}
+\]
+
+\end_inset
+
+de lo cual se desprende que
+\begin_inset Formula 
+\[
+[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}\text{ implica }[\varphi(s_{1},...,s_{n})]_{T}\in\mathcal{U}
+\]
+
+\end_inset
+
+ya que 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ es un filtro.
+ La otra implicacion es analoga.
+\end_layout
+
+\begin_layout Itemize
+Para probar (3) podemos tomar 
+\begin_inset Formula $\varphi=\left(f(v_{1},...,v_{n})\equiv f(s_{1},...,s_{n})\right)$
+\end_inset
+
+ y aplicar (2).
+\end_layout
+
+\begin_deeper
+\begin_layout Proof
+Definamos ahora un modelo 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Itemize
+Universo de 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}=T_{c}^{\tau}/\mathrm{\bowtie}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $c^{\mathbf{A}_{\mathcal{U}}}=c/\mathrm{\bowtie}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f^{\mathbf{A}_{\mathcal{U}}}(t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie})=f(t_{1},...,t_{n})/\mathrm{\bowtie}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $r^{\mathbf{A}_{\mathcal{U}}}=\{(t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}):[r(t_{1},...,t_{n})]_{T}\in\mathcal{U}\}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Notese que la definicion de 
+\begin_inset Formula $f^{\mathbf{A}_{\mathcal{U}}}$
+\end_inset
+
+ es inambigua por (3).
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+Luego,
+ probaremos las siguientes propiedades basicas
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+ Para cada 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})\in T^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ tenemos que
+\begin_inset Formula 
+\[
+t^{\mathbf{A}_{\mathcal{U}}}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]=t(t_{1},...,t_{n})/\mathrm{\bowtie}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ tenemos que
+\begin_inset Formula 
+\[
+\mathbf{A}_{\mathcal{U}}\models\varphi[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\text{ si y solo si }[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+La prueba de (4) es directa por induccion.
+ Pero ahora notese que (5) en particular nos dice que para cada sentencia 
+\begin_inset Formula $\psi\in S^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}\models\psi$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $[\psi]_{T}\in\mathcal{U}.$
+\end_inset
+
+ De esta forma llegamos a que 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}\models\Sigma$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}\models\lnot\varphi_{0}$
+\end_inset
+
+,
+ lo cual contradice la suposicion de que 
+\begin_inset Formula $T\models\varphi_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Ahora supongamos que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es cualquier tipo.
+ Sean 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ un par de simbolos no pertenecientes a la lista
+\begin_inset Formula 
+\[
+\forall\ \ \exists\ \ \lnot\ \ \vee\ \ \wedge\ \ \rightarrow\ \ \leftrightarrow\ \ (\ \ )\ \ ,\ \equiv\ \ \mathsf{X}\ \ \mathit{0}\ \ \mathit{1}\ \ ...\ \ \mathit{9}\ \ \mathbf{0}\ \ \mathbf{1}\ \ ...\ \ \mathbf{9}
+\]
+
+\end_inset
+
+y tales que ninguno ocurra en alguna palabra de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}.$
+\end_inset
+
+ Si 
+\begin_inset Formula $T\models\varphi$
+\end_inset
+
+,
+ entonces usando el Lema de Coincidencia se puede ver que 
+\begin_inset Formula $(\Sigma,(\mathcal{C}\cup\{s_{1}s_{2}s_{1},s_{1}s_{2}s_{2}s_{1},...\},\mathcal{F},\mathcal{R},a))\models\varphi$
+\end_inset
+
+,
+ por lo cual
+\begin_inset Formula 
+\[
+(\Sigma,(\mathcal{C}\cup\{s_{1}s_{2}s_{1},s_{1}s_{2}s_{2}s_{1},...\},\mathcal{F},\mathcal{R},a))\vdash\varphi.
+\]
+
+\end_inset
+
+Pero por Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Tipos parecidos
+\begin_inset Quotes frd
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $T\vdash\varphi.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sexto Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Teorema de Completitud
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Theorem
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria de primer orden.
+ Si 
+\begin_inset Formula $T\models\varphi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $T\vdash\varphi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Haga solo el caso en que 
+\begin_inset Formula $τ$
+\end_inset
+
+ tiene una cantidad infinita de nombres de cte que no ocurren en las sentencias de 
+\begin_inset Formula $Σ$
+\end_inset
+
+.
+ En la exposicion de la prueba no es necesario que demuestre los items:
+ (1),
+ (2),
+ (3) y (4)
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Standard
+Probaremos entonces (5)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Enunciado 5
+\end_layout
+
+\begin_layout Standard
+5.
+ Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ tenemos que
+\begin_inset Formula 
+\[
+\mathbf{A}_{\mathcal{U}}\models\varphi[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\text{ si y solo si }[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+Probaremos por induccion en el 
+\begin_inset Formula $k$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ El caso 
+\begin_inset Formula $k=0$
+\end_inset
+
+ es dejado al lector.
+ Supongamos (5) vale para 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F_{k+1}^{\tau}-F_{k}^{\tau}$
+\end_inset
+
+.
+ Hay varios casos:
+\end_layout
+
+\begin_layout Proof
+CASO 
+\begin_inset Formula $\varphi=\left(\varphi_{1}\vee\varphi_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Notese que por la Convencion Notacional 6,
+ tenemos que 
+\begin_inset Formula $\varphi_{i}=_{d}\varphi_{i}(v_{1},...,v_{n})$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}_{\mathcal{U}}\models\varphi[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\mathbf{A}_{\mathcal{U}}\models\varphi_{1}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\text{ o }\mathbf{A}_{\mathcal{U}}\models\varphi_{2}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\{}
+[\varphi_{1}(t_{1},...,t_{n})]_{T}\in\mathcal{U}\text{ o }[\varphi_{2}(t_{1},...,t_{n})]_{T}\in\mathcal{U}\\
+\Updownarrow\\{}
+[\varphi_{1}(t_{1},...,t_{n})]_{T}\ \mathsf{s}^{T}\mathsf{\ }[\varphi_{2}(t_{1},...,t_{n})]_{T}\in\mathcal{U}\\
+\Updownarrow\\{}
+[\left(\varphi_{1}(t_{1},...,t_{n})\vee\varphi_{2}(t_{1},...,t_{n})\right)]_{T}\in\mathcal{U}\\
+\Updownarrow\\{}
+[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\end{array}
+\]
+
+\end_inset
+
+CASO 
+\begin_inset Formula $\varphi=\forall v\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $v\in Var-\{v_{1},...,v_{n}\}$
+\end_inset
+
+.
+ Notese que por la Convencion Notacional 6,
+ tenemos que 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n},v)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}_{\mathcal{U}}\models\varphi[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\mathbf{A}_{\mathcal{U}}\models\varphi_{1}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie},t/\mathrm{\bowtie}]\text{, para todo }t\in T_{c}^{\tau}\\
+\Updownarrow\\{}
+[\varphi_{1}(t_{1},...,t_{n},t)]_{T}\in\mathcal{U}\text{, para todo }t\in T_{c}^{\tau}\\
+\Updownarrow\\{}
+[\forall v\varphi_{1}(t_{1},...,t_{n},v)]_{T}\in\mathcal{U}\\
+\Updownarrow\\{}
+[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\end{array}
+\]
+
+\end_inset
+
+CASO 
+\begin_inset Formula $\varphi=\exists v\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $v\in Var-\{v_{1},...,v_{n}\}$
+\end_inset
+
+.
+ Notese que por la Convencion Notacional 6,
+ tenemos que 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n},v)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}_{\mathcal{U}}\models\varphi[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\mathbf{A}_{\mathcal{U}}\models\varphi_{1}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie},t/\mathrm{\bowtie}]\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\{}
+[\varphi_{1}(t_{1},...,t_{n},t)]_{T}\in\mathcal{U}\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+([\varphi_{1}(t_{1},...,t_{n},t)]_{T})^{\mathsf{c}^{T}}\not\in\mathcal{U}\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\{}
+[\lnot\varphi_{1}(t_{1},...,t_{n},t)]_{T}\not\in\mathcal{U}\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\{}
+[\forall v\;\lnot\varphi_{1}(t_{1},...,t_{n},v)]_{T}\not\in\mathcal{U}\\
+\Updownarrow\\
+([\forall v\;\lnot\varphi_{1}(t_{1},...,t_{n},v)]_{T})^{\mathsf{c}^{T}}\in\mathcal{U}\\
+\Updownarrow\\{}
+[\lnot\forall v\;\lnot\varphi_{1}(t_{1},...,t_{n},v)]_{T}\in\mathcal{U}\\
+\Updownarrow\\{}
+[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Septimo Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Propiedades basicas de la deduccion o Propiedades basicas de 
+\begin_inset Formula $\vdash$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+\end_layout
+
+\begin_layout Enumerate
+(Uso de Teoremas) Si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1},...,\varphi_{n}\},\tau)\vdash\varphi,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Supongamos 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una regla distinta de GENERALIZACION y ELECCION y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se deduce de 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ por la regla 
+\begin_inset Formula $R$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+1.
+ Notese que basta con hacer el caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ El caso con 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ se obtiene aplicando 
+\begin_inset Formula $n$
+\end_inset
+
+ veces el caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ Supongamos entonces que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1}\},\tau)\vdash\varphi$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(\alpha_{1}...\alpha_{h},I_{1}...I_{h})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(\psi_{1}...\psi_{m},J_{1}...J_{m})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1}\},\tau)$
+\end_inset
+
+.
+ Notese que por los Lemas 
+\begin_inset Quotes fld
+\end_inset
+
+Cambio de indice de hipotesis
+\begin_inset Quotes frd
+\end_inset
+
+ y 
+\begin_inset Quotes fld
+\end_inset
+
+Cambio de ctes auxiliares
+\begin_inset Quotes frd
+\end_inset
+
+ podemos suponer que estas dos pruebas no comparten ningun nombre de constante auxiliar y que tampoco comparten numeros asociados a hipotesis o tesis.
+ Para cada 
+\begin_inset Formula $i=1,...,m$
+\end_inset
+
+,
+ definamos 
+\begin_inset Formula $\widetilde{J_{i}}$
+\end_inset
+
+ de la siguiente manera.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{i}=\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{EVOCACION}(\overline{h})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{i}\notin\{\varphi_{1}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha R(\overline{l_{1}},...,\overline{l_{k}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha R(\overline{l_{1}+h},...,\overline{l_{k}+h})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\noindent
+Es facil chequear que
+\begin_inset Formula 
+\[
+(\alpha_{1}...\alpha_{h}\psi_{1}...\psi_{m},I_{1}...I_{h}\widetilde{J_{1}}...\widetilde{J_{m}})
+\]
+
+\end_inset
+
+es una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+2.
+ Notese que
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & \varphi_{1} &  & \text{AXIOMAPROPIO}\\
+2.\; & \varphi_{2} &  & \text{AXIOMAPROPIO}\\
+\vdots & \vdots &  & \vdots\\
+n. & \varphi_{n} &  & \text{AXIOMAPROPIO}\\
+n+1. & \varphi &  & R(\bar{1},...,\bar{n})
+\end{array}
+\]
+
+\end_inset
+
+es una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1},...,\varphi_{n}\},\tau)$
+\end_inset
+
+,
+ lo cual por (1) nos dice que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+3.
+ Supongamos 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+.
+ Entonces tenemos que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash(\varphi\rightarrow\psi),\varphi$
+\end_inset
+
+,
+ lo cual por (2) nos dice que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+ Supongamos ahora que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(\varphi_{1}...\varphi_{n},J_{1}...,J_{n})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\psi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+.
+ Para cada 
+\begin_inset Formula $i=1,...,n$
+\end_inset
+
+,
+ definamos 
+\begin_inset Formula $\widetilde{J_{i}}$
+\end_inset
+
+ de la siguiente manera.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi_{i}=\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{EVOCACION}(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi_{i}\neq\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $J_{i}=\alpha R(\overline{l_{1}},...,\overline{l_{k}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\widetilde{J_{i}}=\alpha P(\overline{l_{1}+1},...,\overline{l_{k}+1})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+\noindent
+Sea 
+\begin_inset Formula $m$
+\end_inset
+
+ tal que ninguna 
+\begin_inset Formula $J_{i}$
+\end_inset
+
+ es igual a 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{m}$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $\widetilde{J_{n}}$
+\end_inset
+
+ no es de la forma 
+\begin_inset Formula $\mathrm{TESIS}\bar{k}\beta$
+\end_inset
+
+ ni de la forma 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ (por que?) por lo cual 
+\begin_inset Formula $\mathrm{TESIS}\bar{m}\widetilde{J_{n}}$
+\end_inset
+
+ es una justificacion.
+ Es facil chequear que
+\begin_inset Formula 
+\[
+(\varphi\varphi_{1}...\varphi_{n}(\varphi\rightarrow\psi),\text{HIPOTESIS}\bar{m}\widetilde{J_{1}}...\widetilde{J_{n-1}}\mathrm{TESIS}\bar{m}\widetilde{J_{n}}\text{CONCLUSION})
+\]
+
+\end_inset
+
+es una prueba formal de 
+\begin_inset Formula $(\varphi\rightarrow\psi)$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Lema 35 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ es un reticulado terna
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ es un reticulado terna
+\end_layout
+
+\begin_layout Description
+Prueba
+\end_layout
+
+\begin_layout Proof
+Veamos que la estructura 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ cumple (I4).
+ Sean 
+\begin_inset Formula $x/\theta$
+\end_inset
+
+,
+ 
+\begin_inset Formula $y/\theta$
+\end_inset
+
+,
+ 
+\begin_inset Formula $z/\theta$
+\end_inset
+
+ elementos cualesquiera de 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+.
+ Tenemos que
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+(x/\theta\mathsf{\;\tilde{s}\;}y/\theta)\;\mathsf{\tilde{s}}\;z/\theta & = & (x\mathsf{\;s\;}y)/\theta\;\mathsf{\tilde{s}}\;z/\theta\\
+ & = & ((x\mathsf{\;s\;}y)\;\mathsf{s}\;z)/\theta\\
+ & = & (x\mathsf{\;s\;}(y\;\mathsf{s}\;z))/\theta\\
+ & = & x/\theta\;\mathsf{\tilde{s}}\;(y\;\mathsf{s}\;z)/\theta\\
+ & = & x/\theta\mathsf{\;\tilde{s}\;}(y/\theta\;\mathsf{\tilde{s}}\;z/\theta)
+\end{array}
+\]
+
+\end_inset
+
+En forma similar se puede ver que la estructura 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ cumple el resto de las identidades que definen reticulado terna.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $x/\theta\tilde{\leq}y/\theta\text{ sii }y\theta(x\mathsf{\;s\;}y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Entonces:
+\begin_inset Formula 
+\[
+x/\theta\tilde{\leq}y/\theta\text{ sii }y\theta(x\mathsf{\;s\;}y)
+\]
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Por definicion de 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $x/\theta\tilde{\leq}y/\theta$
+\end_inset
+
+ sii 
+\begin_inset Formula $y/\theta=x/\theta\mathsf{\;\tilde{s}\;}y/\theta$
+\end_inset
+
+.
+ Pero 
+\begin_inset Formula $x/\theta\mathsf{\;\tilde{s}\;}y/\theta=(x\mathsf{\;s\;}y)/\theta$
+\end_inset
+
+ (por definicion de 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+) por lo cual tenemos que 
+\begin_inset Formula $x/\theta\tilde{\leq}y/\theta$
+\end_inset
+
+ sii 
+\begin_inset Formula $y/\theta=(x\mathsf{\;s\;}y)/\theta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Lemma 36
+\end_layout
+
+\begin_layout Paragraph
+Enunciado 
+\end_layout
+
+\begin_layout Lemma
+Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ reticulados terna y sean 
+\begin_inset Formula $(L\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+ los posets asociados.
+ Sea 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ una funcion.
+ Entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Supongamos 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+,
+ tales que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+ Tenemos que 
+\begin_inset Formula $y=x\mathsf{\;s\;}y$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $F(y)=F(x\mathsf{\;s\;}y)=F(x)\mathsf{\;s^{\prime}\;}F(y)$
+\end_inset
+
+,
+ produciendo 
+\begin_inset Formula $F(x)\leq^{\prime}F(y)$
+\end_inset
+
+.
+ En forma similar se puede ver que 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ es tambien un homomorfismo de 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+,
+ entonces (g) y (h) del Lema 
+\begin_inset Quotes fld
+\end_inset
+
+Isomorfismos de posets
+\begin_inset Quotes frd
+\end_inset
+
+ nos dicen que 
+\begin_inset Formula $F$
+\end_inset
+
+ y 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ son homomorfismos (de reticulados terna terna) por lo cual 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Octavo Combo de Teoremas
+\end_layout
+
+\begin_layout Subsection
+Lemma 37
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo.
+ Sea 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ En particular 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ satisfacen las mismas sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Proof
+Probamos por induccion.
+ 
+\end_layout
+
+\begin_layout Proof
+Por induccion.
+ Sea
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+:
+ Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo.
+ Sea 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+para cada 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Proof
+Prueba de Teo
+\begin_inset Formula $_{0}$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $F:\mathbf{A}\rightarrow\mathbf{B}$
+\end_inset
+
+ es un isomorfismo,
+ 
+\begin_inset Formula $\varphi\in F_{0}^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $(a_{1},a_{2},...)\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ Probaremos que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi[(a_{1},a_{2},...)]\text{ sii }\mathbf{B}\models\varphi[(F(a_{1}),F(a_{2}),...)]
+\]
+
+\end_inset
+
+Hay dos casos.
+ Caso 
+\begin_inset Formula $\varphi=r(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+,
+\begin_inset Formula $\;r\in\mathcal{R}_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+.
+ Denotemos con 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ a 
+\begin_inset Formula $(a_{1},a_{2},...)$
+\end_inset
+
+ y con 
+\begin_inset Formula $F(\vec{a})$
+\end_inset
+
+ a 
+\begin_inset Formula $(F(a_{1}),F(a_{2}),...)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+\mathbf{A}\models\varphi[\vec{a}] & \text{sii} & (t_{1}^{\mathbf{A}}[\vec{a}],...,t_{m}^{\mathbf{A}}[\vec{a}])\in r^{\mathbf{A}}\text{ (def de }\models\text{)}\\
+ & \text{sii} & (F(t_{1}^{\mathbf{A}}[\vec{a}]),...,F(t_{n}^{\mathbf{A}}[\vec{a}]))\in r^{\mathbf{B}}\text{ (}F\text{ es iso)}\\
+ & \text{sii} & (t_{1}^{\mathbf{B}}[F(\vec{a})]),...,t_{n}^{\mathbf{B}}[F(\vec{a})])\in r^{\mathbf{B}}\text{ (Lema \ref{F-respeta-term})}\\
+ & \text{sii} & \mathbf{B}\models\varphi[F(\vec{a})]
+\end{array}
+\]
+
+\end_inset
+
+Dejamos al lector completar la prueba de que Teo
+\begin_inset Formula $_{k}$
+\end_inset
+
+ implica Teo
+\begin_inset Formula $_{k+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Isomorfismo de Posets
+\end_layout
+
+\begin_layout Paragraph
+Enunciado
+\end_layout
+
+\begin_layout Lemma
+Sean 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+posets.
+ Supongamos 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(P^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Para cada 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+ y cada 
+\begin_inset Formula $a\in P$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $a$
+\end_inset
+
+ es cota superior (resp.
+ inferior) de 
+\begin_inset Formula $S$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es cota superior (resp.
+ inferior) de 
+\begin_inset Formula $F(S)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Para cada 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+,
+ se tiene que existe 
+\begin_inset Formula $\sup(S)$
+\end_inset
+
+ si y solo si existe 
+\begin_inset Formula $\sup(F(S))$
+\end_inset
+
+ y en el caso de que existan tales elementos se tiene que 
+\begin_inset Formula $F(\sup(S))=\sup(F(S))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+Prueba
+\end_layout
+
+\begin_layout Enumerate
+Supongamos que 
+\begin_inset Formula $a$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Veamos que entonces 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $F(S)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $x\in F(S)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $s\in S$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x=F(s)$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $s\leq a$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $x=F(s)\leq^{\prime}F(a)$
+\end_inset
+
+.
+ Supongamos ahora que 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $F(S)$
+\end_inset
+
+ y veamos que entonces 
+\begin_inset Formula $a$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $s\in S$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $F(s)\leq^{\prime}F(a)$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $s=F^{-1}(F(s))\leq F^{-1}(F(a))=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Supongamos existe 
+\begin_inset Formula $\sup(S)$
+\end_inset
+
+.
+ Veamos entonces que 
+\begin_inset Formula $F(\sup(S))$
+\end_inset
+
+ es el supremo de 
+\begin_inset Formula $F(S)$
+\end_inset
+
+.
+ Por (e) 
+\begin_inset Formula $F(\sup(S))$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $F(S)$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $b$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $F(S)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $F^{-1}(b)$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $S$
+\end_inset
+
+,
+ por lo cual 
+\begin_inset Formula $\sup(S)\leq F^{-1}(b)$
+\end_inset
+
+,
+ produciendo 
+\begin_inset Formula $F(\sup(S))\leq^{\prime}b$
+\end_inset
+
+.
+ En forma analoga se ve que si existe 
+\begin_inset Formula $\sup(F(S))$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $F^{-1}(\sup(F(S)))$
+\end_inset
+
+ es el supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

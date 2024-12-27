@@ -1,0 +1,5596 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:40:36}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Estructuras y su lenguaje elemental asociado
+\end_layout
+
+\begin_layout Standard
+En la Guia 6 desarrollamos a manera intuitiva un tipo de formulas y pruebas muy particulares asociadas con los reticulados cuaterna.
+ Les llamamos formulas elementales y pruebas elementales por lo basicas y simples que son.
+ En esta guia haremos lo mismo con las otras estructuras que venimos trabajando y con algunas nuevas.
+ Esto dejara el terreno listo para hacer en la Guia 8 un tratamiento general del concepto de estructura y su lenguaje elemental.
+\end_layout
+
+\begin_layout Standard
+Es importante notar que las estructuras que hemos estudiado en las guias previas son todas de un formato similar,
+ a saber uplas formadas por una primera coordenada que es un conjunto no vacio (llamado el universo de la estructura) y luego ciertas relaciones,
+ operaciones y elementos distinguidos,
+ dependiendo del caso.
+ Otra cosa importante a notar es que para cada tipo de estructura hay ciertos simbolos fijos que usamos en forma generica para denotar sus relaciones,
+ operaciones y elementos distinguidos.
+ Por ejemplo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para los posets usamos el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ para denotar su relacion binaria de orden parcial en un sentido generico (este tipo de estructuras no tiene operaciones ni elementos distinguidos).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados terna usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones binarias de supremo e infimo (este tipo de estructuras no tiene relaciones ni elementos distinguidos).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados acotados usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones binarias de supremo e infimo y los numerales 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ para denotar sus elementos distinguidos,
+ a saber minimo y maximo respectivamente.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados complementados usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones binarias de supremo e infimo,
+ el simbolo 
+\begin_inset Formula $c$
+\end_inset
+
+ para denotar su operacion unaria de complementacion y los numerales 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ para denotar sus elementos distinguidos,
+ a saber minimo y maximo respectivamente.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para el caso de los reticulados cuaterna usamos en forma generica los simbolos 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ para denotar sus operaciones binarias de supremo e infimo y el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ para denotar su relacion binaria de orden parcial.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Para el caso de los reticulados cuaterna,
+ estos simbolos genericos (
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ y 
+\begin_inset Formula $\leq$
+\end_inset
+
+) son justamente los que intervienen (aparte de los simbolos clasicos) en la construccion de las formulas elementales.
+ Es decir que para dar nuestra definicion de formula elemental para alguno de estos otros tipos de estructura,
+ usaremos la misma idea,
+ es decir seran aquellas formulas que se pueden construir (de forma adecuada) usando solo los simbolos genericos del tipo de estructura en cuestion mas simbolos de la lista de simbolos clasicos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall\ \exists\;\lnot\;\vee\;\wedge\;\rightarrow\;\leftrightarrow\;(\;,\;)\;=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x,y,z,w,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a,b,c,d,...$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A continuacion iremos viendo los distintos casos (algunos quedaran como ejercicios) y agregaremos tambien tres tipos de estructuras mas para hacer mas general aun nuestra perspectiva del tema.
+\end_layout
+
+\begin_layout Subsubsection*
+Posets
+\end_layout
+
+\begin_layout Standard
+Ya que no tenemos en los posets operaciones ni elementos distinguidos,
+ solo una la relacion binaria denotada genericamente con el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+,
+ los
+\emph on
+ terminos elementales de posets
+\emph default
+ seran las variables y los nombres de elementos fijos.
+ Y las 
+\emph on
+formulas elementales de posets
+\emph default
+ se definen con las siguientes clausulas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de posets,
+ entonces la palabra 
+\begin_inset Formula $(t=s)$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de posets,
+ entonces la palabra 
+\begin_inset Formula $(t\leq s)$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de posets,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de posets,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de posets,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de posets,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de posets,
+ entonces 
+\begin_inset Formula $\lnot\varphi$
+\end_inset
+
+ es una formula elemental de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de posets,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\forall x\varphi\;\;\;\forall y\varphi\;\;\;\forall z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de posets,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\exists x\varphi\;\;\;\exists y\varphi\;\;\;\exists z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es una formula elemental de posets si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Notese que cada formula elemental de posets es una formula elemental de reticulados cuaterna pero obviamente no al revez.
+ Similarmente a lo hecho para reticulados cuaterna,
+ aquellas formulas elementales de posets en las que no ocurren nombres de elementos fijos seran llamadas 
+\emph on
+puras
+\emph default
+.
+ Analogamente aquellos terminos elementales de posets en los que no ocurren nombres de elementos fijos son llamados 
+\emph on
+puros
+\emph default
+ (i.e.
+ las variables).
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+De una formula elemental pura de posets que tenga dos variables libres 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ existe el supremo del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+De una formula elemental pura de posets que tenga dos variables libres 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x\text{ es cubierto por }y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de posets la cual sea verdadera en un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es isomorfo a 
+\begin_inset Formula $(\{2,4,8\},|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de posets la cual sea verdadera en un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de posets la cual sea verdadera en un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par cuyo reticulado terna asociado es distributivo
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset VSpace bigskip
+\end_inset
+
+Reticulados complementados
+\end_layout
+
+\begin_layout Standard
+Ya que en estas estructuras tenemos tres operaciones distinguidas,
+ denotadas genericamente con 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ y 
+\begin_inset Formula $c$
+\end_inset
+
+ y ademas tenemos dos elementos distinguidos,
+ denotados genericamente con los numerales 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+,
+ los 
+\emph on
+terminos elementales de reticulados complementados
+\emph default
+ seran dados por las siguientes clausulas
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Los numerales 
+\begin_inset Formula $0$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ son terminos elementales de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada variable es un termino elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada nombre de elemento fijo es un termino elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ es un termino elemental de reticulados complementados,
+ entonces 
+\begin_inset Formula $c(t)$
+\end_inset
+
+ es un termino elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados complementados,
+ entonces 
+\begin_inset Formula $(t\;\mathsf{s\;}s)$
+\end_inset
+
+ es un termino elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados complementados,
+ entonces 
+\begin_inset Formula $(t\;\mathsf{i\;}s)$
+\end_inset
+
+ es un termino elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es un termino elemental de reticulados complementados si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Deberia quedar claro que arriba 
+\begin_inset Formula $c(t)$
+\end_inset
+
+ denota el resultado de concatenar las 4 siguientes palabras
+\begin_inset Formula 
+\[
+c\;\;\;\;\;\;(\;\;\;\;\;\;\;\;\;t\;\;\;\;\;\;\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $c(t)$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|t\right|+3$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(0\;\mathsf{s\;}c(y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c(0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c((x\mathsf{\;s\;}y)\;\mathsf{s}\;z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(c(a)\;\mathsf{s\;}z)\;\mathsf{i\;}x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c(c(c(b)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las siguientes clausulas definen el concepto de 
+\emph on
+formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados complementados,
+ entonces la palabra 
+\begin_inset Formula $(t=s)$
+\end_inset
+
+ es una formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados complementados,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados complementados,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados complementados,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados complementados,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulados complementados,
+ entonces 
+\begin_inset Formula $\lnot\varphi$
+\end_inset
+
+ es una formula elemental de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulados complementados,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\forall x\varphi\;\;\;\forall y\varphi\;\;\;\forall z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulados complementados,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\exists x\varphi\;\;\;\exists y\varphi\;\;\;\exists z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es una formula elemental de reticulados complementados si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Notese que por ejemplo la palabra 
+\begin_inset Formula $(x\leq y)$
+\end_inset
+
+ no es una formula elemental de reticulados complementados.
+ Esto es debido a que en la definicion de reticulado complementado solo intervienen las operaciones 
+\begin_inset Formula $\mathsf{s},\mathsf{i},c$
+\end_inset
+
+ y los elementos distinguidos 
+\begin_inset Formula $0,1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De una sentencia elemental pura de reticulados complementados la cual sea verdadera en un reticulado complementado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},c,0,1)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es distributivo.
+ 
+\end_layout
+
+\begin_layout Enumerate
+De una formula elemental pura de reticulados complementados que tenga a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ como sus unicas variables libres y la cual 
+\begin_inset Quotes eld
+\end_inset
+
+diga
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es menor o igual a 
+\begin_inset Formula $y$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},c,0,1)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ser muy similares,
+ dejamos como ejercicios los casos de reticulados terna y reticulados acotados.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Defina el concepto de 
+\emph on
+termino elemental de reticulados terna
+\end_layout
+
+\begin_layout Enumerate
+Defina el concepto de 
+\emph on
+formula elemental de reticulados terna
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Defina el concepto de 
+\emph on
+termino elemental de reticulados acotados
+\end_layout
+
+\begin_layout Enumerate
+Defina el concepto de 
+\emph on
+formula elemental de reticulados acotados
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+De una sentencia elemental pura de reticulados acotados la cual sea verdadera en un reticulado acotado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+ si y solo todo elemento de 
+\begin_inset Formula $L$
+\end_inset
+
+ tiene un complemento en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+De una formula elemental pura de reticulados complementados que tenga a 
+\begin_inset Formula $x$
+\end_inset
+
+ como su unica variable libre y la cual 
+\begin_inset Quotes eld
+\end_inset
+
+diga
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es complementado en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+A continuacion analizaremos las formulas elementales de otros tres tipos de estructuras.
+\end_layout
+
+\begin_layout Subsubsection*
+Grafos
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+grafo
+\shape default
+ es un par 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ donde 
+\begin_inset Formula $G$
+\end_inset
+
+ es un conjunto no vacio y 
+\begin_inset Formula $r$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $G$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x,x)\notin r$
+\end_inset
+
+,
+ cualesquiera sea 
+\begin_inset Formula $x\in G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(x,y)\in r$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(y,x)\in r$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+ (es decir,
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ es una relacion simetrica con respecto a 
+\begin_inset Formula $G$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Hay varias presentaciones del concepto de grafo no dirigido pero el lector no tardara en darse cuenta que estas estructuras son equivalentes a las que el haya estudiado bajo el nombre de grafos no dirigidos.
+ Los elementos de 
+\begin_inset Formula $G$
+\end_inset
+
+ son llamados los 
+\emph on
+vertices
+\emph default
+ de 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+.
+ Cuando 
+\begin_inset Formula $(x,y)\in r$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ son 
+\emph on
+adyacentes 
+\emph default
+o 
+\emph on
+estan conectados
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Dado que no hay operaciones distinguidas ni elementos distinguidos en este tipo de estructuras,
+ los 
+\emph on
+terminos elementales de grafos
+\emph default
+ seran las variables y los nombres de elementos fijos.
+ Para las formulas elementales de grafos escribiremos 
+\begin_inset Formula $r(x,y)$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(x,y)\in r$
+\end_inset
+
+.
+ Con esta convencion las 
+\emph on
+formulas elementales de grafos
+\emph default
+ se definen con las siguientes clausulas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de grafos,
+ entonces la palabra 
+\begin_inset Formula $(t=s)$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de grafos,
+ entonces la palabra 
+\begin_inset Formula $r(t,s)$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de grafos,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de grafos,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de grafos,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de grafos,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de grafos,
+ entonces 
+\begin_inset Formula $\lnot\varphi$
+\end_inset
+
+ es una formula elemental de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de grafos,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\forall x\varphi\;\;\;\forall y\varphi\;\;\;\forall z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de grafos,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\exists x\varphi\;\;\;\exists y\varphi\;\;\;\exists z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es una formula elemental de grafos si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Deberia quedar claro que arriba 
+\begin_inset Formula $r(t,s)$
+\end_inset
+
+ denota el resultado de concatenar las 6 siguientes palabras
+\begin_inset Formula 
+\[
+r\;\;\;\;\;\;(\;\;\;\;\;\;t\;\;\;\;\;\;,\;\;\;\;\;\;s\;\;\;\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $r(t,s)$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|t\right|+\left|s\right|+4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Veamos algunas definiciones basicas de grafos.
+ Dado un grafo 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ y 
+\begin_inset Formula $x\in G$
+\end_inset
+
+ la 
+\emph on
+valencia
+\emph default
+ de 
+\begin_inset Formula $x$
+\end_inset
+
+ es el cardinal del conjunto 
+\begin_inset Formula $\{y:(x,y)\in r\}$
+\end_inset
+
+.
+ Diremos que un subconjunto 
+\begin_inset Formula $S\subseteq G$
+\end_inset
+
+ es una 
+\emph on
+clique
+\emph default
+ cuando se de que 
+\begin_inset Formula $(x,y)\in r$
+\end_inset
+
+ cada ves que 
+\begin_inset Formula $x,y$
+\end_inset
+
+ sean elementos distintos de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Dado 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+,
+ un 
+\emph on
+
+\begin_inset Formula $n$
+\end_inset
+
+-ciclo 
+\emph default
+de 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ sera una sucecion 
+\begin_inset Formula $x_{1},x_{2},...,x_{n}$
+\end_inset
+
+ la cual cumpla que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x_{i}\text{ es distinto de }x_{j}$
+\end_inset
+
+,
+ siempre que 
+\begin_inset Formula $i\text{ sea distinto de }j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x_{i},x_{i+1})\in r$
+\end_inset
+
+,
+ para 
+\begin_inset Formula $i=1,...,n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x_{n},x_{1})\in r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Algunos ejercicios:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+De una formula elemental pura de grafos que tenga a 
+\begin_inset Formula $x$
+\end_inset
+
+ como su unica variable libre la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ tiene valencia 3
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+De un sentencia elemental pura de grafos que sea verdadera en un grafo 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ no tiene cliques de cardinal 4
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+De un sentencia elemental pura de grafos que sea verdadera en un grafo 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ no tiene 4-ciclos
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Grafos bicoloreados
+\end_layout
+
+\begin_layout Standard
+Recordemos que dado un grafo 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+,
+ un 
+\shape italic
+coloreo de 
+\shape default
+
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ es una asignacion de colores a cada elemento de 
+\begin_inset Formula $G$
+\end_inset
+
+ de manera que nunca dos elementos de 
+\begin_inset Formula $G$
+\end_inset
+
+ que esten relacionados tengan el mismo color.
+ En el caso en que el coloreo solo usa dos colores,
+ le llamamos un 
+\shape italic
+bicoloreo de 
+\shape default
+
+\begin_inset Formula $(G,r)$
+\end_inset
+
+.
+ Notese que un bicoloreo puede ser representado con un subconjunto de 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Por ejemplo si el bicoloreo coloreaba a los elementos de 
+\begin_inset Formula $G$
+\end_inset
+
+ con dos colores,
+ verde y rojo,
+ podemos tomar 
+\begin_inset Formula $R=\{g\in G:g$
+\end_inset
+
+ es rojo
+\begin_inset Formula $\}$
+\end_inset
+
+ y esto determina nuestro bicoloreo ya que 
+\begin_inset Formula $G-R$
+\end_inset
+
+ sera justamente el conjunto de elemenos verdes.
+ O sea que matematicamente hablando podemos dar la siguiente definicion.
+ Un 
+\shape italic
+bicoloreo de 
+\shape default
+
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ es un subconjunto 
+\begin_inset Formula $R$
+\end_inset
+
+ de 
+\begin_inset Formula $G$
+\end_inset
+
+ el cual cumple:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+ se tiene que si 
+\begin_inset Formula $(x,y)\in r$
+\end_inset
+
+,
+ entonces se da alguna de las siguientes condiciones:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\in R$
+\end_inset
+
+ y 
+\begin_inset Formula $y\notin R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\notin R$
+\end_inset
+
+ y 
+\begin_inset Formula $y\in R$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Esto nos inspira para dar la definicion de un nuevo tipo de estructura.
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+grafo bicoloreado
+\shape default
+ es una terna 
+\begin_inset Formula $(G,r,R)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ es un grafo y 
+\begin_inset Formula $R$
+\end_inset
+
+ es un bicoloreo de 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{1,2\},\{(1,2),(2,1)\},\{1\})$
+\end_inset
+
+ es un grafo bicoloreado
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Tomemos
+\begin_inset Formula 
+\begin{align*}
+G & =\omega\\
+r & =\{(x,x+1):x\in\omega\}\cup\{(x+1,x):x\in\omega\}\\
+R & =\{x\in\omega:x\text{ es par}\}
+\end{align*}
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $(G,r,R)$
+\end_inset
+
+ es un grafo bicoloreado
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\{1,2,3,4\},\emptyset,R)$
+\end_inset
+
+ es un grafo bicoloreado,
+ cualesquera sea 
+\begin_inset Formula $R\subseteq\{1,2,3,4\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Para escribir las formulas elementales de grafos bicoloreados,
+ pensaremos a 
+\begin_inset Formula $R$
+\end_inset
+
+ como una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+relacion unaria
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ y escribiremos 
+\begin_inset Formula $R(x)$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $x\in R$
+\end_inset
+
+.
+ Asi como cuando escribimos 
+\begin_inset Formula $r(x,y)$
+\end_inset
+
+ pensamos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ estan conectados
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+,
+ cuando escribamos 
+\begin_inset Formula $R(x)$
+\end_inset
+
+ pensaremos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ es rojo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+.
+ Dejamos al lector la definicion de 
+\emph on
+terminos elementales de grafos bicoloreados
+\emph default
+ y de 
+\emph on
+formulas elementales de grafos bicoloreados
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos de formulas elementales de grafos bicoloreados:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(R(a)\wedge r(x,y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists z(r(a,z)\rightarrow R(z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall yr(a,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y((R(x)\wedge R(y))\rightarrow(x=y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\forall z(\lnot R(z)\rightarrow r(x,z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow(R(x)\leftrightarrow\lnot R(y)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y\forall z\;(((x=y)\wedge(y=z))\rightarrow(x=z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Deberia quedar claro que el primero de los ejemplos de formula elemental de grafos bicoloreados de arriba como objeto matematico es simplemente una palabra de longitud 13.
+ Algunos ejercicios:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+Pruebe que si un grafo 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ tiene un 
+\begin_inset Formula $3$
+\end_inset
+
+-ciclo,
+ entonces no puede ser bicoloreado.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+Notese que si en un grafo bicoloreado 
+\begin_inset Formula $(G,r,R)$
+\end_inset
+
+ existe un elemento 
+\begin_inset Formula $x$
+\end_inset
+
+ el cual esta relacionado con todos los otros elementos,
+ entonces ningun par de elementos distintos de 
+\begin_inset Formula $x$
+\end_inset
+
+ estan relacionados.
+ Escriba una sentencia elemental pura de grafos bicoloreados que exprese esta propiedad.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Median algebras
+\end_layout
+
+\begin_layout Standard
+Una 
+\shape italic
+median algebra
+\shape default
+ es un par 
+\begin_inset Formula $(A,M)$
+\end_inset
+
+ donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio,
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ es una operacion 
+\begin_inset Formula $3$
+\end_inset
+
+-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ (i.e.
+ 
+\begin_inset Formula $M:A^{3}\rightarrow A$
+\end_inset
+
+) y se cumplen:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M(x,y,z)=M(x,z,y)$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M(x,y,z)=M(y,z,x)$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M(x,x,y)=x$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M(M(x,y,z),u,v))=M(x,M(y,u,v),M(z,u,v))$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z,u,v\in A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Por ejemplo si tomamos un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y definimos 
+\begin_inset Formula $M(x,y,z)=(x\;\mathsf{i\;}y)\;\mathsf{s\;}(x\;\mathsf{i\;}z)\;\mathsf{s\;}(y\;\mathsf{i\;}z)$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(L,M)$
+\end_inset
+
+ es una median algebra.
+ Estas estructuras han sido extensivamente estudiadas y tienen un roll importante en la informatica teorica.
+\end_layout
+
+\begin_layout Standard
+Ya que hay una unica operacion distinguida la cual denotamos genericamente con la letra 
+\begin_inset Formula $M$
+\end_inset
+
+,
+ los 
+\emph on
+terminos elementales de median algebras
+\emph default
+ seran dados por las siguientes clausulas
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada variable es un termino elemental de median algebras
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada nombre de elemento fijo es un termino elemental de median algebras
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t_{1},t_{2},t_{3}$
+\end_inset
+
+ son terminos elementales de median algebras,
+ entonces 
+\begin_inset Formula $M(t_{1},t_{2},t_{3})$
+\end_inset
+
+ es un termino elemental de median algebras
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es un termino elemental de median algebras si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Deberia quedar claro que arriba 
+\begin_inset Formula $M(t_{1},t_{2},t_{3})$
+\end_inset
+
+ denota el resultado de concatenar las 8 siguientes palabras
+\begin_inset Formula 
+\[
+M\;\;\;\;\;\;(\;\;\;\;\;\;t_{1}\;\;\;\;\;\;,\;\;\;\;\;\;t_{2}\;\;\;\;\;\;,\;\;\;\;\;\;t_{3}\;\;\;\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $M(t_{1},t_{2},t_{3})$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|t_{1}\right|+\left|t_{2}\right|+\left|t_{3}\right|+5$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $M(x,y,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $M(M(a,a,a),a,a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $M(a,b,M(M(M(x,y,z),u,v),x,a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Ahora seguramente el lector no tendra problema para definir las formulas elementales de median algebras.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\exists y(M(x,y,z)=z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y\forall z((M(x,y,a)=M(x,y,b))\rightarrow(a=b))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y(M(x,y,y)=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+Defina el concepto de 
+\emph on
+formula elemental de median algebras
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Pruebas elementales
+\end_layout
+
+\begin_layout Standard
+Ya tenemos una buena cantidad de tipos de estructuras y para cada tipo hemos definido el concepto de formula elemental.
+ Ahora definiremos el concepto de prueba elemental asociado a cada tipo de estructura.
+ Obviamente nos inspiraremos en nuestro concepto ya definido,
+ y trabajado en la Guia 6,
+ de prueba elemental de reticulados cuaterna.
+ Primero es importante notar que para hablar del concepto de prueba elemental relativo a un tipo de estructura debemos tener un conjunto de sentencias elementales puras las cuales axiomaticen a tal tipo de estructura.
+ A continuacion daremos para cada tipo de estructura un conjunto de axiomas.
+ El lector no tendra problemas en corroborar que dichos conjuntos de axiomas caracterizan en cada caso al tipo de estructura en cuestion.
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de posets
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\leq x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\leq y\wedge y\leq z)\rightarrow x\leq z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y((x\leq y\wedge y\leq x)\rightarrow x=y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de reticulados terna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\;\mathsf{s}\;x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;i\;}x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;s\;}y=y\;\mathsf{s}\;x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;i\;}y=y\mathsf{\;i\;}x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\mathsf{\;s\;}y)\;\mathsf{s}\;z=x\;\mathsf{s}\;(y\;\mathsf{s}\;z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\mathsf{\;i\;}y)\mathsf{\;i\;}z=x\mathsf{\;i\;}(y\mathsf{\;i\;}z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;(x\mathsf{\;i\;}y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;i\;}(x\;\mathsf{s}\;y)=x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de reticulados acotados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\;\mathsf{s}\;x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;i\;}x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;s\;}y=y\;\mathsf{s}\;x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;i\;}y=y\mathsf{\;i\;}x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\mathsf{\;s\;}y)\;\mathsf{s}\;z=x\;\mathsf{s}\;(y\;\mathsf{s}\;z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\mathsf{\;i\;}y)\mathsf{\;i\;}z=x\mathsf{\;i\;}(y\mathsf{\;i\;}z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;(x\mathsf{\;i\;}y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;i\;}(x\;\mathsf{s}\;y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(0\mathsf{\;s\;}x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;s\;}1=1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de reticulados complementados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\;\mathsf{s}\;x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;i\;}x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;s\;}y=y\;\mathsf{s}\;x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;i\;}y=y\mathsf{\;i\;}x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\mathsf{\;s\;}y)\;\mathsf{s}\;z=x\;\mathsf{s}\;(y\;\mathsf{s}\;z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z((x\mathsf{\;i\;}y)\mathsf{\;i\;}z=x\mathsf{\;i\;}(y\mathsf{\;i\;}z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;(x\mathsf{\;i\;}y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(x\mathsf{\;i\;}(x\;\mathsf{s}\;y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(0\mathsf{\;s\;}x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;s\;}1=1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;s\;}c(x)=1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\mathsf{\;i\;}c(x)=0)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\leq R}=\forall x(x\leq x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\leq T}=\forall x\forall y\forall z((x\leq y\wedge y\leq z)\rightarrow x\leq z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\leq A}=\forall x\forall y((x\leq y\wedge y\leq x)\rightarrow x=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}=\forall x\forall y(x\leq x\;\mathsf{s}\;y\wedge y\leq x\;\mathsf{s}\;y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}=\forall x\forall y\forall z((x\leq z\wedge y\leq z)\rightarrow x\;\text{\ensuremath{\mathsf{s\;}}}y\leq z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}esC}=\forall x\forall y(x\;\mathsf{i}\;y\leq x\wedge x\;\mathsf{i}\;y\leq y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}=\forall x\forall y\forall z((z\leq x\wedge z\leq y)\rightarrow z\leq x\;\mathsf{i}\;y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de grafos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\neg r(x,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow r(y,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de grafos bicoloreados
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\neg r(x,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow r(y,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow((R(x)\wedge\lnot R(y))\vee(\lnot R(x)\wedge R(y))))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas elementales de median algebras
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z(M(x,y,z)=M(x,z,y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z(M(x,y,z)=M(y,z,x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y(M(x,x,y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\forall u\forall v(M(M(x,y,z),u,v))=M(x,M(y,u,v),M(z,u,v)))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ahora que tenemos para cada tipo de estructura sus axiomas elementales podemos describir el concepto de 
+\emph on
+prueba elemental
+\emph default
+ relativo a un tipo de estructura.
+ Por supuesto las pruebas elementales prueban cierta sentencia elemental pura de dicho tipo,
+ la cual debera obviamente ser verdadera en todas las estructuras de tal tipo.
+ Deberan poseer ademas las siguientes caracteristicas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+El enunciado a probar debe ser una sentencia elemental pura del tipo en cuestion.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+En la prueba se parte de una estructura del tipo en cuestion,
+ fija pero arbitraria en el sentido que lo unico que sabemos es que ella satisface los axiomas elementales correspondientes (o sea esta es la unica informacion particular que podemos usar).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Las deducciones en la prueba son muy simples y obvias de justificar con minimas fraces en castellano
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+En la escritura de la prueba lo concerniente a la matematica misma se expresa usando solo sentencias elementales del tipo de estructura en cuestion
+\end_layout
+
+\begin_layout Standard
+Dado que en una prueba se parte de una estructura fija de la que solo se asume que satisface los axiomas elementales,
+ la sentencia elemental probada debe ser verdadera en todas las estructuras del tipo en cuestion.
+\end_layout
+
+\begin_layout Standard
+A continuacion damos ejemplos para cada uno de los tipos de estructuras analizados previamente.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales de posets
+\end_layout
+
+\begin_layout Standard
+Sea
+\begin_inset Formula 
+\[
+\mu=\forall x\forall y\left((\forall z\ z\leq x\wedge\forall z\ z\leq y)\rightarrow x=y\right)
+\]
+
+\end_inset
+
+Notese que 
+\begin_inset Formula $\mu$
+\end_inset
+
+ es una sentencia elemental pura de posets la cual se cumple en todos los posets ya que ella expresa que si en un poset 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ son elementos maximos,
+ entonces 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+ Veamos una prueba elemental de 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ Notar que,
+ tal como lo aclara el item (2) arriba,
+ debemos partir de un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+,
+ fijo pero arbitrario y solo usar la informacion que nos brindan los axiomas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ fijos pero arbitrarios.
+ Supongamos
+\begin_inset Formula 
+\[
+(\forall z\ z\leq a\wedge\forall z\ z\leq b)
+\]
+
+\end_inset
+
+En particular 
+\begin_inset Formula $\forall z\ z\leq b$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ y 
+\begin_inset Formula $\forall z\ z\leq a$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+,
+ por lo cual tenemos que
+\begin_inset Formula 
+\[
+a\leq b\wedge b\leq a
+\]
+
+\end_inset
+
+Pero el axioma
+\begin_inset Formula 
+\[
+\forall x\forall y((x\leq y\wedge y\leq x)\rightarrow x=y)
+\]
+
+\end_inset
+
+nos dice que
+\begin_inset Formula 
+\[
+(a\leq b\wedge b\leq a)\rightarrow a=b
+\]
+
+\end_inset
+
+obteniendo de esta forma que 
+\begin_inset Formula $a=b$
+\end_inset
+
+.
+ O sea que hemos probado que
+\begin_inset Formula 
+\[
+(\forall z\ z\leq a\wedge\forall z\ z\leq b)\rightarrow a=b
+\]
+
+\end_inset
+
+Como 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ eran elementos fijos pero arbitrarios,
+ obtenemos que vale 
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+De pruebas elementales de posets de las siguientes sentencias
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\exists x\exists y\ (\lnot(x=y))\rightarrow\exists x\exists y\ (\lnot(x\leq y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\ (x\leq y\wedge y\leq z\wedge x=z\rightarrow x=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\forall x\exists y(\lnot(x=y)\wedge x\leq y)\rightarrow\exists x\exists y\exists z(\lnot(x=y)\wedge\lnot(x=z)\wedge\lnot(y=z))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales de reticulados terna
+\end_layout
+
+\begin_layout Standard
+A continuacion daremos una prueba elemental de reticulados terna de la sentencia 
+\begin_inset Formula $\eta=\forall x\forall y(x\;\mathsf{s}\;y=y\rightarrow x\;\mathsf{i}\;y=x)$
+\end_inset
+
+.
+ Notar que,
+ tal como lo aclara el item (2) de la descripcion de prueba elemental,
+ debemos partir de un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+,
+ fijo pero arbitrario y solo usar la informacion que nos brindan los axiomas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+ fijos pero arbitrarios.
+ Supongamos
+\begin_inset Formula 
+\[
+(a\;\mathsf{s}\;b=b)
+\]
+
+\end_inset
+
+El axioma
+\begin_inset Formula 
+\[
+\forall x\forall y(x\mathsf{\;i\;}(x\;\mathsf{s}\;y)=x)
+\]
+
+\end_inset
+
+nos dice que
+\begin_inset Formula 
+\[
+a\mathsf{\;i\;}(a\;\mathsf{s}\;b)=a
+\]
+
+\end_inset
+
+O sea que reemplazando en esta igualdad 
+\begin_inset Formula $a\;\mathsf{s}\;b$
+\end_inset
+
+ por 
+\begin_inset Formula $b$
+\end_inset
+
+ obtenemos:
+\begin_inset Formula 
+\[
+a\mathsf{\;i\;}b=a
+\]
+
+\end_inset
+
+Ya que habiamos supuesto que 
+\begin_inset Formula $a\;\mathsf{s}\;b=b$
+\end_inset
+
+ hemos probado en realidad que
+\begin_inset Formula 
+\[
+a\;\mathsf{s}\;b=b\rightarrow a\mathsf{\;i\;}b=a
+\]
+
+\end_inset
+
+Como 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ eran elementos fijos pero arbitrarios,
+ obtenemos que vale 
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;y=y\rightarrow x\;\mathsf{i}\;y=x)$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 17:
+\end_layout
+
+\end_inset
+
+Notese que las sentencias elementales de reticulados terna son sentencias elementales de reticulados cuaterna tambien.
+ Explique por que la prueba elemental de reticulados terna de arriba no es una prueba elemental de reticulados cuaterna.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 18:
+\end_layout
+
+\end_inset
+
+Sean
+\begin_inset Formula 
+\begin{align*}
+Dis_{1} & =\forall x\forall y\forall z(x\mathsf{\;i\;}(y\;\mathsf{s}\;z)=(x\mathsf{\;i\;}y)\;\mathsf{s}\;(x\mathsf{\;i\;}z))\\
+Dis_{2} & =\forall x\forall y\forall z(x\;\mathsf{s}\;(y\mathsf{\;i\;}z)=(x\mathsf{\;s\;}y)\mathsf{\;i\;}(x\;\mathsf{s}\;z))
+\end{align*}
+
+\end_inset
+
+De una prueba elemental de reticulados terna de la sentencia 
+\begin_inset Formula $(Dis_{1}\rightarrow Dis_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Encontrar pruebas elementales de reticulados terna tiene cierta dificultad ya que solo podemos usar los axiomas de reticulados terna y ademas no podemos escribir el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+.
+ Podemos escribir 
+\begin_inset Formula $t\;\mathsf{s}\;s=s$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $t\leq s$
+\end_inset
+
+ y de esta manera simular en nuestras formulas elementales de reticulados terna al simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+.
+ De todas maneras el escollo que tendremos es que de los axiomas de reticulados terna no es obvio que las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ sean supremo e infimo respecto del orden dado por la ecuacion 
+\begin_inset Formula $x\;\mathsf{s}\;y=y$
+\end_inset
+
+.
+ Esto puede ser resuelto si nos inspiramos en la prueba del Teorema de Dedeking (que prueba justamente eso usando solo el lenguaje elemental de los reticulados terna) pero de todas maneras las pruebas se complican un poco en su escritura.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales de reticulados acotados
+\end_layout
+
+\begin_layout Standard
+Tambien tenemos el problema de no poder escribir el simbolo 
+\begin_inset Formula $\leq$
+\end_inset
+
+ en las pruebas elementales de reticulados acotados y tambien el escollo de que los axiomas no hacen referencia obvia a que las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ sean operaciones supremo e infimo respecto del orden dado por la ecuacion 
+\begin_inset Formula $x\;\mathsf{s}\;y=y$
+\end_inset
+
+.
+ Sin envargo muchas pruebas elementales se pueden hacer en forma natural.
+ Por ejemplo,
+ notar que toda prueba elemental de reticulados terna es tambien una prueba elemental de reticulados acotados,
+ por lo cual tenemos pruebas elementales de reticulados acotados de las sentencias
+\begin_inset Formula 
+\begin{align*}
+\forall x\forall y(x\;\mathsf{s}\;y & =y\rightarrow x\;\mathsf{i}\;y=x)\\
+(Dis_{1} & \rightarrow Dis_{2})
+\end{align*}
+
+\end_inset
+
+Veamos una prueba elemental de reticulados acotados de la sentencia 
+\begin_inset Formula $\forall x(x\mathsf{\;i\;}1=x)$
+\end_inset
+
+.
+ Notar que,
+ tal como lo aclara el item (2) de la descripcion de prueba elemental,
+ debemos partir de un reticulado acotado 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},0,1)$
+\end_inset
+
+,
+ fijo pero arbitrario y solo usar la informacion que nos brindan los axiomas de reticulados acotados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $a\in L$
+\end_inset
+
+ fijo pero arbitrario.
+ El axioma
+\begin_inset Formula 
+\[
+\forall x(x\mathsf{\;s\;}1=1)
+\]
+
+\end_inset
+
+nos dice que
+\begin_inset Formula 
+\[
+a\mathsf{\;s\;}1=1
+\]
+
+\end_inset
+
+Ya que
+\begin_inset Formula 
+\[
+\forall x\forall y(x\;\mathsf{s}\;y=y\rightarrow x\;\mathsf{i}\;y=x)
+\]
+
+\end_inset
+
+(teorema ya probado) tenemos que
+\begin_inset Formula 
+\[
+a\;\mathsf{s}\;1=1\rightarrow a\;\mathsf{i}\;1=a
+\]
+
+\end_inset
+
+O sea que
+\begin_inset Formula 
+\[
+a\;\mathsf{i}\;1=a
+\]
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $a$
+\end_inset
+
+ era arbitrario,
+ hemos probado que
+\begin_inset Formula 
+\[
+\forall x(x\;\mathsf{i}\;1=x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Por supuesto la anterior no es una prueba elemental estrictamente hablando porque en una parte introduce la sentencia 
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;y=y\rightarrow x\;\mathsf{i}\;y=x)$
+\end_inset
+
+ y lo justifica diciendo 
+\begin_inset Quotes eld
+\end_inset
+
+teorema ya probado
+\begin_inset Quotes erd
+\end_inset
+
+ lo cual no es una justificacion simple y obvia (de hecho dicho teorema podria ser muy dificil de probar).
+ Obviamente esto se soluciona de manera muy simple:
+ agregamos antes de la sentencia 
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;y=y\rightarrow x\;\mathsf{i}\;y=x)$
+\end_inset
+
+ la prueba elemental que ya hicimos de ella.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 19:
+\end_layout
+
+\end_inset
+
+Inspirese en los resultados dados en la Guia 5 para dar pruebas elementales de reticulados complementados de las siguientes sentencias elementales puras:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Dis_{1}\rightarrow\forall x\forall u\forall v((x\mathsf{\;s\;}u=1\wedge x\mathsf{\;i\;}u=0\wedge x\mathsf{\;s\;}v=1\wedge x\mathsf{\;i\;}v=0)\rightarrow u=v)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Dis_{1}\rightarrow\forall x\forall u((x\mathsf{\;s\;}u=1\wedge x\mathsf{\;i\;}u=0)\rightarrow u=c(x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Dis_{1}\rightarrow\forall x\forall y(c(x\,\mathsf{i\,}y)=c(x)\,\mathsf{s\,}c(y))$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales de grafos
+\end_layout
+
+\begin_layout Standard
+Es dificil encontrar pruebas elementales de grafos que no sean complicadas.
+ Aceptando cierto grado de complejidad hay muchas.
+ Un dato interesante es que el conjunto de sentencias elementales de grafos que tienen una prueba elemental es no recursivo,
+ es decir no hay un procedimiento efectivo que decida si una sentencia elemental de grafos dada tiene una prueba elemental.
+ Esto habla acerca de cuan complicada puede ser la estructura o fisonomia de las sentencias elementales de grafos que pueden ser probadas elementalmente.
+ Otro problema para hacer pruebas elementales de grafos es que en general son tediosas ya que suelen involucrar el analisis de muchos casos.
+ De todas maneras muchas veces aunque la prueba sea tediosa por la cantidad de casos,
+ la idea de la sentencia a probar es bastante geometrica y simple.
+ Veamos un ejemplo.
+ Supongamos que tenemos dos suceciones 
+\begin_inset Formula $x_{1},x_{2},...,x_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $y_{1},y_{2},...,y_{n}$
+\end_inset
+
+ de vertices de un grafo 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ tales que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x_{i}\text{ es distinto de }x_{j}$
+\end_inset
+
+,
+ siempre que 
+\begin_inset Formula $i\text{ sea distinto de }j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $y_{i}\text{ es distinto de }y_{j}$
+\end_inset
+
+,
+ siempre que 
+\begin_inset Formula $i\text{ sea distinto de }j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x_{i},x_{i+1}),(y_{i},y_{i+1})\in r$
+\end_inset
+
+,
+ para 
+\begin_inset Formula $i=1,...,n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x_{1}=y_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $x_{n}=y_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x_{i}\text{ es distinto de }y_{i}$
+\end_inset
+
+,
+ para algun 
+\begin_inset Formula $i\in\{2,...,n-1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces haciendo un dibujo uno rapidamente se convence que en 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ debe haber un 
+\begin_inset Formula $k$
+\end_inset
+
+-ciclo,
+ con 
+\begin_inset Formula $k$
+\end_inset
+
+ tal que 
+\begin_inset Formula $2n-2\geq k\geq4$
+\end_inset
+
+.
+ Por supuesto esta verdad acerca de los grafos todavia no esta escrita en forma de sentencia elemental y si quisieramos hacerlo nos topariamos con el problema que 
+\begin_inset Formula $n$
+\end_inset
+
+ es variable en el enunciado de dicho resultado.
+ Sin embargo para el caso de un 
+\begin_inset Formula $n$
+\end_inset
+
+ concreto,
+ digamos 
+\begin_inset Formula $n=10$
+\end_inset
+
+,
+ con un poco de trabajo,
+ podemos hacer una sentencia elemental que simule el enunciado anterior.
+ Y con bastante mas trabajo podriamos hacer una prueba elemental de grafos que pruebe dicha sentencia elemental.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 19,5:
+\end_layout
+
+\end_inset
+
+(O) Explique como construiria la sentencia elemental que corresponde al caso 
+\begin_inset Formula $n=10$
+\end_inset
+
+ del resultado arriba descripto.
+ Tambien imagine como seria una prueba elemental de dicha sentencia.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales de median algebras
+\end_layout
+
+\begin_layout Standard
+Tambien es dificil encontrar pruebas elementales de median algebras que no sean complicadas.
+ Veamos una prueba elemental de median algebras de la sentencia 
+\begin_inset Formula $\forall x\forall y(M(x,y,y)=y)$
+\end_inset
+
+.
+ Notar que,
+ tal como lo aclara el item (2) de la descripcion de prueba elemental,
+ debemos partir de una median algebra 
+\begin_inset Formula $(A,M)$
+\end_inset
+
+,
+ fija pero arbitraria y solo usar la informacion que nos brindan los axiomas de median algebras.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $a,b\in A$
+\end_inset
+
+ fijos pero arbitrarios.
+ Por el axioma 
+\begin_inset Formula $\forall x\forall y\forall z(M(x,y,z)=M(y,z,x))$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\[
+M(a,b,b)=M(b,b,a)
+\]
+
+\end_inset
+
+Por el axioma 
+\begin_inset Formula $\forall x\forall y(M(x,x,y)=x)$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\[
+M(b,b,a)=b
+\]
+
+\end_inset
+
+O sea que
+\begin_inset Formula 
+\[
+M(a,b,b)=b
+\]
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $a,b$
+\end_inset
+
+ eran arbitarios,
+ hemos probado que 
+\begin_inset Formula $\forall x\forall y(M(x,y,y)=y)$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pruebas elementales de grafos bicoloreados
+\end_layout
+
+\begin_layout Standard
+Veamos una prueba elemental de grafos bicoloreados de la sentencia 
+\begin_inset Formula $\forall x\forall y((r(x,y)\wedge R(x))\rightarrow\lnot R(y))$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+ fijos pero arbitarios.
+ Supongamos 
+\begin_inset Formula $r(a,b)\wedge R(a)$
+\end_inset
+
+.
+ En particular tenemos que se da 
+\begin_inset Formula $r(a,b)$
+\end_inset
+
+.
+ Por el axioma 
+\begin_inset Formula $\forall x\forall y(r(x,y)\rightarrow((R(x)\wedge\lnot R(y))\vee(\lnot R(x)\wedge R(y))))$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $r(a,b)\rightarrow((R(a)\wedge\lnot R(b))\vee(\lnot R(a)\wedge R(b)))$
+\end_inset
+
+,
+ por lo cual tenemos que 
+\begin_inset Formula $((R(a)\wedge\lnot R(b))\vee(\lnot R(a)\wedge R(b)))$
+\end_inset
+
+.
+ Pero ya que se da 
+\begin_inset Formula $R(a)$
+\end_inset
+
+,
+ tenemos que no puede darse 
+\begin_inset Formula $(\lnot R(a)\wedge R(b))$
+\end_inset
+
+,
+ por lo cual obtenemos que se da 
+\begin_inset Formula $(R(a)\wedge\lnot R(b))$
+\end_inset
+
+.
+ Esto en particular nos dice que se da 
+\begin_inset Formula $\lnot R(b)$
+\end_inset
+
+.
+ O sea que hemos probado que 
+\begin_inset Formula $(r(a,b)\wedge R(a))\rightarrow\lnot R(b)$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $b$
+\end_inset
+
+ eran arbitrarios tenemos que vale 
+\begin_inset Formula $\forall x\forall y((r(x,y)\wedge R(x))\rightarrow\lnot R(y))$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 20:
+\end_layout
+
+\end_inset
+
+De pruebas elementales de grafos bicoloreados de las sentencias
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y((r(x,y)\wedge\lnot R(x))\rightarrow R(y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\lnot(r(x,y)\wedge r(x,z)\wedge r(y,z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ ((R(x)\wedge\forall z(\lnot(z=x)\rightarrow r(x,z)))\rightarrow\forall u\ (\lnot(u=x)\rightarrow\lnot R(u)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\ (\forall z(\lnot(z=x)\rightarrow r(x,z))\rightarrow\forall u\forall v((\lnot(u=x)\wedge\lnot(v=x))\rightarrow\lnot r(u,v)))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 21:
+\end_layout
+
+\end_inset
+
+(O) Defina el concepto de 
+\shape italic
+grafo tricoloreado
+\shape default
+ como una cuatrupla 
+\begin_inset Formula $(G,r,R,V)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ es un grafo y .....
+ Describa informalmente cuales serian las formulas elementales de grafos tricoloreados,
+ encuentre sentencias elementales que los axiomaticen y de algunas pruebas elementales de grafos tricoloreados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Limitaciones del poder expresivo de las formulas elementales
+\end_layout
+
+\begin_layout Standard
+Ya vimos para el caso de los reticulados cuaterna en la Guia 6 que no hay una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de reticulados cuaterna la cual cumpla que es verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto finito.
+ Lo mismo sucede para todos los otros tipos de estructuras,
+ es decir nunca se puede con una sentencia elemental pura decir que la estructura tenga universo finito.
+ O sea en general es muy comun que no se pueda decir cierta propiedad por medio de una formula o sentencia elemental.
+ Esto habla en algun sentido del poco poder expresivo que tienen las formulas elementales lo cual es razonable por lo 
+\begin_inset Quotes eld
+\end_inset
+
+elementales
+\begin_inset Quotes erd
+\end_inset
+
+ y en algun sentido 
+\begin_inset Quotes eld
+\end_inset
+
+finitarias
+\begin_inset Quotes erd
+\end_inset
+
+ que son.
+ Veamos algunos ejemplos mas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+No hay una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de grafos la cual tenga a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ como sus unicas variables libres y la cual cumpla que dado un grafo cualquiera 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ sean equivalentes las siguientes propiedades:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+ cuando asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $g_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $g_{2}$
+\end_inset
+
+ estan en la misma componente conexa de 
+\begin_inset Formula $(G,r)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir no hay una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de grafos la cual 
+\begin_inset Quotes eld
+\end_inset
+
+diga
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ estan en la misma componente conexa
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+No hay una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ elemental de posets la cual tenga a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ como sus unicas variables libres y la cual cumpla que dado un poset cualquiera 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ sean equivalentes las siguientes propiedades:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ cuando asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+El intervalo 
+\begin_inset Formula $\{p\in P:p_{1}\leq p\leq p_{2}\}$
+\end_inset
+
+ es un conjunto finito
+\end_layout
+
+\begin_layout Standard
+Es decir no hay una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de posets la cual 
+\begin_inset Quotes eld
+\end_inset
+
+diga
+\begin_inset Quotes erd
+\end_inset
+
+ el intervalo 
+\begin_inset Formula $[x,y]$
+\end_inset
+
+ es finito
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+No hay una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ elemental de reticulados terna la cual sea verdadera en un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es isomorfo al reticulado terna 
+\begin_inset Formula $(\text{\textbf{R}},max,min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Es decir,
+ lo mas comun es que si una propiedad involucra infinitos chequeos no se pueda 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ por medio de una formula elemental.
+ Al igual que en el ejemplo dado en la Guia 6,
+ las imposibilidades dadas arriba pueden ser justificadas usando el Teorema de Compacidad que veremos en la Guia 14.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Extendiendo el concepto de verdad
+\end_layout
+
+\begin_layout Standard
+Supongamos tenemos una cuatrupla 
+\begin_inset Formula $(A,f,g,R)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio,
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ son operaciones binarias sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ pero no sabemos nada acerca de estas operaciones 
+\begin_inset Formula $f$
+\end_inset
+
+ y 
+\begin_inset Formula $g$
+\end_inset
+
+ ni de la relacion 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ Es decir tenemos una 
+\begin_inset Quotes eld
+\end_inset
+
+estructura
+\begin_inset Quotes erd
+\end_inset
+
+ del mismo tipo que los reticulados cuaterna pero obviamente no tiene por que ser un reticulado cuaterna.
+ De todas maneras,
+ podemos hablar de cuando una formula elemental de reticulados cuaterna es verdadera en 
+\begin_inset Formula $(A,f,g,R)$
+\end_inset
+
+ para una asignacion de valores de 
+\begin_inset Formula $A$
+\end_inset
+
+ a sus variables libres y sus nombres de elementos fijos.
+ Simplemente debemos interpretar a 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ como 
+\begin_inset Formula $f$
+\end_inset
+
+,
+ a 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ como 
+\begin_inset Formula $g$
+\end_inset
+
+ y a 
+\begin_inset Formula $\leq$
+\end_inset
+
+ como 
+\begin_inset Formula $R$
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+leer
+\begin_inset Quotes erd
+\end_inset
+
+ dicha formula interpretando ademas sus variables libres y nombres de elementos fijos segun la asignacion dada.
+ Dicho en pocas palabras,
+ las formulas elementales de reticulados cuaterna se pueden interpretar no solo en los reticulados cuaterna sino tambien en cualquier estructura del mismo tipo.
+\end_layout
+
+\begin_layout Standard
+Veamos algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental de reticulados cuaterna 
+\begin_inset Formula $(x\leq y)$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $(\mathbf{R},+,-,\{(x,y)\in\mathbf{R}^{2}:x+1=y\})$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $10$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $11$
+\end_inset
+
+.
+ Esto es ya que interpretamos a 
+\begin_inset Formula $\leq$
+\end_inset
+
+ como la relacion 
+\begin_inset Formula $\{(x,y)\in\mathbf{R}^{2}:x+1=y\}$
+\end_inset
+
+.
+ Cabe destacar que 
+\begin_inset Formula $(\mathbf{R},+,-,\{(x,y)\in\mathbf{R}^{2}:x+1=y\})$
+\end_inset
+
+ no es un reticulado cuaterna (por que?)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental de reticulados cuaterna 
+\begin_inset Formula $((x\;\mathsf{s\;}x)=x)$
+\end_inset
+
+ es falsa en la estructura 
+\begin_inset Formula $(\mathbf{R},+,-,\{(x,y)\in\mathbf{R}^{2}:x+1=y\})$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ cualquier valor no nulo.
+ Esto es ya que interpretamos a 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ como la operacion 
+\begin_inset Formula $+$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental de reticulados cuaterna 
+\begin_inset Formula $\exists y((y\;\mathsf{s\;}y)=y)$
+\end_inset
+
+ es falsa en la estructura 
+\begin_inset Formula $(\mathbf{N},+,+,|)$
+\end_inset
+
+ (la cual tampoco es un reticulado cuaterna).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental de reticulados cuaterna 
+\begin_inset Formula $((a\;\mathsf{s\;}y)=(a\;\mathsf{i\;}y))$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $(\mathbf{N},+,+,|)$
+\end_inset
+
+ cualquiera sea la asignacion de valores a 
+\begin_inset Formula $a$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental de reticulados cuaterna 
+\begin_inset Formula $\forall x((x\leq x)\rightarrow\forall z((z\;\mathsf{i\;}x)=x))$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $(\mathbf{R},+,.,\{(0,0)\})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental de reticulados cuaterna 
+\begin_inset Formula $\forall x(\lnot(x=a)\rightarrow\exists y((x\;\mathsf{i\;}y)=b))$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $(\mathbf{R},+,.,\{(0,0)\})$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $0$
+\end_inset
+
+ y a 
+\begin_inset Formula $b$
+\end_inset
+
+ el valor 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por supuesto podemos hacer el mismo tipo de generalizacion para cada uno de los tipos de estructuras que venimos manejando.
+ Por ejemplo si tenemos un par 
+\begin_inset Formula $(A,R)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio cualquiera y 
+\begin_inset Formula $R$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ (cualquier relacion,
+ no necesariamente un orden parcial) podemos hablar de cuando una formula elemental de posets es verdadera en 
+\begin_inset Formula $(A,R)$
+\end_inset
+
+ para una asignacion de valores de 
+\begin_inset Formula $A$
+\end_inset
+
+ a sus variables libres y sus nombres de elementos fijos.
+ Simplemente debemos interpretar a 
+\begin_inset Formula $\leq$
+\end_inset
+
+ como 
+\begin_inset Formula $R$
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+leer
+\begin_inset Quotes erd
+\end_inset
+
+ dicha formula interpretando ademas sus variables libres y nombres de elementos fijos segun la asignacion dada.
+ Algunos ejemplos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental de posets 
+\begin_inset Formula $(x\leq y)$
+\end_inset
+
+ es falsa en la estructura 
+\begin_inset Formula $(\mathbf{R},\mathbf{R}\times\omega)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $0$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $1/2$
+\end_inset
+
+.
+ Esto es ya que interpretamos a 
+\begin_inset Formula $\leq$
+\end_inset
+
+ como la relacion 
+\begin_inset Formula $\mathbf{R}\times\omega$
+\end_inset
+
+.
+ Cabe destacar que 
+\begin_inset Formula $(\mathbf{R},\mathbf{R}\times\omega)$
+\end_inset
+
+ no es un poset (por que?)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental de posets 
+\begin_inset Formula $\exists y\forall x(x\leq y)$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $(\mathbf{N},\{(n,5):n\in\mathbf{N}\})$
+\end_inset
+
+ (la cual tampoco es un poset).
+\end_layout
+
+\begin_layout Standard
+Otros ejemplos para los otros tipos de estructuras:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental de reticulados complementados 
+\begin_inset Formula $(\forall x\exists y((y\;\mathsf{s\;}y)=c(x))$
+\end_inset
+
+ es falsa en la estructura 
+\begin_inset Formula $(\mathbf{R},-,+,\{(x,x^{2}):x\in\mathbf{R}\},5,100)$
+\end_inset
+
+ (la cual no es un reticulado complementado).
+ Esto es ya que interpretamos a 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ como la operacion 
+\begin_inset Formula $-$
+\end_inset
+
+ sobre los reales y a 
+\begin_inset Formula $c$
+\end_inset
+
+ como la funcion 
+\begin_inset Formula $\{(x,x^{2}):x\in\mathbf{R}\}$
+\end_inset
+
+ y por lo tanto 
+\begin_inset Formula $(\forall x\exists y((y\;\mathsf{s\;}y)=c(x))$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+dice
+\begin_inset Quotes erd
+\end_inset
+
+ que para cada numero real 
+\begin_inset Formula $x$
+\end_inset
+
+ hay un numero real 
+\begin_inset Formula $y$
+\end_inset
+
+ tal que 
+\begin_inset Formula $y-y=x^{2}$
+\end_inset
+
+,
+ lo cual sabemos que es falso.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental de grafos bicoloreados 
+\begin_inset Formula $(R(z)\wedge\exists xr(a,x))$
+\end_inset
+
+ es verdadera en la estructura 
+\begin_inset Formula $(\mathbf{R},\{(1,1),(3,4)\},\{5,6,7,8,9,10\})$
+\end_inset
+
+ (la cual no es un grafo bicoloreado) cuando le asignamos a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $10$
+\end_inset
+
+ y a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 3.
+ Esto es ya que interpretamos a 
+\begin_inset Formula $r$
+\end_inset
+
+ como la relacion binaria 
+\begin_inset Formula $\{(1,1),(3,4)\}$
+\end_inset
+
+ y a 
+\begin_inset Formula $R$
+\end_inset
+
+ como la relacion 1-aria 
+\begin_inset Formula $\{5,6,7,8,9,10\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $g:\mathbf{R}^{3}\rightarrow\mathbf{R}$
+\end_inset
+
+ dada por 
+\begin_inset Formula $g(x,y,z)=1,\text{ para cada }(x,y,z)\in\mathbf{R^{3}}$
+\end_inset
+
+.
+ La sentencia elemental de median algebras 
+\begin_inset Formula $\forall x\exists y\exists z\exists w(M(y,z,w)=x)$
+\end_inset
+
+ es falsa en la estructura 
+\begin_inset Formula $(\mathbf{R},g)$
+\end_inset
+
+ (la cual no es una median algebra).
+ Esto es ya que interpretamos a 
+\begin_inset Formula $M$
+\end_inset
+
+ como la operacion 
+\begin_inset Formula $g$
+\end_inset
+
+ y es claro que entonces 
+\begin_inset Formula $\forall x\exists y\exists z\exists w(M(y,z,w)=x)$
+\end_inset
+
+ no se cumple en 
+\begin_inset Formula $(\mathbf{R},g)$
+\end_inset
+
+ puesto que por ejemplo para 
+\begin_inset Formula $x=2$
+\end_inset
+
+ tenemos que no hay 
+\begin_inset Formula $y,z,w\in\mathbf{R}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $g(y,z,w)=x$
+\end_inset
+
+.
+ Notese que por el tercer axioma de median algebras la sentencia 
+\begin_inset Formula $\forall x\exists y\exists z\exists w(M(y,z,w)=x)$
+\end_inset
+
+ es cierta en toda median algebra.
+\end_layout
+
+\end_body
+\end_document

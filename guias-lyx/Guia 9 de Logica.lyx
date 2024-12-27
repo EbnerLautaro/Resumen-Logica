@@ -1,0 +1,5810 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:41:21}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Modelo matematico de la sintaxis elemental
+\end_layout
+
+\begin_layout Standard
+En esta guia daremos un modelo matematico de los conceptos de termino elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Esto corresponde al punto (1) del programa de logica enunciado al final de la Guia 8.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Variables
+\end_layout
+
+\begin_layout Standard
+Las variables usadas en las formulas elementales no estaban del todo especificadas.
+ Para hacer bien preciso este concepto definiremos un conjunto concreto de variables.
+ Sea 
+\begin_inset Formula $Var$
+\end_inset
+
+ el siguiente conjunto de palabras del alfabeto 
+\begin_inset Formula $\{\mathsf{X},\mathit{0},\mathit{1},...,\mathit{9},\mathbf{0},\mathbf{1},...,\mathbf{9}\}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+Var=\{\mathsf{X}\mathbf{1},\mathsf{X}\mathbf{2},...,\mathsf{X}\mathbf{9},\mathsf{X}\mathit{1}\mathbf{0},\mathsf{X}\mathit{1}\mathbf{1},...,\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathit{2}\mathbf{0},\mathsf{X}\mathit{2}\mathbf{1},...\}
+\]
+
+\end_inset
+
+Es decir el elemento 
+\begin_inset Formula $n$
+\end_inset
+
+-esimo de 
+\begin_inset Formula $Var$
+\end_inset
+
+ es la palabra de la forma 
+\begin_inset Formula $\mathsf{X}\alpha$
+\end_inset
+
+ donde 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es el resultado de reemplazar en la palabra que denota 
+\begin_inset Formula $n$
+\end_inset
+
+ en notacion decimal,
+ el ultimo numeral por su correspondiente numeral bold y los otros por sus correspondientes italicos.
+ A los elementos de 
+\begin_inset Formula $Var$
+\end_inset
+
+ los llamaremos 
+\shape italic
+variables.
+
+\shape default
+ La razon por la cual usamos numerales italicos y bold es que a los numerales normales los usamos habitualmente en los tipos y sera conveniente que entonces no ocurran en las variables.
+ Ademas tomamos el ultimo simbolo de cada variable en bold para que de esta manera nunca una variable sea una subpalabra de otra variable distinta a ella,
+ lo cual contribuye a simplificar los resultados.
+ Denotaremos con 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ al 
+\begin_inset Formula $i$
+\end_inset
+
+-esimo elemento de 
+\begin_inset Formula $Var$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $i\in\mathbf{N}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(x_{1},x_{2},...)=Var$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Ti(v)=n\mathrm{-UPLA}$
+\end_inset
+
+,
+ para algun 
+\begin_inset Formula $n\in\mathbf{N}-\{1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+,
+ entonces la variable 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Var-\{\mathsf{X}\}=\mathbf{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Var-\{\mathsf{X}\}=\{\mathbf{1},...,\mathbf{9},\mathit{1}\mathbf{0},\mathit{1}\mathbf{1},...,\mathit{1}\mathbf{9},\mathit{2}\mathbf{0},\mathit{2}\mathbf{1},...\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbf{N}=\{\mathbf{1},...,\mathbf{9},\mathit{1}\mathbf{0},\mathit{1}\mathbf{1},...,\mathit{1}\mathbf{9},\mathit{2}\mathbf{0},\mathit{2}\mathbf{1},...\}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Terminos
+\end_layout
+
+\begin_layout Standard
+Dado un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ definamos recursivamente los conjuntos de palabras 
+\begin_inset Formula $T_{k}^{\tau}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+,
+ de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+T_{0}^{\tau} & =Var\cup\mathcal{C}\\
+T_{k+1}^{\tau} & =T_{k}^{\tau}\cup\{f(t_{1},...,t_{n}):f\in\mathcal{F}_{n}\text{, }n\geq1\text{ y }t_{1},...,t_{n}\in T_{k}^{\tau}\}.
+\end{align*}
+
+\end_inset
+
+Sea
+\begin_inset Formula 
+\[
+T^{\tau}=\bigcup_{k\geq0}T_{k}^{\tau}
+\]
+
+\end_inset
+
+Los elementos de 
+\begin_inset Formula $T^{\tau}$
+\end_inset
+
+ seran llamados 
+\shape italic
+terminos de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Un termino 
+\begin_inset Formula $t$
+\end_inset
+
+ es llamado 
+\shape italic
+cerrado
+\shape default
+ si 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ no es subpalabra de 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $i\in\mathbf{N}$
+\end_inset
+
+.
+ Definamos
+\begin_inset Formula 
+\[
+T_{c}^{\tau}=\{t\in T^{\tau}:t\text{ es cerrado}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\mathrm{MAS})=4$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\mathrm{P})=1$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\mathrm{Her})=3$
+\end_inset
+
+.
+ Entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Las palabras 
+\begin_inset Formula $\mathrm{uno}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{doli}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{X}\mathit{15666}\mathbf{9}$
+\end_inset
+
+ son terminos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ ya que pertenecen a 
+\begin_inset Formula $T_{0}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{MAS}(\mathrm{uno},\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{P}(\mathrm{uno})\ $
+\end_inset
+
+son terminos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ ya que pertenecen a 
+\begin_inset Formula $T_{1}^{\tau}$
+\end_inset
+
+ (por que?)
+\end_layout
+
+\begin_layout Enumerate
+Las palabras
+\begin_inset Formula 
+\[
+\mathrm{P}(\mathrm{P}(\mathrm{uno}))\ \ \ \ \ \mathrm{MAS}(\mathrm{P}(\mathsf{X}\mathbf{4}),\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5})
+\]
+
+\end_inset
+
+son terminos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ ya que pertenecen a 
+\begin_inset Formula $T_{2}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{P}(\mathrm{MAS}(\mathrm{P}(\mathsf{X}\mathbf{4}),\mathrm{MAS}(\mathsf{X}\mathbf{1},\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{3},\mathsf{X}\mathbf{4}),\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5}))$
+\end_inset
+
+ es un termino ya que pertenece a 
+\begin_inset Formula $T_{3}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{uno}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{doli}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{P}(\mathrm{uno})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{MAS}(\mathrm{uno},\mathrm{doli},\mathrm{doli},\mathrm{doli})$
+\end_inset
+
+ son terminos cerrados de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Lo que debe quedar claro es que como objetos matematicos los terminos son meras palabras,
+ por ejemplo 
+\begin_inset Formula $\mathrm{MAS}(\mathrm{uno},\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5})$
+\end_inset
+
+ es una palabra (de longitud 20)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{+,\times,\uparrow\},\emptyset,a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(+)=2$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\times)=3$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\uparrow)=1$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+\mathsf{X}\mathit{111}\mathbf{9}\ \ \ \ \ \ \ \ 0\ \ \ \ \ \ \ \ 1\ \ \ \ \ \ \ \ +(+(\mathrm{\uparrow}(\mathsf{X}\mathbf{4}),\times(\mathsf{X}\mathbf{2},1,0)),\times(1,\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{3}))
+\]
+
+\end_inset
+
+son terminos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Tambien 
+\begin_inset Formula $\mathrm{\uparrow}(+(\mathrm{\uparrow}(0),\times(0,1,0)))$
+\end_inset
+
+ es un termino cerrado de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})$
+\end_inset
+
+ el tipo de los reticulados terna.
+ Entonces
+\begin_inset Formula 
+\[
+\mathsf{s}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{3})\ \ \ \ \ \ \ \ \ \mathsf{s}(\mathsf{s}(\mathsf{X}\mathbf{4},\mathsf{X}\mathit{1}\mathbf{4}),\mathsf{i}(\mathsf{X}\mathbf{2},\mathsf{X}\mathit{111}\mathbf{9}))
+\]
+
+\end_inset
+
+son terminos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ No hay terminos cerrados de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Cabe destacar que 
+\begin_inset Formula $\mathsf{X}\mathbf{2\ }\mathsf{s\ X}\mathbf{3}$
+\end_inset
+
+ no es un termino de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ aunque,
+ como veremos en los ejercicios esto no es trivial de la definicion de termino y requiere de una demostracion.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Observacion importante:
+\end_layout
+
+\end_inset
+
+Notar que los terminos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son un modelo matematico de los terminos elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ en los cuales no ocurren nombres de elementos fijos.
+ Medite...
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo,
+ entonces 
+\begin_inset Formula $Ti(T^{\tau})=\mathrm{CONJUNTO}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Hay exactamente dos terminos cerrados de tipo 
+\begin_inset Formula $(\{0,1\},\{\mathsf{s},\mathsf{i}\},\emptyset,\{(\mathsf{s},2),(\mathsf{i},2)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Hay exactamente dos terminos cerrados de tipo 
+\begin_inset Formula $(\{0,1\},\{\max,\min\},\emptyset,\{(\max,2),(\min,2)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T^{(\emptyset,\emptyset,\emptyset,\emptyset)}=Var$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $T^{\tau}=\bigcup_{k\geq6}T_{k}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $t$
+\end_inset
+
+ un termino no cerrado.
+ Sea 
+\begin_inset Formula $n$
+\end_inset
+
+ la cantidad de ocurrencias de 
+\begin_inset Formula $\mathsf{X}$
+\end_inset
+
+ en 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $Dom(t)=Var^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo,
+ entonces 
+\begin_inset Formula $T_{c}^{\tau}=\{t\in T^{\tau}:Var\cap t=\emptyset\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Si 
+\begin_inset Formula $f\in\mathcal{F}_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ son palabras tales que 
+\begin_inset Formula $f(\alpha,\beta)\in T^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\alpha,\beta\in T^{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente lema es la herramienta basica para probar propiedades de los terminos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Menu para terminos
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Supongamos 
+\begin_inset Formula $t\in T_{k}^{\tau}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+.
+ Entonces se da alguna de las siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $t\in Var\cup\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{k-1}^{\tau}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Por induccion en 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+CASO 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+ Es directo ya que por definicion
+\begin_inset Formula 
+\[
+T_{1}^{\tau}=Var\cup\mathcal{C}\cup\{f(t_{1},...,t_{n}):f\in\mathcal{F}_{n}\text{, }n\geq1\text{ y }t_{1},...,t_{n}\in T_{0}^{\tau}\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+CASO 
+\begin_inset Formula $k\Rightarrow k+1$
+\end_inset
+
+:
+ Sea 
+\begin_inset Formula $t\in T_{k+1}^{\tau}$
+\end_inset
+
+.
+ Por definicion de 
+\begin_inset Formula $T_{k+1}^{\tau}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $t\in T_{k}^{\tau}$
+\end_inset
+
+ o 
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+ con 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{k}^{\tau}$
+\end_inset
+
+.
+ Si se da que 
+\begin_inset Formula $t\in T_{k}^{\tau}$
+\end_inset
+
+,
+ entonces podemos aplicar hipotesis inductiva y usar que 
+\begin_inset Formula $T_{k-1}^{\tau}\subseteq T_{k}^{\tau}$
+\end_inset
+
+.
+ Esto completa el caso.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Probar que
+\begin_inset Formula $\;$
+\end_inset
+
+si 
+\begin_inset Formula $t\in T^{\tau}-(Var\cup\mathcal{C})$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\left\vert t\right\vert \geq4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ es tal que en 
+\begin_inset Formula $t$
+\end_inset
+
+ ocurre el simbolo 
+\begin_inset Formula $)$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+ con 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $\left[t\right]_{i}=\mathrm{)}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i<\left\vert t\right\vert $
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left[t\right]_{i+1}=$
+\end_inset
+
+ 
+\begin_inset Formula $,$
+\end_inset
+
+ o 
+\begin_inset Formula $\left[t\right]_{i+1}=\mathrm{)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Probar que en un término nunca puede ocurrir la palabra 
+\begin_inset Formula $(,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{cero,1\},\{suma,glp\},\emptyset,a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a(suma)=2$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(glp)=1$
+\end_inset
+
+.
+ Probar que las siguientes palabras no son términos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $glp((\mathsf{X}\mathit{13}\mathbf{3})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $suma(g,cero)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $glp(0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $suma(suma(suma(suma(suma(\mathsf{X}\mathit{123}\mathbf{4},1),1),1),1),glp(cero)))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resolveremos algunos de los casos del ejercicio anterior.
+ Una forma de probar que una palabra dada no es un termino es encontrar una propiedad que posean todos los terminos la cual no cumpla dicha palabra.
+ Por ejemplo la siguiente propiedad:
+\begin_inset Formula 
+\[
+\left\vert t\right\vert _{(}=\left\vert t\right\vert _{)}
+\]
+
+\end_inset
+
+la cumplen todos los terminos y claramente 
+\begin_inset Formula $glp((\mathsf{X}\mathit{13}\mathbf{3})$
+\end_inset
+
+ no la cumple por lo cual hemos resuelto a.
+ del Ejercicio 7.
+ Usando esta estrategia se pueden hacer todos los incisos restantes del Ejercicio 7 pero daremos una prueba distinta para el inciso d.
+\end_layout
+
+\begin_layout Standard
+Supongamos que 
+\begin_inset Formula $suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)$
+\end_inset
+
+ es un termino de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Llegaremos a un absurdo.
+ Por definicion de 
+\begin_inset Formula $T^{\tau}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)\in T_{k}^{\tau}$
+\end_inset
+
+ para algun 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Notar que 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)$
+\end_inset
+
+ no es variable ni nombre de cte tenemos que el Lema 1 nos asegura que
+\begin_inset Formula 
+\[
+suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)=f(t_{1},...,t_{n}),\text{ con }f\in\mathcal{F}_{n}\text{, }n\geq1\text{,}\;t_{1},...,t_{n}\in T_{k-1}^{\tau}
+\]
+
+\end_inset
+
+O sea que se da alguno de los siguientes casos
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)=glp(t_{1}),$
+\end_inset
+
+ con 
+\begin_inset Formula $t_{1}\in T_{k-1}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)=suma(t_{1},t_{2}),$
+\end_inset
+
+ con 
+\begin_inset Formula $t_{1},t_{2}\in T_{k-1}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+El primero de estos es claramente imposible.
+ O sea que tenemos que
+\begin_inset Formula 
+\[
+suma(\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1)=suma(t_{1},t_{2})\text{, con }t_{1},t_{2}\in T_{k-1}^{\tau}
+\]
+
+\end_inset
+
+O sea que
+\begin_inset Formula 
+\[
+\mathsf{X}\mathit{123}\mathbf{2},\mathsf{X}\mathbf{2},1=t_{1},t_{2}
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $t_{1},t_{2}\in T_{k-1}^{\tau}$
+\end_inset
+
+.
+ De esta igualdad se deduce trivialmente que 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ comienza con 
+\begin_inset Formula $\mathsf{X}$
+\end_inset
+
+,
+ ya que 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ no puede ser 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ (justifique).
+ Pero es facil probar por induccion que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(*)
+\end_layout
+
+\end_inset
+
+si un termino comienza con 
+\begin_inset Formula $\mathsf{X}$
+\end_inset
+
+,
+ entonces debe ser una variable 
+\end_layout
+
+\begin_layout Standard
+\noindent
+de lo cual rapidamente inferimos que 
+\begin_inset Formula $\mathsf{X}\mathit{123}\mathbf{2}=t_{1}$
+\end_inset
+
+.
+ Esto nos dice que
+\begin_inset Formula 
+\[
+\mathsf{X}\mathbf{2},1=t_{2}
+\]
+
+\end_inset
+
+Pero nuevamente aplicando (*),
+ obtenemos un absurdo ya que 
+\begin_inset Formula $\mathsf{X}\mathbf{2},1$
+\end_inset
+
+ no es una variable
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Unicidad de la lectura de terminos
+\end_layout
+
+\begin_layout Standard
+Diremos que 
+\begin_inset Formula $\beta$
+\end_inset
+
+ es un 
+\shape italic
+tramo inicial (propio) 
+\shape default
+de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ si hay una palabra 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\alpha=\beta\gamma$
+\end_inset
+
+ (y 
+\begin_inset Formula $\beta\notin\{\varepsilon,\alpha\}$
+\end_inset
+
+).
+ En forma similar se define 
+\shape italic
+tramo final (propio).
+\end_layout
+
+\begin_layout Standard
+Notese que en la definicion de tipo se exige que nunca un nombre de cte sea subpalabra de otro nombre de cte,
+ lo cual garantiza que nunca puede ser un nombre de cte un tramo inicial o final propio de otro nombre de cte.
+ Lo que si puede suceder es que un tramo final propio de un nombre de cte 
+\begin_inset Formula $c$
+\end_inset
+
+ sea un tramo inicial propio de otro nombre de cte 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Mas formalmente puede suceder que haya palabras 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+,
+ las tres distintas de 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ tales que 
+\begin_inset Formula $c=xy$
+\end_inset
+
+ y 
+\begin_inset Formula $d=yz$
+\end_inset
+
+.
+ En tal caso solemos decir que las palabras 
+\begin_inset Formula $c$
+\end_inset
+
+ y 
+\begin_inset Formula $d$
+\end_inset
+
+ se 
+\shape italic
+mordizquean
+\shape default
+.
+ Por ejemplo si 
+\begin_inset Formula $\tau=(\{\mathrm{uno}$
+\end_inset
+
+,
+\begin_inset Formula $\mathrm{noli}\},\emptyset,\emptyset,\emptyset)$
+\end_inset
+
+,
+ es facil ver que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo y que 
+\begin_inset Formula $\mathrm{uno}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{noli}$
+\end_inset
+
+ se mordizquean.
+ El lema siguiente nos dice que este es el unico caso de mordizqueo de terminos.
+ Lo aceptaremos sin prueba.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Mordizqueo de Terminos
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $s,t\in T^{\tau}$
+\end_inset
+
+ y supongamos que hay palabras 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $y\neq\varepsilon$
+\end_inset
+
+ tales que 
+\begin_inset Formula $s=xy$
+\end_inset
+
+ y 
+\begin_inset Formula $t=yz$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $x=z=\varepsilon$
+\end_inset
+
+ o 
+\begin_inset Formula $s,t\in\mathcal{C}$
+\end_inset
+
+.
+ En particular si un termino es tramo inicial o final de otro termino,
+ entonces dichos terminos son iguales.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+No haga la prueba del lema anterior
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Si 
+\begin_inset Formula $t_{1},t_{2},s_{1},s_{2}\in T^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{1}t_{2}=s_{1}s_{2}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t_{1}=s_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $t_{2}=s_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Lectura unica de terminos]
+\end_layout
+
+\end_inset
+
+
+\shape italic
+Dado 
+\shape default
+
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+se da una de las siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $t\in Var\cup\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\shape italic
+Hay unicos 
+\shape default
+
+\begin_inset Formula $n\geq1,\;f\in\mathcal{F}_{n},\;t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+tales que 
+\shape default
+
+\begin_inset Formula $t=f(t_{1},...,t_{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ En virtud del primer lema de esta guia solo nos falta probar la unicidad en el punto (2).
+ Supongamos que
+\begin_inset Formula 
+\[
+t=f(t_{1},...,t_{n})=g(s_{1},...,s_{m})
+\]
+
+\end_inset
+
+con 
+\begin_inset Formula $n,m\geq1$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $g\in\mathcal{F}_{m}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n},s_{1},...,s_{m}\in T^{\tau}$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $f=g$
+\end_inset
+
+.
+ O sea que 
+\begin_inset Formula $n=m=a(f)$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ es tramo inicial de 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ o 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ es tramo inicial de 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+,
+ lo cual por el lema anterior nos dice que 
+\begin_inset Formula $t_{1}=s_{1}$
+\end_inset
+
+.
+ Con el mismo razonamiento podemos probar que debera suceder 
+\begin_inset Formula $t_{2}=s_{2},...,t_{n}=s_{n}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+(S) Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Si 
+\begin_inset Formula $f\in\mathcal{F}_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $f(\alpha,t)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\alpha\in T^{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El teorema anterior es importante ya que nos permite definir recursivamente funciones con dominio contenido en 
+\begin_inset Formula $T^{\tau}$
+\end_inset
+
+.
+ Por ejemplo podemos definir una funcion 
+\begin_inset Formula $F:T^{\tau}\rightarrow T^{\tau}$
+\end_inset
+
+,
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F(c)=c$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F(v)=v$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F(f(t_{1},...,t_{n}))=f(F(t_{1}),...,F(t_{n}))$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $n\neq2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F(f(t_{1},t_{2}))=f(t_{2},t_{1})$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $f\in\mathcal{F}_{2}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Notese que si la unicidad de la lectura no fuera cierta,
+ entonces las ecuaciones anteriores no estarian definiendo en forma correcta una funcion ya que el valor de la imagen de un termino 
+\begin_inset Formula $t$
+\end_inset
+
+ estaria dependiendo de cual descomposicion tomemos para 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Ocurrencias
+\end_layout
+
+\begin_layout Standard
+Dadas palabras 
+\begin_inset Formula $\alpha,\beta\in\Sigma^{\ast}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\left\vert \alpha\right\vert ,\left\vert \beta\right\vert \geq1$
+\end_inset
+
+,
+ y un natural 
+\begin_inset Formula $i\in\{1,...,\left\vert \beta\right\vert \}$
+\end_inset
+
+,
+ se dice que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\shape italic
+ocurre a partir de 
+\shape default
+
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $\beta$
+\end_inset
+
+ cuando se de que existan palabras 
+\begin_inset Formula $\delta,\gamma$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\beta=\delta\alpha\gamma$
+\end_inset
+
+ y 
+\begin_inset Formula $\left\vert \delta\right\vert =i-1$
+\end_inset
+
+.
+ Intuitivamente hablando 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ocurre a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+ cuando se de que si comensamos a leer desde el lugar 
+\begin_inset Formula $i$
+\end_inset
+
+-esimo de 
+\begin_inset Formula $\beta$
+\end_inset
+
+ en adelante,
+ leeremos la palabra 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ completa y luego posiblemente seguiran otros simbolos.
+\end_layout
+
+\begin_layout Standard
+Notese que una palabra 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ puede ocurrir en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+,
+ y tambien a partir de 
+\begin_inset Formula $j$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+.
+ En virtud de esto,
+ hablaremos de las distintas ocurrencias de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Por ejemplo hay dos ocurrencias de la palabra 
+\begin_inset Formula $aba$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+en la palabra
+\begin_inset Formula 
+\[
+cccccccabaccccabaccccc
+\]
+
+\end_inset
+
+y tambien hay dos ocurrencias de la palabra 
+\begin_inset Formula $aba$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+en la palabra
+\begin_inset Formula 
+\[
+cccccccababacccccccccc
+\]
+
+\end_inset
+
+En el primer caso diremos que dichas ocurrencias de 
+\begin_inset Formula $aba$
+\end_inset
+
+ son 
+\shape italic
+disjuntas
+\shape default
+ ya que ocupan espacios disjuntos dentro de la palabra.
+ En cambio en el segundo caso puede apreciarse que las dos ocurrencias se superponen en una posicion.
+ A veces diremos que una ocurrencia esta 
+\shape italic
+contenida
+\shape default
+ o 
+\shape italic
+sucede
+\shape default
+ dentro de otra.
+ Por ejemplo la segunda ocurrencia de 
+\begin_inset Formula $ab$
+\end_inset
+
+ en 
+\begin_inset Formula $babbbfabcccfabccc$
+\end_inset
+
+ esta contenida en la primer ocurrencia de 
+\begin_inset Formula $fabc$
+\end_inset
+
+ en 
+\begin_inset Formula $babbbfabcccfabccc$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+No definiremos en forma matematica precisa el concepto de ocurrencia pero el lector no tendra problemas en comprenderlo y manejarlo en forma correcta.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Reemplazos de ocurrencias
+\end_layout
+
+\begin_layout Standard
+Tambien haremos 
+\shape italic
+reemplazos
+\shape default
+ de ocurrencias por palabras.
+ Por ejemplo el resultado de reemplazar la primer ocurrencia de 
+\begin_inset Formula $abb$
+\end_inset
+
+ en 
+\begin_inset Formula $ccabbgfgabbgg$
+\end_inset
+
+ por 
+\begin_inset Formula $oolala$
+\end_inset
+
+ es la palabra 
+\begin_inset Formula $ccoolalagfgabbgg$
+\end_inset
+
+.
+ Cuando todas las ocurrencias de una palabra 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ en una palabra 
+\begin_inset Formula $\beta$
+\end_inset
+
+ sean disjuntas entre si,
+ podemos hablar del resultado de 
+\shape italic
+reeplazar simultaneamente cada ocurrencia de 
+\shape default
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ 
+\shape italic
+por
+\shape default
+ 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ Por ejemplo si tenemos
+\begin_inset Formula 
+\begin{align*}
+\alpha & =yet\\
+\beta & =ghsyetcjjjyetbcpyeteabc\\
+\gamma & =\%\%
+\end{align*}
+
+\end_inset
+
+entonces 
+\begin_inset Formula $ghs\%\%cjjj\%\%bcp\%\%eabc$
+\end_inset
+
+ es el resultado de reemplazar simultaneamente cada ocurrencia de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+ por 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ Es importante notar que los reemplazos se hacen simultaneamente y no secuencialmente (i.e.
+ reemplazando la primer ocurrencia de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ por 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ y luego al resultado reemplazarle la primer ocurrencia de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ por 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ y asi sucesivamente).
+ Obviamente el reemplazo secuencial puede dar un resultado distinto al simultaneo (que es el que usaremos en general) e incluso puede suceder que en el reemplazo secuencial el proceso se pueda iterar indefinidamente.
+ Dejamos al lector armar ejemplos de estas cituaciones.
+\end_layout
+
+\begin_layout Standard
+Tambien se pueden hacer reemplazos simultaneos de distintas palabras en una palabra dada.
+ Supongamos tenemos palabras 
+\begin_inset Formula $\alpha_{1},...,\alpha_{n}$
+\end_inset
+
+ (con 
+\begin_inset Formula $\alpha_{i}\neq\alpha_{j}$
+\end_inset
+
+,
+ para 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+) las cuales tienen la propiedad de que las distintas ocurrencias de ellas en la palabra 
+\begin_inset Formula $\beta$
+\end_inset
+
+ son siempre disjuntas de a pares,
+ y tenemos ademas palabras 
+\begin_inset Formula $\gamma_{1},...,\gamma_{n}$
+\end_inset
+
+.
+ Entonces hablaremos del resultado de reemplazar simultaneamente:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+cada ocurrencia de 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+cada ocurrencia de 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+cada ocurrencia de 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $\gamma_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Por ejemplo si tomamos
+\begin_inset Formula 
+\begin{align*}
+\alpha_{1} & =gh\\
+\alpha_{2} & =yet\\
+\alpha_{3} & =ana\\
+\beta & =ghbbbyetbbgh\%\%ana\#\#ana!!!ana\\
+\gamma_{1} & =AA\\
+\gamma_{2} & =BBBB\\
+\gamma_{3} & =CCC
+\end{align*}
+
+\end_inset
+
+entonces 
+\begin_inset Formula $AAbbbBBBBbbAA\%\%CCC\#\#CCC!!!CCC$
+\end_inset
+
+ es el resultado de reemplazar simultaneamente:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+cada ocurrencia de 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+cada ocurrencia de 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+ 
+\end_layout
+
+\end_inset
+
+cada ocurrencia de 
+\begin_inset Formula $\alpha_{3}$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ por 
+\begin_inset Formula $\gamma_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Subterminos
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $s,t\in T^{\tau}$
+\end_inset
+
+.
+ Diremos que 
+\begin_inset Formula $s$
+\end_inset
+
+ es 
+\shape italic
+subtermino 
+\shape default
+(
+\shape italic
+propio
+\shape default
+)
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+de 
+\begin_inset Formula $t$
+\end_inset
+
+ si (no es igual a 
+\begin_inset Formula $t$
+\end_inset
+
+ y) 
+\begin_inset Formula $s$
+\end_inset
+
+ es subpalabra de 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Ocurrencias de terminos en terminos
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $r,s,t\in T^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $s\neq t=f(t_{1},...,t_{n})$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ entonces dicha ocurrencia sucede dentro de algun 
+\begin_inset Formula $t_{j}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $j=1,...,n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $r,s$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ocurren en 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ entonces dichas ocurrencias son disjuntas o una ocurre dentro de otra.
+ En particular,
+ las distintas ocurrencias de 
+\begin_inset Formula $r$
+\end_inset
+
+ en 
+\begin_inset Formula $t$
+\end_inset
+
+ son disjuntas.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t^{\prime}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+es el resultado de reemplazar una ocurrencia de 
+\begin_inset Formula $s$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+en 
+\begin_inset Formula $t$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+por 
+\begin_inset Formula $r$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $t^{\prime}\in T^{\tau}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (a) Supongamos la ocurrencia de 
+\begin_inset Formula $s$
+\end_inset
+
+ comienza en algun 
+\begin_inset Formula $t_{j}$
+\end_inset
+
+.
+ Entonces el Lema de Modizqueo de Terminos nos conduce a que dicha ocurrencia debera estar contenida en 
+\begin_inset Formula $t_{j}$
+\end_inset
+
+.
+ Veamos que la ocurrencia de 
+\begin_inset Formula $s$
+\end_inset
+
+ no puede ser a partir de un 
+\begin_inset Formula $i\in\{1,...,\left\vert f\right\vert \}$
+\end_inset
+
+.
+ Supongamos lo contrario.
+ Tenemos entonces que 
+\begin_inset Formula $s$
+\end_inset
+
+ debe ser de la forma 
+\begin_inset Formula $g(s_{1},...,s_{m})$
+\end_inset
+
+ ya que no puede estar en 
+\begin_inset Formula $Var\cup\mathcal{C}$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $i\neq1$
+\end_inset
+
+ ya que en caso contrario 
+\begin_inset Formula $s$
+\end_inset
+
+ seria un tramo inicial propio de 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Pero entonces 
+\begin_inset Formula $g$
+\end_inset
+
+ debe ser un tramo final propio de 
+\begin_inset Formula $f$
+\end_inset
+
+,
+ lo cual es absurdo.
+ Ya que 
+\begin_inset Formula $s$
+\end_inset
+
+ no puede comenzar con parentesis o coma,
+ hemos contemplado todos los posibles casos de comienzo de la ocurrencia de 
+\begin_inset Formula $s$
+\end_inset
+
+ en 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(b) y (c) pueden probarse por induccion,
+ usando (a).
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+(S) Complete las partes no hechas en la prueba anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Nota:
+
+\series default
+ Es importante notar que si bien no hemos definido en forma presisa el concepto de ocurrencia o de reemplazo de ocurrencias,
+ la prueba del lema anterior es rigurosa en el sentido de que solo usa propiedades del concepto de ocurrencia y reemplazo de ocurrencias las cuales deberan ser comunes a cualquier definicion o formulacion matematica que se hiciera de aquellos conceptos.
+ En este caso,
+ es posible dar una definicion presisa y satisfactoria de dichos conceptos aunque para otros conceptos tales como el de prueba absoluta de consistencia,
+ aun no se ha encontrado una formulacion matematica adecuada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Formulas
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Las palabras de alguna de las siguientes dos formas
+\begin_inset Formula 
+\[
+\begin{array}{l}
+(t\equiv s),\;\text{con }t,s\in T^{\tau}\\
+r(t_{1},...,t_{n})\text{, con }r\in\mathcal{R}_{n}\text{,}\ n\geq1\text{ y }t_{1},...,t_{n}\in T^{\tau}
+\end{array}
+\]
+
+\end_inset
+
+seran llamadas 
+\shape italic
+formulas atomicas de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Por ejemplo si 
+\begin_inset Formula $\tau=(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\mathrm{MAS})=4$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\mathrm{P})=1$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\mathrm{Her})=3$
+\end_inset
+
+,
+ entonces
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\mathrm{uno}\equiv\mathrm{doli})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\mathsf{X}\mathit{15666}\mathbf{9}\equiv\mathrm{doli})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{Her}(\mathrm{uno},\mathsf{X}\mathbf{4},\mathrm{doli})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\mathrm{MAS}(\mathrm{uno},\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5})\equiv\mathrm{uno})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{Her}(\mathrm{P}(\mathrm{P}(\mathrm{uno})),\mathrm{MAS}(\mathrm{P}(\mathsf{X}\mathbf{4}),\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5}),\mathsf{X}\mathit{1}\mathbf{9})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+son formulas atomicas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ definamos recursivamente los conjuntos de palabras 
+\begin_inset Formula $F_{k}^{\tau}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+,
+ de la siguiente manera:
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+F_{0}^{\tau} & = & \{\text{formulas atomicas de tipo }\tau\}\\
+F_{k+1}^{\tau} & = & F_{k}^{\tau}\cup\{\lnot\varphi:\varphi\in F_{k}^{\tau}\}\cup\{(\varphi\vee\psi):\varphi,\psi\in F_{k}^{\tau}\}\cup\\
+ &  & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{(\varphi\wedge\psi):\varphi,\psi\in F_{k}^{\tau}\}\cup\{(\varphi\rightarrow\psi):\varphi,\psi\in F_{k}^{\tau}\}\cup\\
+ &  & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{(\varphi\leftrightarrow\psi):\varphi,\psi\in F_{k}^{\tau}\}\cup\{\forall v\varphi:\varphi\in F_{k}^{\tau}\text{ y }v\in Var\}\cup\\
+ &  & \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{\exists v\varphi:\varphi\in F_{k}^{\tau}\text{ y }v\in Var\}
+\end{array}
+\]
+
+\end_inset
+
+Sea
+\begin_inset Formula 
+\[
+F^{\tau}=\bigcup_{k\geq0}F_{k}^{\tau}
+\]
+
+\end_inset
+
+Los elementos de 
+\begin_inset Formula $F^{\tau}$
+\end_inset
+
+ seran llamados 
+\shape italic
+formulas de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\mathrm{MAS})=4$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\mathrm{P})=1$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\mathrm{Her})=3$
+\end_inset
+
+.
+ Entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lnot((\mathsf{X}\mathbf{1}\equiv\mathsf{X}\mathbf{2})\wedge\mathrm{Her}(\mathrm{P}(\mathrm{doli}),\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists\mathsf{X}\mathbf{9}\mathrm{Her}(\mathrm{doli},\mathrm{doli},\mathsf{X}\mathbf{9})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists\mathsf{X}\mathbf{9}\lnot(\mathrm{uno}\equiv\mathrm{doli})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot\exists\mathsf{X}\mathbf{9}\forall\mathsf{X}\mathbf{7(}\mathrm{Her}(\mathsf{X}\mathbf{9},\mathrm{doli},\mathsf{X}\mathbf{7})\rightarrow(\mathrm{P}(\mathrm{doli})\equiv\mathsf{X}\mathbf{7}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\mathsf{X}\mathit{555}\mathbf{9}\forall\mathsf{X}\mathbf{7}\exists\mathsf{X}\mathit{5}\mathbf{1}(\mathrm{MAS}(\mathrm{uno},\mathrm{doli},\mathsf{X}\mathit{1}\mathbf{9},\mathsf{X}\mathbf{5})\equiv\mathrm{uno})\rightarrow\mathrm{Her}(\mathrm{doli},\mathrm{doli},\mathrm{doli}))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+son formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathsf{s},\mathsf{i}\},\{\leq\},\{(\mathsf{s},2),(\mathsf{i},2),(\leq,2)\})$
+\end_inset
+
+ el tipo de los reticulados cuaterna.
+ Entonces
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(1,0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{\leq}(\mathsf{X}\mathbf{1},\mathsf{X}\mathbf{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lnot(\mathsf{s}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{1})\equiv\mathsf{X}\mathbf{2}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\mathsf{X}\mathbf{2}\forall\mathsf{X}\mathbf{1}\mathrm{\leq}(\mathsf{X}\mathbf{2},\mathsf{s}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{1}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\mathsf{i}(\mathsf{X}\mathbf{1},\mathsf{X}\mathbf{2})\equiv0)\wedge(\mathsf{s}(\mathsf{X}\mathbf{1},\mathsf{X}\mathbf{2})\equiv1))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\mathsf{X}\mathbf{9}\exists\mathsf{X}\mathbf{1}((0\equiv\mathsf{X}\mathbf{1})\rightarrow\exists\mathsf{X}\mathbf{1}\lnot\mathrm{\leq}(\mathsf{X}\mathbf{2},\mathsf{s}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{1})))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+son formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Cabe destacar que 
+\begin_inset Formula $(\mathsf{X}\mathbf{1}\leq\mathsf{X}\mathbf{2})$
+\end_inset
+
+ no es una formula de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ aunque,
+ como veremos en los ejercicios esto no es trivial de la definicion de formula y requiere de una demostracion.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Observacion importante:
+\end_layout
+
+\end_inset
+
+Notar que las formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son un modelo matematico de las formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ en las cuales no ocurren nombres de elementos fijos.
+ Medite...
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente lema es la herramienta basica que usaremos para probar propiedades acerca de los elementos de 
+\begin_inset Formula $F^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Menu para formulas
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Supongamos 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es de alguna de las siguientes formas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=(t\equiv s),$
+\end_inset
+
+ con 
+\begin_inset Formula $t,s\in T^{\tau}$
+\end_inset
+
+
+\shape italic
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=r(t_{1},...,t_{n}),$
+\end_inset
+
+ con 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+
+\shape italic
+,
+ 
+\shape default
+
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=(\varphi_{1}\eta\varphi_{2}),$
+\end_inset
+
+ con 
+\begin_inset Formula $\eta\in\{\wedge,\vee,\rightarrow,\leftrightarrow\},\;\varphi_{1},\varphi_{2}\in F_{k-1}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=\lnot\varphi_{1},$
+\end_inset
+
+ con 
+\begin_inset Formula $\varphi_{1}\in F_{k-1}^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi=Qv\varphi_{1},$
+\end_inset
+
+ con 
+\begin_inset Formula $Q\in\{\forall,\exists\},\;v\in Var$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{1}\in F_{k-1}^{\tau}$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Induccion en 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justificar
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ son palabras tales que 
+\begin_inset Formula $(\alpha\wedge\beta)\in F^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\alpha,\beta\in F^{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi^{\prime}=$
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+resultado de remover en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ cada ocurrencia del símbolo 
+\begin_inset Formula $\lnot$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\varphi^{\prime}\in F^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi^{\prime}=$
+\end_inset
+
+ resultado de reemplazar cada ocurrencia de la variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ por 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\varphi^{\prime}\in F^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi^{\prime}=$
+\end_inset
+
+ resultado de reemplazar algunas ocurrencias de la variable 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ por 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\varphi^{\prime}\in F^{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+Pruebe que las siguientes palabras no son fórmulas de tipo 
+\begin_inset Formula $(\{0,1\},\{+\},\{r\},\{(+,2),(r,2)\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lnot(((x_{1}\equiv x_{2})\wedge r(+(0,x_{12}),x_{2})),\forall x_{3}(x_{3}\equiv0))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((r(x_{1},(0\equiv1))\wedge\forall x_{1}\exists x_{2}r(x_{1},x_{2}))\wedge((0\equiv x_{3})\rightarrow r(x_{3},x_{7})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists x_{3}(r(x_{3},x_{4})\rightarrow\lnot(x_{4}\equiv0)\forall x_{4})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Unicidad de la lectura de formulas
+\end_layout
+
+\begin_layout Standard
+Aceptaremos sin prueba el siguiente resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proposition}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Mordisqueo de formulas
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\shape italic
+Si 
+\shape default
+
+\begin_inset Formula $\varphi,\psi\in F^{\tau}$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+y 
+\shape default
+
+\begin_inset Formula $x,y,z$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+son tales que 
+\shape default
+
+\begin_inset Formula $\varphi=xy,$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $\psi=yz$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+y 
+\shape default
+
+\begin_inset Formula $y\neq\varepsilon,$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+entonces 
+\shape default
+
+\begin_inset Formula $z=\varepsilon$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+y 
+\shape default
+
+\begin_inset Formula $x\in(\{\lnot\}\cup\{Qv:Q\in\{\forall,\exists\}$
+\end_inset
+
+ y 
+\begin_inset Formula $v\in Var\})^{\ast}$
+\end_inset
+
+.
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+En particular ningun tramo inicial propio de una formula es una formula.
+
+\shape default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proposition}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Lectura unica de formulas]
+\end_layout
+
+\end_inset
+
+Dada 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+se da una y solo una de las siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\varphi=(t\equiv s),$
+\end_inset
+
+ con 
+\begin_inset Formula $t,s\in T^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\varphi=r(t_{1},...,t_{n}),$
+\end_inset
+
+ con 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+
+\shape italic
+,
+ 
+\shape default
+
+\begin_inset Formula $t_{1},...,t_{n}\in T^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\varphi=(\varphi_{1}\eta\varphi_{2}),$
+\end_inset
+
+ con 
+\begin_inset Formula $\eta\in\{\wedge,\vee,\rightarrow,\leftrightarrow\},\;\varphi_{1},\varphi_{2}\in F^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\varphi=\lnot\varphi_{1},$
+\end_inset
+
+ con 
+\begin_inset Formula $\varphi_{1}\in F^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\varphi=Qv\varphi_{1},$
+\end_inset
+
+ con 
+\begin_inset Formula $Q\in\{\forall,\exists\},\;\varphi_{1}\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $v\in Var.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Mas aun,
+ en los puntos (1),
+ (2),
+ (3),
+ (4) y (5) tales descomposiciones son unicas.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Si una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ satisface (1),
+ entonces 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ no puede contener simbolos del alfabeto 
+\begin_inset Formula $\{\wedge,\vee,\rightarrow,\leftrightarrow\}$
+\end_inset
+
+ lo cual garantiza que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ no puede satisfacer (3).
+ Ademas 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ no puede satisfacer (2) o (4) o (5) ya que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ comienza con 
+\begin_inset Formula $($
+\end_inset
+
+.
+ En forma analoga se puede terminar de ver que las propiedades (1),...,(5) son excluyentes.
+\end_layout
+
+\begin_layout Standard
+La unicidad en las descomposiciones de (4) y (5) es obvia.
+ La de (3) se desprende facilmente del lema anterior y la de los puntos (1) y (2) del lema analogo para terminos.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+(S) Complete las partes no hechas en la prueba anterior
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+(S) Si 
+\begin_inset Formula $\psi_{1},\psi_{2},\varphi_{1},\varphi_{2}\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{1}\psi_{2}=\varphi_{1}\varphi_{2}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\psi_{1}=\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}=\varphi_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 17:
+\end_layout
+
+\end_inset
+
+(S) Si 
+\begin_inset Formula $(\alpha\wedge\beta),\beta\in F^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\alpha\in F^{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Subformulas
+\end_layout
+
+\begin_layout Standard
+Una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sera llamada una 
+\shape italic
+subformula 
+\shape default
+(
+\shape italic
+propia
+\shape default
+)
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+de una formula 
+\begin_inset Formula $\psi$
+\end_inset
+
+,
+ cuando 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ (sea no igual a 
+\begin_inset Formula $\psi$
+\end_inset
+
+ y) sea subpalabra de 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Ya que es similar a su analogo para terminos,
+ aceptaremos sin prueba el lema siguiente
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Ocurrencias de formulas en formulas
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Las formulas atomicas no tienen subformulas propias.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ocurre propiamente en 
+\begin_inset Formula $(\psi\eta\phi),$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+entonces tal ocurrencia es en 
+\begin_inset Formula $\psi$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+o en 
+\begin_inset Formula $\phi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ocurre propiamente en 
+\begin_inset Formula $\lnot\psi$
+\end_inset
+
+,
+\begin_inset space \space{}
+\end_inset
+
+entonces tal ocurrencia es en 
+\begin_inset Formula $\psi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ocurre propiamente en 
+\begin_inset Formula $Qx_{k}\psi,$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+entonces tal ocurrencia es en 
+\begin_inset Formula $\psi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1},\varphi_{2}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ocurren en 
+\begin_inset Formula $\varphi,$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+entonces dichas ocurrencias son disjuntas o una contiene a la otra.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(f)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\lambda^{\prime}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+es el resultado de reemplazar alguna ocurrencia de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+en 
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+por 
+\begin_inset Formula $\psi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\lambda^{\prime}\in F^{\tau}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 18:
+\end_layout
+
+\end_inset
+
+(S) Si 
+\begin_inset Formula $\psi,\varphi,\alpha\in F^{\tau}$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $\psi$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i+1$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left\vert \varphi\right\vert <\left\vert \psi\right\vert $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Variables libres
+\end_layout
+
+\begin_layout Standard
+Recordemos que dadas palabras 
+\begin_inset Formula $\alpha,\beta\in\Sigma^{\ast}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\left\vert \alpha\right\vert ,\left\vert \beta\right\vert \geq1$
+\end_inset
+
+,
+ y un natural 
+\begin_inset Formula $i\in\{1,...,\left\vert \beta\right\vert \}$
+\end_inset
+
+,
+ se dice que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ 
+\shape italic
+ocurre a partir de 
+\shape default
+
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\shape italic
+en 
+\shape default
+
+\begin_inset Formula $\beta$
+\end_inset
+
+ cuando se de que existan palabras 
+\begin_inset Formula $\delta,\gamma$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\beta=\delta\alpha\gamma$
+\end_inset
+
+ y 
+\begin_inset Formula $\left\vert \delta\right\vert =i-1$
+\end_inset
+
+.
+ Intuitivamente hablando 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ocurre a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ en 
+\begin_inset Formula $\beta$
+\end_inset
+
+ cuando se de que si comensamos a leer desde el lugar 
+\begin_inset Formula $i$
+\end_inset
+
+-esimo de 
+\begin_inset Formula $\beta$
+\end_inset
+
+,
+ en adelante,
+ entonces leeremos la palabra 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ completa y luego posiblemente seguiran otros simbolos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definamos recursivamente la relacion 
+\begin_inset Formula $"v\mathit{\ ocurre\ libremente\ en\ }\varphi\mathit{\ a\ partir\ de\ }i"$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $i\in\{1,...,\left\vert \varphi\right\vert \}$
+\end_inset
+
+,
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es atomica,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=(\varphi_{1}\eta\varphi_{2})$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii se da alguna de las siguientes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-\left\vert (\varphi_{1}\eta\right\vert $
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=\lnot\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi=Qw\varphi_{1}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ sii 
+\begin_inset Formula $v\neq w$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-\left\vert Qw\right\vert $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Dados 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $i\in\{1,...,\left\vert \varphi\right\vert \}$
+\end_inset
+
+,
+ diremos que 
+\begin_inset Formula $"v$
+\end_inset
+
+ 
+\shape italic
+ocurre acotadamente en
+\shape default
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+a partir de
+\shape default
+ 
+\begin_inset Formula $i"$
+\end_inset
+
+ cuando 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ no ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{uno},\mathrm{doli}\},\{\mathrm{MAS},\mathrm{P}\},\{\mathrm{Her}\},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $a$
+\end_inset
+
+ dado por 
+\begin_inset Formula $a(\mathrm{MAS})=4$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a(\mathrm{P})=1$
+\end_inset
+
+ y 
+\begin_inset Formula $a(\mathrm{Her})=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{X}\mathbf{9}$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\mathrm{Her}(\mathrm{doli},\mathrm{doli},\mathsf{X}\mathbf{9})$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $15$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{X}\mathbf{9}$
+\end_inset
+
+ ocurre acotadamente en 
+\begin_inset Formula $\exists\mathsf{X}\mathbf{9}\mathrm{Her}(\mathrm{doli},\mathrm{doli},\mathsf{X}\mathbf{9})$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $2$
+\end_inset
+
+ y de 
+\begin_inset Formula $18$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathsf{X}\mathbf{2}$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $(\exists\mathsf{X}\mathbf{2}\mathrm{Her}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{7},\mathrm{uno})\rightarrow\mathrm{Her}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{7},\mathrm{uno}))$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $24$
+\end_inset
+
+ y acotadamente a partir de 
+\begin_inset Formula $3$
+\end_inset
+
+ y 
+\begin_inset Formula $9$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\varphi=((\mathsf{X}\mathbf{1}\equiv\mathsf{X}\mathbf{2})\wedge\exists\mathsf{X}\mathbf{2}\mathrm{Her}(\mathrm{P}(\mathrm{doli}),\mathrm{doli},\mathsf{X}\mathbf{2}))$
+\end_inset
+
+.
+ La variable 
+\begin_inset Formula $\mathsf{X}\mathbf{2}$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $6$
+\end_inset
+
+ y ocurre acotadamente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $11$
+\end_inset
+
+ y de 
+\begin_inset Formula $30$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ sea
+\begin_inset Formula 
+\[
+Li(\varphi)=\{v\in Var:\text{hay un }i\text{ tal que }v\text{ ocurre libremente en }\varphi\text{ a partir de }i\}\text{.}
+\]
+
+\end_inset
+
+Los elementos de 
+\begin_inset Formula $Li(\varphi)$
+\end_inset
+
+ seran llamados 
+\shape italic
+variables libres de 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Por ejemplo,
+ si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es la formula
+\begin_inset Formula 
+\[
+(\exists\mathsf{X}\mathbf{7}(\mathsf{X}\mathbf{7}\equiv\mathsf{X}\mathbf{6})\rightarrow((\mathsf{X}\mathbf{1}\equiv\mathsf{X}\mathbf{2})\wedge\exists\mathsf{X}\mathbf{2}\mathrm{Her}(\mathrm{doli},\mathrm{doli},\mathsf{X}\mathbf{2})))
+\]
+
+\end_inset
+
+tenemos que 
+\begin_inset Formula $Li(\varphi)=\{\mathsf{X}\mathbf{1},\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{6}\}$
+\end_inset
+
+ (justifique).
+ Tambien si
+\begin_inset Formula 
+\[
+\varphi=(\exists\mathsf{X}\mathbf{2}\mathrm{Her}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{7},\mathrm{uno})\rightarrow\mathrm{Her}(\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{7},\mathrm{uno}))
+\]
+
+\end_inset
+
+entonces 
+\begin_inset Formula $Li(\varphi)=\{\mathsf{X}\mathbf{2},\mathsf{X}\mathbf{7}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Una 
+\shape italic
+sentencia 
+\shape default
+sera una formula 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ tal que 
+\begin_inset Formula $Li(\varphi)=\emptyset$
+\end_inset
+
+.
+ Usaremos 
+\begin_inset Formula $S^{\tau}$
+\end_inset
+
+ para denotar el conjunto de las sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Li((t\equiv s))=\{v\in Var:v$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $t$
+\end_inset
+
+ o 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $s\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Li(r(t_{1},...,t_{n}))=\{v\in Var:v$
+\end_inset
+
+ ocurre en algun 
+\begin_inset Formula $t_{i}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Li(\lnot\varphi)=Li(\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Li((\varphi\eta\psi))=Li(\varphi)\cup Li(\psi).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $Li(Qx_{j}\varphi)=Li(\varphi)-\{x_{j}\}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (a) y (b) son triviales de las definiciones y dejadas al lector
+\end_layout
+
+\begin_layout Standard
+(d) Supongamos 
+\begin_inset Formula $v\in Li((\varphi\eta\psi))$
+\end_inset
+
+,
+ entonces hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $(\varphi\eta\psi)$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Por definicion tenemos que ya sea 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-1$
+\end_inset
+
+ o 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\psi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-\left\vert (\varphi\eta\right\vert $
+\end_inset
+
+,
+ con lo cual 
+\begin_inset Formula $v\in Li(\varphi)\cup Li(\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supongamos ahora que 
+\begin_inset Formula $v\in Li(\varphi)\cup Li(\psi)$
+\end_inset
+
+.
+ S.p.d.g.
+ supongamos 
+\begin_inset Formula $v\in Li(\psi)$
+\end_inset
+
+.
+ Por definicion tenemos que hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\psi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Pero notese que esto nos dice por definicion que 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $(\varphi\eta\psi)$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i+\left\vert (\varphi\eta\right\vert $
+\end_inset
+
+ con lo cual 
+\begin_inset Formula $v\in Li((\varphi\eta\psi))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(c) es similar a (d)
+\end_layout
+
+\begin_layout Standard
+(e) Supongamos 
+\begin_inset Formula $v\in Li(Qx_{j}\varphi)$
+\end_inset
+
+,
+ entonces hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $Qx_{j}\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Por definicion tenemos que 
+\begin_inset Formula $v\neq x_{j}$
+\end_inset
+
+ y 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i-\left\vert Qx_{j}\right\vert $
+\end_inset
+
+,
+ con lo cual 
+\begin_inset Formula $v\in Li(\varphi)-\{x_{j}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supongamos ahora que 
+\begin_inset Formula $v\in Li(\varphi)-\{x_{j}\}$
+\end_inset
+
+.
+ Por definicion tenemos que hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $v\neq x_{j}$
+\end_inset
+
+ esto nos dice por definicion que 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $Qx_{j}\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i+\left\vert Qx_{j}\right\vert $
+\end_inset
+
+,
+ con lo cual 
+\begin_inset Formula $v\in Li(Qx_{j}\varphi)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 19:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sean 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $i\in\omega$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $v\ $
+\end_inset
+
+ocurre
+\begin_inset space \space{}
+\end_inset
+
+libremente
+\begin_inset space \space{}
+\end_inset
+
+en
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+a
+\begin_inset space \space{}
+\end_inset
+
+partir
+\begin_inset space \space{}
+\end_inset
+
+de
+\begin_inset space \space{}
+\end_inset
+
+algun 
+\begin_inset Formula $i$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\forall v$
+\end_inset
+
+ no es subpalabra de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sean 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $i\in\{1,...,\left\vert \varphi\right\vert \}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+ o 
+\begin_inset Formula $v$
+\end_inset
+
+ ocurre acotadamente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a partir de 
+\begin_inset Formula $i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $Li(\forall x_{j}\varphi)\cup\{x_{j}\}=Li(\varphi)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Modelo matematico de las formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ es un tipo,
+ diremos que 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ es una 
+\shape italic
+extension de 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\shape italic
+ por nombres de constante
+\shape default
+ si 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ es de la forma 
+\begin_inset Formula $(\mathcal{C}^{\prime},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ con 
+\begin_inset Formula $\mathcal{C}^{\prime}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathcal{C}\subseteq\mathcal{C}^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Hemos definido las formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con la intencion de dar un modelo matematico del concepto de formula elemental de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ pero deberiamos notar que en las formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ no hay nombres de elementos fijos por lo cual dichas formulas son un modelo matematico solo de ciertas formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ a saber aquellas en las cuales no hay nombres de elementos fijos.
+ Recordemos que estos nombres se usaban en las pruebas elementales para denotar elementos fijos (a veces arbitrarios y otras veces que cumplian alguna propiedad).
+\end_layout
+
+\begin_layout Standard
+Cuando un matematico realiza una prueba elemental en una teoria elemental 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ comienza la misma imaginando una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ de la cual lo unico que sabe es que cumple las sentencias de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ Luego cuando fija un elemento y le pone nombre,
+ digamos 
+\begin_inset Formula $b$
+\end_inset
+
+,
+ podemos pensar que expandio su estructura imaginaria a una de tipo 
+\begin_inset Formula $(\mathcal{C}\cup\{b\},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ y continua su razonamiento.
+ Esto lo puede hacer muchas veces a lo largo de una prueba por lo cual su estructura imaginaria va cambiando de tipo.
+ Esta mecanica de prueba del matematico nos deja ver que es natural modelizar las formulas elementales de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ con formulas de tipo 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+ es alguna extension de 
+\begin_inset Formula $\tau$
+\end_inset
+
+ por constantes.
+\end_layout
+
+\end_body
+\end_document

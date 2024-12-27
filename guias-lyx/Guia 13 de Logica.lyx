@@ -1,0 +1,3310 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:42:40}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Propiedades basicas de pruebas y teoremas
+\end_layout
+
+\begin_layout Standard
+Por supuesto los numeros asociados a las hipotesis en una prueba son completamen
+te arbitrarios y pueden cambiarse, es decir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Cambio de indice de hipotesis
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cambio-indice-hipotesis"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $m\in\mathbf{N}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}\neq$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{m}$
+\end_inset
+
+, para cada 
+\begin_inset Formula $i=1,...,n(\mathbf{\varphi})$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ y que 
+\begin_inset Formula $\mathbf{J}_{j}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+, con 
+\begin_inset Formula $[\alpha]_{1}\notin Num$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\mathbf{\tilde{J}}$
+\end_inset
+
+ el resultado de reemplazar en 
+\begin_inset Formula $\mathbf{J}$
+\end_inset
+
+ la justificacion 
+\begin_inset Formula $\mathbf{J}_{i}$
+\end_inset
+
+ por 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{m}$
+\end_inset
+
+ y reemplazar la justificacion 
+\begin_inset Formula $\mathbf{J}_{j}$
+\end_inset
+
+ por 
+\begin_inset Formula $\mathrm{TESIS}\bar{m}\alpha$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{\tilde{J}})$
+\end_inset
+
+ es una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tambien podemos cambiar los nombres de cte auxiliares
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Cambio de ctes auxiliares
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cambio-ctes"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\mathcal{C}_{1}$
+\end_inset
+
+ el conjunto de nombres de constante que ocurren en 
+\begin_inset Formula $\mathbf{\varphi}$
+\end_inset
+
+ y que no pertenecen a 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $e\in\mathcal{C}_{1}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\tilde{e}\notin\mathcal{C}\cup\mathcal{C}_{1}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(\mathcal{C}\cup(\mathcal{C}_{1}-\{e\})\cup\{\tilde{e}\},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ es un tipo.
+ Sea 
+\begin_inset Formula $\mathbf{\tilde{\varphi}}_{i}=$
+\end_inset
+
+ resultado de reemplazar en 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ cada ocurrencia de 
+\begin_inset Formula $e$
+\end_inset
+
+ por 
+\begin_inset Formula $\tilde{e}.$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $(\mathbf{\tilde{\varphi}}_{1}...\mathbf{\tilde{\varphi}}_{n(\mathbf{\varphi})},\mathbf{J})$
+\end_inset
+
+ es una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aceptaremos sin prueba los lemas anteriores pero:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+Medite hasta creer fuertemente en la veracidad de los lemas anteriores 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por una prueba del siguiente lema ver el apunte.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Propiedades basicas de 
+\begin_inset Formula $\vdash$
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "prop-bas-prueb"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+(Uso de Teoremas) Si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi_{1},...,\varphi_{n}\},\tau)\vdash\varphi,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Supongamos 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $R$
+\end_inset
+
+ es una regla distinta de GENERALIZACION y ELECCION y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se deduce de 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ por la regla 
+\begin_inset Formula $R$
+\end_inset
+
+, entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+Haga un bosquejo de la prueba de (1) del lema anterior, para el caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ Convensase que iterando el caso 
+\begin_inset Formula $n=1$
+\end_inset
+
+, obtenemos el caso general.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Pruebe (2), usando (1)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Pruebe el 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+solo si
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ de (3) usando (2)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Haga un bosquejo de la prueba del 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+si
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ de (3) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Consistencia
+\end_layout
+
+\begin_layout Standard
+Una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera 
+\shape italic
+inconsistente
+\shape default
+ cuando haya una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\wedge\lnot\varphi).$
+\end_inset
+
+ Una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera 
+\shape italic
+consistente
+\shape default
+ cuando no sea inconsistente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Propiedades basicas de la consistencia
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es inconsistente, entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+, para toda sentencia 
+\begin_inset Formula $\varphi.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente y 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+, entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ es consistente.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(\Sigma,\tau)\not\vdash\lnot\varphi$
+\end_inset
+
+, entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ es consistente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (1) Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es inconsistente, entonces por definicion tenemos que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi\wedge\lnot\psi$
+\end_inset
+
+ para alguna sentencia 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+ Dada una sentencia cualquiera 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se deduce por la regla del absurdo a partir de 
+\begin_inset Formula $\psi\wedge\lnot\psi$
+\end_inset
+
+ con lo cual (2) del Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop-bas-prueb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(2) Supongamos 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente y 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ fuera inconsistente, entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\vdash\psi\wedge\lnot\psi$
+\end_inset
+
+, para alguna sentencia 
+\begin_inset Formula $\psi$
+\end_inset
+
+, lo cual por (1) del Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop-bas-prueb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos diria que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi\wedge\lnot\psi$
+\end_inset
+
+, es decir nos diria que 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es inconsistente.
+\end_layout
+
+\begin_layout Standard
+Dejamos (3) como ejercicio 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Pruebe (3) del lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+El teorema de correccion
+\end_layout
+
+\begin_layout Standard
+Como ya vimos en las secciones anteriores, el concepto matematico de prueba
+ formal en una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ fue hecho como un intento de modelizar ciertas pruebas que realizan los
+ matematicos profecionales, a las que llamamos pruebas elementales.
+ Es claro que cuando un matematico hace una prueba elemental de una setencia
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+, comienza imaginando una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ de la cual lo unico que sabe es que ella satisface todas las sentencias
+ de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, y luego al finalizar la prueba concluye que dicho modelo imaginario satisface
+ la ultima sentencia de la prueba.
+ En algun sentido la mision de una prueba es justamente eso: justificar
+ con solidez que la sentencia a probar vale en todos los modelos de la teoria.
+\end_layout
+
+\begin_layout Standard
+O sea que si nuestro concepto de prueba formal permitiera probar sentencias
+ que no sean verdaderas en todos los modelos de la teoria, no seria correcto.
+ Este no es el caso y el teorema que asegura que las pruebas formales solo
+ prueban sentencias verdaderas en todos los modelos se llama Teorema de
+ Correccion.
+ Lo enunciaremos fomalmente a continuacion aunque no daremos la prueba ya
+ que es dificultosa.
+ Antes una definicion.
+ Dada 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria, escribiremos 
+\begin_inset Formula $(\Sigma,\tau)\models\varphi$
+\end_inset
+
+ cuando 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sea verdadera en todo modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Teorema de Correccion]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+ implica 
+\begin_inset Formula $(\Sigma,\tau)\models\varphi$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que el teorema de correccion hace parte de la tarea encomendada
+ en el punto (4) del programa de logica dado en la Guia 7 ya que asegura
+ que nuestro concepto de prueba formal no es demaciado permisivo como para
+ permitir probar sentencias que son falsas en algun modelo de la teoria.
+ Pero dicho concepto podria ser incorrecto en el sentido que podria haber
+ pruebas elementales dadas por matematicos la cuales no puedan ser simuladas
+ por pruebas formales.
+ Por ejemplo podria pasar que mañana un matematico diera una prueba elemental
+ de una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ pero que no haya una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ En tal caso nuestro modelo de prueba formal seria un modelo erroneo del
+ concepto de prueba elemental, por ser incompleto.
+ Por supuesto en ese caso podriamos mejorarlo viendo la prueba elemental
+ dada por dicho matematico y enrriquesiendo a la luz de dicha prueba nuestra
+ definicion de prueba formal.
+ De todas maneras nos quedaria la duda de que aun esta nueva definicion
+ de prueba sea incompleta ....
+ Como veremos el Teorema de Completitud de Godel prueba que este no es el
+ caso!
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un corolario muy importante del Teorema de Correccion es el siguiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tiene un modelo, entonces 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Supongamos 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ fuera inconsistente, entonces toda sentencia de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ seria un teorema de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+, en particular tendriamos que 
+\begin_inset Formula $\exists x_{1}\lnot(x_{1}\equiv x_{1})$
+\end_inset
+
+ seria un teorema de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+, lo cual por el Teorema de Correccion nos diria que 
+\begin_inset Formula $\mathbf{A}\models\exists x_{1}\lnot(x_{1}\equiv x_{1})$
+\end_inset
+
+, lo cual no es cierto.
+ O sea que 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El teorema de correccion es muy util para asegurar que una sentencia no
+ es un teorema de una teoria dada.
+ Mas concretamente tenemos el siguiente criterio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+NoEsTeorema
+\end_layout
+
+\end_inset
+
+Si ud quiere probar que una sentencia 
+\begin_inset Formula $\varphi\in F^{\tau}$
+\end_inset
+
+ no es teorema de una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ basta con encontrar un modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ para el cual 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sea falsa.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Justifique el criterio anterior, es decir pruebe que si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tiene un modelo en el cual 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es falsa, entonces 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ no es un teorema de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+Pruebe que ni 
+\begin_inset Formula $\forall x\forall y\forall z\;(x\;\mathsf{i}\ y)\;\mathsf{s}\;(x\;\mathsf{i}\;z)\equiv x\;\mathsf{i}\;(y\;\mathsf{s}\;z)$
+\end_inset
+
+ ni su negacion son teoremas de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Es la siguiente sentencia un teorema de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\forall xyz\;((x\;\mathsf{i}\;(y\;\mathsf{s}\;z)\equiv(x\;\mathsf{i}\ y)\;\mathsf{s}\;(x\;\mathsf{i}\;z)\rightarrow x\;\mathsf{s}\;(y\;\mathsf{i}\;z)\equiv(x\;\mathsf{s}\ y)\;\mathsf{i}\;(x\;\mathsf{s}\;z))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoría y 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ una sentencia de 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tal que 
+\begin_inset Formula $T\vdash\varphi$
+\end_inset
+
+, entonces o 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es universalmente valida o existen 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}\in\Sigma$
+\end_inset
+
+, con 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+, tales que 
+\begin_inset Formula $((\varphi_{1}\wedge...\wedge\varphi_{n})\rightarrow\varphi)$
+\end_inset
+
+ es universalmente válida.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoría y 
+\begin_inset Formula $\varphi,\phi\in S^{\tau}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\phi\},\tau)$
+\end_inset
+
+ son ambas teorías consistentes.
+ Entonces 
+\begin_inset Formula $(\Sigma\cup\{\varphi,\phi\},\tau)$
+\end_inset
+
+ es consistente
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria consistente.
+ Si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\nvdash\lnot\psi$
+\end_inset
+
+, entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria consistente.
+ Entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\nvdash\lnot\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria consistente.
+ Entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\left(\varphi\vee\psi\right)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+ o 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Concluimos la subseccion dando algunos ejemplos que muestran que si hacemos
+ mas permisiva la definicion de prueba formal, esta ya no resulta correcta.
+ Recomendamos al lector dejar estos ejemplos para una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+segunda pasada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ en el estudio de la materia
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejemplo 1:
+\end_layout
+
+\end_inset
+
+Este ejemplo muestra que en la sentencia a generalizar (dentro de una prueba
+ formal) no puede ocurrir un nombre de cte el cual dependa del nombre de
+ cte a generalizar.
+ Sea 
+\begin_inset Formula $\tau=(\emptyset,\{f^{1}\},\emptyset,a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma=\{\forall y\exists x\;y\equiv f(x)\}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+.
+ Notese que una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es modelo de 
+\begin_inset Formula $T$
+\end_inset
+
+ sii 
+\begin_inset Formula $f^{\mathbf{A}}$
+\end_inset
+
+ es una funcion sobre.
+ Consideremos
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+\ 1. & \forall y\exists x\;y\equiv f(x) &  & \text{AXIOMAPROPIO}\\
+\ 2. & \exists x\;y_{0}\equiv f(x) &  & \text{PARTICULARIZACION}(1)\\
+\ 3. & y_{0}\equiv f(e) &  & \text{ELECCION}(2)\\
+\ 4. & \forall y\;y\equiv f(e) &  & \text{GENERALIZACION}(3)\\
+\ 5. & c\equiv f(e) &  & \text{PARTICULARIZACION}(4)\\
+\ 6. & d\equiv f(e) &  & \text{PARTICULARIZACION}(4)\\
+\ 7. & f(e)\equiv d &  & \text{COMMUTATIVIDAD}(6)\\
+\ 8. & c\equiv d &  & \text{TRANSITIVIDAD}(5,7)\\
+\ 9. & \forall y\;c\equiv y &  & \text{GENERALIZACION}(8)\\
+10. & \forall x\forall y\;x\equiv y &  & \text{GENERALIZACION}(9)
+\end{array}
+\]
+
+\end_inset
+
+Obviamente, si permitieramos que lo anterior fuera una prueba formal, dejaria
+ de valer el teorema de correccion ya que hay muchos modelos de 
+\begin_inset Formula $T$
+\end_inset
+
+, los cuales no satisfacen 
+\begin_inset Formula $\forall x\forall y\;x\equiv y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejemplo 2:
+\end_layout
+
+\end_inset
+
+El siguiente ejemplo muestra que el nombre de cte a generalizar no puede
+ ocurrir en hipotesis de la sentencia a la cual se le aplica la generalizacion.
+ Sea 
+\begin_inset Formula $\tau=(\{1\},\emptyset,\emptyset,\emptyset)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $T=(\emptyset,\tau)$
+\end_inset
+
+.
+ Consideremos
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & c\equiv1 &  & \text{HIPOTESIS}1\\
+2.\; & \forall x\;x\equiv1 &  & \text{TESIS}1\text{GENERALIZACION}(1)\\
+3.\; & (c\equiv1\rightarrow\forall x\;x\equiv1) &  & \text{CONCLUSION}\\
+4.\; & \forall y\;\left(y\equiv1\rightarrow\forall x\;x\equiv1\right) &  & \text{GENERALIZACION}(3)\\
+5.\; & \left(1\equiv1\rightarrow\forall x\;x\equiv1\right) &  & \text{PARTICULARIZACION}(4)\\
+6. & 1\equiv1 &  & \text{AXIOMALOGICO}\\
+7. & \forall x\;x\equiv1 &  & \text{MODUSPONENS}(5,6)
+\end{array}
+\]
+
+\end_inset
+
+Si permitieramos que lo anterior fuera una prueba formal, dejaria de valer
+ el teorema de correccion ya que hay muchos modelos de 
+\begin_inset Formula $T$
+\end_inset
+
+ (toda estructura es un modelo de 
+\begin_inset Formula $T$
+\end_inset
+
+) los cuales no satisfacen 
+\begin_inset Formula $\forall x\;x\equiv1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejemplo 3:
+\end_layout
+
+\end_inset
+
+El siguiente ejemplo muestra que la sentencia a generalizar no puede tener
+ una hipotesis en las cual ocurra un nombre de cte que dependa del nombre
+ de cte que se generaliza.
+ Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\emptyset,\emptyset)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $T=(\emptyset,\tau)$
+\end_inset
+
+.
+ Consideremos
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+\ 1. & c\equiv c &  & \text{AXIOMALOGICO}\\
+\ 2. & \exists z\;z\equiv c &  & \text{EXISTENCIA}(1)\\
+\ 3. & e\equiv c &  & \text{ELECCION}(2)\\
+\ 4. & d\equiv e &  & \text{HIPOTESIS}1\\
+\ 5. & d\equiv c &  & \text{TRANSITIVIDAD}(4,3)\\
+\ 6. & \forall y\;d\equiv y &  & \text{TESIS}1\text{GENERALIZACION}(5)\\
+\ 7. & d\equiv e\rightarrow\forall y\;d\equiv y &  & \text{CONCLUSION}\\
+\ 8. & \forall x(x\equiv e\rightarrow\forall y\;x\equiv y) &  & \text{GENERALIZACION}(7)\\
+\ 9. & e\equiv e\rightarrow\forall y\;e\equiv y &  & \text{PARTICULARIZACION}(8)\\
+10. & e\equiv e &  & \text{AXIOMALOGICO}\\
+11. & \forall y\;e\equiv y &  & \text{MODUSPONENS}(10,9)\\
+12. & \forall y\;c\equiv y &  & \text{REEMPLAZO}(3,11)\\
+13. & \forall x\forall y\;x\equiv y &  & \text{GENERALIZACION}(12)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+El algebra de Lindenbaum
+\end_layout
+
+\begin_layout Standard
+Recordemos que dado un tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+, con 
+\begin_inset Formula $S^{\tau}$
+\end_inset
+
+ denotamos el conjunto de las sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+, es decir
+\begin_inset Formula 
+\[
+S^{\tau}=\{\varphi\in F^{\tau}:Li(\varphi)=\emptyset\}
+\]
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Podemos definir la siguiente relacion binaria sobre 
+\begin_inset Formula $S^{\tau}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\varphi\dashv\vdash_{T}\psi\text{ si y solo si }T\vdash\left(\varphi\leftrightarrow\psi\right)
+\]
+
+\end_inset
+
+Es decir
+\begin_inset Formula 
+\[
+\dashv\vdash_{T}=\{(\varphi,\psi)\in S^{\tau}:T\vdash\left(\varphi\leftrightarrow\psi\right)\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\dashv\vdash_{T}$
+\end_inset
+
+ es una relacion de equivalencia.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ La relacion es reflexiva ya que 
+\begin_inset Formula $(\varphi\leftrightarrow\varphi)$
+\end_inset
+
+ es un axioma logico y por lo tanto 
+\begin_inset Formula $((\varphi\leftrightarrow\varphi),$
+\end_inset
+
+AXIOMALOGICO
+\begin_inset Formula $)$
+\end_inset
+
+ es una prueba formal de 
+\begin_inset Formula $(\varphi\leftrightarrow\varphi)$
+\end_inset
+
+ en 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Veamos que es simetrica.
+ Supongamos que 
+\begin_inset Formula $\varphi\dashv\vdash_{T}\psi$
+\end_inset
+
+, es decir 
+\begin_inset Formula $T\vdash\left(\varphi\leftrightarrow\psi\right)$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $\left(\psi\leftrightarrow\varphi\right)$
+\end_inset
+
+ se deduce de 
+\begin_inset Formula $(\varphi\leftrightarrow\psi)$
+\end_inset
+
+ por la regla de commutatividad, (2) del Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop-bas-prueb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $T\vdash\left(\psi\leftrightarrow\varphi\right)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+Complete la prueba anterior probando que 
+\begin_inset Formula $\dashv\vdash_{T}$
+\end_inset
+
+ es transitiva 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se dice 
+\shape italic
+refutable en 
+\shape default
+
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\lnot\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "0 y 1 del algebra de lindembaum"
+
+\end_inset
+
+Dada una teoria 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+, se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T\}\in S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es refutable en 
+\begin_inset Formula $T\}\in S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Haremos la prueba de (2) y dejaremos la prueba de (1) como ejercicio.
+ Sean 
+\begin_inset Formula $\varphi,\psi$
+\end_inset
+
+ refutables en 
+\begin_inset Formula $T$
+\end_inset
+
+, veremos que 
+\begin_inset Formula $\varphi\dashv\vdash_{T}\psi$
+\end_inset
+
+.
+ Notese que
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & \varphi &  & \text{HIPOTESIS}1\\
+2.\; & \lnot\psi &  & \text{HIPOTESIS}2\\
+3.\; & \lnot\varphi &  & \text{AXIOMAPROPIO}\\
+4.\; & (\varphi\wedge\lnot\varphi) &  & \text{TESIS}2\text{CONJUNCIONINTRODUCCION}(1,3)\\
+5. & \lnot\psi\rightarrow(\varphi\wedge\lnot\varphi) &  & \text{CONCLUSION}\\
+6. & \psi &  & \text{TESIS}1\text{ABSURDO}(5)\\
+7. & (\varphi\rightarrow\psi) &  & \text{CONCLUSION}\\
+8. & \psi &  & \text{HIPOTESIS}3\\
+9. & \lnot\varphi &  & \text{HIPOTESIS}4\\
+10. & \lnot\psi &  & \text{AXIOMAPROPIO}\\
+11. & (\psi\wedge\lnot\psi) &  & \text{TESIS}4\text{CONJUNCIONINTRODUCCION}(8,10)\\
+12. & \lnot\varphi\rightarrow(\psi\wedge\lnot\psi) &  & \text{CONCLUSION}\\
+13. & \varphi &  & \text{TESIS}3\text{ABSURDO}(12)\\
+14. & (\psi\rightarrow\varphi) &  & \text{CONCLUSION}\\
+15. & (\varphi\leftrightarrow\psi) &  & \text{EQUIVALENCIAINTRODUCCION}(7,14)
+\end{array}
+\]
+
+\end_inset
+
+justifica que 
+\begin_inset Formula $(\Sigma\cup\{\lnot\varphi,\lnot\psi\},\tau)\vdash(\varphi\leftrightarrow\psi)$
+\end_inset
+
+ lo cual por (1) del Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop-bas-prueb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\leftrightarrow\psi)$
+\end_inset
+
+, obteniendo que 
+\begin_inset Formula $\varphi\dashv\vdash_{T}\psi$
+\end_inset
+
+.
+ Para terminar de probar (2) faltaria ver que si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es refutable en 
+\begin_inset Formula $T$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi\dashv\vdash_{T}\psi$
+\end_inset
+
+, entonces 
+\begin_inset Formula $\psi$
+\end_inset
+
+ es refutable en 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Dejamos al lector la prueba.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+Pruebe (1) del lema anterior y complete la prueba de (2) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una teoria 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi\in S^{\tau}$
+\end_inset
+
+, 
+\begin_inset Formula $[\varphi]_{T}$
+\end_inset
+
+ denotara la clase de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ con respecto a la relacion de equivalencia 
+\begin_inset Formula $\dashv\vdash_{T}$
+\end_inset
+
+.
+ Definiremos sobre 
+\begin_inset Formula $S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+ las siguiente operacion binaria 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\lbrack\varphi]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\psi]_{T}=[(\varphi\vee\psi)]_{T}
+\]
+
+\end_inset
+
+Una observacion importante es que para que la definicion anterior de la
+ operacion 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+ sea inambigua, debemos probar la siguiente propiedad
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $[\varphi]_{T}=[\varphi^{\prime}]_{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $[\psi]_{T}=[\psi^{\prime}]_{T}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $[(\varphi\vee\psi)]_{T}=[(\varphi^{\prime}\vee\psi^{\prime})]_{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Es decir debemos probar que si 
+\begin_inset Formula $T\vdash\left(\varphi\leftrightarrow\varphi^{\prime}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $T\vdash\left(\psi\leftrightarrow\psi^{\prime}\right)$
+\end_inset
+
+, entonces 
+\begin_inset Formula $T\vdash((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi^{\prime}))$
+\end_inset
+
+.
+ Pero esto sigue de (1) del Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop-bas-prueb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ya que
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & \left(\varphi\leftrightarrow\varphi^{\prime}\right) &  & \text{AXIOMAPROPIO}\\
+2.\; & \left(\psi\leftrightarrow\psi^{\prime}\right) &  & \text{AXIOMAPROPIO}\\
+3.\; & ((\varphi\vee\psi)\leftrightarrow(\varphi\vee\psi)) &  & \text{AXIOMALOGICO}\\
+4.\; & ((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi)) &  & \text{REEMPLAZO}(1,3)\\
+5.\; & ((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi^{\prime})) &  & \text{REEMPLAZO}(2,4)
+\end{array}
+\]
+
+\end_inset
+
+atestigua que 
+\begin_inset Formula $(\Sigma\cup\{\left(\varphi\leftrightarrow\varphi^{\prime}\right),\left(\psi\leftrightarrow\psi^{\prime}\right)\},\tau)\vdash((\varphi\vee\psi)\leftrightarrow(\varphi^{\prime}\vee\psi^{\prime}))$
+\end_inset
+
+.
+ En forma analoga se puede ver que las siguientes igualdades definen en
+ forma inambigua una operacion binaria 
+\begin_inset Formula $\mathsf{i}^{T}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+sobre 
+\begin_inset Formula $S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+ y una operacion unaria 
+\begin_inset Formula $^{\mathsf{c}^{T}}$
+\end_inset
+
+ sobre 
+\begin_inset Formula $S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+\lbrack\varphi]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\psi]_{T} & =[(\varphi\wedge\psi)]_{T}\\
+([\varphi]_{T})^{\mathsf{c}^{T}} & =[\lnot\varphi]_{T}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una teoria 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+, denotemos con 
+\begin_inset Formula $1^{T}$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T\}$
+\end_inset
+
+ y con 
+\begin_inset Formula $0^{T}$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es refutable en 
+\begin_inset Formula $T\}$
+\end_inset
+
+.
+ Ya vimos en un lema anterior que 
+\begin_inset Formula $0^{T}$
+\end_inset
+
+ y 
+\begin_inset Formula $1^{T}$
+\end_inset
+
+ pertenecen a 
+\begin_inset Formula $S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+.
+ Podemos enunciar ahora el siguiente resultado, inspirado en la idea clasica
+ de Boole para el calculo proposicional.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Entonces 
+\begin_inset Formula $(S^{\tau}/\mathrm{\dashv\vdash}_{T},\mathsf{s}^{T},\mathsf{i}^{T},^{\mathsf{c}^{T}},0^{T},1^{T})$
+\end_inset
+
+ es un algebra de Boole.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Por definicion de algebra de Boole, debemos probar que cualesquiera sean
+ 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}\in S^{\tau}$
+\end_inset
+
+, se cumplen las siguientes igualdades:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{1}]_{T}=[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{1}]_{T}=[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{2}]_{T}=[\varphi_{2}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{2}]_{T}=[\varphi_{2}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}([\varphi_{2}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{3}]_{T})=([\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{2}]_{T})\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{3}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(6)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}([\varphi_{2}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T})=([\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{2}]_{T})\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(7)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}([\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{2}]_{T})=[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(8)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}([\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{2}]_{T})=[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(9)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $0^{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{1}]_{T}=[\varphi_{1}]_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(10)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}1^{T}=1^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(11)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}([\varphi_{1}]_{T})^{\mathsf{c}^{T}}=1^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(12)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}([\varphi_{1}]_{T})^{\mathsf{c}^{T}}=0^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(13)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}([\varphi_{2}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T})=([\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{2}]_{T})\;\mathsf{s}^{T}\mathsf{\;}([\varphi_{1}]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi_{3}]_{T})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Veamos por ejemplo que se da (10), es decir probaremos que 
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}1^{T}=1^{T}$
+\end_inset
+
+, cualesquiera sea la sentencia 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $\forall x_{1}(x_{1}\equiv x_{1})$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T$
+\end_inset
+
+, atestiguado por la prueba formal
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & c\equiv c &  & \text{AXIOMALOGICO}\\
+2.\; & \forall x_{1}(x_{1}\equiv x_{1}) &  & \text{GENERALIZACION}(1)
+\end{array}
+\]
+
+\end_inset
+
+(
+\begin_inset Formula $c$
+\end_inset
+
+ es un nombre de cte no perteneciente a 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ y tal que 
+\begin_inset Formula $(\mathcal{C}\cup\{c\},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ es un tipo), tenemos que el Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "0 y 1 del algebra de lindembaum"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $1^{T}=\{\varphi\in S^{\tau}:\varphi$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T\}=[\forall x_{1}(x_{1}\equiv x_{1})]_{T}$
+\end_inset
+
+.
+ Es decir que para probar (10) debemos probar que para cualquier 
+\begin_inset Formula $\varphi_{1}\in S^{\tau}$
+\end_inset
+
+, se da que
+\begin_inset Formula 
+\[
+\lbrack\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\forall x_{1}(x_{1}\equiv x_{1})]_{T}=\{\varphi\in S^{\tau}:\varphi\text{ }\mathrm{es\ un\ teorema\ de\ }T\}
+\]
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $[\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\forall x_{1}(x_{1}\equiv x_{1})]_{T}=[\varphi_{1}\vee\forall x_{1}(x_{1}\equiv x_{1})]_{T}$
+\end_inset
+
+, debemos probar que 
+\begin_inset Formula $\varphi_{1}\vee\forall x_{1}(x_{1}\equiv x_{1})$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T$
+\end_inset
+
+, lo cual es atestiguado por la siguiente prueba formal
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & c\equiv c &  & \text{AXIOMALOGICO}\\
+2.\; & \forall x_{1}(x_{1}\equiv x_{1}) &  & \text{GENERALIZACION}(1)\\
+3. & (\varphi_{1}\vee\forall x_{1}(x_{1}\equiv x_{1})) &  & \text{DISJUNCIONINTRODUCCION}(2)
+\end{array}
+\]
+
+\end_inset
+
+Veamos ahora que se da (6), es decir veamos que
+\begin_inset Formula 
+\[
+\lbrack\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}([\varphi_{2}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T})=([\varphi_{1}]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{2}]_{T})\;\mathsf{s}^{T}\mathsf{\;}[\varphi_{3}]_{T}
+\]
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}\in S^{\tau}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}\in S^{\tau}$
+\end_inset
+
+ fijas.
+ Por la definicion de la operacion 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+ debemos probar que
+\begin_inset Formula 
+\[
+\lbrack(\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))]_{T}=[((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})]_{T}
+\]
+
+\end_inset
+
+es decir, debemos probar que
+\begin_inset Formula 
+\[
+T\vdash((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\leftrightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))
+\]
+
+\end_inset
+
+Notese que por (2) del Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prop-bas-prueb"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, basta con probar que
+\begin_inset Formula 
+\begin{align*}
+T & \vdash((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))\\
+T & \vdash(((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})\rightarrow(\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3})))
+\end{align*}
+
+\end_inset
+
+La siguiente es una prueba formal de 
+\begin_inset Formula $((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))$
+\end_inset
+
+ en 
+\begin_inset Formula $T$
+\end_inset
+
+ y dejamos al lector la otra prueba formal.
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1. & (\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3})) &  & \text{HIPOTESIS}1\\
+2. & \varphi_{1} &  & \text{HIPOTESIS}2\\
+3. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(2)\\
+4. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}2\text{DISJUNCIONINTRODUCCION}(3)\\
+5. & \varphi_{1}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+6. & (\varphi_{2}\vee\varphi_{3}) &  & \text{HIPOTESIS}3\\
+7. & \varphi_{2} &  & \text{HIPOTESIS}4\\
+8. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(6)\\
+9. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}4\text{DISJUNCIONINTRODUCCION}(7)\\
+10. & \varphi_{2}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+11. & \varphi_{3} &  & \text{HIPOTESIS}5\\
+12. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}5\text{DISJUNCIONINTRODUCCION}(11)\\
+13. & \varphi_{3}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+14. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}3\text{DIVISIONPORCASOS}(6,10,13)\\
+15. & (\varphi_{2}\vee\varphi_{3})\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}\\
+16. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}1\text{DIVISIONPORCASOS}(1,5,15)\\
+17. & (\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{CONCLUSION}
+\end{array}
+\]
+
+\end_inset
+
+El resto de las propiedades pueden ser probadas en forma similar, algunas
+ de las pruebas formales necesarias han sido dadas en los ejemplos que siguen
+ a la definicion de prueba formal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dada una teoria 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+, denotaremos con 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ al algebra de Boole 
+\begin_inset Formula $(S^{\tau}/\mathrm{\dashv\vdash}_{T},\mathsf{s}^{T},\mathsf{i}^{T},^{\mathsf{c}^{T}},0^{T},1^{T})$
+\end_inset
+
+.
+ El algebra 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ sera llamada el 
+\shape italic
+algebra de Lindenbaum de la teoria 
+\shape default
+
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Denotaremos con 
+\begin_inset Formula $\leq^{T}$
+\end_inset
+
+ al orden parcial asociado al algebra de Boole 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ (es decir 
+\begin_inset Formula $[\varphi]_{T}\leq^{T}[\psi]_{T}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $[\varphi]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\psi]_{T}=[\psi]_{T}$
+\end_inset
+
+).
+ El siguiente lema nos da una descripcion agradable de 
+\begin_inset Formula $\leq^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $T$
+\end_inset
+
+ una teoria.
+ Se tiene que
+\begin_inset Formula 
+\[
+\lbrack\varphi]_{T}\leq^{T}[\psi]_{T}\text{ si y solo si }T\vdash\left(\varphi\rightarrow\psi\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Supongamos que 
+\begin_inset Formula $[\varphi]_{T}\leq^{T}[\psi]_{T}$
+\end_inset
+
+, es decir supongamos que 
+\begin_inset Formula $[\varphi]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\psi]_{T}=[\psi]_{T}$
+\end_inset
+
+.
+ Por la definicion de 
+\begin_inset Formula $\mathsf{s}^{T}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $[(\varphi\vee\psi)]_{T}=[\psi]_{T}$
+\end_inset
+
+, es decir 
+\begin_inset Formula $T\vdash((\varphi\vee\psi)\leftrightarrow\psi)$
+\end_inset
+
+.
+ Es facil ver entonces que 
+\begin_inset Formula $T\vdash\left(\varphi\rightarrow\psi\right)$
+\end_inset
+
+.
+ Reciprocamente si 
+\begin_inset Formula $T\vdash\left(\varphi\rightarrow\psi\right)$
+\end_inset
+
+, entonces facilmente podemos probar que 
+\begin_inset Formula $T\vdash((\varphi\vee\psi)\leftrightarrow\psi)$
+\end_inset
+
+, lo cual nos dice que 
+\begin_inset Formula $[(\varphi\vee\psi)]_{T}=[\psi]_{T}$
+\end_inset
+
+.
+ Por la definicion de
+\begin_inset Formula $\ \mathsf{s}^{T}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $[\varphi]_{T}\;\mathsf{s}^{T}\mathsf{\;}[\psi]_{T}=[\psi]_{T}$
+\end_inset
+
+, lo cual nos dice que 
+\begin_inset Formula $[\varphi]_{T}\leq^{T}[\psi]_{T}$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+Reflexionar sobre la siguiente pregunta: ¿El concepto de algebra de Lindenbaum
+ es un concepto sintactico o semantico? 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si queremos demostrar que en 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ se da que 
+\begin_inset Formula $[\varphi]_{T}\neq\lbrack\psi]_{T}$
+\end_inset
+
+, es claro que por definicion de 
+\begin_inset Formula $\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+ deberemos probar que 
+\begin_inset Formula $(\varphi\leftrightarrow\psi)$
+\end_inset
+
+ no es un teorema de 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ O sea que por el criterio 
+\series bold
+NoEsTeorema
+\series default
+ surge el siguiente criterio:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si queremos demostrar que en 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+ se da que 
+\begin_inset Formula $[\varphi]_{T}\neq\lbrack\psi]_{T}$
+\end_inset
+
+, entonces basta con encontrar un modelo 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de 
+\begin_inset Formula $T$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(\varphi\leftrightarrow\psi)$
+\end_inset
+
+ sea falsa en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Es decir deberemos encontrar un modelo 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de 
+\begin_inset Formula $T$
+\end_inset
+
+ el cual haga verdadera a una de las sentencias y falsa a la otra
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+Hacer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Encuentre 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi$
+\end_inset
+
+ sentencias de 
+\begin_inset Formula $\tau_{RetCua}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $[\varphi]_{RetCua}<^{RetCua}[\psi]_{RetCua}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Encuentre en 
+\begin_inset Formula $\mathcal{A}_{RetCua}$
+\end_inset
+
+ una cadena ascendente numerable infinita 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Entonces 
+\begin_inset Formula $1^{T}\cap0^{T}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $T$
+\end_inset
+
+ una teoria.
+ Entonces 
+\begin_inset Formula $e\leq^{T}\forall x_{1}(x_{1}\equiv x_{1})$
+\end_inset
+
+, para cada 
+\begin_inset Formula $e\in S^{\tau}/\mathrm{\dashv\vdash}_{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\emptyset,\emptyset).$
+\end_inset
+
+ El algebra de Boole 
+\begin_inset Formula $\mathcal{A}_{(\emptyset,\tau)}$
+\end_inset
+
+ tiene una cantidad finita de elementos
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $T$
+\end_inset
+
+ una teoria.
+ Entonces 
+\begin_inset Formula $[\varphi]_{T}\leq^{T}[\psi]_{T}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\left(\varphi\rightarrow\psi\right)$
+\end_inset
+
+ es veradera en 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

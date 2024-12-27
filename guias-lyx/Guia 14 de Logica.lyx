@@ -1,0 +1,4632 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:43:04}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Teorema de completitud
+\end_layout
+
+\begin_layout Standard
+Hasta el momento tenemos una definicion matematica de prueba formal que modeliza el concepto intuitivo de prueba elemental,
+ el cual corresponde al mundo real de los matematicos profecionales.
+ Ahora bien,
+ nada nos asegura que no aparesca un matematico que realize una prueba elemental de una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ y que no haya una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ En tal caso nuestro concepto de prueba seria incompleto (como modelo) aunque,
+ como ya se vio,
+ el mismo es correcto.
+ Esto podria pasar por ejemplo si nos hubiesemos olvidado de incluir en nuestra definicion de prueba formal alguna regla o accion que el matematico usara para probar dicha 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ es decir nos podria pasar que no podamos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+traducir
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ dicha prueba elemental a una prueba formal.
+ Parese dificil poder asegurar o probar que nuestro concepto de prueba formal sea completo en el sentido antes descripto ya que el concepto de prueba elemental es empirico puesto que depende de las acciones de la comunidad matematica profecional y ademas no tiene una formulacion precisa.
+ Por otra parte nada nos asegura que los matematicos profecionales no vayan a descubrir en el futuro algun nuevo 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+truco
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ elemental y que nuestro concepto que era completo pase a ser incompleto.
+\end_layout
+
+\begin_layout Standard
+Fue un verdadero desafio cientifico (de los años cercanos a 1900) lidiar con estos problemas,
+ y el teorema de completitud de Godel resuelve todo de una manera limpia y asombrosa.
+ La razon es muy simple:
+ Godel prueba que si una sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera en todos los modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ entonces hay una prueba formal de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Ya que toda prueba elemental que haga un matematico (ahora o en el futuro) siempre probara una sentencia que es verdadera en cada modelo de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ el teorema de Godel nos garantiza que para cada prueba elemental (de ahora y del futuro) habra una prueba formal que pruebe la misma sentencia!
+\end_layout
+
+\begin_layout Standard
+Por supuesto queda la posibilidad de que una prueba elemental dada por algun matematico (ahora o en el futuro) no sea traducible en forma natural a una prueba formal que pruebe lo mismo (mas alla de que sepamos que hay una gracias a Godel).
+ Sin envargo el lector se ira convenciendo que esto es improbable que suceda,
+ a medida que vaya formalizando distintas pruebas elementales clasicas dadas por los matematicos a lo largo de la historia.
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que entonces el Teorema de Correccion junto con el Teorema de Completitud resuelven el punto (4) del programa de logica dado al final de la Guia 7.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para probar el teorema de completitud necesitaremos algunos resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Teoremas del filtro primo y de Rasiova Sikorski
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+filtro 
+\shape default
+de un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ sera un subconjunto 
+\begin_inset Formula $F\subseteq L$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x,y\in F\Rightarrow x\;\mathsf{i\;}y\in F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\in F$
+\end_inset
+
+ y 
+\begin_inset Formula $x\leq y\Rightarrow y\in F$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+El nombre 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+filtro
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es inspirado por la propiedad (3) ya que si un filtro o colador atrapa a cierto objeto 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ entonces claramente atrapara a todos los objetos mas grandes que 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Como son los filtros de 
+\begin_inset Formula $(\mathbf{R,}\max,\min)$
+\end_inset
+
+?
+ Siempre existe 
+\begin_inset Formula $\inf F$
+\end_inset
+
+,
+ cualquiera sea el filtro 
+\begin_inset Formula $F$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Encuentre todos los filtros de 
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+,
+ denotemos con 
+\begin_inset Formula $[S)$
+\end_inset
+
+ el siguiente conjunto
+\begin_inset Formula 
+\[
+\{y\in L:y\geq s_{1}\;\mathsf{i\;}...\;\mathsf{i\;}s_{n}\text{, para algunos }s_{1},...,s_{n}\in S\text{, }n\geq1\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Supongamos 
+\begin_inset Formula $S$
+\end_inset
+
+ es no vacio.
+ Entonces 
+\begin_inset Formula $[S)$
+\end_inset
+
+ es un filtro.
+ Mas aun si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un filtro y 
+\begin_inset Formula $F\supseteq S$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $F\supseteq\lbrack S)$
+\end_inset
+
+.
+ Es decir,
+ 
+\begin_inset Formula $[S)$
+\end_inset
+
+ es el menor filtro que contiene a 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Ya que 
+\begin_inset Formula $S\subseteq\lbrack S)$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $[S)\neq\emptyset$
+\end_inset
+
+.
+ Claramente 
+\begin_inset Formula $[S)$
+\end_inset
+
+ cumple la propiedad (3).
+ Veamos cumple la (2).
+ Si 
+\begin_inset Formula $y\geq s_{1}\;\mathsf{i\;}s_{2}\;\mathsf{i\;}...\;\mathsf{i\;}s_{n}$
+\end_inset
+
+ y 
+\begin_inset Formula $z\geq t_{1}\;\mathsf{i\;}t_{2}\;\mathsf{i\;}$
+\end_inset
+
+...
+\begin_inset Formula $\;\mathsf{i\;}t_{m}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $s_{1},s_{2},...,s_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},t_{2},...,t_{m}\in S$
+\end_inset
+
+,
+ entonces
+\begin_inset Formula 
+\[
+y\;\mathsf{i\;}z\geq s_{1}\;\mathsf{i\;}s_{2}\;\mathsf{i\;}...\;\mathsf{i\;}s_{n}\;\mathsf{i\;}t_{1}\;\mathsf{i\;}t_{2}\;\mathsf{i\;}...\;\mathsf{i\;}t_{m}
+\]
+
+\end_inset
+
+lo cual prueba (2).
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Llamaremos a 
+\begin_inset Formula $[S)$
+\end_inset
+
+ el 
+\shape italic
+filtro generado
+\shape default
+ 
+\shape italic
+por
+\shape default
+ 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $S$
+\end_inset
+
+ es finito,
+ tenemos que 
+\begin_inset Formula $[S)=\{y\in L:y\geq\inf S\}$
+\end_inset
+
+.
+ De un ejemplo en el que no existe 
+\begin_inset Formula $\inf S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando 
+\begin_inset Formula $S$
+\end_inset
+
+ es infinito y existe 
+\begin_inset Formula $\inf S$
+\end_inset
+
+,
+ en muchos casos se dara que 
+\begin_inset Formula $[S)=\{y\in L:y\geq\inf S\}$
+\end_inset
+
+ o que 
+\begin_inset Formula $[S)=\{y\in L:y>\inf S\}$
+\end_inset
+
+,
+ pero no necesariamente esto sucedera siempre.
+ Por ejemplo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{L}=(\mathcal{P}(\mathbf{N}),\cup,\cap)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $S=\{\mathbf{N}-\{n\}:n\in\mathbf{N}\}$
+\end_inset
+
+.
+ Es facil ver que 
+\begin_inset Formula $\inf S=\emptyset$
+\end_inset
+
+ y que 
+\begin_inset Formula $[S)=\{A\in\mathcal{P}(\mathbf{N}):\mathbf{N}-A$
+\end_inset
+
+ es finito
+\begin_inset Formula $\}$
+\end_inset
+
+ por lo cual no se da que 
+\begin_inset Formula $[S)=\{y\in L:y\geq\inf S\}$
+\end_inset
+
+ o que 
+\begin_inset Formula $[S)=\{y\in L:y>\inf S\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+ Un subconjunto 
+\begin_inset Formula $C\subseteq P$
+\end_inset
+
+ sera llamado una 
+\shape italic
+cadena
+\shape default
+ si para cada 
+\begin_inset Formula $x,y\in C$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ o 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+.
+ Por ejemplo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\{1,10,40,600\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\{2^{n}:n\in\mathbf{N}\}$
+\end_inset
+
+ son cadenas del poset 
+\begin_inset Formula $(\mathbf{N},|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\{-3,5,2\}$
+\end_inset
+
+ y el intervalo 
+\begin_inset Formula $[2,3]$
+\end_inset
+
+ son cadenas del poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+ De hecho todo subconjunto de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ es una cadena de 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $C=\{[0,n]:n\in\mathbf{N}\}$
+\end_inset
+
+ es una cadena del poset 
+\begin_inset Formula $(\mathcal{P}(\mathbf{R}),\subseteq)$
+\end_inset
+
+.
+ Notese que cada elemento de 
+\begin_inset Formula $C$
+\end_inset
+
+ es un conjunto (i.e.
+ un intervalo).
+ 
+\end_layout
+
+\begin_layout Standard
+Es importante notar que las cadenas pueden ser infinitas y que dada una cadena infinita 
+\begin_inset Formula $C$
+\end_inset
+
+ puede no existir una infinitupla 
+\begin_inset Formula $(c_{1},c_{2},...)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $C=\{c_{n}:n\in\mathbf{N}\}$
+\end_inset
+
+.
+ Este es el caso de la cadena 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ del poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+,
+ ya que el bien conocido argumento diagonal de Cantor nos dice que no existe una manera de enumerar los elementos del intervalo 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+.
+ Esto nos obliga a pensar con cierta madurez a las cadenas y no caer en la falacia de pensar que sus elementos forman necesariamente una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+filita discreta
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+.
+ Otro ejemplo para madurar nuestra idea de cadena,
+ tomemos 
+\begin_inset Formula $C$
+\end_inset
+
+ igual al conjunto de los numeros racionales mayores o iguales que 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Claramente 
+\begin_inset Formula $C$
+\end_inset
+
+ es una cadena del poset 
+\begin_inset Formula $(\mathbf{R},\leq)$
+\end_inset
+
+.
+ Si bien 
+\begin_inset Formula $C$
+\end_inset
+
+ puede ser enumerado,
+ es decir hay una funcion 
+\begin_inset Formula $c:\omega\rightarrow C$
+\end_inset
+
+,
+ la cual es biyectiva (por lo cual cumple que 
+\begin_inset Formula $C=\{c(0),c(1),...\}$
+\end_inset
+
+),
+ nunca la enumeracion 
+\begin_inset Formula $c$
+\end_inset
+
+ podra ser 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+en filita
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+,
+ es decir 
+\begin_inset Formula $c(0)<c(1)<c(2)<...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tambien es importante,
+ para entender la prueba del Teorema del Filtro Primo que viene a continuacion,
+ imaginar las cadenas de posets que sus elementos son conjuntos y su orden es la inclusion,
+ es decir dichas cadenas seran un conjunto de conjuntos 
+\begin_inset Formula $C$
+\end_inset
+
+ con la propiedad que dados dos cualesquiera elementos de 
+\begin_inset Formula $C$
+\end_inset
+
+ siempre alguno contiene al otro.
+ Un ejemplo de este tipo de cadenas es dado en (E3).
+ Otro ejemplo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E4)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathcal{F}=\{F:F$
+\end_inset
+
+ es un filtro del reticulado terna 
+\begin_inset Formula $(\mathbf{N},mcm,mcd)\}$
+\end_inset
+
+.
+ Notar que dado 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+,
+ el conjunto 
+\begin_inset Formula $\{x\in\mathbf{N}:n|x\}$
+\end_inset
+
+ es un filtro de 
+\begin_inset Formula $(\mathbf{N},mcm,mcd)\}$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ es no vacio tenemos que 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ es un poset.
+ Entonces
+\begin_inset Formula 
+\[
+C=\{\{x\in\mathbf{N}:n|x\}:n\text{ es potencia de }2\}
+\]
+
+\end_inset
+
+es una cadena de 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente resultado es una herramienta fundamental en el algebra moderna.
+ Lo aceptaremos sin prueba.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Lema de Zorn
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset y supongamos cada cadena de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tiene al menos una cota superior.
+ Entonces hay un elemento maximal en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obviamente en cada poset con universo finito hay al menos un elemento maximal.
+ O sea que el Lema de Zorn es interesante para el caso en que 
+\begin_inset Formula $P$
+\end_inset
+
+ es un conjunto infinito.
+ Un argumento para creer en la veracidad del lema podria ser el siguiente razonamiento por el absurdo:
+\end_layout
+
+\begin_layout Standard
+Supongamos que 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset en el cual cada cadena tiene al menos una cota superior y supongamos ademas que no hay elementos maximales en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Tomemos 
+\begin_inset Formula $x_{0}\in P$
+\end_inset
+
+ un elemento cualquiera.
+ Ya que 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ no es maximal,
+ hay un 
+\begin_inset Formula $x_{1}\in P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x_{0}<x_{1}$
+\end_inset
+
+.
+ Iterando esta idea vemos que debe haber elementos 
+\begin_inset Formula $x_{2},x_{3},...$
+\end_inset
+
+ tales que:
+\begin_inset Formula 
+\[
+x_{0}<x_{1}<x_{2}<x_{3}<\cdots
+\]
+
+\end_inset
+
+Pero 
+\begin_inset Formula $\{x_{0},x_{1},x_{2},x_{3},...\}$
+\end_inset
+
+ es una cadena por lo cual hay al menos una cota superior de ella en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ una de tales cotas.
+ Ya que 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ no es maximal,
+ hay un 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $y_{0}<y_{1}$
+\end_inset
+
+.
+ Iterando esta idea vemos que debe haber elementos 
+\begin_inset Formula $y_{2},y_{3},...$
+\end_inset
+
+ tales que:
+\begin_inset Formula 
+\[
+x_{0}<x_{1}<x_{2}<x_{3}<\cdots<y_{0}<y_{1}<y_{2}<y_{3}<\cdots
+\]
+
+\end_inset
+
+Pero 
+\begin_inset Formula $\{x_{0},x_{1},x_{2},x_{3},...,y_{0},y_{1},y_{2},y_{3},...\}$
+\end_inset
+
+ es una cadena por lo cual hay al menos una cota superior de ella en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Esto nos permite seguir agrandando la cadena usando la misma usada recien lo cual muestra que tenemos un procedimiento abstracto constructivo que nos permite ir agrandando indefinidamente nuestra cadena.
+ Esto huele a absurdo!
+\end_layout
+
+\begin_layout Standard
+De todas maneras para dar una prueba formal del lema de Zorn es necesario madurar algunos conceptos para poder escribir en forma precisa el argumento antes descripto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Un filtro 
+\begin_inset Formula $F$
+\end_inset
+
+ de un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ sera llamado 
+\shape italic
+primo
+\shape default
+ cuando se cumplan:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $F\neq L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s\;}y\in F\Rightarrow x\in F$
+\end_inset
+
+ o 
+\begin_inset Formula $y\in F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+E1
+\end_layout
+
+\end_inset
+
+Todo filtro de 
+\begin_inset Formula $(\mathbf{R},\max,\min)$
+\end_inset
+
+,
+ distinto de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+,
+ es primo (justificar)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+E2
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $B=\{X\subseteq\omega:X$
+\end_inset
+
+ es finito o 
+\begin_inset Formula $\omega-X$
+\end_inset
+
+ es finito
+\begin_inset Formula $\}$
+\end_inset
+
+.
+ Como vimos anteriormente 
+\begin_inset Formula $B$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\cup$
+\end_inset
+
+ y 
+\begin_inset Formula $\cap$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $P=\{X\subseteq\omega:\omega-X$
+\end_inset
+
+ es finito
+\begin_inset Formula $\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $P$
+\end_inset
+
+ es un filtro primo de 
+\begin_inset Formula $(B,\cup,\cap)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+Todo filtro de 
+\begin_inset Formula $(\mathbf{R,}\max,\min)$
+\end_inset
+
+,
+ distinto de 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+,
+ es primo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Encuentre todos los filtros primos de 
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Teorema del Filtro Primo]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna distributivo y 
+\begin_inset Formula $F$
+\end_inset
+
+ un filtro.
+ Supongamos 
+\begin_inset Formula $x_{0}\in L-F$
+\end_inset
+
+.
+ Entonces hay un filtro primo 
+\begin_inset Formula $P$
+\end_inset
+
+ tal que 
+\begin_inset Formula $x_{0}\notin P$
+\end_inset
+
+ y 
+\begin_inset Formula $F\subseteq P$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sea
+\begin_inset Formula 
+\[
+\mathcal{F}=\{F_{1}:F_{1}\text{ es un filtro, }x_{0}\notin F_{1}\text{ y }F\subseteq F_{1}\}.
+\]
+
+\end_inset
+
+Notese que 
+\begin_inset Formula $\mathcal{F}\neq\emptyset$
+\end_inset
+
+,
+ por lo cual 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ es un poset.
+ Veamos que cada cadena en 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ tiene una cota superior.
+ Sea 
+\begin_inset Formula $C$
+\end_inset
+
+ una cadena.
+ Si 
+\begin_inset Formula $C=\emptyset$
+\end_inset
+
+,
+ entonces cualquier elemento de 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ es cota de 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Supongamos entonces 
+\begin_inset Formula $C\neq\emptyset$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+G=\{x:x\in F_{1}\text{, para algun }F_{1}\in C\}.
+\]
+
+\end_inset
+
+Veamos que 
+\begin_inset Formula $G$
+\end_inset
+
+ es un filtro.
+ Es claro que 
+\begin_inset Formula $G$
+\end_inset
+
+ es no vacio.
+ Supongamos que 
+\begin_inset Formula $x,y\in G$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $F_{1},F_{2}\in\mathcal{F}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $x\in F_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $y\in F_{2}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $F_{1}\subseteq F_{2}$
+\end_inset
+
+,
+ entonces ya que 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+ es un filtro tenemos que 
+\begin_inset Formula $x\;\mathsf{i\;}y\in F_{2}\subseteq G$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $F_{2}\subseteq F_{1}$
+\end_inset
+
+,
+ entonces tenemos que 
+\begin_inset Formula $x\;\mathsf{i\;}y\in F_{1}\subseteq G$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $C$
+\end_inset
+
+ es una cadena,
+ tenemos que siempre 
+\begin_inset Formula $x\;\mathsf{i\;}y\in G$
+\end_inset
+
+.
+ En forma analoga se prueba la propiedad restante por lo cual tenemos que 
+\begin_inset Formula $G$
+\end_inset
+
+ es un filtro.
+ Ademas 
+\begin_inset Formula $x_{0}\notin G$
+\end_inset
+
+,
+ por lo que 
+\begin_inset Formula $G\in\mathcal{F}$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ Por el lema de Zorn,
+ 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+ tiene un elemento maximal 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Veamos que 
+\begin_inset Formula $P$
+\end_inset
+
+ es un filtro primo.
+ Supongamos 
+\begin_inset Formula $x\;\mathsf{s\;}y\in P$
+\end_inset
+
+ y 
+\begin_inset Formula $x,y\notin P$
+\end_inset
+
+.
+ Notese que 
+\begin_inset Formula $[P\cup\{x\})$
+\end_inset
+
+ es un filtro el cual contiene propiamente a 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Entonces ya que 
+\begin_inset Formula $P$
+\end_inset
+
+ es un elemento maximal de 
+\begin_inset Formula $(\mathcal{F},\subseteq)$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{x\})$
+\end_inset
+
+.
+ Analogamente tenemos que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{y\})$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{x\})$
+\end_inset
+
+,
+ tenemos que hay elementos 
+\begin_inset Formula $p_{1},...,p_{n}\in P$
+\end_inset
+
+,
+ tales que
+\begin_inset Formula 
+\[
+x_{0}\geq p_{1}\;\mathsf{i\;}...\;\mathsf{i\;}p_{n}\;\mathsf{i\;}x
+\]
+
+\end_inset
+
+(se deja como ejercicio justificar esto).
+ Ya que 
+\begin_inset Formula $x_{0}\in\lbrack P\cup\{y\})$
+\end_inset
+
+,
+ tenemos que hay elementos 
+\begin_inset Formula $q_{1},...,q_{m}\in P$
+\end_inset
+
+,
+ tales que
+\begin_inset Formula 
+\[
+x_{0}\geq q_{1}\;\mathsf{i\;}...\;\mathsf{i\;}q_{m}\;\mathsf{i\;}y
+\]
+
+\end_inset
+
+Si
+\begin_inset space \space{}
+\end_inset
+
+llamamos 
+\begin_inset Formula $p$
+\end_inset
+
+ al siguiente elemento de 
+\begin_inset Formula $P$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{1}\;\mathsf{i\;}...\;\mathsf{i\;}p_{n}\;\mathsf{i\;}q_{1}\;\mathsf{i\;}...\;\mathsf{i\;}q_{m}
+\]
+
+\end_inset
+
+tenemos que
+\begin_inset Formula 
+\begin{align*}
+x_{0} & \geq p\;\mathsf{i\;}x\\
+x_{0} & \geq p\;\mathsf{i\;}y
+\end{align*}
+
+\end_inset
+
+Se tiene entonces que 
+\begin_inset Formula $x_{0}\geq(p\;\mathsf{i\;}x)\;\mathsf{s\;}(p\;\mathsf{i\;}y)=p\;\mathsf{i\;}(x\;\mathsf{s\;}y)\in P$
+\end_inset
+
+,
+ lo cual es absurdo ya que 
+\begin_inset Formula $x_{0}\notin P$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente teorema sera clave en nuestra prueba del teorema de completitud de la logica de primer orden.
+ Lo aceptaremos sin demostracion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}
+\end_layout
+
+\end_inset
+
+ (Rasiova y Sikorski) Sea 
+\begin_inset Formula $(B,\mathsf{s},\mathsf{i},^{c},0,1)$
+\end_inset
+
+ un algebra de Boole.
+ Sea 
+\begin_inset Formula $a\in B$
+\end_inset
+
+,
+ 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $(A_{1},A_{2},...)$
+\end_inset
+
+ es una infinitupla de subconjuntos de 
+\begin_inset Formula $B$
+\end_inset
+
+ tal que existe 
+\begin_inset Formula $\inf(A_{j})$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2....$
+\end_inset
+
+ Entonces hay un filtro primo 
+\begin_inset Formula $P$
+\end_inset
+
+ el cual cumple:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $P\supseteq A_{j}\Rightarrow P\ni\inf(A_{j})$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2,....$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tipos-parecidos"
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\tau=(\mathcal{C},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau^{\prime}=(\mathcal{C}^{\prime},\mathcal{F}^{\prime},\mathcal{R}^{\prime},a^{\prime})$
+\end_inset
+
+ tipos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\mathcal{C}\subseteq\mathcal{C}^{\prime}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}\subseteq\mathcal{F}^{\prime}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{R}\subseteq\mathcal{R}^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $a^{\prime}\mid_{\mathcal{F}\cup\mathcal{R}}=a$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+ implica 
+\begin_inset Formula $(\Sigma,\tau^{\prime})\vdash\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\mathcal{C}\subseteq\mathcal{C}^{\prime}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{F}=\mathcal{F}^{\prime}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathcal{R}=\mathcal{R}^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $a^{\prime}=a$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau^{\prime})\vdash\varphi$
+\end_inset
+
+ implica 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+,
+ cada vez que 
+\begin_inset Formula $\Sigma\cup\{\varphi\}\subseteq S^{\tau}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aceptaremos sin prueba el lema anterior pero:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+Medite hasta entender que aplicando el lema de cambio de nombres de ctes auxiliares de la Guia 12 podemos probar (1) del lema anterior.
+ No es necesario que escriba la prueba.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+Medite hasta entender que bajo las hipotesis de (2) del lema anterior se tiene que una prueba de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau^{\prime})$
+\end_inset
+
+ tambien es una prueba de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ No es necesario que escriba la prueba.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aceptaremos sin demostracion el siguiente resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Lema del infimo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lema-del-infimo"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria y supongamos que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tiene una cantidad infinita de nombres de cte que no ocurren en las sentencias de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ Entonces para cada formula 
+\begin_inset Formula $\varphi=_{d}\varphi(v)$
+\end_inset
+
+,
+ se tiene que en el algebra de Lindembaum 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\lbrack\forall v\varphi(v)]_{T}=\inf(\{[\varphi(t)]_{T}:t\in T_{c}^{\tau}\})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+(S) Encuentre un contraejemplo para el caso en que no se da la hipotesis de que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tiene una cantidad infinita de nombres de cte que no ocurren en las sentencias de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente resultado es muy natural y lo aceptaremos sin demostracion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Lema de Coincidencia
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ dos tipos cualesquiera y sea 
+\begin_inset Formula $\tau_{\cap}=(\mathcal{C}_{\cap},\mathcal{F}_{\cap},\mathcal{R}_{\cap},a_{\cap})$
+\end_inset
+
+,
+ donde
+\begin_inset Formula 
+\begin{align*}
+\mathcal{C}_{\cap} & =\mathcal{C}\cap\mathcal{C}^{\prime}\\
+\mathcal{F}_{\cap} & =\{f\in\mathcal{F}\cap\mathcal{F}^{\prime}:a(f)=a^{\prime}(f)\}\\
+\mathcal{R}_{\cap} & =\{r\in\mathcal{R}\cap\mathcal{R}^{\prime}:a(r)=a^{\prime}(r)\}\\
+a_{\cap} & =a\mid_{\mathcal{F}_{\cap}\cup\mathcal{R}_{\cap}}
+\end{align*}
+
+\end_inset
+
+Entonces 
+\begin_inset Formula $\tau_{\cap}$
+\end_inset
+
+ es un tipo tal que 
+\begin_inset Formula $T^{\tau_{\cap}}=T^{\tau}\cap T^{\tau^{\prime}}$
+\end_inset
+
+ y 
+\begin_inset Formula $F^{\tau_{\cap}}=F^{\tau}\cap F^{\tau^{\prime}}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}^{\prime}$
+\end_inset
+
+ modelos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ respectivamente.
+ Supongamos que 
+\begin_inset Formula $A=A^{\prime}$
+\end_inset
+
+ y que 
+\begin_inset Formula $c^{\mathbf{A}}=c^{\mathbf{A}^{\prime}}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $c\in\mathcal{C}_{\cap}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f^{\mathbf{A}}=f^{\mathbf{A}^{\prime}}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $f\in\mathcal{F}_{\cap}$
+\end_inset
+
+ y 
+\begin_inset Formula $r^{\mathbf{A}}=r^{\mathbf{A}^{\prime}}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $r\in\mathcal{R}_{\cap}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $t=_{d}t(\vec{v})\in T^{\tau_{\cap}}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=t^{\mathbf{A}^{\prime}}[\vec{a}]$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $\vec{a}\in A^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(\vec{v})\in F^{\tau_{\cap}}$
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi\lbrack\vec{a}]\text{ si y solo si }\mathbf{A}^{\prime}\models\varphi\lbrack\vec{a}]\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\Sigma\cup\{\varphi\}\subseteq S^{\tau_{\cap}}$
+\end_inset
+
+,
+ entonces
+\begin_inset Formula 
+\[
+(\Sigma,\tau)\models\varphi\text{ sii }(\Sigma,\tau^{\prime})\models\varphi\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Meditar sobre el lema anterior hasta entender que es intuitivamente obvio.
+ Intente dar una descripcion rapida,
+ en castellano,
+ de lo que 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+dice
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ el lema.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Sean
+\begin_inset Formula 
+\begin{align*}
+\tau & =(\{\mathrm{un},\mathrm{do},\mathrm{\bigtriangleup}\},\{+,\mathrm{Fa}\},\{\mathrm{Her},\leq\},\{(+,2),(\mathrm{Fa},1),(\mathrm{Her},3),(\leq,2)\})\\
+\tau^{\prime} & =(\{\mathrm{un},\mathrm{do},\mathrm{\bigtriangledown}\},\{+,\mathrm{G}\},\{\mathrm{Her},r\},\{(+,2),(\mathrm{G},4),(\mathrm{Her},3),(r,1)\})
+\end{align*}
+
+\end_inset
+
+Notar que 
+\begin_inset Formula $\tau_{\cap}=(\{\mathrm{un},\mathrm{do}\},\{+\},\{\mathrm{Her}\},\{(+,2),(\mathrm{Her},3)\})$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}^{\prime}$
+\end_inset
+
+ modelos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y 
+\begin_inset Formula $\tau^{\prime}$
+\end_inset
+
+ respectivamente tales que
+\begin_inset Formula 
+\begin{align*}
+A & =A^{\prime}\\
+\mathrm{un}^{\mathbf{A}} & =\mathrm{un}^{\mathbf{A}^{\prime}}\\
+\mathrm{do}^{\mathbf{A}} & =\mathrm{do}^{\mathbf{A}^{\prime}}\\
++^{\mathbf{A}} & =+^{\mathbf{A}^{\prime}}\\
+\mathrm{Her}^{\mathbf{A}} & =\mathrm{Her}^{\mathbf{A}^{\prime}}
+\end{align*}
+
+\end_inset
+
+Entonces:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Para cada 
+\begin_inset Formula $t=_{d}t(\vec{v})\in T^{\tau_{\cap}}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $t^{\mathbf{A}}[\vec{a}]=t^{\mathbf{A}^{\prime}}[\vec{a}]$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $\vec{a}\in A^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(\vec{v})\in F^{\tau_{\cap}}$
+\end_inset
+
+ se tiene que
+\begin_inset Formula 
+\[
+\mathbf{A}\models\varphi\lbrack\vec{a}]\text{ si y solo si }\mathbf{A}^{\prime}\models\varphi\lbrack\vec{a}]\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\Sigma\cup\{\varphi\}\subseteq S^{\tau_{\cap}}$
+\end_inset
+
+,
+ entonces
+\begin_inset Formula 
+\[
+(\Sigma,\tau)\models\varphi\text{ sii }(\Sigma,\tau^{\prime})\models\varphi\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Hay una infinitupla 
+\begin_inset Formula $(\gamma_{1},\gamma_{2},...)\in F^{\tau\mathbf{N}}$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\vert Li(\gamma_{j})\right\vert \leq1$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\left\vert Li(\gamma)\right\vert \leq1$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\gamma=\gamma_{j}$
+\end_inset
+
+,
+ para algun 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Notese que las formulas de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son palabras de algun alfabeto finito 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Dado un orden total 
+\begin_inset Formula $\leq$
+\end_inset
+
+ para 
+\begin_inset Formula $A$
+\end_inset
+
+,
+ podemos definir
+\begin_inset Formula 
+\begin{align*}
+\gamma_{1} & =\min\nolimits_{\alpha}^{\leq}\left(\alpha\in F^{\tau}\wedge\left\vert Li(\alpha)\right\vert \leq1\right)\\
+\gamma_{t+1} & =\min\nolimits_{\alpha}^{\leq}\left(\alpha\in F^{\tau}\wedge\left\vert Li(\alpha)\right\vert \leq1\wedge(\forall i\in\omega)_{i\leq t}\alpha\neq\gamma_{i}\right)
+\end{align*}
+
+\end_inset
+
+Notese que para 
+\begin_inset Formula $t\in\mathbf{N}$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $\gamma_{t}=t$
+\end_inset
+
+-esimo elemento de 
+\begin_inset Formula $\{\alpha\in F^{\tau}:\left\vert Li(\alpha)\right\vert \leq1\}$
+\end_inset
+
+,
+ con respecto al orden total de 
+\begin_inset Formula $A^{\ast}$
+\end_inset
+
+ inducido por 
+\begin_inset Formula $\leq$
+\end_inset
+
+.
+ Claramente entonces la infinitupla 
+\begin_inset Formula $(\gamma_{1},\gamma_{2},...)$
+\end_inset
+
+ cumple (1) y (2).
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5,5:
+\end_layout
+
+\end_inset
+
+Para 
+\begin_inset Formula $\tau=(\emptyset,\{\mathsf{s}^{2},\mathsf{i}^{2}\},\emptyset,a)$
+\end_inset
+
+ encuentre el alfabeto 
+\begin_inset Formula $A$
+\end_inset
+
+ del cual habla la prueba anterior,
+ ordenelo y calcule 
+\begin_inset Formula $\gamma_{1},...,\gamma_{10}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5,6:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria de primer orden y sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ un modelo de 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Pruebe que
+\begin_inset Formula 
+\[
+P=\{[\varphi]_{T}:\varphi\in S^{\tau}\text{ y }\mathbf{A}\models\varphi\}
+\]
+
+\end_inset
+
+es un filtro primo del algebra de Boole 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que si para cada 
+\begin_inset Formula $a\in A$
+\end_inset
+
+,
+ hay un termino cerrado 
+\begin_inset Formula $t$
+\end_inset
+
+ tal que 
+\begin_inset Formula $a=t^{\mathbf{A}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $P$
+\end_inset
+
+ tiene la siguiente propiedad:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v)\in F^{\tau}$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\{[\varphi(t)]_{T}:t\in T_{c}^{\tau}\}\subseteq P$
+\end_inset
+
+ entonces 
+\begin_inset Formula $[\forall v\varphi(v)]_{T}\in P$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora si,
+ el famoso resultado de Godel.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Teorema de Completitud]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria de primer orden.
+ Si 
+\begin_inset Formula $T\models\varphi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $T\vdash\varphi$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Primero probaremos completitud para el caso en que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tiene una cantidad infinita de nombres de cte que no ocurren en las sentencias de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+ Lo probaremos por el absurdo,
+ es decir supongamos que hay una sentencia 
+\begin_inset Formula $\varphi_{0}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $T\models\varphi_{0}$
+\end_inset
+
+ y 
+\begin_inset Formula $T\not\vdash\varphi_{0}$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $T\not\vdash\varphi_{0}$
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $[\varphi_{0}]_{T}\neq1^{T}=\{\varphi\in S^{\tau}:T\vdash\varphi\}$
+\end_inset
+
+.
+ O sea que 
+\begin_inset Formula $[\lnot\varphi_{0}]_{T}\not=0^{T}$
+\end_inset
+
+.
+ Por el lema anterior hay una infinitupla 
+\begin_inset Formula $(\gamma_{1},\gamma_{2},...)\in F^{\tau\mathbf{N}}$
+\end_inset
+
+ tal que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\left\vert Li(\gamma_{j})\right\vert \leq1$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\left\vert Li(\gamma)\right\vert \leq1$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\gamma=\gamma_{j}$
+\end_inset
+
+,
+ para algun 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Para cada 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+,
+ sea 
+\begin_inset Formula $w_{j}\in Var$
+\end_inset
+
+ tal que 
+\begin_inset Formula $Li(\gamma_{j})\subseteq\{w_{j}\}$
+\end_inset
+
+.
+ Para cada 
+\begin_inset Formula $j$
+\end_inset
+
+,
+ declaremos 
+\begin_inset Formula $\gamma_{j}=_{d}\gamma_{j}(w_{j})$
+\end_inset
+
+.
+ Notese que por el Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lema-del-infimo"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $\inf\{[\gamma_{j}(t)]_{T}:t\in T_{c}^{\tau}\}=[\forall w_{j}\gamma_{j}(w_{j})]_{T}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $j=1,2,...$
+\end_inset
+
+.
+ Por el Teorema de Rasiova y Sikorski tenemos que hay un filtro primo 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+,
+ el cual cumple:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\lnot\varphi_{0}]_{T}\in\mathcal{U}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $j\in\mathbf{N}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\{[\gamma_{j}(t)]_{T}:t\in T_{c}^{\tau}\}\subseteq\mathcal{U}$
+\end_inset
+
+ implica que 
+\begin_inset Formula $[\forall w_{j}\gamma_{j}(w_{j})]_{T}\in\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Ya que la infinitupla 
+\begin_inset Formula $(\gamma_{1},\gamma_{2},...)$
+\end_inset
+
+ cubre todas las formulas con a lo sumo una variable libre,
+ podemos reescribir la propiedad (b) de la siguiente manera
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\begin_inset Formula $^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v)\in F^{\tau}$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\{[\varphi(t)]_{T}:t\in T_{c}^{\tau}\}\subseteq\mathcal{U}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $[\forall v\varphi(v)]_{T}\in\mathcal{U}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Definamos sobre 
+\begin_inset Formula $T_{c}^{\tau}$
+\end_inset
+
+ la siguiente relacion:
+\begin_inset Formula 
+\[
+t\bowtie s\text{ si y solo si }[(t\equiv s)]_{T}\in\mathcal{U}\text{.}
+\]
+
+\end_inset
+
+Veamos entonces que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\bowtie$
+\end_inset
+
+ es de equivalencia.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n},s_{1},...,s_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $t_{1}\bowtie s_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{2}\bowtie s_{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $...$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{n}\bowtie s_{n}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $[\varphi(s_{1},...,s_{n})]_{T}\in\mathcal{U}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n},s_{1},...,s_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+t_{1}\bowtie s_{1},t_{2}\bowtie s_{2},...,\;t_{n}\bowtie s_{n}\text{ implica }f(t_{1},...,t_{n})\bowtie f(s_{1},...,s_{n}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Probaremos (2).
+ Notese que
+\begin_inset Formula 
+\[
+T\vdash\left((t_{1}\equiv s_{1})\wedge(t_{2}\equiv s_{2})\wedge...\wedge(t_{n}\equiv s_{n})\wedge\varphi(t_{1},...,t_{n})\right)\rightarrow\varphi(s_{1},...,s_{n})
+\]
+
+\end_inset
+
+lo cual nos dice que
+\begin_inset Formula 
+\[
+\lbrack(t_{1}\equiv s_{1})]_{T}\;\mathsf{i}^{T}\mathsf{\;}[(t_{2}\equiv s_{2})]_{T}\;\mathsf{i}^{T}\mathsf{\;}...\;\mathsf{i}^{T}\mathsf{\;}[(t_{n}\equiv s_{n})]_{T}\;\mathsf{i}^{T}\mathsf{\;}[\varphi(t_{1},...,t_{n})]_{T}\leq^{T}[\varphi(s_{1},...,s_{n})]_{T}
+\]
+
+\end_inset
+
+de lo cual se desprende que
+\begin_inset Formula 
+\[
+\lbrack\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}\text{ implica }[\varphi(s_{1},...,s_{n})]_{T}\in\mathcal{U}
+\]
+
+\end_inset
+
+ya que 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ es un filtro.
+ La otra implicacion es analoga.
+\end_layout
+
+\begin_layout Standard
+Para probar (3) podemos tomar 
+\begin_inset Formula $\varphi=\left(f(v_{1},...,v_{n})\equiv f(s_{1},...,s_{n})\right)$
+\end_inset
+
+ y aplicar (2).
+\end_layout
+
+\begin_layout Standard
+Definamos ahora un modelo 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ de la siguiente manera:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Universo de 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}=T_{c}^{\tau}/\mathrm{\bowtie}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c^{\mathbf{A}_{\mathcal{U}}}=c/\mathrm{\bowtie}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f^{\mathbf{A}_{\mathcal{U}}}(t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie})=f(t_{1},...,t_{n})/\mathrm{\bowtie}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $f\in\mathcal{F}_{n}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}\;$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $r^{\mathbf{A}_{\mathcal{U}}}=\{(t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}):[r(t_{1},...,t_{n})]_{T}\in\mathcal{U}\}$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $r\in\mathcal{R}_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Notese que la definicion de 
+\begin_inset Formula $f^{\mathbf{A}_{\mathcal{U}}}$
+\end_inset
+
+ es inambigua por (3).
+ Probaremos las siguientes propiedades basicas:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $t=_{d}t(v_{1},...,v_{n})\in T^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ tenemos que
+\begin_inset Formula 
+\[
+t^{\mathbf{A}_{\mathcal{U}}}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]=t(t_{1},...,t_{n})/\mathrm{\bowtie}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $t_{1},...,t_{n}\in T_{c}^{\tau}$
+\end_inset
+
+,
+ tenemos que
+\begin_inset Formula 
+\[
+\mathbf{A}_{\mathcal{U}}\models\varphi\lbrack t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\text{ si y solo si }[\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La prueba de (4) es directa por induccion.
+ Probaremos (5) por induccion en el 
+\begin_inset Formula $k$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ El caso 
+\begin_inset Formula $k=0$
+\end_inset
+
+ es dejado al lector.
+ Supongamos (5) vale cuando 
+\begin_inset Formula $\varphi\in F_{k}^{\tau}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\varphi=_{d}\varphi(v_{1},...,v_{n})\in F_{k+1}^{\tau}-F_{k}^{\tau}$
+\end_inset
+
+.
+ Hay varios casos:
+\end_layout
+
+\begin_layout Standard
+CASO 
+\begin_inset Formula $\varphi=\left(\varphi_{1}\vee\varphi_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notese que por la Convencion Notacional 6,
+ tenemos que 
+\begin_inset Formula $\varphi_{i}=_{d}\varphi_{i}(v_{1},...,v_{n})$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}_{\mathcal{U}}\models\varphi\lbrack t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\mathbf{A}_{\mathcal{U}}\models\varphi_{1}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\text{ o }\mathbf{A}_{\mathcal{U}}\models\varphi_{2}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\lbrack\varphi_{1}(t_{1},...,t_{n})]_{T}\in\mathcal{U}\text{ o }[\varphi_{2}(t_{1},...,t_{n})]_{T}\in\mathcal{U}\\
+\Updownarrow\\
+\lbrack\varphi_{1}(t_{1},...,t_{n})]_{T}\ \mathsf{s}^{T}\mathsf{\ }[\varphi_{2}(t_{1},...,t_{n})]_{T}\in\mathcal{U}\\
+\Updownarrow\\
+\lbrack\left(\varphi_{1}(t_{1},...,t_{n})\vee\varphi_{2}(t_{1},...,t_{n})\right)]_{T}\in\mathcal{U}\\
+\Updownarrow\\
+\lbrack\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\end{array}
+\]
+
+\end_inset
+
+CASO 
+\begin_inset Formula $\varphi=\forall v\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $v\in Var-\{v_{1},...,v_{n}\}$
+\end_inset
+
+.
+ Notese que por la Convencion Notacional 6,
+ tenemos que 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n},v)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}_{\mathcal{U}}\models\varphi\lbrack t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\mathbf{A}_{\mathcal{U}}\models\varphi_{1}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie},t/\mathrm{\bowtie}]\text{, para todo }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+\lbrack\varphi_{1}(t_{1},...,t_{n},t)]_{T}\in\mathcal{U}\text{, para todo }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+\lbrack\forall v\varphi_{1}(t_{1},...,t_{n},v)]_{T}\in\mathcal{U}\\
+\Updownarrow\\
+\lbrack\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\end{array}
+\]
+
+\end_inset
+
+CASO 
+\begin_inset Formula $\varphi=\exists v\varphi_{1}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $v\in Var-\{v_{1},...,v_{n}\}$
+\end_inset
+
+.
+ Notese que por la Convencion Notacional 6,
+ tenemos que 
+\begin_inset Formula $\varphi_{1}=_{d}\varphi_{1}(v_{1},...,v_{n},v)$
+\end_inset
+
+.
+ Tenemos entonces
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}_{\mathcal{U}}\models\varphi\lbrack t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie}]\\
+\Updownarrow\\
+\mathbf{A}_{\mathcal{U}}\models\varphi_{1}[t_{1}/\mathrm{\bowtie},...,t_{n}/\mathrm{\bowtie},t/\mathrm{\bowtie}]\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+\lbrack\varphi_{1}(t_{1},...,t_{n},t)]_{T}\in\mathcal{U}\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+([\varphi_{1}(t_{1},...,t_{n},t)]_{T})^{\mathsf{c}^{T}}\not\in\mathcal{U}\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+\lbrack\lnot\varphi_{1}(t_{1},...,t_{n},t)]_{T}\not\in\mathcal{U}\text{, para algun }t\in T_{c}^{\tau}\\
+\Updownarrow\\
+\lbrack\forall v\;\lnot\varphi_{1}(t_{1},...,t_{n},v)]_{T}\not\in\mathcal{U}\\
+\Updownarrow\\
+([\forall v\;\lnot\varphi_{1}(t_{1},...,t_{n},v)]_{T})^{\mathsf{c}^{T}}\in\mathcal{U}\\
+\Updownarrow\\
+\lbrack\lnot\forall v\;\lnot\varphi_{1}(t_{1},...,t_{n},v)]_{T}\in\mathcal{U}\\
+\Updownarrow\\
+\lbrack\varphi(t_{1},...,t_{n})]_{T}\in\mathcal{U}.
+\end{array}
+\]
+
+\end_inset
+
+Pero ahora notese que (5) en particular nos dice que para cada sentencia 
+\begin_inset Formula $\psi\in S^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}\models\psi$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $[\psi]_{T}\in\mathcal{U}.$
+\end_inset
+
+ De esta forma llegamos a que 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}\models\Sigma$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}_{\mathcal{U}}\models\lnot\varphi_{0}$
+\end_inset
+
+,
+ lo cual contradice la suposicion de que 
+\begin_inset Formula $T\models\varphi_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ahora supongamos que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es cualquier tipo.
+ Sean 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ un par de simbolos no pertenecientes a la lista
+\begin_inset Formula 
+\[
+\forall\ \ \exists\ \ \lnot\ \ \vee\ \ \wedge\ \ \rightarrow\ \ \leftrightarrow\ \ (\ \ )\ \ ,\ \equiv\ \ \mathsf{X}\ \ \mathit{0}\ \ \mathit{1}\ \ ...\ \ \mathit{9}\ \ \mathbf{0}\ \ \mathbf{1}\ \ ...\ \ \mathbf{9}
+\]
+
+\end_inset
+
+y tales que ninguno ocurra en alguna palabra de 
+\begin_inset Formula $\mathcal{C}\cup\mathcal{F}\cup\mathcal{R}.$
+\end_inset
+
+ Si 
+\begin_inset Formula $T\models\varphi$
+\end_inset
+
+,
+ entonces usando el Lema de Coincidencia se puede ver que 
+\begin_inset Formula $(\Sigma,(\mathcal{C}\cup\{s_{1}s_{2}s_{1},s_{1}s_{2}s_{2}s_{1},...\},\mathcal{F},\mathcal{R},a))\models\varphi$
+\end_inset
+
+,
+ por lo cual
+\begin_inset Formula 
+\[
+(\Sigma,(\mathcal{C}\cup\{s_{1}s_{2}s_{1},s_{1}s_{2}s_{2}s_{1},...\},\mathcal{F},\mathcal{R},a))\vdash\varphi.
+\]
+
+\end_inset
+
+Pero por Lema 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tipos-parecidos"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
+ tenemos que 
+\begin_inset Formula $T\vdash\varphi.$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+ Toda teoria consistente tiene un modelo.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Supongamos 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente y no tiene modelos.
+ Entonces 
+\begin_inset Formula $(\Sigma,\tau)\models\left(\varphi\wedge\lnot\varphi\right)$
+\end_inset
+
+,
+ con lo cual por completitud 
+\begin_inset Formula $(\Sigma,\tau)\vdash\left(\varphi\wedge\lnot\varphi\right)$
+\end_inset
+
+,
+ lo cual es absurdo.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{corollary}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+[Teorema de Compacidad
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es tal que 
+\begin_inset Formula $(\Sigma_{0},\tau)$
+\end_inset
+
+ tiene un modelo,
+ para cada subconjunto finito 
+\begin_inset Formula $\Sigma_{0}\subseteq\Sigma$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tiene un modelo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(\Sigma,\tau)\models\varphi$
+\end_inset
+
+,
+ entonces hay un subconjunto finito 
+\begin_inset Formula $\Sigma_{0}\subseteq\Sigma$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(\Sigma_{0},\tau)\models\varphi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{corollary}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (a) Veamos que 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente.
+ Supongamos lo contrario,
+ es decir supongamos 
+\begin_inset Formula $(\Sigma,\tau)\vdash\left(\varphi\wedge\lnot\varphi\right)$
+\end_inset
+
+,
+ para alguna sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Notese que entonces hay un subconjunto finito 
+\begin_inset Formula $\Sigma_{0}\subseteq\Sigma$
+\end_inset
+
+ tal que la teoria 
+\begin_inset Formula $(\Sigma_{0},\tau)\vdash\left(\varphi\wedge\lnot\varphi\right)$
+\end_inset
+
+ (
+\begin_inset Formula $\Sigma_{0}$
+\end_inset
+
+ puede ser formado con los axiomas de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ usados en una prueba formal que atestigue que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\left(\varphi\wedge\lnot\varphi\right)$
+\end_inset
+
+).
+ Pero esto es absurdo ya que por hypotesis dicha teoria 
+\begin_inset Formula $(\Sigma_{0},\tau)$
+\end_inset
+
+ tiene un modelo.
+ O sea que 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ es consistente por lo cual tiene un modelo.
+\end_layout
+
+\begin_layout Standard
+(b) Si 
+\begin_inset Formula $(\Sigma,\tau)\models\varphi$
+\end_inset
+
+,
+ entonces por completitud,
+ 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+ Pero entonces hay un subconjunto finito 
+\begin_inset Formula $\Sigma_{0}\subseteq\Sigma$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(\Sigma_{0},\tau)\vdash\varphi$
+\end_inset
+
+,
+ es decir tal que 
+\begin_inset Formula $(\Sigma_{0},\tau)\models\varphi$
+\end_inset
+
+ (correccion).
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $T\not\vdash\varphi$
+\end_inset
+
+ si y solo si hay un modelo de 
+\begin_inset Formula $T$
+\end_inset
+
+ en el cual 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es falsa
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $T\not\vdash\lnot\varphi$
+\end_inset
+
+ si y solo si hay un modelo de 
+\begin_inset Formula $T$
+\end_inset
+
+ en el cual 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es verdadera
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria consistente.
+ Si 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+ y 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\nvdash\lnot\psi$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria consistente.
+ Entonces 
+\begin_inset Formula $(\Sigma,\tau)\vdash(\varphi\rightarrow\psi)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(\Sigma\cup\{\varphi\},\tau)\nvdash\lnot\psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria consistente.
+ Si 
+\begin_inset Formula $(\Sigma,\tau)\not\vdash\lnot\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Partic^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $(\Sigma,\tau)\not\vdash\lnot\varphi_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(hint:
+ reemplace 
+\begin_inset Formula $\vdash$
+\end_inset
+
+ por 
+\begin_inset Formula $\models$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0\},\emptyset,\{\leq^{2}\},a)$
+\end_inset
+
+,
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por los axiomas que dicen que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial junto con los dos siguientes axiomas
+\begin_inset Formula 
+\begin{align*}
+\exists x,y,z\ ((x & \neq y\wedge x\neq z\wedge y\neq z)\wedge\forall w\ (w=x\vee w=y\vee w=z))\\
+\forall x\ 0 & \leq x
+\end{align*}
+
+\end_inset
+
+Sea 
+\begin_inset Formula $T$
+\end_inset
+
+ la teoría 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ De un algoritmo que decida cuando una sentencia de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Interpretacion semantica del algebra de Lindembaum
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoria.
+ Dada 
+\begin_inset Formula $\varphi\in S^{\tau}$
+\end_inset
+
+ definamos
+\begin_inset Formula 
+\[
+\mathrm{Mod}_{T}(\varphi)=\{\mathbf{A}:\mathbf{A}\text{ es modelo de }T\text{ y }\mathbf{A}\vDash\varphi\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ejemplo 
+\begin_inset Formula $\mathrm{Mod}_{Po}(\exists x\forall z(x\leq z))=\{(A,i):(A,i(\leq))$
+\end_inset
+
+ es un poset con minimo
+\begin_inset Formula $\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dadas 
+\begin_inset Formula $\varphi,\psi\in S^{\tau}$
+\end_inset
+
+ se tiene:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi]_{T}\leq^{T}[\psi]_{T}$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathrm{Mod}_{T}(\varphi)\subseteq\mathrm{Mod}_{T}(\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi]_{T}=[\psi]_{T}$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathrm{Mod}_{T}(\varphi)=\mathrm{Mod}_{T}(\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $[\varphi]_{T}<^{T}[\psi]_{T}$
+\end_inset
+
+ sii 
+\begin_inset Formula $\mathrm{Mod}_{T}(\varphi)\subsetneqq\mathrm{Mod}_{T}(\psi)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+Pruebe el lema anterior
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+(Opcional) Sea 
+\begin_inset Formula $\tau=(\{0\},\emptyset,\{\leq^{2}\},a)$
+\end_inset
+
+,
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por los axiomas que dicen que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial junto con el axioma 
+\begin_inset Formula $\forall x$
+\end_inset
+
+ 
+\begin_inset Formula $0\leq x$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $T$
+\end_inset
+
+ la teoría 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+\varphi=\exists x,y\ \ \left(0<x\wedge x<y\wedge\forall z\ \ \left(z=0\vee z=x\vee z=y\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Entonces 
+\begin_inset Formula $[\varphi]_{T}$
+\end_inset
+
+ es un átomo del álgebra de Lindenbaum 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+(Opcional) Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{r^{2}\},a).$
+\end_inset
+
+ En el algebra de Lindenbaum 
+\begin_inset Formula $\mathcal{A}_{(\emptyset,\tau)}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $[\exists x\forall y\;r(x,y)]\prec\lbrack\forall y\exists x\;r(x,y)]$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+(Opcional) Sea 
+\begin_inset Formula $T=(\Sigma,\tau)$
+\end_inset
+
+ una teoría consistente y sea 
+\begin_inset Formula $\varphi=\forall x,y\ (x\equiv y)$
+\end_inset
+
+.
+ Es 
+\begin_inset Formula $[\varphi]_{T}$
+\end_inset
+
+ un átomo del álgebra de Lindenbaum 
+\begin_inset Formula $\mathcal{A}_{T}$
+\end_inset
+
+?
+ 
+\end_layout
+
+\end_body
+\end_document

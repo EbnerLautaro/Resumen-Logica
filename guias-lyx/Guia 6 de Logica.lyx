@@ -1,0 +1,4602 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:40:36}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Reticulados cuaterna y su lenguaje elemental
+\end_layout
+
+\begin_layout Standard
+En esta guia introduciremos un nuevo tipo de estructura que llamaremos reticulado cuaterna,
+ pero nuestra intencion aqui no sera hacer teoremas similares a los hechos con las estructuras ya estudiadas.
+ De hecho ya lo hicimos en detalle tantas veces que el lector no tendria problema si quisiera definir los conceptos de subestructura,
+ subuniverso,
+ homomorfismo,
+ etc para los reticulados cuaterna.
+ Nuestra intencion aqui sera delimitar en forma intuitiva un lenguaje muy elemental con el cual se pueden enunciar muchas propiedades matematicas de los reticulados cuaterna y tambien con el cual se pueden hacer muchas pruebas interesantes sin salirse de dicho lenguaje elemental (a las cuales llamaremos pruebas elementales).
+ Comencemos con la definicion matematica de este nuevo tipo de estructura.
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+reticulado cuaterna
+\shape default
+ entenderemos una 
+\begin_inset Formula $4$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto no vacio,
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ son operaciones binarias sobre 
+\begin_inset Formula $L$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es una relacion binaria sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ y se cumplen las siguientes propiedades:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq x$
+\end_inset
+
+,
+ cualesquiera sea 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq y\text{ y }y\leq z\text{ implican }x\leq z$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq y\text{ y }y\leq x\text{ implican }x=y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq x\;\mathsf{s}\;y\text{ y }y\leq x\;\mathsf{s}\;y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq z\text{ y }y\leq z\text{ implican }x\;\mathsf{s}\;y\leq z$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(6)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{i}\;y\leq x\text{ y }x\;\mathsf{i}\;y\leq y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(7)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $z\leq x\text{ y }z\leq y\text{ implican }z\leq x\;\mathsf{i}\;y$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obviamente (1),
+ (2) y (3) nos garantizan que 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ es un poset.
+ Ademas notese que (4) nos dice que cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $x\;\mathsf{s}\;y$
+\end_inset
+
+ es cota superior del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+.
+ Ademas notese que (5) nos dice que cualesquiera sean los elementos 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+,
+ se tiene que 
+\begin_inset Formula $x\;\mathsf{s}\;y\leq z$
+\end_inset
+
+,
+ cada vez que 
+\begin_inset Formula $z$
+\end_inset
+
+ es cota superior del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+.
+ Por supuesto esto nos garaniza que 
+\begin_inset Formula $x\;\mathsf{s}\;y=\mathrm{sup}\{x,y\}$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+ Similarmente (6) y (7) garantizan que 
+\begin_inset Formula $x\;\mathsf{s}\;y=\inf\{x,y\}$
+\end_inset
+
+,
+ cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O sea que,
+ en virtud del teorema de Dedeking y de los resultados sobre reticulados par probados en la Guia 3,
+ tenemos que un reticulado cuaterna no es ni mas ni menos que una 
+\begin_inset Formula $4$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna y 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es su orden parcial asociado.
+ Pero debe quedar claro que este ultimo es un teorema y no la definicion de reticulado cuaterna:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+Pruebe que una 
+\begin_inset Formula $4$
+\end_inset
+
+-upla 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ es un reticulado cuaterna si y solo si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna y 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es su orden parcial asociado.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos de reticulados cuaterna:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $(\mathbf{N},mcm,mcd,|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $(\mathbf{R},max,min,\leq)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es el orden usual de los numeros reales
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A$
+\end_inset
+
+ es finito
+\begin_inset Formula $\},\cup,\cap,\subseteq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Convencion Notacional:
+\end_layout
+
+\end_inset
+
+Muchos conceptos definidos para posets o reticulados terna los usaremos referidos a un reticulado cuaterna.
+ Por ejemplo,
+ si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ es totalmente ordenado,
+ esto significara que el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ lo es.
+ Si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ tiene elemento maximo,
+ esto significara que el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ lo tiene.
+ Si decimos que en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ el elemento 
+\begin_inset Formula $a$
+\end_inset
+
+ cubre al elemento 
+\begin_inset Formula $b$
+\end_inset
+
+,
+ esto significara que eso sucede en el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+.
+ Otro ejemplo,
+ si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ es distributivo,
+ nos estaremos refiriendo a que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es distributivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+En lo que sigue comensaremos a definir en forma intuitiva el lenguaje elemental de los reticulados cuaterna.
+ Lo que debe quedar claro es que no nos interesa dar definiciones matematicas rigurosas de estos conceptos sino mas bien dejar bien desarrollada nuestra intuicion respecto de los mismos.
+\end_layout
+
+\begin_layout Subsection*
+Terminos elementales de reticulados cuaterna
+\end_layout
+
+\begin_layout Standard
+Son palabras que se construyen usando simbolos de la siguiente lista
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Parentesis:
+ 
+\begin_inset Formula $(\;\;)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Variables:
+ 
+\begin_inset Formula $x,y,z,w,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Nombres de elementos fijos:
+ 
+\begin_inset Formula $a,b,c,d,...$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Intuitivamente hablando son palabras que representan el resultado de aplicar a las variables y a los nombres de elementos fijos las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ cierta cantidad de veces (posiblemente 0 veces).
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\;\mathsf{s\;}y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $((a\mathsf{\;i\;}y)\;\mathsf{s}\;z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $((x\mathsf{\;s\;}y)\;\mathsf{s}\;((x\mathsf{\;s\;}y)\;\mathsf{s}\;z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\mathsf{\;i\;}(x\mathsf{\;i\;}(b\mathsf{\;i\;}x)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es muy importante entender que los terminos elementales de reticulados cuaterna son palabras,
+ es decir 
+\begin_inset Formula $Ti(t)=\mathrm{PALABRA}$
+\end_inset
+
+,
+ cada ves que 
+\begin_inset Formula $t$
+\end_inset
+
+ es un termino elemental de reticulado cuaterna.
+ Por ejemplo el termino elemental dado en el primer ejemplo arriba es una palabra de longitud 5 (los espacios no cuentan y son para hacerla mas 
+\begin_inset Quotes eld
+\end_inset
+
+lejible
+\begin_inset Quotes erd
+\end_inset
+
+) el del quinto ejemplo es una palabra de longitud 1 (la letra 
+\begin_inset Formula $x$
+\end_inset
+
+),
+ etc.
+ No precisaremos bien la lista de variables y la de nombres de elementos fijos pero esto no traera problemas para el manejo intuitivo que haremos del tema.
+\end_layout
+
+\begin_layout Standard
+Las siguientes reglas constructivas nos aproximan razonablemente al concepto de 
+\emph on
+termino elemental de reticulado cuaterna
+\emph default
+ (aunque no sean una definicion matematica precisa).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada variable es un termino elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cada nombre de elemento fijo es un termino elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $(t\;\mathsf{s\;}s)$
+\end_inset
+
+ es un termino elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $(t\;\mathsf{i\;}s)$
+\end_inset
+
+ es un termino elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es un termino elemental de reticulados cuaterna si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+Deberia quedar claro que arriba 
+\begin_inset Formula $(t\;\mathsf{s\;}s)$
+\end_inset
+
+ denota el resultado de concatenar las 5 siguientes palabras
+\begin_inset Formula 
+\[
+(\;\;\;\;\;\;t\;\;\;\;\;\;\;\;\;\mathsf{s\;}\;\;\;\;\;\;\;s\;\;\;\;\;\;\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $(t\;\mathsf{s\;}s)$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|t\right|+\left|s\right|+3$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Valores que asumen o representan los terminos elementales
+\end_layout
+
+\begin_layout Standard
+Para que un termino elemental 
+\begin_inset Formula $t$
+\end_inset
+
+ 
+\emph on
+represente o asuma
+\emph default
+ un valor debemos tener un reticulado cuaterna concreto y asignarle valores a las variables y a los nombres de elementos fijos que ocurren en 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En el reticulado cuaterna 
+\begin_inset Formula $(\mathbf{N},mcm,mcd,|)$
+\end_inset
+
+,
+ el termino elemental 
+\begin_inset Formula $(x\mathsf{\;i\;}b)$
+\end_inset
+
+,
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $200$
+\end_inset
+
+ y a 
+\begin_inset Formula $b$
+\end_inset
+
+ el valor 
+\begin_inset Formula $300$
+\end_inset
+
+,
+ asume el valor 100 (ya que 
+\begin_inset Formula $mcm(200,300)=100$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En el reticulado cuaterna 
+\begin_inset Formula $(\mathbf{N},mcm,mcd,|)$
+\end_inset
+
+,
+ el termino elemental 
+\begin_inset Formula $z$
+\end_inset
+
+,
+ cuando le asignamos a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $200$
+\end_inset
+
+ asume el valor 
+\begin_inset Formula $200$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En el reticulado cuaterna 
+\begin_inset Formula $(\mathbf{N},mcm,mcd,|)$
+\end_inset
+
+,
+ el termino elemental 
+\begin_inset Formula $((x\mathsf{\;i\;}y)\;\mathsf{s}\;z)$
+\end_inset
+
+,
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $20$
+\end_inset
+
+ a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 12 y a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 100,
+ asume el valor 100 (ya que 
+\begin_inset Formula $mcm(mcd(20,12),100)=100$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En el reticulado cuaterna 
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A\text{ es finito}\},\cup,\cap,\subseteq)$
+\end_inset
+
+,
+ el termino elemental 
+\begin_inset Formula $((x\mathsf{\;i\;}y)\mathsf{\;i\;}z)$
+\end_inset
+
+,
+ cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\{1,5,9\}$
+\end_inset
+
+ a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\{5,6,9,1000\}$
+\end_inset
+
+ y a 
+\begin_inset Formula $z$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\{9\}$
+\end_inset
+
+,
+ asume el valor 
+\begin_inset Formula $\{9\}$
+\end_inset
+
+ (ya que 
+\begin_inset Formula $(\{1,5,9\}\cap\{5,6,9,1000\})\cap\{9\}=\{9\}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Es muy importante no confundir un termino elemental con el valor que asume en un reticulado cuaterna dado para alguna asignacion de valores a sus variables y nombres de elementos fijos.
+ Por ejemplo los terminos elementales 
+\begin_inset Formula $(x\mathsf{\;i\;}y)$
+\end_inset
+
+ y 
+\begin_inset Formula $(y\mathsf{\;i\;}x)$
+\end_inset
+
+ son distintos y sin embargo asumen siempre el mismo valor cualquiera sea el reticulado cuaterna que consideremos y cualquiera sea la asignacion de valores que tomemos para las variables 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Terminos elementales puros
+\end_layout
+
+\begin_layout Standard
+Un termino elemental de reticulados cuaterna sera llamado 
+\emph on
+puro
+\emph default
+ cuando en el no ocurran nombres de elementos fijos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Formulas elementales de reticulados cuaterna
+\end_layout
+
+\begin_layout Standard
+Las formulas elementales de reticulados cuaterna son palabras que se construyen usando simbolos de la siguiente lista:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall\ \exists\;\lnot\;\vee\;\wedge\;\rightarrow\;\leftrightarrow\;(\;)\;=\;\mathsf{s\;}\mathsf{i\;}\leq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Variables:
+ 
+\begin_inset Formula $x,y,z,w,...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Nombres de elementos fijos:
+ 
+\begin_inset Formula $a,b,c,d,...$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Es decir que,
+ mas alla de que no daremos una definicion matematica rigurosa del concepto de formula elemental de reticulados cuaterna,
+ es importante entender que son meras palabras,
+ es decir 
+\begin_inset Formula $Ti(\varphi)=\mathrm{PALABRA}$
+\end_inset
+
+,
+ cada ves que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulado cuaterna.
+ Antes de dar una descripcion mas completa del concepto,
+ veamos algunos ejemplos concretos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\leq y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $((x\;\mathsf{s\;}y)=a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $((a\;\mathsf{s\;}z)\;\mathsf{i\;}x)=((x\;\mathsf{i\;}y)\;\mathsf{s\;}x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(((a\leq z)\wedge(x=y))\wedge\lnot(x=y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\lnot\exists y((x\;\mathsf{s\;}y=y)\wedge\lnot(x=y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y\forall z(((x\leq y)\wedge(y\leq z))\rightarrow(x\leq z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\exists y((x\;\mathsf{s\;}y)=a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y\forall z\forall w(((x\leq z)\wedge(y\leq w))\rightarrow((x\;\mathsf{s}\ y)\leq(z\;\mathsf{s}\ w)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como puede notarse es muy comun que una formula elemental tenga a terminos elementales como subpalabras aunque los terminos elementales tienen un distinto significado que las formulas elementales ya que ellos representan elementos y las formulas elementales son palabras que cuando las interpretamos adecuadamente se vuelven verdaderas o falsas.
+ Las siguientes reglas constructivas nos aproximan razonablemente al concepto de
+\emph on
+ formula elemental de reticulado cuaterna
+\emph default
+ (aunque no sean una definicion matematica precisa):
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados cuaterna,
+ entonces la palabra 
+\begin_inset Formula $(t=s)$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+ son terminos elementales de reticulados cuaterna,
+ entonces la palabra 
+\begin_inset Formula $(t\leq s)$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\vee\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\leftrightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $(\varphi_{1}\rightarrow\varphi_{2})$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna,
+ entonces 
+\begin_inset Formula $\lnot\varphi$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\forall x\varphi\;\;\;\forall y\varphi\;\;\;\forall z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es una formula elemental de reticulados cuaterna,
+ entonces las palabras
+\begin_inset Formula 
+\[
+\exists x\varphi\;\;\;\exists y\varphi\;\;\;\exists z\varphi\;\;\;...
+\]
+
+\end_inset
+
+son formulas elementales de reticulados cuaterna
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Una palabra es una formula elemental de reticulados cuaterna si y solo si se puede construir usando las clausulas anteriores
+\end_layout
+
+\begin_layout Standard
+Deberia quedar claro que,
+ por ejemplo,
+ arriba 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ denota el resultado de concatenar las 5 siguientes palabras
+\begin_inset Formula 
+\[
+(\;\;\;\;\;\;\varphi_{1}\;\;\;\;\;\;\;\;\;\wedge\;\;\;\;\;\;\;\varphi_{2}\;\;\;\;\;\;\;\;\;)
+\]
+
+\end_inset
+
+es decir que 
+\begin_inset Formula $(\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ es una palabra de longitud 
+\begin_inset Formula $\left|\varphi_{1}\right|+\left|\varphi_{2}\right|+3$
+\end_inset
+
+.
+ Notese que siempre 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+cuantificamos por delante
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+,
+ es decir que la palabra 
+\begin_inset Formula $(x\leq a)\forall x$
+\end_inset
+
+ NO es una formula elemental de reticulados cuaterna.
+ Tampoco se cuantificaran los nombres de elementos fijos,
+ es decir solo cuantificamos variables.
+ O sea que 
+\begin_inset Formula $\forall a(a=x)$
+\end_inset
+
+ no es una formula elemental.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Observacion importante:
+\end_layout
+
+\end_inset
+
+Notese que segun los items (7),
+ (8) y (9) de la definicion de formula cuando 
+\begin_inset Quotes eld
+\end_inset
+
+negamos
+\begin_inset Quotes erd
+\end_inset
+
+ y cuando 
+\begin_inset Quotes eld
+\end_inset
+
+cuantificamos
+\begin_inset Quotes erd
+\end_inset
+
+,
+ no agregamos parentesis.
+ Solo agregamos parentesis cuando 
+\begin_inset Quotes eld
+\end_inset
+
+nexamos
+\begin_inset Quotes erd
+\end_inset
+
+ un par de formulas.
+ Esto hay que tenerlo en cuenta para leer las formulas.
+ Por ejemplo la formula 
+\begin_inset Formula $(\exists z(a\leq z)\wedge(b\leq z))$
+\end_inset
+
+ debe leerse como la conjuncion de las formulas 
+\begin_inset Formula $\exists z(a\leq z)$
+\end_inset
+
+ y 
+\begin_inset Formula $(b\leq z)$
+\end_inset
+
+ y no pensarse como una formula que dice 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\exists z\text{ tal que }(a\leq z)\wedge(b\leq z)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Sucede algo similar con la negacion.
+ Es decir si 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ son formulas elementales entonces la formula elemental 
+\begin_inset Formula $(\lnot\varphi_{1}\wedge\varphi_{2})$
+\end_inset
+
+ debe leerse como la conjuncion de 
+\begin_inset Formula $\lnot\varphi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ y no pensarse como una formula que dice 
+\begin_inset Quotes eld
+\end_inset
+
+no es verdad que 
+\begin_inset Formula $\varphi_{1}\wedge\varphi_{2}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ O sea,
+ los cuantificadores y la negacion tienen precedencia sobre los nexos logicos.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Formulas elementales puras
+\end_layout
+
+\begin_layout Standard
+Una formula elemental de reticulados cuaterna sera llamada 
+\emph on
+pura
+\emph default
+ cuando en ella no ocurran nombres de elementos fijos.
+ Notese que en particular los terminos que ocurran en una formula elemental pura seran tambien puros.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Valor de verdad de una formula
+\end_layout
+
+\begin_layout Standard
+Para que una formula elemental se vuelva verdadera o falsa tenemos que tener un reticulado cuaterna concreto 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ y ademas asignar valores concretos de 
+\begin_inset Formula $L$
+\end_inset
+
+ a las variables libres y a los nombres de elementos fijos que ocurren en dicha formula.
+ Tambien cabe destacar que los cuantificadores siempre ranguean sobre 
+\begin_inset Formula $L$
+\end_inset
+
+,
+ es decir 
+\begin_inset Formula $\forall x$
+\end_inset
+
+ se interpretara como 
+\begin_inset Formula $\forall x\in L$
+\end_inset
+
+ y 
+\begin_inset Formula $\exists x$
+\end_inset
+
+ se interpretara como 
+\begin_inset Formula $\exists x\in L$
+\end_inset
+
+.
+ Veamos algunos ejemplos concretos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $(x\leq y)$
+\end_inset
+
+ tiene a las variables 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ libres y en el reticulado cuaterna 
+\begin_inset Formula $(\mathbf{N},mcm,mcd,|)$
+\end_inset
+
+ es verdadera cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $6$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $36$
+\end_inset
+
+.
+ Esto es ya que interpretamos a 
+\begin_inset Formula $\leq$
+\end_inset
+
+ como la relacion 
+\begin_inset Formula $|$
+\end_inset
+
+ y 
+\begin_inset Formula $6\text{ divide a }36$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $((a\;\mathsf{s\;}y=y)\vee(y\;\mathsf{s\;}a=a))$
+\end_inset
+
+ tiene a 
+\begin_inset Formula $y$
+\end_inset
+
+ como su unica variable libre y en el reticulado cuaterna 
+\begin_inset Formula $(\mathbf{N},mcm,mcd,|)$
+\end_inset
+
+ es falsa cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $5$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $11$
+\end_inset
+
+ y verdadera cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $5$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+ el valor 
+\begin_inset Formula $10$
+\end_inset
+
+.
+ Esta formula es verdadera en el reticulado cuaterna 
+\begin_inset Formula $(\mathbf{N},max,min,\leq)$
+\end_inset
+
+ para cualquier asignacion de valores a 
+\begin_inset Formula $a$
+\end_inset
+
+ y a 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $\exists y((y\leq x)\wedge\lnot(y=x))$
+\end_inset
+
+ tiene a 
+\begin_inset Formula $x$
+\end_inset
+
+ como su unica variable libre y en el reticulado cuaterna 
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A\text{ es finito}\},\cup,\cap,\subseteq)$
+\end_inset
+
+ es verdadera cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ cualquier valor distinto de 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ y es falsa cuando le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $((\lnot(x=y)\wedge\lnot(x=z))\wedge\lnot(y=z))$
+\end_inset
+
+ es verdadera en un reticulado cuaterna si y solo si los valores que le asignamos a las variables 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ y 
+\begin_inset Formula $z$
+\end_inset
+
+ son distintos entre si.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Por supuesto,
+ cuando la formula elemental es pura,
+ su valor de verdad en un reticulado cuaterna dado solo depende de que valores asignemos a sus variables libres.
+ Tambien es bueno pensar que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $\forall y(x\leq y)$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+dice
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es un elemento minimo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+,
+ en el sentido que ella sera verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si le asignamos a 
+\begin_inset Formula $x$
+\end_inset
+
+ un elemento minimo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $\forall y(y\leq b)$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+dice
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+,
+ en el sentido que ella sera verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si le asignamos a 
+\begin_inset Formula $b$
+\end_inset
+
+ un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $((x\leq y)\wedge\lnot(y=x))$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+dice
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es menor que 
+\begin_inset Formula $y$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La formula elemental 
+\begin_inset Formula $\lnot\exists z((x\leq z)\wedge\lnot(z=x))$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+dice
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es un elemento maximal de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 1,5:
+\end_layout
+
+\end_inset
+
+De una formula elemental pura de reticulados cuaterna,
+ que tenga dos variables libres 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+,
+ la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es cubierto por 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+De una formula elemental pura de reticulados cuaterna,
+ que tenga una variable libre 
+\begin_inset Formula $x$
+\end_inset
+
+,
+ la cual 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+diga
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ es cubierto por exactamente dos elementos
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Sentencias elementales
+\end_layout
+
+\begin_layout Standard
+Cuando una formula elemental de reticulados cuaterna no tiene variables libres diremos que es una 
+\shape italic
+sentencia elemental de reticulados cuaterna
+\shape default
+.
+ Algunos ejemplos de sentencias:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x(a\leq x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\exists y\lnot(x=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\forall x\forall y((x\leq y)\vee(y\leq x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\exists x\exists y((((a\;\mathsf{s\;}x)=(a\;\mathsf{s\;}y))\wedge\lnot(x\leq y))\wedge\lnot(y\leq x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que en tal caso sera verdadera o falsa en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ dependiendo solo de los valores que tomen los nombres para elementos fijos que ocurren en ella.
+ Y si ella es pura (i.e.
+ no ocurren en ella nombres de elementos fijos),
+ entonces dado un reticulado cuaterna concreto,
+ la sentencia resulta verdadera o falsa.
+ Por ejemplo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental 
+\begin_inset Formula $\forall x(a\leq x)$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A\text{ es finito}\},\cup,\cap,\subseteq)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental pura 
+\begin_inset Formula $\exists x\exists y\lnot(x=y)$
+\end_inset
+
+ es verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $L$
+\end_inset
+
+ tiene al menos dos elementos distintos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental pura 
+\begin_inset Formula $\forall x\forall y((x\leq y)\vee(y\leq x))$
+\end_inset
+
+ es verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ es un conjunto totalmente ordenado
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+La sentencia elemental 
+\begin_inset Formula $\exists x\exists y((((a\;\mathsf{s\;}x)=(a\;\mathsf{s\;}y))\wedge\lnot(x\leq y))\wedge\lnot(y\leq x))$
+\end_inset
+
+ es verdadera en el reticulado cuaterna 
+\begin_inset Formula $(\mathcal{P}(\{0,1,2\}),\cup,\cap,\subseteq)$
+\end_inset
+
+ cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\{0,1\}$
+\end_inset
+
+ y es falsa cuando le asignamos a 
+\begin_inset Formula $a$
+\end_inset
+
+ el valor 
+\begin_inset Formula $\{0\}$
+\end_inset
+
+ o el valor 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2,5:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de reticulados cuaterna la cual sea verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $L$
+\end_inset
+
+ tiene al menos 5 elementos distintos.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de reticulados cuaterna la cual sea verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $L$
+\end_inset
+
+ tiene exactamente 5 elementos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de reticulados cuaterna la cual sea verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ es distributivo.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 4,5:
+\end_layout
+
+\end_inset
+
+De una sentencia elemental pura de reticulados cuaterna la cual sea verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ tiene un elemento minimo el cual es cubierto por al menos dos elementos distintos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 4,6:
+\end_layout
+
+\end_inset
+
+(Los cuantificadores no commutan.) De una formula elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de reticulados cuaterna tal que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\varphi$
+\end_inset
+
+ tiene a 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+ como sus unicas variables libres
+\end_layout
+
+\begin_layout Enumerate
+La sentencia elemental pura 
+\begin_inset Formula $\forall x\exists y\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(\mathbf{N},max,min,\leq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La sentencia elemental pura 
+\begin_inset Formula $\exists y\forall x\varphi$
+\end_inset
+
+ es verdadera en 
+\begin_inset Formula $(\mathbf{N},max,min,\leq)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Un poco mas sobre variables libres
+\end_layout
+
+\begin_layout Standard
+Ya que el tema de cuando una variable es libre o no,
+ es bastante delicado,
+ nos explayaremos un poco mas.
+ Primero deberiamos notar que si una variable ocurre varias veces en una formula,
+ entonces algunas de aquellas ocurrencias seran libres y otras no.
+ Por ejemplo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En la formula 
+\begin_inset Formula $((x\leq a)\wedge\forall x(b\leq x))$
+\end_inset
+
+ la primer ocurrencia de 
+\begin_inset Formula $x$
+\end_inset
+
+ es libre y las otras dos ocurrencias de 
+\begin_inset Formula $x$
+\end_inset
+
+ no son libres 
+\end_layout
+
+\begin_layout Standard
+Como es usual a las ocurrencias que no son libres las llamaremos 
+\shape italic
+acotadas
+\shape default
+.
+ O sea que toda ocurrencia de una variable en una formula es ya sea libre o acotada.
+ Por ejemplo,
+ en la formula
+\begin_inset Formula 
+\[
+(((a\;\mathsf{s\;}b)\leq y)\wedge\forall y((z\;\mathsf{s\;}b)\leq y))
+\]
+
+\end_inset
+
+la variable 
+\begin_inset Formula $y$
+\end_inset
+
+ ocurre tres veces,
+ la primera ocurrencia es libre y la segunda y tercera son acotadas.
+\end_layout
+
+\begin_layout Standard
+Cuando digamos que 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\shape italic
+es una variable libre de una formula elemental
+\shape default
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ nos estaremos refiriendo a que la variable 
+\begin_inset Formula $x$
+\end_inset
+
+ ocurre al menos una ves libremente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ aunque tambien puede ocurrir acotadamente en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Por ejemplo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ es una variable libre de la formula 
+\begin_inset Formula $((x\leq a)\wedge\forall x(b\leq x))$
+\end_inset
+
+ (aunque ocurre acotadamente)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Las variables libres de la formula
+\begin_inset Formula 
+\[
+(((x\leq z)\vee\exists x\forall y((a\leq x)\wedge(y\leq x)))\rightarrow\forall y(z\leq y))
+\]
+
+\end_inset
+
+son 
+\begin_inset Formula $x$
+\end_inset
+
+ y 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Las dos ocurrencias de 
+\begin_inset Formula $z$
+\end_inset
+
+ son libres,
+ todas las ocurrencias de 
+\begin_inset Formula $y$
+\end_inset
+
+ son acotadas,
+ la primer ocurrencia de 
+\begin_inset Formula $x$
+\end_inset
+
+ es libre y las otras tres ocurrencias de 
+\begin_inset Formula $x$
+\end_inset
+
+ son acotadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Alcance de la ocurrencia de un cuantificador
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+cuantificador
+\shape default
+ sera una palabra formada por alguno de los simbolos
+\begin_inset Formula 
+\[
+\forall\ \ \ \ \exists
+\]
+
+\end_inset
+
+seguido de una variable.
+ Es decir
+\begin_inset Formula 
+\[
+\exists x\ \ \ \forall x\ \ \ \exists y\ \ \ \forall y\ \ \ \exists z\ \ \ \forall z\ \ \ldots
+\]
+
+\end_inset
+
+son los cuantificadores.
+\end_layout
+
+\begin_layout Standard
+Una propiedad importante de las formulas elementales es que siempre que un cuantificador ocurra en una formula,
+ seguido a dicha ocurrencia ocurrira una formula elemental (la cual ademas es unica).
+ Ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En la formula
+\begin_inset Formula 
+\[
+(((x\leq y)\wedge\forall y\lnot(y=a))\rightarrow\forall y(z\leq y))
+\]
+
+\end_inset
+
+seguido a la segunda ocurrencia del cuantificador 
+\begin_inset Formula $\forall y$
+\end_inset
+
+ ocurre la formula 
+\begin_inset Formula $(z\leq y)$
+\end_inset
+
+ y seguido a la primer ocurrencia del cuantificador 
+\begin_inset Formula $\forall y$
+\end_inset
+
+ ocurre la formula 
+\begin_inset Formula $\lnot(y=a)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En la formula
+\begin_inset Formula 
+\[
+\forall x\forall y((x\leq y)\vee(y\leq x))
+\]
+
+\end_inset
+
+seguido a la unica ocurrencia del cuantificador 
+\begin_inset Formula $\forall y$
+\end_inset
+
+ ocurre la formula 
+\begin_inset Formula $((x\leq y)\vee(y\leq x))$
+\end_inset
+
+ y seguido a la unica ocurrencia del cuantificador 
+\begin_inset Formula $\forall x$
+\end_inset
+
+ ocurre la formula 
+\begin_inset Formula $\forall y((x\leq y)\vee(y\leq x))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto nos da lugar al concepto de 
+\shape italic
+alcance
+\shape default
+ de una ocurrencia de un cuantificador en una formula elemental.
+ Intuitivamente hablando,
+ el alcance de una ocurrencia de un cuantificador es el espacio ocupado por la unica formula que ocurre inmediatamente despues de dicha ocurrencia del cuantificador.
+ Parece un trabalenguas pero con ejemplos se entendera la idea.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En la formula
+\begin_inset Formula 
+\[
+((((x\leq y)\wedge\forall y\underline{\lnot(y=a)})\rightarrow\forall y(z\leq y))\vee(x\leq z))
+\]
+
+\end_inset
+
+hemos subrayado el alcance de la primer ocurrencia del cuantificador 
+\begin_inset Formula $\forall y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En la formula
+\begin_inset Formula 
+\[
+\forall x\underline{\forall y((x\leq y)\vee(y\leq x))}
+\]
+
+\end_inset
+
+hemos subrayado el alcance de la unica ocurrencia del cuantificador 
+\begin_inset Formula $\forall x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+En la formula
+\begin_inset Formula 
+\[
+(((x\leq z)\vee\exists x\underline{\forall y((a\leq x)\wedge(y\leq x))})\rightarrow\exists x(x\leq y))
+\]
+
+\end_inset
+
+hemos subrayado el alcance de la primer ocurrencia del cuantificador 
+\begin_inset Formula $\exists x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Es importante notar que no tiene sentido hablar del alcance de un cuantificador en una formula ya que el mismo cuantificador puede ocurrir varias veces en dicha formula.
+ Es decir el concepto de alcance es relativo a una ocurrencia de un cuantificador.
+\end_layout
+
+\begin_layout Standard
+Notese que una ocurrencia de una variable 
+\begin_inset Formula $v$
+\end_inset
+
+ en una formula elemental 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ sera acotada si y solo si ya sea es parte de la ocurrencia de un cuantificador 
+\begin_inset Formula $Qv$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $Q\in\{\forall,\exists\}$
+\end_inset
+
+,
+ o dicha ocurrencia sucede dentro del alcance de la ocurrencia de un cuantificador 
+\begin_inset Formula $Q^{\prime}v$
+\end_inset
+
+ en 
+\begin_inset Formula $\varphi$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $Q^{\prime}\in\{\forall,\exists\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Deberia quedar claro que el roll jugado por una variable 
+\begin_inset Formula $v$
+\end_inset
+
+ en sus ocurrencias acotadas (dentro de la ocurrencia de un cuantificador 
+\begin_inset Formula $Qv$
+\end_inset
+
+ y su alcance) es en algun sentido 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+mudo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ o 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+impersonal
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ en el sentido que podriamos reemplazar dichas ocurrencias de 
+\begin_inset Formula $v$
+\end_inset
+
+ por una variable 
+\begin_inset Formula $w$
+\end_inset
+
+ que no figure en la formula y el significado de la formula resultante seria el mismo que el de la formula original.
+ Por ejemplo la formula
+\begin_inset Formula 
+\[
+(\lnot(x=a)\wedge\forall y((x\leq y)\wedge(x\leq y)))
+\]
+
+\end_inset
+
+nos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+dice
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ que 
+\begin_inset Formula $x$
+\end_inset
+
+ es distinto a 
+\begin_inset Formula $a$
+\end_inset
+
+ y que 
+\begin_inset Formula $x$
+\end_inset
+
+ es comparable con todo otro elemento;
+ y si reemplazamos cada ocurrencia de 
+\begin_inset Formula $y$
+\end_inset
+
+ en el bloque 
+\begin_inset Formula $\forall y((x\leq y)\wedge(x\leq y))$
+\end_inset
+
+ por la variable 
+\begin_inset Formula $z$
+\end_inset
+
+,
+ obtenemos
+\begin_inset Formula 
+\[
+(\lnot(x=a)\wedge\forall z((x\leq z)\wedge(x\leq z)))
+\]
+
+\end_inset
+
+la cual claramente dice lo mismo acerca de 
+\begin_inset Formula $x$
+\end_inset
+
+ y 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Aviso importante:
+\end_layout
+
+\end_inset
+
+Ya tenemos una intuicion bien clara del concepto de formula elemental y en esta etapa no nos interesa ser puntillosos en la escritura por lo cual muchas veces para hacer mas dinamica la exposicion suprimiremos algunos parentesis.
+ Por ejemplo en lugar de escribir 
+\begin_inset Formula $((x\leq y)\wedge(y\leq z))$
+\end_inset
+
+ escribiremos 
+\begin_inset Formula $(x\leq y\wedge y\leq z)$
+\end_inset
+
+ o tambien por ejemplo en lugar de escribir 
+\begin_inset Formula $((a\leq b)\wedge(x\leq y))\wedge(z=c))$
+\end_inset
+
+ escribiremos 
+\begin_inset Formula $(a\leq b\wedge x\leq y\wedge z=c)$
+\end_inset
+
+ ya que obviamente ambas formulas tienen el mismo significado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Limitaciones del poder expresivo de las formulas elementales
+\end_layout
+
+\begin_layout Standard
+Hay muchas propiedades de los reticulados cuaterna que no se pueden 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ usando sentencias elementales puras.
+ Por ejemplo no hay una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de reticulados cuaterna la cual cumpla que es verdadera en un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto finito.
+ Por supuesto esto lo podemos 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ de la siguiente manera
+\begin_inset Formula 
+\[
+\exists x_{1}\exists x_{2}...\exists x_{n}\forall z((z=x_{1})\vee(z=x_{2})\vee...\vee(z=x_{n}))
+\]
+
+\end_inset
+
+pero aqui el problema es que 
+\begin_inset Formula $n$
+\end_inset
+
+ hace referencia a algun natural que puede variar y no podemos reemplazarlo por uno concreto ya que entonces la sentencia solo valdria en los reticulados cuaterna con a lo sumo esa candidad de elementos.
+ Es decir las formulas elementales en general no pueden expresar la existencia de una sucesion finita de elementos,
+ solo la existencia de una cantidad concreta fija de elementos.
+ O sea se puede 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ existen tres elementos tales que ...
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ existen 10 elementos tales que ...
+ pero no se puede 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ existen 
+\begin_inset Formula $n$
+\end_inset
+
+ elementos tales que ...
+ ,
+ pensando que 
+\begin_inset Formula $n$
+\end_inset
+
+ es algun natural.
+ Una prueba de esta imposibilidad de 
+\begin_inset Quotes eld
+\end_inset
+
+decir
+\begin_inset Quotes erd
+\end_inset
+
+ con una sentencia elemental que el universo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ es finito es consecuencia directa del teorema de compacidad que veremos en la Guia 14.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Pruebas elementales de reticulados cuaterna
+\end_layout
+
+\begin_layout Standard
+Notese que las propiedades (1),...,(7) que definen reticulado cuaterna pueden ser escritas como sentencias elementales puras de reticulados cuaterna:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\leq R}=\forall x(x\leq x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\leq T}=\forall x\forall y\forall z((x\leq y\wedge y\leq z)\rightarrow x\leq z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\leq A}=\forall x\forall y((x\leq y\wedge y\leq x)\rightarrow x=y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}=\forall x\forall y(x\leq x\;\mathsf{s}\;y\wedge y\leq x\;\mathsf{s}\;y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}=\forall x\forall y\forall z((x\leq z\wedge y\leq z)\rightarrow x\;\text{\ensuremath{\mathsf{s\;}}}y\leq z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}esC}=\forall x\forall y(x\;\mathsf{i}\;y\leq x\wedge x\;\mathsf{i}\;y\leq y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}=\forall x\forall y\forall z((z\leq x\wedge z\leq y)\rightarrow z\leq x\;\mathsf{i}\;y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Llamaremos a estas sentencias elementales puras los 
+\emph on
+axiomas elementales de reticulados cuaterna
+\emph default
+.
+ El nombre 
+\begin_inset Formula $\mathrm{A}_{\leq R}$
+\end_inset
+
+ hace referencia a que esta sentencia 
+\begin_inset Quotes eld
+\end_inset
+
+dice
+\begin_inset Quotes erd
+\end_inset
+
+ que la relacion 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es reflexiva.
+ El nombre 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+ hace referencia a que esta sentencia 
+\begin_inset Quotes eld
+\end_inset
+
+dice
+\begin_inset Quotes erd
+\end_inset
+
+ que 
+\begin_inset Formula $x\;\mathsf{s}\;y$
+\end_inset
+
+ es cota superior del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+.
+ El nombre 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+ hace referencia a que esta sentencia 
+\begin_inset Quotes eld
+\end_inset
+
+dice
+\begin_inset Quotes erd
+\end_inset
+
+ que 
+\begin_inset Formula $x\;\mathsf{s}\;y$
+\end_inset
+
+ es menor o igual a cualquier cota superior del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+.
+ Los otros nombres fueron elejidos en forma analoga.
+\end_layout
+
+\begin_layout Standard
+Muchas propiedades que son ciertas en todos los reticulados cuaterna se pueden escribir usando sentencias elementales puras de reticulados cuaterna.
+ Por ejemplo la sentencia elemental pura 
+\begin_inset Formula $\rho=\forall x\forall y(x\;\mathsf{s}\;y=y\;\mathsf{s}\;x)$
+\end_inset
+
+ es cierta en cada reticulado cuaterna.
+ Esto nosotros lo sabemos ya que en un reticulado cuaterna los axiomas 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+ nos garantizan que 
+\begin_inset Formula $x\;\mathsf{s}\;y=\mathrm{sup}\{x,y\}$
+\end_inset
+
+ y obviamente 
+\begin_inset Formula $\mathrm{sup}\{x,y\}=\mathrm{sup}\{y,x\}$
+\end_inset
+
+.
+ Pero esta prueba o justificacion de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ usa 
+\begin_inset Formula $\mathrm{sup}\{x,y\}$
+\end_inset
+
+,
+ la cual es una expresion que no forma parte de las formulas elementales.
+ Nos interesa dar una prueba muy especial de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ en el sentido que se cumplan las siguientes caracteristicas
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+En la prueba se parte de una estructura 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ fija pero arbitraria en el sentido que solo sabemos que satisface los axiomas 
+\begin_inset Formula $\mathrm{A}_{\leq R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\leq A}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\leq T}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}esC}$
+\end_inset
+
+ ,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}$
+\end_inset
+
+ (o sea esta es la unica informacion particular que podemos usar).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Las deducciones de la prueba son muy simples y obvias de justificar con minimas fraces en castellano
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+En la escritura de la prueba lo concerniente a la matematica misma se expresa usando solo sentencias elementales de reticulados cuaterna.
+\end_layout
+
+\begin_layout Standard
+Llamaremos a las pruebas que tengan estas caracteristicas
+\shape italic
+,
+ pruebas elementales de reticulados cuaterna
+\shape default
+.
+ Veamos una prueba de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ con estas caracteristicas.
+ Recordemos que en la prueba partiremos de una estructura 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ fija de la cual solo sabemos que satisface los axiomas 
+\begin_inset Formula $\mathrm{A}_{\leq R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\leq A}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\leq T}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}esC}$
+\end_inset
+
+ ,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+ elementos fijos pero arbitarrios.
+ Por el axioma 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+ (instanciado haciendo 
+\begin_inset Formula $x=b$
+\end_inset
+
+ y 
+\begin_inset Formula $y=a$
+\end_inset
+
+) tenemos que
+\begin_inset Formula 
+\[
+(b\leq b\;\mathsf{s}\;a\wedge a\leq b\;\mathsf{s}\;a)
+\]
+
+\end_inset
+
+De lo cual sacamos obviamente que
+\begin_inset Formula 
+\[
+(a\leq b\;\mathsf{s}\;a\wedge b\leq b\;\mathsf{s}\;a)
+\]
+
+\end_inset
+
+Ademas el axioma 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+ (instanciado haciendo 
+\begin_inset Formula $x=a$
+\end_inset
+
+,
+ 
+\begin_inset Formula $y=b$
+\end_inset
+
+ y 
+\begin_inset Formula $z=b\;\mathsf{s}\;a$
+\end_inset
+
+) nos dice que
+\begin_inset Formula 
+\[
+\left((a\leq b\;\mathsf{s}\;a\wedge b\leq b\;\mathsf{s}\;a)\rightarrow a\;\text{\ensuremath{\mathsf{s\;}}}b\leq b\;\mathsf{s}\;a\right)
+\]
+
+\end_inset
+
+O sea que de las ultimas dos sentencias obtenemos trivialmente que
+\begin_inset Formula 
+\[
+(a\;\text{\ensuremath{\mathsf{s\;}}}b\leq b\;\mathsf{s}\;a)
+\]
+
+\end_inset
+
+En forma analoga se puede probar que
+\begin_inset Formula 
+\[
+(b\;\mathsf{s}\;a\leq a\;\text{\ensuremath{\mathsf{s\;}}}b)
+\]
+
+\end_inset
+
+Lo cual nos dice trivialmente que
+\begin_inset Formula 
+\[
+(a\;\text{\ensuremath{\mathsf{s\;}}}b\leq b\;\mathsf{s}\;a\wedge b\;\mathsf{s}\;a\leq a\;\text{\ensuremath{\mathsf{s\;}}}b)
+\]
+
+\end_inset
+
+Pero el axioma 
+\begin_inset Formula $\mathrm{A}_{\leq A}$
+\end_inset
+
+ nos dice que
+\begin_inset Formula 
+\[
+((a\;\text{\ensuremath{\mathsf{s\;}}}b\leq b\;\mathsf{s}\;a\wedge b\;\mathsf{s}\;a\leq a\;\text{\ensuremath{\mathsf{s\;}}}b)\rightarrow a\;\text{\ensuremath{\mathsf{s\;}}}b=b\;\mathsf{s}\;a)
+\]
+
+\end_inset
+
+De lo cual obviamente obtenemos que(
+\begin_inset Formula 
+\[
+(a\;\text{\ensuremath{\mathsf{s\;}}}b=b\;\mathsf{s}\;a)
+\]
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $a,b$
+\end_inset
+
+ eran elementos fijos pero arbitrarios,
+ hemos probado que
+\begin_inset Formula 
+\[
+\forall x\forall y(x\;\mathsf{s}\;y=y\;\mathsf{s}\;x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Por supuesto,
+ en la parte de la prueba en la que decimos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+En forma analoga se puede probar que 
+\begin_inset Formula $(b\;\mathsf{s}\;a\leq a\;\mathsf{s\;}$
+\end_inset
+
+
+\begin_inset Formula $b$
+\end_inset
+
+)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ deberiamos poner las lineas que corresponden para obtener realmente la prueba elemental (si no lo hacemos la prueba no es una prueba elemental ya que la justificacion 
+\begin_inset Quotes eld
+\end_inset
+
+en forma analoga se puede probar ...
+\begin_inset Quotes erd
+\end_inset
+
+ no es lo suficientemente simple y obvia).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Completar la prueba anterior haciendo la parte faltante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Muchas de las pruebas dadas en la Guia 3 pueden adaptarse naturalmente para ser pruebas elementales de reticulados cuaterna.
+ Para hacer esta adaptacion notese que el axioma 
+\begin_inset Formula $\mathrm{A}_{\leq A}$
+\end_inset
+
+ puede ser usado en lugar de aplicar la regla Igualdad en Posets (asi lo hicimos en la prueba de recien) y similarmente los axiomas 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}$
+\end_inset
+
+ se pueden usar en lugar de las reglas Superar un Supremo y Ser Menor o Igual que un Infimo.
+\end_layout
+
+\begin_layout Standard
+Ahora daremos una prueba elemental de la sentencia elemental pura 
+\begin_inset Formula $\mu=\forall x\forall y(x\leq y\leftrightarrow x\;\mathsf{s}\;y=y)$
+\end_inset
+
+.
+ Obviamente sabemos que 
+\begin_inset Formula $\mu$
+\end_inset
+
+ es verdadera en cada reticulado cuaterna pero queremos una prueba elemental.
+ Recordemos que en la prueba partiremos de una estructura 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ fija de la cual solo sabemos que satisface los axiomas 
+\begin_inset Formula $\mathrm{A}_{\leq R}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\leq A}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\leq T}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}esC}$
+\end_inset
+
+ ,
+ 
+\begin_inset Formula $\mathrm{A}_{\mathsf{i}\geq C}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ [Prueba elemental de 
+\begin_inset Formula $\mu$
+\end_inset
+
+:] Sean 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+ elementos fijos.
+ Supongamos que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+ Probaremos que 
+\begin_inset Formula $a\;\mathsf{s}\;b=b$
+\end_inset
+
+.
+ Por el axioma 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\[
+\left((a\leq b\wedge b\leq b)\rightarrow a\;\text{\ensuremath{\mathsf{s\;}}}b\leq b\right)
+\]
+
+\end_inset
+
+Pero por el axioma 
+\begin_inset Formula $\mathrm{A}_{\leq R}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $b\leq b$
+\end_inset
+
+ y por hipotesis tenemos que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ por lo cual
+\begin_inset Formula 
+\[
+a\leq b\wedge b\leq b
+\]
+
+\end_inset
+
+Obviamente esto nos dice que 
+\begin_inset Formula $a\;\mathsf{s\;}$
+\end_inset
+
+
+\begin_inset Formula $b\leq b$
+\end_inset
+
+.
+ Ademas por el axioma 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\[
+b\leq a\;\mathsf{s}\;b
+\]
+
+\end_inset
+
+O sea que hemos probado
+\begin_inset Formula 
+\[
+a\;\mathsf{s\;}b\leq b\wedge b\leq a\;\mathsf{s\;}b
+\]
+
+\end_inset
+
+Lo cual por el axioma 
+\begin_inset Formula $\mathrm{A}_{\leq A}$
+\end_inset
+
+ nos dice que 
+\begin_inset Formula $a\;\mathsf{s}\;b=b$
+\end_inset
+
+.
+ Ya que habiamos asumido que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ en realidad hemos probado que
+\begin_inset Formula 
+\[
+a\leq b\rightarrow a\;\mathsf{s}\;b=b
+\]
+
+\end_inset
+
+Supongamos ahora que 
+\begin_inset Formula $a\;\mathsf{s}\;b=b$
+\end_inset
+
+.
+ Por el axioma 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $a\leq a\;\mathsf{s}\;b$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $a\;\mathsf{s}\;b=b$
+\end_inset
+
+ obtenemos que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+ O sea que realmente hemos probado que
+\begin_inset Formula 
+\[
+a\;\mathsf{s}\;b=b\rightarrow a\leq b
+\]
+
+\end_inset
+
+Lo cual por la otra implicacion probada nos dice que
+\begin_inset Formula 
+\[
+a\leq b\leftrightarrow a\;\mathsf{s}\;b=b
+\]
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $a,b$
+\end_inset
+
+ eran elementos fijos pero arbitrarios,
+ hemos probado que
+\begin_inset Formula 
+\[
+\forall x\forall y(x\leq y\leftrightarrow x\;\mathsf{s}\;y=y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Consejos importantes:
+\end_layout
+
+\end_inset
+
+ Por favor contengan a su escarabajo interior...
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Cuando queramos hacer una prueba elemental de alguna sentencia elemental pura es importante no perder nuestro roll de matematicos y creer que porque debemos realizar la prueba escribiendo las cosas con sentencias elementales debemos dejar de pensar como matematicos y volvernos escarabajos sintacticos mecanicos que solo usan reglas y van encadenando sentencias elementales sin pensar e imaginar.
+ Es decir,
+ debemos hacer la prueba a lo mariposa pensando,
+ imaginando.
+ Tal como lo venimos haciendo en las guias anteriores pero agregando la consigna de que a la matematica involucrada la escribamos usando sentencias elementales.
+\end_layout
+
+\begin_layout Enumerate
+Una buena manera de hacer una prueba elemental de una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es primero hacer la prueba matematica sin fijarse demaciado si es elemental o no.
+ Es decir partir de la suposicion de que tenemos un reticulado cuaterna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ fijo (pero arbitrario) e intentar (como matematicos) probar que entonces en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ se cumple 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Una ves que hayamos hecho nuestra prueba como matematicos,
+ intentar tunearla para que solo use sentencias elementales en lo que se refiere a la escritura de lo matematico.
+\end_layout
+
+\begin_layout Enumerate
+Es decir debemos ser el mismo matematico de siempre solo que haciendo pruebas de un estilo muy particular.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+De pruebas elementales de reticulados cuaterna de las siguientes sentencias elementales puras.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x(x\;\mathsf{s\;}x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y((x\;\mathsf{s\;}y)=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y((x\;\mathsf{s\;}y)\;\mathsf{i}\;x=x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\;(x\;\mathsf{s}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $y)\;\mathsf{s}\;z=x\;\mathsf{s}\;(y\;\mathsf{s}\;z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\forall w((x\leq z\wedge y\leq w)\rightarrow(x\;\mathsf{s}\ y\leq z\;\mathsf{s}\ w))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+(Ejercicio 10 de la Guia 3) Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ un reticulado cuaterna.
+ Supongamos que 
+\begin_inset Formula $m$
+\end_inset
+
+ es un elemento maximal de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+.
+ Pruebe que entonces 
+\begin_inset Formula $m$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Use las ideas de la prueba hecha en (a) para dar una prueba elemental de reticulados cuaterna de la sentencia elemental pura 
+\begin_inset Formula $\forall x\;(\lnot\exists z(x\leq z\wedge\lnot(z=x))\rightarrow\forall z(z\leq x))$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+(Ejercicio 10,5 de la Guia 3) Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i},\leq)$
+\end_inset
+
+ un reticulado cuaterna y supongamos 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $y$
+\end_inset
+
+ tapa a 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Entonces para cualquier 
+\begin_inset Formula $z\in L$
+\end_inset
+
+,
+ se tiene que si 
+\begin_inset Formula $z\nleq x$
+\end_inset
+
+ entonces 
+\begin_inset Formula $y\leq x\mathsf{\;s\;}z$
+\end_inset
+
+.
+ (
+\begin_inset Quotes eld
+\end_inset
+
+tapa
+\begin_inset Quotes erd
+\end_inset
+
+ esta definido antes del Ejercicio 5,5 de la Guia 2)
+\end_layout
+
+\begin_layout Enumerate
+De una sentencia elemental pura 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ de reticulados cuaterna la cual exprese el resultado de (a).
+\end_layout
+
+\begin_layout Enumerate
+Use las ideas de la prueba hecha en (a) para dar una prueba elemental de reticulados cuaterna de la sentencia 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

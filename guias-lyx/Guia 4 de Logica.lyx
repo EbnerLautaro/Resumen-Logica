@@ -1,0 +1,4557 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:39:43}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Guia 4 de Logica
+\end_layout
+
+\begin_layout Standard
+Nota: Los ejercicios que tienen una S son para una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Segunda pasada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es decir ya sea son mas anecdoticos y menos importantes tematicamente,
+ o son de completar pruebas y tienen que ver mas con la parte teorica, o
+ son mas dificiles y conviene encararlos despues de una primera pasada por
+ la guia (asi uno comienza a pensarlos con un poco mas de madurez sobre
+ el tema).
+\end_layout
+
+\begin_layout Subsection*
+Reticulados terna
+\end_layout
+
+\begin_layout Standard
+De la diversas propiedades de las operaciones s e i de un reticulado par
+ 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ distinguiremos las siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s}\;x=x\mathsf{\;i\;}x=x$
+\end_inset
+
+, cualesquiera sea 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;s\;}y=y\;\mathsf{s}\;x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}y=y\mathsf{\;i\;}x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\mathsf{\;s\;}y)\;\mathsf{s}\;z=x\;\mathsf{s}\;(y\;\mathsf{s}\;z)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\mathsf{\;i\;}y)\mathsf{\;i\;}z=x\mathsf{\;i\;}(y\mathsf{\;i\;}z)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I6)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s}\;(x\mathsf{\;i\;}y)=x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(I7)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}(x\;\mathsf{s}\;y)=x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Podemos abstraernos y pensar que s e i son dos operaciones binarias cualesquiera
+ sobre un conjunto 
+\begin_inset Formula $L$
+\end_inset
+
+ arbitrario y estudiar cuando se satisfacen y cuando no dichas propiedades.
+ Algunos ejemplos
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Si tomamos 
+\begin_inset Formula $L=\mathbf{R}$
+\end_inset
+
+ y
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:\mathbf{R}^{2} & \rightarrow & \mathbf{R}\\
+(a,b) & \rightarrow & a+b
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:\mathbf{R}^{2} & \rightarrow & \mathbf{R}\\
+(a,b) & \rightarrow & a.b
+\end{array}
+\]
+
+\end_inset
+
+entonces se cumplen (I2), (I3), (I4) e (I5), pero (I1), (I6) e (I7)
+\begin_inset space \space{}
+\end_inset
+
+no se cumplen.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Si tomamos 
+\begin_inset Formula $L=\{1,2\}$
+\end_inset
+
+ y
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:\{1,2\}^{2} & \rightarrow & \{1,2\}\\
+(1,1) & \rightarrow & 1\\
+(1,2) & \rightarrow & 2\\
+(2,1) & \rightarrow & 1\\
+(2,2) & \rightarrow & 2
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:\{1,2\}^{2} & \rightarrow & \{1,2\}\\
+(1,1) & \rightarrow & 1\\
+(1,2) & \rightarrow & 1\\
+(2,1) & \rightarrow & 1\\
+(2,2) & \rightarrow & 1
+\end{array}
+\]
+
+\end_inset
+
+entonces se cumplen (I3), (I4) e (I5), pero (I1), (I2), (I6) e (I7)
+\begin_inset space \space{}
+\end_inset
+
+no se cumplen.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E3)
+\end_layout
+
+\end_inset
+
+Si tomamos 
+\begin_inset Formula $L=\mathbf{N}$
+\end_inset
+
+ y
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:\mathbf{N}^{2} & \rightarrow & \mathbf{N}\\
+(a,b) & \rightarrow & \max\{a,b\}
+\end{array}\ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:\mathbf{N}^{2} & \rightarrow & \mathbf{N}\\
+(a,b) & \rightarrow & \text{maximo comun divisor de }a\text{ y }b
+\end{array}
+\]
+
+\end_inset
+
+entonces se cumplen (I1), (I2), (I3), (I4), (I5) e (I6), pero (I7)
+\begin_inset space \space{}
+\end_inset
+
+no se cumple.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pero, por supuesto que si s e i son las operaciones supremo e infimo dadas
+ por algun orden parcial 
+\begin_inset Formula $\leq$
+\end_inset
+
+ sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ el cual hace de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ un reticulado par, entonces las propiedades (I1),...,(I7) se cumplen y esto
+ esta probado en la ultima serie de lemas de la Guia 3.
+\end_layout
+
+\begin_layout Standard
+El ultimo ejemplo nos permite ver una sutileza.
+ Notese que en este ejemplo s es la operacion supremo del reticulado par
+ 
+\begin_inset Formula $(\mathbf{N},\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es el orden usual de los naturales, e i es la operacion infimo del reticulado
+ par 
+\begin_inset Formula $(\mathbf{N},|)$
+\end_inset
+
+, donde 
+\begin_inset Formula $|$
+\end_inset
+
+ es el orden de la divisibilidad de los naturales.
+ Sin envargo (I7) falla y esto se debe a que s e i son supremo e infimo
+ pero respecto de distintos ordenes parciales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+Para cada uno de los siguientes ejemplos diga cuales de las propiedades
+ (I1),...,(I7) se cumplen y cuales no.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $L=\mathbf{R}$
+\end_inset
+
+ y
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:\mathbf{R}^{2} & \rightarrow & \mathbf{R}\\
+(a,b) & \rightarrow & \left\lfloor a+b\right\rfloor 
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:\mathbf{R}^{2} & \rightarrow & \mathbf{R}\\
+(a,b) & \rightarrow & \min\{a,b\}
+\end{array}
+\]
+
+\end_inset
+
+(Denotamos con 
+\begin_inset Formula $\left\lfloor r\right\rfloor $
+\end_inset
+
+ a la parte entera de un numero real 
+\begin_inset Formula $r$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $L=\{0,1\}$
+\end_inset
+
+ y
+\begin_inset Formula 
+\begin{align*}
+ & \begin{array}{rcl}
+\mathsf{s}:\{0,1\}^{2} & \rightarrow & \{0,1\}\\
+(x,y) & \rightarrow & \text{resto de dividir }x+y\text{ por }2
+\end{array}\\
+\\
+ & \begin{array}{rcl}
+\mathsf{i}:\{0,1\}^{2} & \rightarrow & \{0,1\}\\
+(x,y) & \rightarrow & \text{resto de dividir }x.y\text{ por }2
+\end{array}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La discusion anterior motiva la siguiente definicion:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+reticulado terna
+\shape default
+ entenderemos una terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ tal que 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto no vacio y 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ son dos operaciones binarias sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ para las cuales se cumplen (I1),...,(I7).
+ Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna, llamaremos a 
+\begin_inset Formula $L$
+\end_inset
+
+ el 
+\shape italic
+universo 
+\shape default
+de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Tal como lo vimos recien, las ternas dadas por los tres ejemplos anteriores
+ no son reticulados terna ya que no cumplen alguna de las identidades (I1),...,(I7)
+, y si tomamos un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+, entonces la terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, con 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ definidas como supremo e infimo, es un reticulado terna.
+ El siguiente teorema muestra que todo reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ se obtiene de esta forma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{theorem}[Dedekind]
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna.
+ La relacion binaria sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ definida por:
+\begin_inset Formula 
+\[
+x\leq y\text{ si y solo si }x\;\mathsf{s}\;y=y
+\]
+
+\end_inset
+
+es un orden parcial sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ para el cual se cumple que:
+\begin_inset Formula 
+\begin{align*}
+\sup(\{x,y\}) & =x\;\mathsf{s}\;y\\
+\inf(\{x,y\}) & =x\mathsf{\;i\;}y
+\end{align*}
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{theorem}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Dejamos como ejercicio para el lector probar que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es reflexiva y antisimetrica con respecto a 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Veamos que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es transitiva con respecto a 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ e 
+\begin_inset Formula $y\leq z$
+\end_inset
+
+.
+ Es decir que por definicion de 
+\begin_inset Formula $\leq$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\begin{align*}
+x\;\mathsf{s}\;y & =y\\
+y\;\mathsf{s}\;z & =z
+\end{align*}
+
+\end_inset
+
+Entonces
+\begin_inset Formula 
+\[
+x\;\mathsf{s\;}z=x\;\mathsf{s\;}(y\;\mathsf{s\;}z)=(x\;\mathsf{s\;}y)\;\mathsf{s\;}z=y\;\mathsf{s\;}z=z
+\]
+
+\end_inset
+
+por lo cual 
+\begin_inset Formula $x\leq z$
+\end_inset
+
+.
+ O sea que ya sabemos que 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ es un poset.
+ Veamos ahora que 
+\begin_inset Formula $\sup(\{x,y\})=x\;\mathsf{s\;}y$
+\end_inset
+
+.
+ Primero debemos ver que 
+\begin_inset Formula $x\;\mathsf{s\;}y$
+\end_inset
+
+ es una cota superior del conjunto 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+, es decir
+\begin_inset Formula 
+\begin{align*}
+x & \leq x\;\mathsf{s}\;y\\
+y & \leq x\;\mathsf{s}\;y
+\end{align*}
+
+\end_inset
+
+Por la definicion de 
+\begin_inset Formula $\leq$
+\end_inset
+
+ debemos probar que
+\begin_inset Formula 
+\begin{align*}
+x\ \mathsf{s}\;(x\;\mathsf{s}\;y) & =x\;\mathsf{s}\;y\\
+y\ \mathsf{s}\;(x\;\mathsf{s}\;y) & =x\;\mathsf{s}\;y
+\end{align*}
+
+\end_inset
+
+Estas igualdades se pueden probar usando (I1), (I2) y (I4).
+ Dejamos al lector hacerlo como ejercicio.
+\end_layout
+
+\begin_layout Standard
+Nos falta ver entonces que 
+\begin_inset Formula $x\;\mathsf{s\;}y$
+\end_inset
+
+ es menor o igual que cualquier cota superior de 
+\begin_inset Formula $\{x,y\}$
+\end_inset
+
+.
+ Supongamos 
+\begin_inset Formula $x,y\leq z$
+\end_inset
+
+.
+ Es decir que por definicion de 
+\begin_inset Formula $\leq$
+\end_inset
+
+ tenemos que
+\begin_inset Formula 
+\begin{align*}
+x\;\mathsf{s}\;z & =z\\
+y\;\mathsf{s}\;z & =z
+\end{align*}
+
+\end_inset
+
+Pero entonces
+\begin_inset Formula 
+\[
+(x\;\mathsf{s\;}y)\;\mathsf{s\;}z=x\;\mathsf{s\;}(y\;\mathsf{s\;}z)=x\;\mathsf{s\;}z=z
+\]
+
+\end_inset
+
+por lo que 
+\begin_inset Formula $x\;\mathsf{s\;}y\leq z$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $x\;\mathsf{s\;}y$
+\end_inset
+
+ es la menor cota superior.
+\end_layout
+
+\begin_layout Standard
+Para probar que 
+\begin_inset Formula $\inf(\{x,y\})=x\mathsf{\;i\;}y$
+\end_inset
+
+, probaremos que para todo 
+\begin_inset Formula $u,v\in L$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+u\leq v\text{ si y solo si }u\mathsf{\;i\;}v=u
+\]
+
+\end_inset
+
+lo cual le permitira al lector aplicar un razonamiento similar al usado
+ en la prueba de que 
+\begin_inset Formula $\sup(\{x,y\})=x\;\mathsf{s\;}y$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $u\leq v$
+\end_inset
+
+.
+ Por definicion tenemos que 
+\begin_inset Formula $u\;\mathsf{s}\;v=v$
+\end_inset
+
+.
+ Entonces
+\begin_inset Formula 
+\[
+u\mathsf{\;i\;}v=u\mathsf{\;i\;}(u\;\mathsf{s}\;v)
+\]
+
+\end_inset
+
+Pero por (I7) tenemos que 
+\begin_inset Formula $u\mathsf{\;i\;}(u\;\mathsf{s}\;v)=u$
+\end_inset
+
+, lo cual implica 
+\begin_inset Formula $u\mathsf{\;i\;}v=u$
+\end_inset
+
+.
+ Reciprocamente si 
+\begin_inset Formula $u\mathsf{\;i\;}v=u$
+\end_inset
+
+, entonces
+\begin_inset Formula 
+\begin{align*}
+u\;\mathsf{s}\;v & =(u\mathsf{\;i\;}v)\;\mathsf{s}\;v\\
+ & =v\;\mathsf{s}\;(u\mathsf{\;i\;}v)\text{ (por (I2))}\\
+ & =v\;\mathsf{s}\;(v\mathsf{\;i\;}u)\text{ (por (I3))}\\
+ & =v\text{ (por (I6))}
+\end{align*}
+
+\end_inset
+
+lo cual nos dice que 
+\begin_inset Formula $u\leq v$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+Complete la prueba del teorema anterior demostrando que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es reflexiva y antisimetrica con respecto a 
+\begin_inset Formula $L$
+\end_inset
+
+ y que 
+\begin_inset Formula $\inf(\{x,y\})=x\mathsf{\;i\;}y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2,5:
+\end_layout
+
+\end_inset
+
+(S) Defina una funcion 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ de 
+\begin_inset Formula $\{(L,\leq):(L,\leq)$
+\end_inset
+
+ es un reticulado par
+\begin_inset Formula $\}$
+\end_inset
+
+ en 
+\begin_inset Formula $\{(L,\mathsf{s},\mathsf{i}):(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna
+\begin_inset Formula $\}$
+\end_inset
+
+ la cual sea biyectiva 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Refleccion Informatica
+\end_layout
+
+\begin_layout Standard
+Como vimos recien a nivel de informacion es lo mismo tener un reticulado
+ par que un reticulado terna.
+ Es decir, los dos conceptos pueden considerarse dos formas distintas de
+ presentar la misma informacion.
+ Muchas veces esta informacion es mas facil de dar dando el poset ya que
+ simplemente podemos dar su diagrama de Hasse y esto en general es una forma
+ economica de dar las operaciones s e i.
+\end_layout
+
+\begin_layout Standard
+Recordemos que algo similar sucedia con los conceptos equivalentes de relacion
+ de equivalencia y particion (Guia 1).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Use el Ejercicio 2,5 para calcular el cardinal del conjunto
+\begin_inset Formula 
+\[
+\{(\{1,2,3\},\mathsf{s},\mathsf{i}):(\{1,2,3\},\mathsf{s},\mathsf{i})\text{ es un reticulado terna}\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+El orden asociado a un reticulado terna
+\end_layout
+
+\begin_layout Standard
+Como vimos el Teorema de Dedekind nos dice que un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un objeto geometrico ya que si definimos
+\begin_inset Formula 
+\[
+\mathrm{\leq}=\{(x,y):x\;\mathsf{s}\;y=y\}
+\]
+
+\end_inset
+
+entonces 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ y las operaciones s e i resultan ser supremo e infimo respecto de este
+ orden parcial.
+ Llamaremos a 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{s}\;y=y\}$
+\end_inset
+
+ el 
+\shape italic
+orden parcial asociado a 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L\leq)$
+\end_inset
+
+ sera llamado el 
+\shape italic
+poset asociado a 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Notese que tambien tenemos que 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y):x\;\mathsf{i}\;y=x\}$
+\end_inset
+
+ (¿por que?).
+\end_layout
+
+\begin_layout Subsubsection*
+Convencion notacional
+\end_layout
+
+\begin_layout Standard
+Muchos conceptos definidos para posets ahora pueden aplicarse cuando tenemos
+ un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Por ejemplo, si decimos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ tiene elemento maximo, esto significara que el poset 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ tiene elemento maximo.
+ Otro ejemplo, si decimos que en 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ se da que el supremo de un conjunto 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $a$
+\end_inset
+
+, nos estaremos refiriendo a que en su poset asociado 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ se da que el supremo de 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna, entonces 
+\begin_inset Formula $(L,\mathsf{i},\mathsf{s})$
+\end_inset
+
+ es un reticulado terna.
+ Que relacion hay entre los ordenes parciales asociados?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna y 
+\begin_inset Formula $t\in\mathsf{s}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $Ti(t)=3\mathrm{-UPLA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{s})$
+\end_inset
+
+ es un reticulado terna, entonces 
+\begin_inset Formula $L$
+\end_inset
+
+ tiene exactamente 1 elemento
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna, entonces siempre se da que 
+\begin_inset Formula $\mathsf{i}\leq\mathsf{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna, entonces 
+\begin_inset Formula $\mathsf{s}(x,y,z)=\mathsf{s}(y,z,x)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,x\in L$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Convencion notacional
+\end_layout
+
+\begin_layout Standard
+Para hacer mas dinamica la notacion asumiremos las siguientes convenciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Convencion notacional 1:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto no vacio cuyos elementos son conjuntos y 
+\begin_inset Formula $L$
+\end_inset
+
+ cumple la siguiente condicion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A,B\in L$
+\end_inset
+
+, entonces 
+\begin_inset Formula $A\cup B,A\cap B\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+entonces ciertas veces usaremos 
+\begin_inset Formula $\cup$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $\cap$
+\end_inset
+
+) para denotar la operacion binaria sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ dada por la union (resp.
+ la interceccion).
+ Es decir 
+\begin_inset Formula $\cup$
+\end_inset
+
+ e 
+\begin_inset Formula $\cap$
+\end_inset
+
+ denotaran las funciones
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+L^{2} & \rightarrow & L\\
+(A,B) & \rightarrow & A\cup B
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+L^{2} & \rightarrow & L\\
+(A,B) & \rightarrow & A\cap B
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Convencion notacional 2:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto no vacio cuyos elementos son numeros reales entonces ciertas
+ veces usaremos 
+\begin_inset Formula $\max$
+\end_inset
+
+ y 
+\begin_inset Formula $\min$
+\end_inset
+
+ para denotar las operaciones binarias sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ dadas por
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \max(a,b)
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \min(a,b)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Convencion notacional 3:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $L$
+\end_inset
+
+ es un conjunto no vacio cuyos elementos son numeros naturales y 
+\begin_inset Formula $L$
+\end_inset
+
+ cumple la siguiente condicion
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+, entonces 
+\begin_inset Formula $mcm(a,b),mcd(a,b)\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+entonces ciertas veces usaremos 
+\begin_inset Formula $mcm$
+\end_inset
+
+ y 
+\begin_inset Formula $mcd$
+\end_inset
+
+ para denotar las operaciones binarias sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ dadas por
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & mcm(a,b)
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & mcd(a,b)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Convencion notacional 4:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $P$
+\end_inset
+
+ es un conjunto no vacio contenido en 
+\begin_inset Formula $\mathbf{N}$
+\end_inset
+
+, entonces escribiremos 
+\begin_inset Formula $(P,|)$
+\end_inset
+
+ para denotar al poset 
+\begin_inset Formula $(P,\{(x,y)\in P^{2}:x|y\})$
+\end_inset
+
+.
+ Similarmente si 
+\begin_inset Formula $P$
+\end_inset
+
+ es un conjunto cuyos elementos son conjuntos, entonces escribiremos 
+\begin_inset Formula $(P,\subseteq)$
+\end_inset
+
+ para denotar al poset 
+\begin_inset Formula $(P,\{(A,B)\in P^{2}:A\subseteq B\})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En virtud de las convenciones notacionales anteriores notese que por ejemplo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{R,}\max,\min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $([0,1]\mathbf{,}\max,\min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathcal{P}(\mathbf{N}),\cup,\cap)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A$
+\end_inset
+
+ es finito
+\begin_inset Formula $\},\cup,\cap)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{N},mcm,mcd)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+denotan reticulados terna pero deberia quedar claro que en los primeros
+ dos ejemplos 
+\begin_inset Formula $\max$
+\end_inset
+
+ denota dos distintas operaciones.
+ Analogamente sucede con 
+\begin_inset Formula $\min$
+\end_inset
+
+, 
+\begin_inset Formula $\cup$
+\end_inset
+
+, 
+\begin_inset Formula $\cap$
+\end_inset
+
+, 
+\begin_inset Formula $mcm$
+\end_inset
+
+ y 
+\begin_inset Formula $mcd$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Similarmente
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{N,}|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,2,3,6,7\},|)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{\{1\},\{1,7\},\{1,2,3\},\{16,99,65\}\},\subseteq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A$
+\end_inset
+
+ es finito
+\begin_inset Formula $\},\subseteq)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+denotan posets pero deberia quedar claro que en los primeros dos ejemplos
+ 
+\begin_inset Formula $|$
+\end_inset
+
+ denota dos distintos ordenes parciales.
+ Analogamente sucede con 
+\begin_inset Formula $\subseteq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Estas ambiguedades no nos traeran problemas si estamos atentos al contexto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Reticulados terna distributivos
+\end_layout
+
+\begin_layout Standard
+Un reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ se llamara 
+\shape italic
+distributivo 
+\shape default
+cuando cumpla la siguiente identidad
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Dis
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}(y\;\mathsf{s}\;z)=(x\mathsf{\;i\;}y)\;\mathsf{s}\;(x\mathsf{\;i\;}z)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+Pruebe que los siguientes reticulados terna son distributivos
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{R,}\max,\min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathcal{P}(\mathbf{N}),\cup,\cap)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+(Diamante) Consideremos el poset 
+\begin_inset Formula $(\{1,2,3,5,30\},|)$
+\end_inset
+
+.
+ Es facil ver que es un reticulado par por lo cual 
+\begin_inset Formula $(\{1,2,3,5,30\},\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna, donde 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ son las operaciones binarias definidas usando supremos e infimos en 
+\begin_inset Formula $(\{1,2,3,5,30\},|)$
+\end_inset
+
+.
+ Pruebe que 
+\begin_inset Formula $(\{1,2,3,5,30\},\mathsf{s},\mathsf{i})$
+\end_inset
+
+ no es distributivo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+(Cubo opaco) Sea 
+\begin_inset Formula $L=\mathcal{P}(\{1,2,3\})-\{\{1,2\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Haga un diagrama de Hasse del poset 
+\begin_inset Formula $(L,\subseteq)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Por que se le llama cubo opaco?
+\end_layout
+
+\begin_layout Enumerate
+Haga (sobre el diagrama de Hasse) una serie de computos ordenados de manera
+ que al concluir este seguro de que 
+\begin_inset Formula $(L,\subseteq)$
+\end_inset
+
+ es un reticulado par
+\end_layout
+
+\begin_layout Enumerate
+Sean
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \mathrm{sup}\{a,b\}\text{ en }(L,\subseteq)
+\end{array}\ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:L^{2} & \rightarrow & L\\
+(a,b) & \rightarrow & \inf\{a,b\}\text{ en }(L,\subseteq)
+\end{array}
+\]
+
+\end_inset
+
+Es distributivo el reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+? Son las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ las restricciones a 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ de las operaciones 
+\begin_inset Formula $\cup$
+\end_inset
+
+ e 
+\begin_inset Formula $\cap$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathcal{P}(\{1,2,3\})$
+\end_inset
+
+? 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Subreticulados terna
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $f$
+\end_inset
+
+ es una operacion 
+\begin_inset Formula $n$
+\end_inset
+
+-aria sobre 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $S\subseteq A$
+\end_inset
+
+, entonces diremos que 
+\begin_inset Formula $S$
+\end_inset
+
+ es 
+\shape italic
+cerrado bajo
+\shape default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ cuando se de que 
+\begin_inset Formula $f(a_{1},...,a_{n})\in S$
+\end_inset
+
+, cada ves que 
+\begin_inset Formula $a_{1},...,a_{n}\in S$
+\end_inset
+
+.
+ Notese que si 
+\begin_inset Formula $n=0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $S$
+\end_inset
+
+ es cerrado bajo 
+\begin_inset Formula $f$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $f(\Diamond)\in S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dados reticulados terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ diremos que 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\shape italic
+es un subreticulado terna de 
+\shape default
+
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ si se dan las siguientes condiciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L\subseteq L^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $L$
+\end_inset
+
+ es cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}^{\prime}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathsf{s}=\mathsf{s}^{\prime}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{i}=\mathsf{i}^{\prime}$
+\end_inset
+
+
+\family roman
+
+\begin_inset Formula $|$
+\end_inset
+
+
+\family default
+
+\begin_inset Formula $_{L\times L}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna.
+ Un conjunto 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+ es llamado 
+\shape italic
+subuniverso 
+\shape default
+de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ si es no vacio y cerrado bajo las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+.
+ Es importante notar que si bien los conceptos de subreticulado terna y
+ subuniverso estan muy relacionados, se trata de conceptos diferentes ya
+ que los subreticulados terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ son ternas y los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ son conjuntos, por lo cual no son ternas.
+\end_layout
+
+\begin_layout Standard
+Es facil de chequear que si 
+\begin_inset Formula $S$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $(S,\mathsf{s}\mathrm{\mid}_{S\times S},\mathsf{i}\mathrm{\mid}_{S\times S})$
+\end_inset
+
+ es un subreticulado terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y que todo subreticulado terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ se obtiene en esta forma.
+ Es decir, hay una biyeccion entre el conjunto de los subreticulados terna
+ de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y el conjunto de los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ (cual es?).
+ Dicho de manera mas rapida: los subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ son ni mas ni menos que los universos de los subreticulados terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Encuentre todos los subuniversos del reticulado terna:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathcal{P}(\{1,2\}),\cup,\cap)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{R,}\max,\min)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Para el caso (b) dar todos los subreticulados terna.
+ Cuantos hay?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9,5:
+\end_layout
+
+\end_inset
+
+Describa como son los subuniversos de 
+\begin_inset Formula $(\mathcal{P}(\mathbf{N}),\cup,\cap)$
+\end_inset
+
+ que poseen exactamente tres elementos.
+ Y los que poseen exactamente cuatro elementos?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 9,7:
+\end_layout
+
+\end_inset
+
+Encuentre todos los subuniversos de 4 o mas elementos del reticulado terna
+ 
+\begin_inset Formula $(\{1,2,3,4,6,12\},mcm,mcd)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\{2,6,12\},\max,\min)$
+\end_inset
+
+ es subreticulado terna de 
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sean 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ las operaciones binarias sobre 
+\begin_inset Formula $\{1,2,3,12\}$
+\end_inset
+
+ definidas usando supremos e infimos en 
+\begin_inset Formula $(\{1,2,3,12\},|)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(\{1,2,3,12\},\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es subreticulado terna de 
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y 
+\begin_inset Formula $S$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $Ti(S)=3\mathrm{-UPLA}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna y 
+\begin_inset Formula $S_{1},S_{2}$
+\end_inset
+
+ son subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $S_{1}\cap S_{2}\neq\emptyset$
+\end_inset
+
+, entonces 
+\begin_inset Formula $S_{1}\cap S_{2}$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un reticulado terna y 
+\begin_inset Formula $S_{1},S_{2}$
+\end_inset
+
+ son subuniversos de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $S_{1}\cup S_{2}$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un subreticulado terna de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $Ti(e)=Ti(e^{\prime})$
+\end_inset
+
+ cada vez que 
+\begin_inset Formula $e\in L$
+\end_inset
+
+ y 
+\begin_inset Formula $e^{\prime}\in L^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es un subreticulado terna de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es distributivo, entonces 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ es distributivo
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(S_{1},\mathsf{s}_{1},\mathsf{i}_{1})$
+\end_inset
+
+ y 
+\begin_inset Formula $(S_{2},\mathsf{s}_{2},\mathsf{i}_{2})$
+\end_inset
+
+ son subreticulados terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $(S_{1},\mathsf{s}_{1},\mathsf{i}_{1})\cap(S_{2},\mathsf{s}_{2},\mathsf{i}_{2})$
+\end_inset
+
+ es subreticulado terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\leq$
+\end_inset
+
+ su orden asociado.
+ Sea 
+\begin_inset Formula $S\subseteq L$
+\end_inset
+
+ no vacio.
+ Supongamos que 
+\begin_inset Formula $(S,\mathrm{\leq}\cap S^{2})$
+\end_inset
+
+ es un reticulado par.
+ Sean 
+\begin_inset Formula $\mathsf{\hat{s}},\mathsf{\hat{\imath}}$
+\end_inset
+
+ las operaciones supremo e infimo de 
+\begin_inset Formula $(S,\mathrm{\leq}\cap S^{2})$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(S,\mathsf{\hat{s}},\mathsf{\hat{\imath}})$
+\end_inset
+
+ es un subreticulado terna de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Homomorfismos de reticulados terna
+\end_layout
+
+\begin_layout Standard
+Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ reticulados terna.
+ Una funcion 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ sera llamada un 
+\shape italic
+homomorfismo de 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ si para todo 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ se cumple que
+\begin_inset Formula 
+\begin{align*}
+F(x\mathsf{\;s\;}y) & =F(x)\;\mathsf{s}^{\prime}\ F(y)\\
+F(x\mathsf{\;i\;}y) & =F(x)\;\mathsf{i}^{\prime}\ F(y).
+\end{align*}
+
+\end_inset
+
+Un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ sera llamado 
+\shape italic
+isomorfismo de 
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathsf{i}^{\prime}$
+\end_inset
+
+ 
+\begin_inset Formula $)$
+\end_inset
+
+ cuando sea biyectivo y su inversa sea tambien un homomorfismo.
+ Escribiremos 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})\cong(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ cuando exista un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ Escribiremos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i})\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ un homomorfismo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es un homomorfismo de
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+
+\shape default
+
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ No hay que confundirse al leer esta notacion y pensar que 
+\begin_inset Formula $F$
+\end_inset
+
+ es una funcion cuyo dominio es 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, lo cual por otra parte no tiene sentido ya que el dominio de una funcion
+ nunca puede ser una 
+\begin_inset Formula $3$
+\end_inset
+
+-upla!
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "hom biyect implica iso"
+
+\end_inset
+
+Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i})\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ es un homomorfismo biyectivo, entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+Pruebe el lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ reticulados terna y sea 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i})\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ un homomorfismo.
+ Entonces 
+\begin_inset Formula $I_{F}$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ Es decir que 
+\begin_inset Formula $F$
+\end_inset
+
+ es tambien un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(I_{F},\mathsf{s}^{\prime}\mathrm{\mid}_{I_{F}\times I_{F}},\mathsf{i}^{\prime}\mathrm{\mid}_{I_{F}\times I_{F}})$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Ya que 
+\begin_inset Formula $L$
+\end_inset
+
+ es no vacio tenemos que 
+\begin_inset Formula $I_{F}$
+\end_inset
+
+ tambien es no vacio.
+ Sean 
+\begin_inset Formula $a,b\in I_{F}$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ tales que 
+\begin_inset Formula $F(x)=a$
+\end_inset
+
+ y 
+\begin_inset Formula $F(y)=b$
+\end_inset
+
+.
+ Se tiene que
+\begin_inset Formula 
+\begin{align*}
+a\;\mathsf{s}^{\prime}\ b & =F(x)\;\mathsf{s}^{\prime}\ F(y)=F(x\mathsf{\;s\;}y)\in I_{F}\\
+a\;\mathsf{i}^{\prime}\ b & =F(x)\;\mathsf{i}^{\prime}\ F(y)=F(x\mathsf{\;i\;}y)\in I_{F}
+\end{align*}
+
+\end_inset
+
+por lo cual 
+\begin_inset Formula $I_{F}$
+\end_inset
+
+ es cerrada bajo 
+\begin_inset Formula $\mathsf{s}^{\prime}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}^{\prime}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ reticulados terna y sean 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ y 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+ los posets asociados.
+ Sea 
+\begin_inset Formula $F:L\rightarrow L^{\prime}$
+\end_inset
+
+ una funcion.
+ Entonces 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+) Supongamos 
+\begin_inset Formula $F$
+\end_inset
+
+ es un isomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+, tales que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+ Tenemos que 
+\begin_inset Formula $y=x\mathsf{\;s\;}y$
+\end_inset
+
+ por lo cual 
+\begin_inset Formula $F(y)=F(x\mathsf{\;s\;}y)=F(x)\mathsf{\;s^{\prime}\;}F(y)$
+\end_inset
+
+, produciendo 
+\begin_inset Formula $F(x)\leq^{\prime}F(y)$
+\end_inset
+
+.
+ En forma similar se puede ver que 
+\begin_inset Formula $F^{-1}$
+\end_inset
+
+ es tambien un homomorfismo de 
+\begin_inset Formula $(L^{\prime},\leq^{\prime})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+Pruebe (
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+) del lema anterior.
+ (Hint: puede usar el lema que esta despues del Ejercicio 19 de la Guia
+ 2)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12,3:
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i})\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ es un homomorfismo suryectivo y 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ es distributivo, entonces 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ es distributivo.
+ En particular si 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})\cong(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+, entonces o ambos son distributivos o ambos son no distributivos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 12,6:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i})\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ un homomorfismo suryectivo y 
+\begin_inset Formula $a$
+\end_inset
+
+ un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+.
+ Es cierto que si 
+\begin_inset Formula $F(a)$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+, entonces 
+\begin_inset Formula $a$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+¿Puede haber un isomorfismo entre algun par de reticulados terna de la siguiente
+ lista?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{R,}\max,\min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $([0,1]\mathbf{,}\max,\min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathcal{P}(\mathbf{N}),\cup,\cap)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\{A\subseteq\mathbf{N}:A$
+\end_inset
+
+ es finito
+\begin_inset Formula $\},\cup,\cap)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbf{N},mcm,mcd)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Congruencias de reticulados terna
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna.
+ Una 
+\shape italic
+congruencia sobre
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ sera una relacion de equivalencia 
+\begin_inset Formula $\theta$
+\end_inset
+
+ sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ la cual cumpla:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\theta x^{\prime}$
+\end_inset
+
+ y 
+\begin_inset Formula $y\theta y^{\prime}$
+\end_inset
+
+ implica 
+\begin_inset Formula $(x\mathsf{\;s\;}y)\theta(x^{\prime}\mathsf{\;s\;}y^{\prime})$
+\end_inset
+
+ y 
+\begin_inset Formula $(x\mathsf{\;i\;}y)\theta(x^{\prime}\mathsf{\;i\;}y^{\prime})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Gracias a esta condicion podemos definir en forma inambigua sobre 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+ dos operaciones binarias 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+, de la siguiente manera:
+\begin_inset Formula 
+\begin{align*}
+x/\theta\mathsf{\;\tilde{s}\;}y/\theta & =(x\mathsf{\;s\;}y)/\theta\\
+x/\theta\mathsf{\;\tilde{\imath}\;}y/\theta & =(x\mathsf{\;i\;}y)/\theta
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+Explique porque (1) nos garantiza que la definicion de 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{\tilde{\imath}}$
+\end_inset
+
+ es inambigua 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+Veamos algunos ejemplos:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E1)
+\end_layout
+
+\end_inset
+
+Consideremos el reticulado 
+\begin_inset Formula $(\{1,2,3,4,5,6\},\max,\min)$
+\end_inset
+
+.
+ O sea que aqui 
+\begin_inset Formula $L=\{1,2,3,4,5,6\}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ es la operacion 
+\begin_inset Formula $\max$
+\end_inset
+
+ sobre 
+\begin_inset Formula $L$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ es la operacion 
+\begin_inset Formula $\min$
+\end_inset
+
+ sobre 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ la relacion de equivalencia sobre 
+\begin_inset Formula $\{1,2,3,4,5,6\}$
+\end_inset
+
+ dada por la particion 
+\begin_inset Formula $\{\{1,2\},\{3\},\{4,5\}\}$
+\end_inset
+
+.
+ Se puede chequear que 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia, es decir satisface (1) de arriba.
+ Notese que
+\begin_inset Formula 
+\begin{align*}
+L/\theta & =\{\{1,2\},\{3\},\{4,5\}\}\\
+\mathsf{\tilde{s}\;} & =\widetilde{\max}:L/\theta\times L/\theta\rightarrow L/\theta\\
+\mathsf{\tilde{\imath}\;} & =\widetilde{\min}:L/\theta\times L/\theta\rightarrow L/\theta
+\end{align*}
+
+\end_inset
+
+Por ejemplo tenemos que
+\begin_inset Formula 
+\[
+\{1,2\}\ \widetilde{\max}\ \{3\}=\{3\}
+\]
+
+\end_inset
+
+ya que 
+\begin_inset Formula $\{1,2\}\ \widetilde{\max}\ \{3\}=1/\theta\ \widetilde{\max}\ 3/\theta=(1\max3)/\theta=3/\theta=\{3\}$
+\end_inset
+
+ (escribimos 
+\begin_inset Formula $1\max3$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $\max(1,3)$
+\end_inset
+
+).
+ Similarmente tenemos que
+\begin_inset Formula 
+\begin{align*}
+\{4,5\}\ \widetilde{\max}\ \{3\} & =\{4,5\}\\
+\{1,2\}\ \widetilde{\min}\ \{4,5\} & =\{1,2\}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(E2)
+\end_layout
+
+\end_inset
+
+Consideremos el reticulado terna 
+\begin_inset Formula $(\{1,2,3,6\},mcm,mcd)$
+\end_inset
+
+ (o sea el rombo) y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ la relacion de equivalencia dada por la particion 
+\begin_inset Formula $\{\{1,2\},\{3\},\{6\}\}$
+\end_inset
+
+ (haga un dibujo).
+ Entonces 
+\begin_inset Formula $\theta$
+\end_inset
+
+ no es una congruencia sobre 
+\begin_inset Formula $(\{1,2,3,6\},mcm,mcd)$
+\end_inset
+
+.
+ Esto es ya que si tomamos 
+\begin_inset Formula 
+\begin{align*}
+x & =1\\
+x^{\prime} & =2\\
+y & =3\\
+y^{\prime} & =3
+\end{align*}
+
+\end_inset
+
+no se cumple la implicacion de (1) de la definicion de congruencia.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La terna 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ es llamada el 
+\shape italic
+cociente de
+\shape default
+ 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\shape italic
+sobre
+\shape default
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+ y la denotaremos con 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})/\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ es un reticulado terna.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Veamos que la estructura 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ cumple (I4).
+ Sean 
+\begin_inset Formula $x/\theta$
+\end_inset
+
+, 
+\begin_inset Formula $y/\theta$
+\end_inset
+
+, 
+\begin_inset Formula $z/\theta$
+\end_inset
+
+ elementos cualesquiera de 
+\begin_inset Formula $L/\theta$
+\end_inset
+
+.
+ Tenemos que
+\begin_inset Formula 
+\[
+\begin{array}{ccl}
+(x/\theta\mathsf{\;\tilde{s}\;}y/\theta)\;\mathsf{\tilde{s}}\;z/\theta & = & (x\mathsf{\;s\;}y)/\theta\;\mathsf{\tilde{s}}\;z/\theta\\
+ & = & ((x\mathsf{\;s\;}y)\;\mathsf{s}\;z)/\theta\\
+ & = & (x\mathsf{\;s\;}(y\;\mathsf{s}\;z))/\theta\\
+ & = & x/\theta\;\mathsf{\tilde{s}}\;(y\;\mathsf{s}\;z)/\theta\\
+ & = & x/\theta\mathsf{\;\tilde{s}\;}(y/\theta\;\mathsf{\tilde{s}}\;z/\theta)
+\end{array}
+\]
+
+\end_inset
+
+En forma similar se puede ver que la estructura 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ cumple el resto de las identidades que definen reticulado terna.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Denotaremos con 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+ al orden parcial asociado al reticulado terna 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Entonces:
+\begin_inset Formula 
+\[
+x/\theta\tilde{\leq}y/\theta\text{ sii }y\theta(x\mathsf{\;s\;}y)
+\]
+
+\end_inset
+
+cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Por definicion de 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $x/\theta\tilde{\leq}y/\theta$
+\end_inset
+
+ sii 
+\begin_inset Formula $y/\theta=x/\theta\mathsf{\;\tilde{s}\;}y/\theta$
+\end_inset
+
+.
+ Pero 
+\begin_inset Formula $x/\theta\mathsf{\;\tilde{s}\;}y/\theta=(x\mathsf{\;s\;}y)/\theta$
+\end_inset
+
+ (por definicion de 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+) por lo cual tenemos que 
+\begin_inset Formula $x/\theta\tilde{\leq}y/\theta$
+\end_inset
+
+ sii 
+\begin_inset Formula $y/\theta=(x\mathsf{\;s\;}y)/\theta$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+Dar todas las congruencias del reticulado terna 
+\begin_inset Formula $(\mathcal{P}(\{a,b\}),\cup,\cap)$
+\end_inset
+
+.
+ En cada caso de explicitamente el reticulado terna cociente y diga a quien
+ es isomorfo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 15,5:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $L=\{1,2,3,6,9,18\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Haga un diagrama de Hasse de 
+\begin_inset Formula $(L,mcm,mcd)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Definamos para 
+\begin_inset Formula $x\in\mathbf{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+(x)_{2}=\max_{t}\left(3^{t}\text{ divide a }x\right).
+\]
+
+\end_inset
+
+(el 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+sub 2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es porque 3 es el segundo primo).
+ Sea 
+\begin_inset Formula $\theta=\{(x,y)\in L^{2}:(x)_{2}=(y)_{2}\}$
+\end_inset
+
+.
+ Convensase que 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,mcm,mcd)$
+\end_inset
+
+ (no hace falta que lo pruebe).
+\end_layout
+
+\begin_layout Enumerate
+Dar explicitamente 
+\begin_inset Formula $(L,mcm,mcd)/\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Dar explicitamente (i.e.
+ dar el conjunto de pares) el orden parcial 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+ asociado al reticulado terna 
+\begin_inset Formula $(L,mcm,mcd)/\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De un isomorfismo de 
+\begin_inset Formula $(L,mcm,mcd)/\theta$
+\end_inset
+
+ en 
+\begin_inset Formula $(\{0,1,2\},\max,\min)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Dar una congruencia 
+\begin_inset Formula $\delta$
+\end_inset
+
+ tal que 
+\begin_inset Formula $(L,mcm,mcd)/\delta$
+\end_inset
+
+ sea isomorfo a 
+\begin_inset Formula $(\mathcal{P}(\{a,b\}),\cup,\cap)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna en el cual hay un elemento maximo 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Entonces si 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, 
+\begin_inset Formula $1/\theta$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})/\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 17:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna en el cual hay un elemento maximo 
+\begin_inset Formula $1$
+\end_inset
+
+ y un elemento minimo 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ un congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $(0,1)\in\theta,$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\theta=L\times L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente lema nos da una forma natural de encontrar congruencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $F:(L,\mathsf{s},\mathsf{i})\rightarrow(L^{\prime},\mathsf{s}^{\prime},\mathsf{i}^{\prime})$
+\end_inset
+
+ es un homomorfismo, entonces 
+\begin_inset Formula $\ker F$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 18:
+\end_layout
+
+\end_inset
+
+Pruebe el lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "pi sub tita es homomorfismo"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\pi_{\theta}$
+\end_inset
+
+ es un homomorfismo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ en 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+.
+ Ademas 
+\begin_inset Formula $\ker\pi_{\theta}=\theta$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+.
+ Tenemos que
+\begin_inset Formula 
+\[
+\pi_{\theta}(x\mathsf{\;s\;}y)=(x\mathsf{\;s\;}y)/\theta=x/\theta\mathsf{\;\tilde{s}\;}y/\theta=\pi_{\theta}(x)\mathsf{\;\tilde{s}\;}\pi_{\theta}(y)
+\]
+
+\end_inset
+
+por lo cual 
+\begin_inset Formula $\pi_{\theta}$
+\end_inset
+
+ preserva la operacion supremo.
+ Para la operacion infimo es similar.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 19:
+\end_layout
+
+\end_inset
+
+Dar todas las congruencias del reticulado terna 
+\begin_inset Formula $(\{1,2,3,6,12\},mcm,mcd)$
+\end_inset
+
+ (Ver video con la solucion en granlogico)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 20:
+\end_layout
+
+\end_inset
+
+Dar todas las congruencias del diamante (ver el Ejercicio 7)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 20,5:
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+ son las operaciones binarias definidas usando supremos e infimos en el
+ reticulado par 
+\begin_inset Formula $(\{1,2,4,6,10,60\},|)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Haga el diagrama de 
+\begin_inset Formula $(\{1,2,4,6,10,60\},|)$
+\end_inset
+
+.
+ Son 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+las operaciones mcm y mcd restringidas a 
+\begin_inset Formula $\{1,2,4,6,10,60\}^{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+De todas las congruencias del reticulado terna 
+\begin_inset Formula $(\{1,2,4,6,10,60\},\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ (Darlas marcando las clases de equivalencia sobre el diagrama de Hasse).
+ No es necesario que pruebe que son congruencias, solo hay que darlas.
+\end_layout
+
+\begin_layout Enumerate
+Pruebe que si 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia de 
+\begin_inset Formula $(\{1,2,4,6,10,60\},\mathsf{s},\mathsf{i})$
+\end_inset
+
+ entonces 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es alguna de las listadas en (b).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 21:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia del reticulado terna 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Pruebe que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+si 
+\begin_inset Formula $c\in L/\theta$
+\end_inset
+
+, entonces 
+\begin_inset Formula $c$
+\end_inset
+
+ es un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+si 
+\begin_inset Formula $c\in L/\theta$
+\end_inset
+
+, entonces 
+\begin_inset Formula $c$
+\end_inset
+
+ es un subconjunto convexo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+, es decir para cualesquiera 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+, si se da que 
+\begin_inset Formula $x,y\in c$
+\end_inset
+
+ y 
+\begin_inset Formula $x\leq z\leq y$
+\end_inset
+
+, entonces 
+\begin_inset Formula $z\in c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(Hay video en granlogico con la resolucion)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 22:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+(S) Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna, sea 
+\begin_inset Formula $S$
+\end_inset
+
+ un subuniverso de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\theta.$
+\end_inset
+
+una congruencia de 
+\begin_inset Formula $(S,\mathsf{s}|_{S\times S},\mathsf{i}|_{S\times S}).$
+\end_inset
+
+ Hay una congruencia 
+\begin_inset Formula $\delta$
+\end_inset
+
+ de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\theta=\delta\cap(S\times S)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna distributivo, y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i}).$
+\end_inset
+
+ Entonces 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ es distributivo.
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna y sea 
+\begin_inset Formula $\theta$
+\end_inset
+
+ es una congruencia sobre 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $u\in L$
+\end_inset
+
+ es tal que 
+\begin_inset Formula $u/\theta$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})/\theta$
+\end_inset
+
+, entonces 
+\begin_inset Formula $u$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 23:
+\end_layout
+
+\end_inset
+
+(S) Sea 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ un reticulado terna, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ una congruencia de 
+\begin_inset Formula $(L,\mathsf{s},\mathsf{i})$
+\end_inset
+
+ y 
+\begin_inset Formula $\leq$
+\end_inset
+
+ el orden inducido por 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $(L/\theta,\mathsf{\tilde{s}},\mathsf{\tilde{\imath}})$
+\end_inset
+
+ el reticulado terna cociente, y sea 
+\begin_inset Formula $\tilde{\leq}$
+\end_inset
+
+ el orden inducido por 
+\begin_inset Formula $\mathsf{\tilde{s}}$
+\end_inset
+
+.
+ Demostrar que dados 
+\begin_inset Formula $c,c^{\prime}\in L/\theta$
+\end_inset
+
+ se cumple que 
+\begin_inset Formula $c\tilde{\leq}c^{\prime}$
+\end_inset
+
+ sii existen 
+\begin_inset Formula $x\in c$
+\end_inset
+
+ y 
+\begin_inset Formula $y\in c^{\prime}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document

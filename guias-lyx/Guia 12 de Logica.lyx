@@ -1,0 +1,5901 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:42:19}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language spanish-mexico
+\language_package none
+\inputencoding auto-legacy
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Teorias de primer orden
+\end_layout
+
+\begin_layout Standard
+En esta guia nos avocaremos a dar una solucion al punto (3) de nuestro programa de logica dado al final de la Guia 8.
+ O sea nos abocaremos al siguiente problema:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Dar un modelo matematico del concepto de prueba elemental en una teoria elemental.
+ 
+\end_layout
+
+\begin_layout Standard
+Este problema involucra el concepto de teoria elemental definido en la Guia 8,
+ el cual es intuitivo y no fue definido en forma precisa ya que depende del concepto de sentencia elemental de tipo.
+ O sea que un primer paso en la resolucion de (3) sera dar un modelo matematico del concepto de teoria elemental.
+ Recordemos que una teoria elemental es un par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo cualquiera y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es un conjunto de sentencias elementales puras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Dado que ya tenemos nuestro modelo matematico para las sentencias elementales puras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (i.e.
+ las sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+),
+ podemos dar el siguiente modelo matematico del concepto de teoria elemental:
+\end_layout
+
+\begin_layout Standard
+Una 
+\shape italic
+teoria (de primer orden)
+\shape default
+ sera un par 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo y 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ es un conjunto de sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Esto ya es un buen comienzo en la resolucion del punto (3) pero aun nos queda por hacer lo mas complicado.
+\end_layout
+
+\begin_layout Standard
+Dada una teoria de primer orden 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ los elementos de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ seran llamados 
+\shape italic
+axiomas propios
+\shape default
+ de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Un 
+\shape italic
+modelo de 
+\shape default
+
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ la cual satisfaga todos los axiomas propios de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos de teorias de primer orden:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+La teoria
+\series default
+ 
+\begin_inset Formula $Po$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+Po=(\{\mathrm{A}_{\leq R},\mathrm{A}_{\leq T},\mathrm{A}_{\leq A}\},\tau_{Po})
+\]
+
+\end_inset
+
+donde 
+\begin_inset Formula $\tau_{Po}$
+\end_inset
+
+ es el tipo de los posets,
+ es decir 
+\begin_inset Formula $(\emptyset,\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+ y
+\begin_inset Formula 
+\begin{align*}
+\mathrm{A}_{\leq R} & =\forall x_{1}\;\mathrm{\leq}(x_{1},x_{1})\\
+\mathrm{A}_{\leq T} & =\forall x_{1}\forall x_{2}\forall x_{3}\;((\mathrm{\leq}(x_{1},x_{2})\wedge\mathrm{\leq}(x_{2},x_{3}))\rightarrow\mathrm{\leq}(x_{1},x_{3}))\\
+\mathrm{A}_{\leq A} & =\forall x_{1}\forall x_{2}\;((\mathrm{\leq}(x_{1},x_{2})\wedge\mathrm{\leq}(x_{2},x_{1}))\rightarrow(x_{1}\equiv x_{2}))
+\end{align*}
+
+\end_inset
+
+Notese que una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau_{Po}$
+\end_inset
+
+ es un modelo de 
+\begin_inset Formula $Po$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\leq^{\mathbf{A}}$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Estrictamente hablando un modelo de 
+\begin_inset Formula $Po$
+\end_inset
+
+ no es un poset ya que es un par 
+\begin_inset Formula $(A,i)$
+\end_inset
+
+ donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio e 
+\begin_inset Formula $i$
+\end_inset
+
+ es una funcion con dominio 
+\begin_inset Formula $\{\leq\}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $i(\leq)$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Es decir,
+ un modelo de 
+\begin_inset Formula $Po$
+\end_inset
+
+ es un par 
+\begin_inset Formula $(A,\{(\leq,R)\})$
+\end_inset
+
+ donde 
+\begin_inset Formula $A$
+\end_inset
+
+ es un conjunto no vacio y 
+\begin_inset Formula $R$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ De todas maneras deberia quedar claro que en esencia un poset y un modelo de 
+\begin_inset Formula $Po$
+\end_inset
+
+ son la misma cosa por lo cual llamaremos a 
+\begin_inset Formula $Po$
+\end_inset
+
+ la 
+\shape italic
+teoria de los posets
+\shape default
+ y muchas veces nos referiremos a los modelos de 
+\begin_inset Formula $Po$
+\end_inset
+
+ como si fueran posets.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+La teoria 
+\series default
+
+\begin_inset Formula $RetCua$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\tau_{RetCua}=(\emptyset,\{\mathsf{s}^{2},\mathsf{i}^{2}\},\{\leq^{2}\},a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma_{RetCua}$
+\end_inset
+
+ el siguiente conjunto de sentencias:
+\begin_inset Formula 
+\begin{align*}
+\mathrm{A}_{\leq R} & =\forall x_{1}\;\mathrm{\leq}(x_{1},x_{1})\\
+\mathrm{A}_{\leq T} & =\forall x_{1}\forall x_{2}\forall x_{3}\;((\mathrm{\leq}(x_{1},x_{2})\wedge\mathrm{\leq}(x_{2},x_{3}))\rightarrow\mathrm{\leq}(x_{1},x_{3}))\\
+\mathrm{A}_{\leq A} & =\forall x_{1}\forall x_{2}\;((\mathrm{\leq}(x_{1},x_{2})\wedge\mathrm{\leq}(x_{2},x_{1}))\rightarrow(x_{1}\equiv x_{2}))\\
+\mathrm{A}_{\mathsf{s}esC} & =\forall x_{1}\forall x_{2}\;(\mathrm{\leq}(x_{1},\mathsf{s}(x_{1},x_{2}))\wedge\mathrm{\leq}(x_{2},\mathsf{s}(x_{1},x_{2})))\\
+\mathrm{A}_{\mathsf{s}\leq C} & =\forall x_{1}\forall x_{2}\forall x_{3}\;\left((\mathrm{\leq}(x_{1},x_{3})\wedge\mathrm{\leq}(x_{2},x_{3}))\rightarrow\mathrm{\leq}(\mathsf{s}(x_{1},x_{2}),x_{3}\right))\\
+\mathrm{A}_{\mathsf{i}esC} & =\forall x_{1}\forall x_{2}\;(\mathrm{\leq}(\mathsf{i}(x_{1},x_{2}),x_{1})\wedge\mathrm{\leq}(\mathsf{i}(x_{1},x_{2}),x_{2}))\\
+\mathrm{A}_{\mathsf{i}\geq C} & =\forall x_{1}\forall x_{2}\forall x_{3}\;\left((\mathrm{\leq}(x_{3},x_{1})\wedge\mathrm{\leq}(x_{3},x_{2}))\rightarrow\mathrm{\leq}(x_{3},\mathsf{i}(x_{1},x_{2}))\right)
+\end{align*}
+
+\end_inset
+
+Definamos 
+\begin_inset Formula $RetCua=(\Sigma_{RetCua},\tau_{RetCua})$
+\end_inset
+
+.
+ Obviamente los modelos de esta teoria son esencialmente reticulados cuaterna en el sentido que una estructura 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau_{RetCua}$
+\end_inset
+
+ es un modelo de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $(A,\mathsf{s}^{\mathbf{A}},\mathsf{i}^{\mathbf{A}},\leq^{\mathbf{A}})$
+\end_inset
+
+ es un reticulado cuaterna.
+ Llamaremos a 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ la 
+\shape italic
+teoria de los reticulados cuaterna
+\shape default
+ y muchas veces nos referiremos a los modelos de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ como si fueran reticulados cuaterna.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+De una estructura de tipo 
+\begin_inset Formula $\tau_{RetCua}$
+\end_inset
+
+ la cual satisfaga todos los axiomas de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ menos 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}esC}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+De una estructura de tipo 
+\begin_inset Formula $\tau_{RetCua}$
+\end_inset
+
+ la cual satisfaga todos los axiomas de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ menos 
+\begin_inset Formula $\mathrm{A}_{\mathsf{s}\leq C}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Definicion del concepto de prueba formal
+\end_layout
+
+\begin_layout Standard
+Recomendamos al lector repasar el concepto de prueba elemental en una teoria elemental,
+ dado en la Guia 8.
+ Aqui daremos un modelo matematico del concepto de prueba elemental en una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+.
+ Tal como lo hemos visto en numerosos ejemplos,
+ una prueba es una sucecion de sentencias junto con una sucesion de 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+justificaciones
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ las cuales van explicando o justificando por que es licito que cada una de dichas sentencias aparezca en la sucesion.
+ Por supuesto nuestra definicion sera precisa y matematica por lo que deberemos trabajar bastante para poder escribirla correctamente.
+ Como objeto matematico una prueba resultara ser un par ordenado de palabras cuya primera coordenada codificara en forma natural la sucesion de sentencias y su segunda coordenada codificara la sucesion de justificaciones.
+\end_layout
+
+\begin_layout Standard
+La formalizacion matematica del concepto de prueba elemental es uno de los grandes logros de la ciencia moderna y este hecho se debe en gran medida a que si elejimos bien la teoria,
+ las pruebas elementales no son ni mas ni menos que las pruebas de la matematica misma por lo cual se tiene un modelo matematico de la deduccion matematica real!
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Reglas
+\end_layout
+
+\begin_layout Standard
+Definiremos una serie de conjuntos los cuales poseen informacion deductiva basica,
+ es decir representan las reglas usuales con las que los matematicos dan pasos dentro de una demostracion (aunque muchas veces ellos lo hacen sin avisar debido a la obviedad de dichas reglas).
+\end_layout
+
+\begin_layout Standard
+Recordemos que si 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un tipo cualquiera,
+ un termino 
+\begin_inset Formula $t\in T^{\tau}$
+\end_inset
+
+ es llamado 
+\shape italic
+cerrado
+\shape default
+
+\begin_inset space \space{}
+\end_inset
+
+si ninguna variable es subtermino de 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Con 
+\begin_inset Formula $T_{c}^{\tau}$
+\end_inset
+
+ denotamos el conjunto formado por todos los terminos cerrados.
+\end_layout
+
+\begin_layout Standard
+Sean
+\begin_inset Formula 
+\begin{align*}
+Partic^{\tau} & =\{(\forall v\varphi(v),\varphi(t)):\varphi=_{d}\varphi(v)\in F^{\tau}\ \mathrm{y\ }t\in T_{c}^{\tau}\}\\
+Exist^{\tau} & =\{(\varphi(t),\exists v\varphi(v)):\varphi=_{d}\varphi(v)\in F^{\tau}\ \mathrm{y\ }t\in T_{c}^{\tau}\}\\
+Evoc^{\tau} & =\{(\varphi,\varphi):\varphi\in S^{\tau}\}\\
+Absur^{\tau} & =\{((\lnot\varphi\rightarrow(\psi\wedge\lnot\psi)),\varphi):\varphi,\psi\in S^{\tau}\}\cup\{((\varphi\rightarrow(\psi\wedge\lnot\psi)),\lnot\varphi):\varphi,\psi\in S^{\tau}\}\\
+ConjElim^{\tau} & =\{((\varphi\wedge\psi),\varphi):\varphi,\psi\in S^{\tau}\}\cup\{((\varphi\wedge\psi),\psi):\varphi,\psi\in S^{\tau}\}\\
+EquivElim^{\tau} & =\{((\varphi\leftrightarrow\psi),(\varphi\rightarrow\psi)):\varphi,\psi\in S^{\tau}\}\cup\{((\varphi\leftrightarrow\psi),(\psi\rightarrow\varphi)):\varphi,\psi\in S^{\tau}\}\\
+DisjInt^{\tau} & =\{(\varphi,(\varphi\vee\psi)):\varphi,\psi\in S^{\tau}\}\cup\{(\psi,(\varphi\vee\psi)):\varphi,\psi\in S^{\tau}\}\cup\{((\lnot\varphi\rightarrow\psi),(\varphi\vee\psi)):\varphi,\psi\in S^{\tau}\}
+\end{align*}
+
+\end_inset
+
+Diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\psi$
+\end_inset
+
+ 
+\shape italic
+por la regla de particularizacion
+\shape default
+ (resp.
+ 
+\shape italic
+existencia,
+ evocacion,
+ absurdo,
+ conjuncion-eliminacion,
+ equivalencia-eliminacion,
+ disjuncion-introduccion
+\shape default
+),
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\psi,\varphi)\in Partic^{\tau}$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $(\psi,\varphi)\in Exist^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\psi,\varphi)\in Evoc^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\psi,\varphi)\in Absur^{\tau},$
+\end_inset
+
+ 
+\begin_inset Formula $(\psi,\varphi)\in ConjElim^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\psi,\varphi)\in EquivElim^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\psi,\varphi)\in DisjInt^{\tau}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Sea
+\begin_inset Formula 
+\[
+Commut^{\tau}=Commut1^{\tau}\cup Commut2^{\tau}
+\]
+
+\end_inset
+
+donde
+\begin_inset Formula 
+\begin{align*}
+Commut1^{\tau} & =\{((t\equiv s),(s\equiv t)):s,t\in T_{c}^{\tau}\}\\
+Commut2^{\tau} & =\{((\varphi\leftrightarrow\psi),(\psi\leftrightarrow\varphi)):\varphi,\psi\in S^{\tau}\}
+\end{align*}
+
+\end_inset
+
+Diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\psi$
+\end_inset
+
+ 
+\shape italic
+por la regla de commutatividad
+\shape default
+,
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\psi,\varphi)\in Commut^{\tau}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sean
+\begin_inset Formula 
+\begin{align*}
+ModPon^{\tau} & =\{(\varphi,(\varphi\rightarrow\psi),\psi):\varphi,\psi\in S^{\tau}\}\\
+ConjInt^{\tau} & =\{(\varphi,\psi,(\varphi\wedge\psi)):\varphi,\psi\in S^{\tau}\}\\
+EquivInt^{\tau} & =\{((\varphi\rightarrow\psi),(\psi\rightarrow\varphi),(\varphi\leftrightarrow\psi)):\varphi,\psi\in S^{\tau}\}\\
+DisjElim^{\tau} & =\{(\lnot\varphi,(\varphi\vee\psi),\psi):\varphi,\psi\in S^{\tau}\}\cup\{(\lnot\psi,(\varphi\vee\psi),\varphi):\varphi,\psi\in S^{\tau}\}
+\end{align*}
+
+\end_inset
+
+Diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ 
+\shape italic
+por la regla de Modus Ponens
+\shape default
+ (resp.
+ 
+\shape italic
+conjuncion-introduccion,
+ equivalencia-introduccion,
+ disjuncion-eliminacion
+\shape default
+),
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in ModPon^{\tau}$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in ConjInt^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in EquivInt^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in DisjElim^{\tau}$
+\end_inset
+
+).
+ Sea
+\begin_inset Formula 
+\[
+DivPorCas^{\tau}=\{((\varphi_{1}\vee\varphi_{2}),(\varphi_{1}\rightarrow\psi),(\varphi_{2}\rightarrow\psi),\psi):\varphi_{1},\varphi_{2},\psi\in S^{\tau}\}
+\]
+
+\end_inset
+
+Diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $\psi_{3}$
+\end_inset
+
+ 
+\shape italic
+por la regla de division por casos,
+
+\shape default
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\psi_{1},\psi_{2},\psi_{3},\varphi)\in DivPorCas^{\tau}$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+Reemp^{\tau}=Reemp1^{\tau}\cup Reemp2^{\tau}
+\]
+
+\end_inset
+
+donde
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Reemp1^{\tau}=\{((t\equiv s),\gamma,\tilde{\gamma}):s,t\in T_{c}^{\tau},$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \gamma\in S^{\tau}\ \mathrm{y\ }\tilde{\gamma}=\mathrm{resultado\ de\ reemplazar\ en\ }\gamma\ \mathrm{una\ ocurrencia\ de\ }t\ \mathrm{por\ }s\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Reemp2^{\tau}=\{(\forall v_{1}...\forall v_{n}(\varphi\leftrightarrow\psi),\gamma,\tilde{\gamma}):\varphi,\psi\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $Li(\varphi)=Li(\psi)=\{v_{1},...,v_{n}\}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ n\geq0,$
+\end_inset
+
+ 
+\begin_inset Formula $\gamma\in S^{\tau}\ \mathrm{y\ }\tilde{\gamma}=\mathrm{resultado\ de\ reemplazar\ en\ }\gamma\ \mathrm{una\ ocurrencia\ de\ }\varphi\ \mathrm{por\ }\psi\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ 
+\shape italic
+por la regla de reemplazo,
+
+\shape default
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ para expresar que 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in Reemp^{\tau}$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+Trans^{\tau}=Trans1^{\tau}\cup Trans2^{\tau}\cup Trans3^{\tau}
+\]
+
+\end_inset
+
+donde
+\begin_inset Formula 
+\begin{align*}
+Trans1^{\tau} & =\{((t\equiv s),(s\equiv u),(t\equiv u)):t,s,u\in T_{c}^{\tau}\}\\
+Trans2^{\tau} & =\{((\varphi\rightarrow\psi),(\psi\rightarrow\Phi),(\varphi\rightarrow\Phi)):\varphi,\psi,\Phi\in S^{\tau}\}\\
+Trans3^{\tau} & =\{((\varphi\leftrightarrow\psi),(\psi\leftrightarrow\Phi),(\varphi\leftrightarrow\Phi)):\varphi,\psi,\Phi\in S^{\tau}\}
+\end{align*}
+
+\end_inset
+
+Diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\psi_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $\psi_{2}$
+\end_inset
+
+ 
+\shape italic
+por la regla de transitividad,
+
+\shape default
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in Trans^{\tau}$
+\end_inset
+
+.
+ Sea
+\begin_inset Formula 
+\[
+Generaliz^{\tau}=\{(\varphi(c),\forall v\varphi(v)):\varphi=_{d}\varphi(v)\in F^{\tau},\ Li(\varphi)=\{v\}\ \mathrm{y\ }c\in\mathcal{C}\ \mathrm{no\ ocurre\ en}\ \varphi\}
+\]
+
+\end_inset
+
+Es importante el siguiente
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Generaliz^{\tau}$
+\end_inset
+
+,
+ entonces el nombre de constante 
+\begin_inset Formula $c$
+\end_inset
+
+ del cual habla la definicion de 
+\begin_inset Formula $Generaliz^{\tau}$
+\end_inset
+
+ esta univocamente determinado por el par 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Notese que 
+\begin_inset Formula $c$
+\end_inset
+
+ es el unico nombre de constante que ocurre en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y no ocurre en 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escribiremos 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Generaliz^{\tau}$
+\end_inset
+
+ 
+\shape italic
+via
+\shape default
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Generaliz^{\tau}$
+\end_inset
+
+ y que 
+\begin_inset Formula $c$
+\end_inset
+
+ es el unico nombre de constante que ocurre en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ y no ocurre en 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+.
+ Diremos que 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ 
+\shape italic
+por la regla de generalizacion con nombre de constante 
+\shape default
+
+\begin_inset Formula $c$
+\end_inset
+
+,
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ para expresar que 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Generaliz^{\tau}$
+\end_inset
+
+ 
+\shape italic
+via
+\shape default
+ 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea
+\begin_inset Formula 
+\[
+Elec^{\tau}=\{(\exists v\varphi(v),\varphi(e)):\varphi=_{d}\varphi(v)\in F^{\tau},\ Li(\varphi)=\{v\}\ \mathrm{y\ }e\in\mathcal{C}\ \mathrm{no\ ocurre\ en}\ \varphi\}
+\]
+
+\end_inset
+
+Es importante el siguiente
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Si 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Elec^{\tau}$
+\end_inset
+
+,
+ entonces el nombre de constante 
+\begin_inset Formula $e$
+\end_inset
+
+ del cual habla la definicion de 
+\begin_inset Formula $Elec^{\tau}$
+\end_inset
+
+ esta univocamente determinado por el par 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bigskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Pruebe el lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\bigskip$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Escribiremos 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Elec^{\tau}$
+\end_inset
+
+ 
+\shape italic
+via
+\shape default
+ 
+\begin_inset Formula $e$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Elec^{\tau}$
+\end_inset
+
+ y que 
+\begin_inset Formula $e$
+\end_inset
+
+ es el unico nombre de constante que ocurre en 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ y no ocurre en 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+.
+ Diremos que 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ 
+\shape italic
+se deduce de 
+\shape default
+
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ 
+\shape italic
+por la regla de eleccion con nombre de constante 
+\shape default
+
+\begin_inset Formula $e$
+\end_inset
+
+,
+ 
+\shape italic
+con respecto a 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ para expresar que 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Elec^{\tau}$
+\end_inset
+
+ 
+\shape italic
+via
+\shape default
+ 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como se puede notar hay muchas reglas y todas modelizan en forma muy natural fragmentos deductivos usuales de las pruebas elementales.
+ Una regla 
+\begin_inset Formula $R$
+\end_inset
+
+ sera llamada 
+\shape italic
+universal
+\shape default
+ cuando se de que si 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ se deduce de 
+\begin_inset Formula $\psi_{1},...,\psi_{k}$
+\end_inset
+
+ por 
+\begin_inset Formula $R$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left((\psi_{1}\wedge...\wedge\psi_{k})\rightarrow\varphi\right)$
+\end_inset
+
+ es una sentencia universalmente valida.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo.
+ Todas las reglas exepto las reglas de eleccion y generalizacion son universales.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Veamos que la regla de existencia es universal.
+ Por definicion,
+ un par de 
+\begin_inset Formula $Exist^{\tau}$
+\end_inset
+
+ es siempre de la forma 
+\begin_inset Formula $(\varphi(t),\exists v\varphi(v))$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\varphi=_{d}\varphi(v)$
+\end_inset
+
+ y 
+\begin_inset Formula $t\in T_{c}^{\tau}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{A}\models\varphi(t)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $t^{\mathbf{A}}$
+\end_inset
+
+ el valor que toma 
+\begin_inset Formula $t$
+\end_inset
+
+ en 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+.
+ Por el Lema de reemplazo tenemos que 
+\begin_inset Formula $\mathbf{A}\models\varphi\left[t^{\mathbf{A}}\right]$
+\end_inset
+
+,
+ por lo cual tenemos que 
+\begin_inset Formula $\mathbf{A}\models\exists v\varphi(v)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Veamos que la regla de reemplazo es universal.
+ Debemos probar que si 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in Reemp^{\tau}=Reemp1^{\tau}\cup Reemp2^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left((\psi_{1}\wedge\psi_{2})\rightarrow\varphi\right)$
+\end_inset
+
+ es una sentencia universalmente valida.
+ El caso en el que 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in Reemp1^{\tau}$
+\end_inset
+
+ es facil y lo dejaremos al lector.
+ Para el caso en el que 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in Reemp2^{\tau}$
+\end_inset
+
+ nos hara falta un resultado un poco mas general.
+ Veamos por induccion en 
+\begin_inset Formula $k$
+\end_inset
+
+ que si se dan las siguienes condiciones
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\alpha\in F_{k}^{\tau}$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi,\psi\in F^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es una estructura de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\overline{\alpha}=$
+\end_inset
+
+ resultado de reemplazar en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ una ocurrencia de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ por 
+\begin_inset Formula $\psi$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\varphi\left[\vec{a}\right]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\psi\left[\vec{a}\right]$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+entonces se da que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\models\alpha\left[\vec{a}\right]$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $\mathbf{A}\models\overline{\alpha}\left[\vec{a}\right]$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $\vec{a}\in A^{\mathbf{N}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+CASO 
+\begin_inset Formula $k=0.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Entonces 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es atomica y por lo tanto ya que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ es la unica subformula de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+,
+ la situacion es facil de probar.
+\end_layout
+
+\begin_layout Standard
+CASO 
+\begin_inset Formula $\alpha=\forall x_{i}\alpha_{1}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Si 
+\begin_inset Formula $\varphi=\alpha$
+\end_inset
+
+,
+ entonces la situacion es facil de probar.
+ Si 
+\begin_inset Formula $\varphi\neq\alpha$
+\end_inset
+
+,
+ entonces la ocurrencia de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a reemplazar sucede en 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ y por lo tanto 
+\begin_inset Formula $\overline{\alpha}=\forall x_{i}\overline{\alpha_{1}}.$
+\end_inset
+
+ Se tiene entonces que para un 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ dado,
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}\models\alpha\left[\vec{a}\right]\\
+\Updownarrow\\
+\mathbf{A}\models\alpha_{1}\left[\downarrow_{i}^{a}\vec{a}\right],\text{ para cada }a\in A\\
+\Updownarrow\\
+\mathbf{A}\models\overline{\alpha_{1}}\left[\downarrow_{i}^{a}\vec{a}\right],\text{ para cada }a\in A\\
+\Updownarrow\\
+\mathbf{A}\models\overline{\alpha}\left[\vec{a}\right]
+\end{array}
+\]
+
+\end_inset
+
+CASO 
+\begin_inset Formula $\alpha=(\alpha_{1}\vee\alpha_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Si 
+\begin_inset Formula $\varphi=\alpha$
+\end_inset
+
+,
+ entonces la situacion es facil de probar.
+ Supongamos 
+\begin_inset Formula $\varphi\neq\alpha$
+\end_inset
+
+ y supongamos que la ocurrencia de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ a reemplazar sucede en 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\overline{\alpha}=(\overline{\alpha_{1}}\vee\alpha_{2})$
+\end_inset
+
+ y tenemos que
+\begin_inset Formula 
+\[
+\begin{array}{c}
+\mathbf{A}\models\alpha\left[\vec{a}\right]\\
+\Updownarrow\\
+\mathbf{A}\models\alpha_{1}\left[\vec{a}\right]\text{ o }\mathbf{A}\models\alpha_{2}\left[\vec{a}\right]\\
+\Updownarrow\\
+\mathbf{A}\models\overline{\alpha_{1}}\left[\vec{a}\right]\text{ o }\mathbf{A}\models\alpha_{2}\left[\vec{a}\right]\\
+\Updownarrow\\
+\mathbf{A}\models\overline{\alpha}\left[\vec{a}\right]
+\end{array}
+\]
+
+\end_inset
+
+Los demas casos son dejados al lector.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+(S) Pruebe que si 
+\begin_inset Formula $(\psi_{1},\psi_{2},\varphi)\in Reemp1^{\tau}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\left((\psi_{1}\wedge\psi_{2})\rightarrow\varphi\right)$
+\end_inset
+
+ es una sentencia universalmente valida.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Pruebe que las reglas de eleccion y generalizacion no son universales.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 6:
+\end_layout
+
+\end_inset
+
+V o F o I,
+ justifique.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo y supongamos 
+\begin_inset Formula $f\in\mathcal{F}_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $((f(c)\equiv c),\exists x_{1}(f(x_{1})\equiv c))\in Exist^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo y supongamos 
+\begin_inset Formula $f\in\mathcal{F}_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $((f(c)\equiv c),\forall x_{1}(f(x_{1})\equiv c))\in Generaliz^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo y supongamos 
+\begin_inset Formula $f\in\mathcal{F}_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $c\in\mathcal{C}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $((f(c)\equiv x_{2}),\forall x_{1}(f(x_{1})\equiv x_{2}))\in Generaliz^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathsf{s}^{2},\mathsf{i}^{2}\},\emptyset,a)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(\forall x_{2}(1\;\mathsf{s\;}x_{2}\equiv1),\forall x_{1}\forall x_{2}(x_{1}\;\mathsf{s\;}x_{2}\equiv x_{1})\in Generaliz^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathsf{s}^{2},\mathsf{i}^{2}\},\{\leq^{2}\},a)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(\exists x_{1}\mathrm{\leq}(x_{1},0),\mathrm{\leq}(1,0))\in Elec^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathsf{s}^{2},\mathsf{i}^{2}\},\{\leq^{2}\},a)$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(\exists x_{1}(x_{1}\equiv0),(1\equiv0))\in Elec^{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(\varphi_{1},\varphi_{2})\in Generaliz^{\tau}$
+\end_inset
+
+ 
+\shape italic
+via
+\shape default
+ 
+\begin_inset Formula $c$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $c$
+\end_inset
+
+ es un elemento fijo pero arbitrario 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Axiomas logicos
+\end_layout
+
+\begin_layout Standard
+Recordemos que dada una teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ los elementos de 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ son llamados axiomas propios y en general no son sentencias universalmente validas.
+\end_layout
+
+\begin_layout Standard
+En las pruebas formales sera necesario usar ciertas verdades universales y obvias las cuales llamaremos 
+\shape italic
+axiomas logicos
+\shape default
+.
+ Mas concretamente,
+ llamaremos 
+\shape italic
+axiomas logicos de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ a todas las sentencias de alguna de las siguientes formas.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\leftrightarrow\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(t\equiv t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\vee\lnot\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\varphi\leftrightarrow\lnot\lnot\varphi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\lnot\forall v\psi\leftrightarrow\exists v\lnot\psi)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\lnot\exists v\psi\leftrightarrow\forall v\lnot\psi)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+donde 
+\begin_inset Formula $t\in T_{c}^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\varphi\in S^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\psi\in F^{\tau}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+ y 
+\begin_inset Formula $Li(\psi)\subseteq\{v\}$
+\end_inset
+
+.
+ Con 
+\begin_inset Formula $AxLog^{\tau}$
+\end_inset
+
+ denotaremos el conjunto
+\begin_inset Formula 
+\[
+\{\varphi\in S^{\tau}:\varphi\ \mathrm{es\ un\ axioma\ logico\ de\ tipo\ }\tau\}
+\]
+
+\end_inset
+
+Notese que hay infinitos axiomas logicos de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+,
+ es decir el conjunto 
+\begin_inset Formula $AxLog^{\tau}$
+\end_inset
+
+ es un conjunto infinito de palabras.
+ Por ejemplo,
+ el formato dado en 1.
+ produce una cantidad infinita de axiomas logicos,
+ a saber todas las sentencias de la forma 
+\begin_inset Formula $(\varphi\leftrightarrow\varphi)$
+\end_inset
+
+,
+ donde 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es cualquier sentencia de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Pruebe que cada sentencia de 
+\begin_inset Formula $AxLog^{\tau}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+es universalmente valida 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Justificaciones
+\end_layout
+
+\begin_layout Standard
+Llamaremos 
+\shape italic
+numerales
+\shape default
+ a los siguientes simbolos
+\begin_inset Formula 
+\[
+0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9
+\]
+
+\end_inset
+
+Usaremos 
+\begin_inset Formula $Num$
+\end_inset
+
+ para denotar el conjunto de numerales.
+ Notese que 
+\begin_inset Formula $Num\cap\omega=\emptyset$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $Sig:Num^{\ast}\rightarrow Num^{\ast}$
+\end_inset
+
+ definida de la siguiente manera
+\begin_inset Formula 
+\begin{align*}
+Sig(\varepsilon) & =1\\
+Sig(\alpha0) & =\alpha1\\
+Sig(\alpha1) & =\alpha2\\
+Sig(\alpha2) & =\alpha3\\
+Sig(\alpha3) & =\alpha4\\
+Sig(\alpha4) & =\alpha5\\
+Sig(\alpha5) & =\alpha6\\
+Sig(\alpha6) & =\alpha7\\
+Sig(\alpha7) & =\alpha8\\
+Sig(\alpha8) & =\alpha9\\
+Sig(\alpha9) & =Sig(\alpha)0
+\end{align*}
+
+\end_inset
+
+Definamos 
+\begin_inset Formula $Dec:\omega\rightarrow Num^{\ast}$
+\end_inset
+
+ de la siguiente manera
+\begin_inset Formula 
+\begin{align*}
+Dec(0) & =\varepsilon\\
+Dec(n+1) & =Sig(Dec(n))
+\end{align*}
+
+\end_inset
+
+Notese que para 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+,
+ la palabra 
+\begin_inset Formula $Dec(n)$
+\end_inset
+
+ es la notacion usual decimal de 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Para hacer mas agil la notacion escribiremos 
+\begin_inset Formula $\bar{n}$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $Dec(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $Nombres_{1}$
+\end_inset
+
+ el conjunto formado por las siguientes palabras
+\begin_inset Formula 
+\begin{align*}
+ & \text{EXISTENCIA}\\
+ & \text{COMMUTATIVIDAD}\\
+ & \text{PARTICULARIZACION}\\
+ & \text{ABSURDO}\\
+ & \text{EVOCACION}\\
+ & \text{CONJUNCIONELIMINACION}\\
+ & \text{EQUIVALENCIAELIMINACION}\\
+ & \text{DISJUNCIONINTRODUCCION}\\
+ & \text{ELECCION}\\
+ & \text{GENERALIZACION}
+\end{align*}
+
+\end_inset
+
+Sea 
+\begin_inset Formula $Nombres_{2}$
+\end_inset
+
+ el conjunto formado por las siguientes palabras
+\begin_inset Formula 
+\begin{align*}
+ & \text{MODUSPONENS}\\
+ & \text{TRANSITIVIDAD}\\
+ & \text{CONJUNCIONINTRODUCCION}\\
+ & \text{EQUIVALENCIAINTRODUCCION}\\
+ & \text{DISJUNCIONELIMINACION}\\
+ & \text{REEMPLAZO}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una 
+\shape italic
+justificacion basica
+\shape default
+ es una palabra perteneciente a la union de los siguientes conjuntos de palabras
+\begin_inset Formula 
+\[
+\{\text{CONCLUSION},\text{AXIOMAPROPIO},\text{AXIOMALOGICO}\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{\alpha(\bar{k}):k\in\mathbf{N}\text{ y }\alpha\in Nombres_{1}\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{\alpha(\bar{j},\bar{k}):j,k\in\mathbf{N}\text{ y }\alpha\in Nombres_{2}\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{\text{DIVISIONPORCASOS}(\bar{j},\bar{k},\bar{l}):j,k,l\in\mathbf{N}\}
+\]
+
+\end_inset
+
+Usaremos 
+\begin_inset Formula $JustBas$
+\end_inset
+
+ para denotar el conjunto formado por todas las justificaciones basicas.
+ Una 
+\shape italic
+justificacion 
+\shape default
+es una palabra que ya sea es una justificacion basica o pertenece a la union de los siguientes conjuntos de palabras
+\begin_inset Formula 
+\[
+\{\text{HIPOTESIS}\bar{k}:k\in\mathbf{N}\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{\text{TESIS}\bar{j}\alpha:j\in\mathbf{N}\text{ y }\alpha\in JustBas\}
+\]
+
+\end_inset
+
+Usaremos 
+\begin_inset Formula $Just$
+\end_inset
+
+ para denotar el conjunto formado por todas las justificaciones.
+ Cabe destacar que los elementos de 
+\begin_inset Formula $Just$
+\end_inset
+
+ son palabras del alfabeto formado por los siguientes simbolos
+\begin_inset Formula 
+\[
+(\ )\ ,\ 0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9\ \text{A\ B\ C\ D\ E\ G\ H\ I\ J\ L\ M\ N\ O\ P\ Q\ R\ S\ T\ U\ V\ X Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Concatenaciones balanceadas de justificaciones
+\end_layout
+
+\begin_layout Standard
+Para construir el concepto de prueba formal deberiamos trabajar con sucesiones finitas de justificaciones pero el siguiente lema nos dice que podemos reemplazarlas por ciertas palabras,
+ i.e.
+ sus concatenaciones,
+ sin perder informacion.
+ Lo aceptaremos sin demostracion aunque su demostracion es simple.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "secuencia de justificaciones"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+.
+ Hay unicos 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{1},...,J_{n}\in Just$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\mathbf{J}=J_{1}...J_{n}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir el lema anterior nos dice que la sucesion 
+\begin_inset Formula $J_{1},...,J_{n}$
+\end_inset
+
+ se puede codificar con la palabra 
+\begin_inset Formula $J_{1}...J_{n}$
+\end_inset
+
+ sin perder informacion.
+ Dada 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+,
+ usaremos 
+\begin_inset Formula $n(\mathbf{J})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{J}_{1},...,\mathbf{J}_{n(\mathbf{J})}$
+\end_inset
+
+ para denotar los unicos 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $J_{1},...,J_{n}$
+\end_inset
+
+ cuya existencia garantiza el lema anterior.
+\end_layout
+
+\begin_layout Standard
+Dados numeros naturales 
+\begin_inset Formula $i\leq j$
+\end_inset
+
+,
+ usaremos 
+\begin_inset Formula $\left\langle i,j\right\rangle $
+\end_inset
+
+ para denotar el conjunto 
+\begin_inset Formula $\{i,i+1,...,j\}.$
+\end_inset
+
+ A los conjuntos de la forma 
+\begin_inset Formula $\left\langle i,j\right\rangle $
+\end_inset
+
+ los llamaremos 
+\shape italic
+bloques
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Dada 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ definamos
+\begin_inset Formula 
+\begin{gather*}
+\mathcal{B}^{\mathbf{J}}=\{\left\langle i,j\right\rangle :\exists k\ \mathbf{J}_{i}=\text{HIPOTESIS}\bar{k}\text{ y \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\\
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mathbf{J}_{j}=\text{TESIS}\bar{k}\alpha\text{ para algun }\alpha\in JustBas\}
+\end{gather*}
+
+\end_inset
+
+Diremos que 
+\begin_inset Formula $\mathbf{J}\in Just^{+}$
+\end_inset
+
+ es 
+\shape italic
+balanceada
+\shape default
+ si se dan las siguientes
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Por cada 
+\begin_inset Formula $k\in\mathbf{N}$
+\end_inset
+
+ a lo sumo hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ y a lo sumo hay un 
+\begin_inset Formula $i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{i}=$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ entonces hay un 
+\begin_inset Formula $l>i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{l}=\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{TESIS}\bar{k}\alpha$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in JustBas$
+\end_inset
+
+,
+ entonces hay un 
+\begin_inset Formula $l<i$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\mathbf{J}_{l}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $B_{1},B_{2}\in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $B_{1}\cap B_{2}=\emptyset$
+\end_inset
+
+ o 
+\begin_inset Formula $B_{1}\subseteq B_{2}$
+\end_inset
+
+ o 
+\begin_inset Formula $B_{2}\subseteq B_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Pares adecuados
+\end_layout
+
+\begin_layout Standard
+Para construir el concepto de prueba elemental deberiamos trabajar con sucesiones finitas de sentencias pero el siguiente lema nos dice que podemos reemplazarlas por ciertas palabras,
+ i.e.
+ sus concatenaciones,
+ sin perder informacion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "secuencia de sentencias"
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\mathbf{\varphi}\in S^{\tau+}$
+\end_inset
+
+.
+ Hay unicos 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}\in S^{\tau}$
+\end_inset
+
+ tales que 
+\begin_inset Formula $\mathbf{\varphi}=\varphi_{1}...\varphi_{n}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+Pruebe el lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir el lema anterior nos dice que la sucesion 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ se puede codificar con la palabra 
+\begin_inset Formula $\varphi_{1}...\varphi_{n}$
+\end_inset
+
+ sin perder informacion.
+ Dada 
+\begin_inset Formula $\mathbf{\varphi}\in S^{\tau+}$
+\end_inset
+
+,
+ usaremos 
+\begin_inset Formula $n(\mathbf{\varphi})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{\varphi}_{1},...,\mathbf{\varphi}_{n(\mathbf{\varphi})}$
+\end_inset
+
+ para denotar los unicos 
+\begin_inset Formula $n$
+\end_inset
+
+ y 
+\begin_inset Formula $\varphi_{1},...,\varphi_{n}$
+\end_inset
+
+ cuya existencia garantiza el lema anterior.
+\end_layout
+
+\begin_layout Standard
+Un 
+\shape italic
+par adecuado de tipo 
+\shape default
+
+\begin_inset Formula $\tau$
+\end_inset
+
+ es un par 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})\in S^{\tau+}\times Just^{+}$
+\end_inset
+
+ tal que 
+\begin_inset Formula $n(\mathbf{\varphi})=n(\mathbf{J})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{J}$
+\end_inset
+
+ es balanceada.
+ Sea 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ un par adecuado de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\left\langle i,j\right\rangle \in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ sera la 
+\shape italic
+hipotesis 
+\shape default
+del bloque 
+\begin_inset Formula $\left\langle i,j\right\rangle $
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{\varphi}_{j}$
+\end_inset
+
+ sera la 
+\shape italic
+tesis
+\shape default
+ del bloque 
+\begin_inset Formula $\left\langle i,j\right\rangle $
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+.
+ Diremos que 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ 
+\shape italic
+esta bajo la hipotesis
+\shape default
+ 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ o que 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+ 
+\shape italic
+es una hipotesis de
+\shape default
+ 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ cuando haya en 
+\begin_inset Formula $\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+ un bloque de la forma 
+\begin_inset Formula $\left\langle l,j\right\rangle $
+\end_inset
+
+ el cual contenga a 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $i,j\in\left\langle 1,n(\mathbf{\varphi})\right\rangle .$
+\end_inset
+
+ Diremos que 
+\begin_inset Formula $i$
+\end_inset
+
+ es 
+\shape italic
+anterior
+\shape default
+ a 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ si 
+\begin_inset Formula $i<j$
+\end_inset
+
+ y ademas para todo 
+\begin_inset Formula $B\in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $i\in B\Rightarrow j\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Dependencia de constantes en pares adecuados
+\end_layout
+
+\begin_layout Standard
+Dadas 
+\begin_inset Formula $e,d\in\mathcal{C}$
+\end_inset
+
+,
+ diremos que 
+\begin_inset Formula $e$
+\end_inset
+
+ 
+\shape italic
+depende directamente de 
+\shape default
+
+\begin_inset Formula $d$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ si hay numeros 
+\begin_inset Formula $1\leq l<j\leq n(\mathbf{\varphi})$
+\end_inset
+
+ tales que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $l$
+\end_inset
+
+ es anterior a 
+\begin_inset Formula $j$
+\end_inset
+
+ en 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{j}=\alpha\mathrm{ELECCION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{j})\in Elec^{\tau}$
+\end_inset
+
+ via 
+\begin_inset Formula $e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $d$
+\end_inset
+
+ ocurre en 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dados 
+\begin_inset Formula $e,d\in\mathcal{C}$
+\end_inset
+
+,
+ diremos que 
+\begin_inset Formula $e$
+\end_inset
+
+ 
+\shape italic
+depende de 
+\shape default
+
+\begin_inset Formula $d$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ si existen 
+\begin_inset Formula $e_{0},...,e_{k+1}\in\mathcal{C}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $k\geq0$
+\end_inset
+
+,
+ tales que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $e_{0}=e$
+\end_inset
+
+ y 
+\begin_inset Formula $e_{k+1}=d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ 
+\shape italic
+depende directamente de 
+\shape default
+
+\begin_inset Formula $e_{i+1}$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+,
+ para 
+\begin_inset Formula $i=0,...,k$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Definicion de prueba formal
+\end_layout
+
+\begin_layout Standard
+Ahora si estamos en condiciones de definir el concepto de prueba en una teoria de primer orden.
+ Sea 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ una teoria de primer orden.
+ Sea 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ una sentencia de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Una 
+\shape italic
+prueba formal de 
+\shape default
+
+\begin_inset Formula $\varphi$
+\end_inset
+
+ 
+\shape italic
+en
+\shape default
+ 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ sera un par adecuado 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ de algun tipo 
+\begin_inset Formula $\tau_{1}=(\mathcal{C}\cup\mathcal{C}_{1},\mathcal{F},\mathcal{R},a)$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\mathcal{C}_{1}$
+\end_inset
+
+ finito y disjunto con 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+,
+ tal que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Cada 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ es una sentencia de tipo 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{\varphi}_{n(\mathbf{\varphi})}=\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $\left\langle i,j\right\rangle \in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{\varphi}_{j+1}=(\mathbf{\varphi}_{i}\rightarrow\mathbf{\varphi}_{j})$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{J}_{j+1}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+Para cada 
+\begin_inset Formula $i=1,...,n(\mathbf{\varphi}),$
+\end_inset
+
+ se da una de las siguientes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\mathrm{HIPOTESIS}\bar{k}$
+\end_inset
+
+ para algun 
+\begin_inset Formula $k\in\mathbf{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{CONCLUSION}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y hay un 
+\begin_inset Formula $j$
+\end_inset
+
+ tal que 
+\begin_inset Formula $\left\langle j,i-1\right\rangle \in\mathcal{B}^{\mathbf{J}}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{\varphi}_{i}=(\mathbf{\varphi}_{j}\rightarrow\mathbf{\varphi}_{i-1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{AXIOMALOGICO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{\varphi}_{i}$
+\end_inset
+
+ es un axioma logico de tipo 
+\begin_inset Formula $\tau_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{AXIOMAPROPIO}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{\varphi}_{i}\in\Sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{PARTICULARIZACION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Partic^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(f)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{COMMUTATIVIDAD}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Commut^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(g)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{ABSURDO}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Absur^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(h)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{EVOCACION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Evoc^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{EXISTENCIA}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Exist^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(j)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{CONJUNCIONELIMINACION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in ConjElim^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(k)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{DISJUNCIONINTRODUCCION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in DisjInt^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(l)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{EQUIVALENCIAELIMINACION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in EquivElim^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(m)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{MODUSPONENS}(\overline{l_{1}},\overline{l_{2}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{i})\in ModPon^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(n)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{CONJUNCIONINTRODUCCION}(\overline{l_{1}},\overline{l_{2}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{i})\in ConjInt^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(o)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{EQUIVALENCIAINTRODUCCION}(\overline{l_{1}},\overline{l_{2}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{i})\in EquivInt^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(p)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{DISJUNCIONELIMINACION}(\overline{l_{1}},\overline{l_{2}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{i})\in DisjElim^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(q)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{REEMPLAZO}(\overline{l_{1}},\overline{l_{2}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{i})\in Reemp^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(r)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{TRANSITIVIDAD}(\overline{l_{1}},\overline{l_{2}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{i})\in Trans^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(s)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{DIVISIONPORCASOS}(\overline{l_{1}},\overline{l_{2}},\overline{l_{3}})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l_{1},l_{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $l_{3}$
+\end_inset
+
+ anteriores a 
+\begin_inset Formula $i$
+\end_inset
+
+ y y 
+\begin_inset Formula $(\mathbf{\varphi}_{l_{1}},\mathbf{\varphi}_{l_{2}},\mathbf{\varphi}_{l_{3}},\mathbf{\varphi}_{i})\in DivPorCas^{\tau_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(t)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{ELECCION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Elec^{\tau_{1}}$
+\end_inset
+
+ via un nombre de cte 
+\begin_inset Formula $e$
+\end_inset
+
+,
+ el cual no pertenece a 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ y no ocurre en 
+\begin_inset Formula $\mathbf{\varphi}_{1},...,\mathbf{\varphi}_{i-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(u)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{J}_{i}=\alpha\mathrm{GENERALIZACION}(\bar{l})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ anterior a 
+\begin_inset Formula $i$
+\end_inset
+
+ y 
+\begin_inset Formula $(\mathbf{\varphi}_{l},\mathbf{\varphi}_{i})\in Generaliz^{\tau_{1}}$
+\end_inset
+
+ via un nombre de cte 
+\begin_inset Formula $c$
+\end_inset
+
+ el cual cumple:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(i)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c\not\in\mathcal{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(ii)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c$
+\end_inset
+
+ no es un nombre de cte que ocurra en 
+\begin_inset Formula $\mathbf{\varphi}$
+\end_inset
+
+ el cual sea introducido por la aplicacion de la regla de eleccion;
+ es decir para cada 
+\begin_inset Formula $u\in\{1,...,n(\mathbf{\varphi})\}$
+\end_inset
+
+,
+ si 
+\begin_inset Formula $\mathbf{J}_{u}=\alpha\mathrm{ELECCION}(\bar{v})$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha\in\{\varepsilon\}\cup\{\mathrm{TESIS}\bar{k}:k\in\mathbf{N}\}$
+\end_inset
+
+,
+ entonces no se da que 
+\begin_inset Formula $(\mathbf{\varphi}_{v},\mathbf{\varphi}_{u})\in Elec^{\tau_{1}}$
+\end_inset
+
+ via 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(iii)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $c$
+\end_inset
+
+ no ocurre en ninguna hipotesis de 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(iv)
+\end_layout
+
+\end_inset
+
+Ningun nombre de constante que ocurra en 
+\begin_inset Formula $\mathbf{\varphi}_{l}$
+\end_inset
+
+ o en sus hipotesis,
+ depende de 
+\begin_inset Formula $c$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+El concepto de teorema
+\end_layout
+
+\begin_layout Standard
+Cuando haya una prueba de 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ diremos que 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ es un 
+\shape italic
+teorema 
+\shape default
+de la teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ y escribiremos 
+\begin_inset Formula $(\Sigma,\tau)\vdash\varphi$
+\end_inset
+
+.
+ A continuacion daremos algunos ejemplos de teoremas exibiendo sus pruebas formales.
+\end_layout
+
+\begin_layout Subsubsection*
+En la teoria 
+\begin_inset Formula $Po$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sea 
+\begin_inset Formula $\mu=\forall x_{1}\forall x_{2}((\forall x_{3}\leq(x_{3},x_{1})\wedge\forall x_{3}\leq(x_{3},x_{2}))\rightarrow(x_{1}\equiv x_{2}))$
+\end_inset
+
+.
+ Veamos que 
+\begin_inset Formula $\mu$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $Po$
+\end_inset
+
+.
+ La idea para hacer la prueba formal es ir copiando la estructura de la prueba elemental de 
+\begin_inset Formula $\mu$
+\end_inset
+
+ dada en la Guia 7.
+ Para facilitar la lectura la escribiremos secuencialmente
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & (\forall x_{3}\leq(x_{3},a)\wedge\forall x_{3}\leq(x_{3},b)) &  & \text{\textrm{HIPOTESIS}}1\\
+2.\; & \forall x_{3}\leq(x_{3},a) &  & \mathrm{CONJUNCIONELIMINACION}(1)\\
+3.\; & \leq(b,a) &  & \mathrm{PARTICULARIZACION}(2)\\
+4.\; & \forall x_{3}\leq(x_{3},b) &  & \mathrm{CONJUNCIONELIMINACION}(1)\\
+5. & \leq(a,b) &  & \mathrm{PARTICULARIZACION}(4)\\
+6. & (\leq(a,b)\wedge\leq(b,a)) &  & \text{CONJUNCIONINTRODUCCION}(5,3)\\
+7. & \forall x_{1}\forall x_{2}((\leq(x_{1},x_{2})\wedge\leq(x_{2},x_{1}))\rightarrow(x_{1}\equiv x_{2})) &  & \text{AXIOMAPROPIO}\\
+8. & \forall x_{2}((\leq(a,x_{2})\wedge\leq(x_{2},a))\rightarrow(a\equiv x_{2})) &  & \text{PARTICULARIZACION}(7)\\
+9. & ((\leq(a,b)\wedge\leq(b,a))\rightarrow(a\equiv b)) &  & \text{PARTICULARIZACION}(8)\\
+10. & (a\equiv b) &  & \text{TESIS}1\text{MODUSPONENS}(6,9)\\
+11. & ((\forall x_{3}\leq(x_{3},a)\wedge\forall x_{3}\leq(x_{3},b))\rightarrow(a\equiv b)) &  & \text{CONCLUSION}\\
+12. & \forall x_{2}((\forall x_{3}\leq(x_{3},a)\wedge\forall x_{3}\leq(x_{3},x_{2}))\rightarrow(a\equiv x_{2})) &  & \text{GENERALIZACION}(11)\\
+13. & \forall x_{1}\forall x_{2}((\forall x_{3}\leq(x_{3},x_{1})\wedge\forall x_{3}\leq(x_{3},x_{2}))\rightarrow(x_{1}\equiv x_{2})) &  & \text{GENERALIZACION}(12)
+\end{array}
+\]
+
+\end_inset
+
+pero por supuesto,
+ nuestra prueba formal es en realidad el par 
+\begin_inset Formula $(\mathbf{\varphi},\mathbf{J})$
+\end_inset
+
+ donde 
+\begin_inset Formula $\mathbf{\varphi}$
+\end_inset
+
+ es la concatenacion de la secuencia de sentencias de arriba y 
+\begin_inset Formula $\mathbf{J}$
+\end_inset
+
+ es la concatenacion de la secuencia de justificaciones de arriba.
+ Notese que las sentencias de esta prueba formal son de tipo 
+\begin_inset Formula $(\{a,b\},\emptyset,\{\leq\},\{(\leq,2)\})$
+\end_inset
+
+ es decir extendimos 
+\begin_inset Formula $\tau_{Po}$
+\end_inset
+
+ agregando dos nombres de constante nuevos,
+ los cuales en la 
+\begin_inset Quotes eld
+\end_inset
+
+idea
+\begin_inset Quotes erd
+\end_inset
+
+ de la prueba denotan elementos fijos pero arbitrarios.
+ O sea que para esta prueba tenemos que el 
+\begin_inset Formula $\mathcal{C}_{1}$
+\end_inset
+
+ al que se refiere la definicion de prueba es el conjunto 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset VSpace bigskip
+\end_inset
+
+En la teoria 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veamos algunos teoremas con sus pruebas formales de esta teoria.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean las sentencias 
+\begin_inset Formula $\varphi_{1}\text{ y }\varphi_{2}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $((\varphi_{1}\vee\varphi_{2})\rightarrow(\varphi_{2}\vee\varphi_{1}))$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+.
+ Una prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1. & (\varphi_{1}\vee\varphi_{2}) &  & \text{HIPOTESIS}1\\
+2. & \varphi_{1} &  & \text{HIPOTESIS}2\\
+3. & (\varphi_{2}\vee\varphi_{1}) &  & \text{TESIS}2\text{DISJUNCIONINTRODUCCION}(2)\\
+4. & (\varphi_{1}\rightarrow(\varphi_{2}\vee\varphi_{1})) &  & \text{CONCLUSION}\\
+5. & \varphi_{2} &  & \text{HIPOTESIS}3\\
+6. & (\varphi_{2}\vee\varphi_{1}) &  & \text{TESIS}3\text{DISJUNCIONINTRODUCCION}(5)\\
+7. & \varphi_{2}\rightarrow(\varphi_{2}\vee\varphi_{1}) &  & \text{CONCLUSION}\\
+8. & (\varphi_{2}\vee\varphi_{1}) &  & \text{TESIS}1\text{DIVISIONPORCASOS}(1,4,7)\\
+9. & ((\varphi_{1}\vee\varphi_{2})\rightarrow(\varphi_{2}\vee\varphi_{1})) &  & \text{CONCLUSION}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean las sentencias 
+\begin_inset Formula $\varphi_{1},\varphi_{2}\text{ y }\varphi_{3}$
+\end_inset
+
+ de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}))$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+.
+ Una prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1. & (\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3})) &  & \text{HIPOTESIS}1\\
+2. & \varphi_{1} &  & \text{HIPOTESIS}2\\
+3. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(2)\\
+4. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}2\text{DISJUNCIONINTRODUCCION}(3)\\
+5. & (\varphi_{1}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})) &  & \text{CONCLUSION}\\
+6. & (\varphi_{2}\vee\varphi_{3}) &  & \text{HIPOTESIS}3\\
+7. & \varphi_{2} &  & \text{HIPOTESIS}4\\
+8. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(7)\\
+9. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}4\text{DISJUNCIONINTRODUCCION}(8)\\
+10. & (\varphi_{2}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})) &  & \text{CONCLUSION}\\
+11. & \varphi_{3} &  & \text{HIPOTESIS}5\\
+12. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}5\text{DISJUNCIONINTRODUCCION}(11)\\
+13. & (\varphi_{3}\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})) &  & \text{CONCLUSION}\\
+14. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}3\text{DIVISIONPORCASOS}(6,10,13)\\
+15. & ((\varphi_{2}\vee\varphi_{3})\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})) &  & \text{CONCLUSION}\\
+16. & ((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3}) &  & \text{TESIS}1\text{DIVISIONPORCASOS}(1,5,15)\\
+17. & ((\varphi_{1}\vee(\varphi_{2}\vee\varphi_{3}))\rightarrow((\varphi_{1}\vee\varphi_{2})\vee\varphi_{3})) &  & \text{CONCLUSION}
+\end{array}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean las sentencias 
+\begin_inset Formula $\varphi\text{ y }\psi$
+\end_inset
+
+ la sentencia 
+\begin_inset Formula $((\varphi\wedge(\varphi\vee\psi))\leftrightarrow\varphi)$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+.
+ Una prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & (\varphi\wedge(\varphi\vee\psi)) &  & \text{HIPOTESIS}1\\
+2.\; & \varphi &  & \text{TESIS}1\text{CONJUNCIONELIMINACION}(1)\\
+3.\; & ((\varphi\wedge(\varphi\vee\psi))\rightarrow\varphi) &  & \text{CONCLUSION}\\
+4.\; & \varphi &  & \text{HIPOTESIS}2\\
+5. & (\varphi\vee\psi) &  & \text{DISJUNCIONINTRODUCCION}(4)\\
+6. & (\varphi\wedge(\varphi\vee\psi)) &  & \text{TESIS}2\text{CONJUNCIONINTRODUCCION}(4,5)\\
+7. & (\varphi\rightarrow(\varphi\wedge(\varphi\vee\psi))) &  & \text{CONCLUSION}\\
+8. & ((\varphi\wedge(\varphi\vee\psi))\leftrightarrow\varphi) &  & \text{EQUIVALENCIAINTRODUCCION}(3,7)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean las sentencias 
+\begin_inset Formula $\varphi\text{ y }\psi$
+\end_inset
+
+ la sentencia 
+\begin_inset Formula $((\varphi\vee(\varphi\wedge\psi))\leftrightarrow\varphi)$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+.
+ Una prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & (\varphi\vee(\varphi\wedge\psi)) &  & \text{HIPOTESIS}1\\
+2.\; & \varphi &  & \text{HIPOTESIS}2\\
+3.\; & \varphi &  & \text{TESIS}2\text{EVOCACION}(2)\\
+4.\; & (\varphi\rightarrow\varphi) &  & \text{CONCLUSION}\\
+5. & (\varphi\wedge\psi) &  & \text{HIPOTESIS}3\\
+6. & \varphi &  & \text{TESIS}3\text{CONJUNCIONELIMINACION}(5)\\
+7. & ((\varphi\wedge\psi)\rightarrow\varphi) &  & \text{CONCLUSION}\\
+8. & \varphi &  & \text{TESIS}1\text{DIVISIONPORCASOS}(1,4,7)\\
+9. & ((\varphi\vee(\varphi\wedge\psi))\rightarrow\varphi) &  & \text{CONCLUSION}\\
+10. & \varphi &  & \text{HIPOTESIS}4\\
+11. & (\varphi\vee(\varphi\wedge\psi)) &  & \text{TESIS}4\text{DISJUNCIONINTRODUCCION}(10)\\
+12. & (\varphi\rightarrow(\varphi\vee(\varphi\wedge\psi))) &  & \text{CONCLUSION}\\
+13. & ((\varphi\vee(\varphi\wedge\psi))\leftrightarrow\varphi) &  & \text{EQUIVALENCIAINTRODUCCION}(9,12)
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean las sentencias 
+\begin_inset Formula $\varphi_{1},\varphi_{2}\text{ y }\varphi$
+\end_inset
+
+ la sentencia 
+\begin_inset Formula $((\varphi\wedge(\varphi_{1}\vee\varphi_{2}))\rightarrow((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2})))$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+.
+ Una prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & (\varphi\wedge(\varphi_{1}\vee\varphi_{2})) &  & \text{HIPOTESIS}1\\
+2.\; & \varphi &  & \text{CONJUNCIONELIMINACION}(1)\\
+3.\; & (\varphi_{1}\vee\varphi_{2}) &  & \text{CONJUNCIONELIMINACION}(1)\\
+4.\; & \varphi_{1} &  & \text{HIPOTESIS}2\\
+5. & (\varphi\wedge\varphi_{1}) &  & \text{CONJUNCIONINTRODUCCION}(2,4)\\
+6. & ((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2})) &  & \text{TESIS}2\text{DISJUNCIONINTRODUCCION}(5)\\
+7. & (\varphi_{1}\rightarrow((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2}))) &  & \text{CONCLUSION}\\
+8. & \varphi_{2} &  & \text{HIPOTESIS}3\\
+9. & (\varphi\wedge\varphi_{2}) &  & \text{CONJUNCIONINTRODUCCION}(2,8)\\
+10. & ((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2})) &  & \text{TESIS}3\text{DISJUNCIONINTRODUCCION}(9)\\
+11. & (\varphi_{2}\rightarrow((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2}))) &  & \text{CONCLUSION}\\
+12. & ((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2})) &  & \text{TESIS}1\text{DIVISIONPORCASOS}(3,7,11)\\
+13. & ((\varphi\wedge(\varphi_{1}\vee\varphi_{2}))\rightarrow((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2}))) &  & \text{CONCLUSION}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Cualesquiera sean las sentencias 
+\begin_inset Formula $\varphi_{1},\varphi_{2}\text{ y }\varphi$
+\end_inset
+
+ la sentencia 
+\begin_inset Formula $(((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2}))\rightarrow(\varphi\wedge(\varphi_{1}\vee\varphi_{2})))$
+\end_inset
+
+ es un teorema de 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+.
+ Una prueba formal:
+\begin_inset Formula 
+\[
+\begin{array}{llll}
+1.\; & ((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2})) &  & \text{HIPOTESIS}1\\
+2.\; & (\varphi\wedge\varphi_{1}) &  & \text{HIPOTESIS}2\\
+3.\; & \varphi &  & \text{CONJUNCIONELIMINACION}(2)\\
+4.\; & \varphi_{1} &  & \text{CONJUNCIONELIMINACION}(2)\\
+5. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(4)\\
+6. & (\varphi\wedge(\varphi_{1}\vee\varphi_{2})) &  & \text{TESIS}2\text{CONJUNCIONINTRODUCCION}(3,5)\\
+7. & ((\varphi\wedge\varphi_{1})\rightarrow(\varphi\wedge(\varphi_{1}\vee\varphi_{2}))) &  & \text{CONCLUSION}\\
+8. & (\varphi\wedge\varphi_{2}) &  & \text{HIPOTESIS}3\\
+9. & \varphi &  & \text{CONJUNCIONELIMINACION}(8)\\
+10. & \varphi_{2} &  & \text{CONJUNCIONELIMINACION}(8)\\
+11. & (\varphi_{1}\vee\varphi_{2}) &  & \text{DISJUNCIONINTRODUCCION}(10)\\
+12. & (\varphi\wedge(\varphi_{1}\vee\varphi_{2})) &  & \text{TESIS}3\text{CONJUNCIONINTRODUCCION}(9,11)\\
+13. & ((\varphi\wedge\varphi_{2})\rightarrow(\varphi\wedge(\varphi_{1}\vee\varphi_{2}))) &  & \text{CONCLUSION}\\
+14. & (\varphi\wedge(\varphi_{1}\vee\varphi_{2})) &  & \text{TESIS}1\text{DIVISIONPORCASOS}(1,7,13)\\
+15. & (((\varphi\wedge\varphi_{1})\vee(\varphi\wedge\varphi_{2}))\rightarrow(\varphi\wedge(\varphi_{1}\vee\varphi_{2}))) &  & \text{CONCLUSION}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau$
+\end_inset
+
+ un tipo cualquiera y sean 
+\begin_inset Formula $\varphi_{1},\varphi_{2},\varphi_{3}$
+\end_inset
+
+ sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Dar pruebas de las siguientes sentencias en la teoria 
+\begin_inset Formula $(\emptyset,\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi_{1}\wedge\varphi_{2})\rightarrow(\varphi_{2}\wedge\varphi_{1}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(((\varphi_{1}\wedge\varphi_{2})\rightarrow\varphi_{3})\leftrightarrow(\varphi_{1}\rightarrow(\varphi_{2}\rightarrow\varphi_{3})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $((\varphi_{1}\rightarrow\varphi_{2})\leftrightarrow(\lnot\varphi_{1}\vee\varphi_{2}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\lnot(\varphi_{1}\wedge\varphi_{2})\leftrightarrow(\lnot\varphi_{1}\vee\lnot\varphi_{2}))$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+A continuacion damos varias sentencias para que el lector de pruebas formales en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+.
+ La forma mas facil de hacer esto es primero dar la prueba elemental tal como se lo hizo en la Guia 6 (algunas fueron dejadas como ejercicios) y luego traducir la prueba elemental a una prueba formal.
+ No se recomienda al lector que 
+\begin_inset Quotes eld
+\end_inset
+
+cuan escarabajo
+\begin_inset Quotes erd
+\end_inset
+
+ intente aplicar las reglas mecanicamente para obtener la prueba formal.
+ Todo lo contrario el debe volver a la Guia 6 y hacer la respectiva prueba elemental imaginando como matematico la 
+\begin_inset Quotes eld
+\end_inset
+
+novela
+\begin_inset Quotes erd
+\end_inset
+
+ de su prueba elemental para luego dedicarse a traducirla a una formal.
+ Cabe destacar que dar una prueba formal concreta en este caso no es ni mas ni menos que dar una formalizacion matematicamente perfecta de la matematica informal del contexto de la respectiva prueba elemental.
+ Es decir estamos formalizando 
+\begin_inset Quotes eld
+\end_inset
+
+porciones de matematica real
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+De una prueba formal de 
+\begin_inset Formula $\forall x_{1}(\mathsf{s}(x_{1},x_{1})\equiv x_{1})$
+\end_inset
+
+ en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+De una prueba formal de 
+\begin_inset Formula $\forall x_{1}\forall x_{2}(\mathsf{s}(x_{1},x_{2})\equiv\mathsf{s}(x_{2},x_{1}))$
+\end_inset
+
+ en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+De una prueba formal de 
+\begin_inset Formula $\forall x_{1}\forall x_{2}(\mathsf{i}(\mathsf{s}(x_{1},x_{2}),x_{1})\equiv x_{1})$
+\end_inset
+
+ en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+De una prueba formal de 
+\begin_inset Formula $\forall x_{1}\forall x_{2}(\mathsf{s}(x_{1},x_{2})\equiv\mathsf{s}(x_{2},x_{1}))$
+\end_inset
+
+ en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+De una prueba formal de 
+\begin_inset Formula $\forall x_{1}\forall x_{2}(\leq(x_{1},x_{2})\leftrightarrow(\mathsf{s}(x_{1},x_{2})\equiv x_{2}))$
+\end_inset
+
+ en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Observacion:
+\end_layout
+
+\end_inset
+
+En lo que sigue escribiremos las sentencias de una forma mas amigable pero el lector debe entender que nos estamos refiriendo a sentencias de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ Por ejemplo escribiremos 
+\begin_inset Formula $\forall x\forall y(x\;\mathsf{s}\;y\equiv y\;\mathsf{s}\;x)$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $\forall x_{1}\forall x_{2}(\mathsf{s}(x_{1},x_{2})\equiv\mathsf{s}(x_{2},x_{1}))$
+\end_inset
+
+.
+ Tambien para escribir las pruebas formales haremos lo mismo,
+ pero siempre hay que entender que es una manera de hacer mas amena la notacion y que tanto las sentencias como las pruebas que haremos estan reemplazando a las verdaderas sentencias y pruebas formales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+Dar pruebas formales en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ de cada una de las siguientes sentencias de tipo 
+\begin_inset Formula $\tau_{RetCua}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\;(x\;\mathsf{s}\;y)\;\mathsf{s}\;z\equiv x\;\mathsf{s}\;(y\;\mathsf{s}\;z)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\forall w((x\leq z\wedge y\leq w)\rightarrow(x\;\mathsf{s}\ y\leq z\;\mathsf{s}\ w))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\forall y\forall z\;(x\;\mathsf{i}\ y)\;\mathsf{s}\;(x\;\mathsf{i}\;z)\leq x\;\mathsf{i}\;(y\;\mathsf{s}\;z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\forall xyz\;x\;\mathsf{i}\;(y\;\mathsf{s}\;z)\equiv(x\;\mathsf{i}\ y)\;\mathsf{s}\;(x\;\mathsf{i}\;z)\rightarrow\forall xy\left(\exists z(x\;\mathsf{i}\;z\equiv y\;\mathsf{i}\;z\wedge x\;\mathsf{s}\;z\equiv y\;\mathsf{s}\;z)\rightarrow x\equiv y\right))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\forall xyz\;x\;\mathsf{i}\;(y\;\mathsf{s}\;z)\equiv(x\;\mathsf{i}\ y)\;\mathsf{s}\;(x\;\mathsf{i}\;z)\rightarrow\forall xyz\;x\;\mathsf{s}\;(y\;\mathsf{i}\;z)\equiv(x\;\mathsf{s}\ y)\;\mathsf{i}\;(x\;\mathsf{s}\;z))$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x\;(\lnot\exists z(x\leq z\wedge\lnot(z\equiv x))\rightarrow\forall z(z\leq x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(Hint:
+ primero dar la prueba elemental como cualquier matematico lo haria y luego traducir la prueba elemental a una prueba formal)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\mathrm{rel}^{2}\},a).$
+\end_inset
+
+ Sea 
+\begin_inset Formula $T$
+\end_inset
+
+ la teoria 
+\begin_inset Formula $(\{\forall x\exists y(\mathrm{rel}(x,y)\vee\mathrm{rel}(y,x))\},\tau)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Describa los los modelos de 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+De una prueba formal de 
+\begin_inset Formula $\forall x(\forall y\lnot\mathrm{rel}(x,y)\rightarrow\exists z\mathrm{rel}(z,x))$
+\end_inset
+
+ en 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 17:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{\mathrm{tot}\},\{\mathrm{f}^{1},\mathrm{g}^{1},+^{2}\},\emptyset,a)$
+\end_inset
+
+,
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por los siguientes axiomas:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\exists y$
+\end_inset
+
+ 
+\begin_inset Formula $(\mathrm{tot}\equiv y+y\wedge\mathrm{tot}\equiv\mathrm{f}(y)+\mathrm{g}(y))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathrm{tot}\equiv\mathrm{f}(\mathrm{tot})+\mathrm{g}(\mathrm{tot})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+$
+\end_inset
+
+ es asociativa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $+$
+\end_inset
+
+ es conmutativa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\forall y\;\mathrm{f}(x+y)\equiv\mathrm{f}(x)+\mathrm{f}(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\forall y\;\mathrm{g}(x+y)\equiv\mathrm{g}(x)+\mathrm{g}(y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De una prueba formal que atestigue que 
+\begin_inset Formula $(\Sigma,\tau)\vdash\mathrm{tot}+\mathrm{tot}\equiv\mathrm{tot}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 18:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\{\mathrm{Op}^{1}\},\emptyset,a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $T=(\{\forall x_{1}(\mathrm{Op}(\mathrm{Op}(x_{1}))\equiv x_{1})\},\tau)$
+\end_inset
+
+ .
+ De pruebas formales en 
+\begin_inset Formula $T$
+\end_inset
+
+ de las sentencias
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall x_{1}\forall x_{2}(\lnot(x_{1}\equiv x_{2})\rightarrow\lnot(\mathrm{Op}(x_{1})\equiv\mathrm{Op}(x_{2})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall x_{1}\exists x_{2}(\mathrm{Op}(x_{2})\equiv x_{1})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 19:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1\},\{\mathsf{s}^{2},\mathsf{i}^{2},\mathrm{Op}^{1}\},\{\leq^{2}\},a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ formado por los axiomas de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ junto con los axiomas:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall x\;x\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\;0\leq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\ (\mathrm{Op}(\mathrm{Op}(x))\equiv x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\forall y\ ((x\leq y)\rightarrow(\mathrm{Op}(y)\leq\mathrm{Op}(x)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De una prueba formal en 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ de la sentencia 
+\begin_inset Formula $(\mathrm{Op}(0)\equiv1)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Conteo de modelos modulo isomorfismo
+\end_layout
+
+\begin_layout Standard
+Es importante en el analisis de una teoria dada,
+ entender como son sus modelos.
+ Esto nos permite muchas veces sacar conclusiones importantes acerca del poder deductivo de dicha teoria (es decir acerca del conjunto de sus teoremas).
+ Cuanto mas entendamos la naturaleza de los modelos de una teoria mas chanse tenemos de dar pruebas elementales y esto deberia quedar claro del hecho que cuando un matematico da una prueba elemental el esta pensando en un modelo generico de dicha teoria.
+ Por ejemplo si la teoria es 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ el matematico tiene en mente un reticulado cuaterna y por supuesto cuanto mas sepa y entienda este concepto mas chanse tiene de encontrar pruebas elementales en 
+\begin_inset Formula $RetCua$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un buen entrenamiento en el estudio de los modelos de una teoria consiste en contar modulo isomorfismo cuantos modelos tiene de una cardinalidad dada.
+ Como lo vimos para posets y reticulados,
+ contar 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+modulo isomorfismo
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es contar pensando que dos estructuras isomorfas son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+iguales
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ y por lo tanto aportan 1 a nuestra cuenta.
+ Mas formalmente diremos que una teoria 
+\begin_inset Formula $T$
+\end_inset
+
+ 
+\shape italic
+tiene,
+ modulo isomorfismo,
+ exactamente una cantidad 
+\shape default
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\shape italic
+
+\begin_inset space \space{}
+\end_inset
+
+de modelos de 
+\shape default
+
+\begin_inset Formula $m$
+\end_inset
+
+ 
+\shape italic
+elementos
+\shape default
+ si hay 
+\begin_inset Formula $\mathbf{A}_{1},...,\mathbf{A}_{n}$
+\end_inset
+
+ estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ tales que:
+\end_layout
+
+\begin_layout Enumerate
+Cada 
+\begin_inset Formula $\mathbf{A}_{i}$
+\end_inset
+
+ es un modelo de 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\vert A_{i}\right\vert =m$
+\end_inset
+
+,
+ para cada 
+\begin_inset Formula $i=1,...,n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbf{A}_{i}$
+\end_inset
+
+ no es isomorfa a 
+\begin_inset Formula $\mathbf{A}_{j}$
+\end_inset
+
+ cada ves que 
+\begin_inset Formula $i$
+\end_inset
+
+ es distinto de 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es un modelo de la teoria 
+\begin_inset Formula $T$
+\end_inset
+
+ y 
+\begin_inset Formula $\left\vert A\right\vert =m$
+\end_inset
+
+,
+ entonces 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ es isomorfo a 
+\begin_inset Formula $\mathbf{A}_{i}$
+\end_inset
+
+ para algun 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como puede notarse para contar estructuras modulo isomorfismo nos sera necesario probar que ciertas estructuras no son isomorfas.
+ El siguiente criterio es muy util:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+NoHayIso
+\end_layout
+
+\end_inset
+
+Si dos estructuras de tipo 
+\begin_inset Formula $\tau$
+\end_inset
+
+ son tales que hay una 
+\begin_inset Formula $\varphi\in S^{\tau}$
+\end_inset
+
+ la cual vale en una y no en la otra,
+ entonces dichas estructuras no son isomorfas 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dejamos como ejercicio justificar este critero usando un lema del final de la Guia 10.
+ Cabe destacar que el criterio anterior no es completo,
+ es decir dos estructuras 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ pueden satisfacer las mismas sentencias pero ser no isomorfas.
+ Un ejemplo natural de esto se obtiene tomando 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\leq^{2}\},a)$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ y 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ dadas por
+\begin_inset Formula 
+\begin{align*}
+A & =\mathbf{Q\ \ \ \ \ \ \ \ \ \ }\leq^{\mathbf{A}}=\text{orden usual de }\mathbf{Q}\\
+B & =\mathbf{R\ \ \ \ \ \ \ \ \ \ }\leq^{\mathbf{B}}=\text{orden usual de }\mathbf{R}
+\end{align*}
+
+\end_inset
+
+No daremos la prueba de este hecho pero es un interesante ejercicio para el estudiante avanzado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 20:
+\end_layout
+
+\end_inset
+
+Pruebe que modulo isomorfismo la teoria 
+\begin_inset Formula $Po$
+\end_inset
+
+ tiene exactamente 
+\begin_inset Formula $2$
+\end_inset
+
+ modelos de 
+\begin_inset Formula $2$
+\end_inset
+
+ elementos.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 21:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\emptyset,\emptyset,\{\leq^{2},r^{1}\},a)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por los axiomas que dicen que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial junto con el axioma 
+\begin_inset Formula $\forall x\forall y\ (r(x)\wedge r(y)\rightarrow x\equiv y)$
+\end_inset
+
+.
+ Diga cuantos modelos de dos elementos tiene la teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ modulo isomorfismo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 22:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{c\},\emptyset,\{\leq^{2},r^{1}\},a)$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por los axiomas que dicen que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial junto con el axioma 
+\begin_inset Formula $\forall x\forall y\ (r(x)\wedge r(y)\rightarrow x\equiv y)$
+\end_inset
+
+.
+ Diga cuantos modelos de tres elementos tiene la teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+,
+ modulo isomorfismo
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 23:
+\end_layout
+
+\end_inset
+
+Sean 
+\begin_inset Formula $n,m\in\mathbf{N}$
+\end_inset
+
+.
+ Defina matematicamente que significa que
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+una teoria 
+\begin_inset Formula $T$
+\end_inset
+
+ tenga,
+ modulo isomorfismo,
+ exactamente 
+\begin_inset Formula $n$
+\end_inset
+
+ modelos
+\end_layout
+
+\begin_layout Enumerate
+una teoria 
+\begin_inset Formula $T$
+\end_inset
+
+ tenga,
+ modulo isomorfismo,
+ exactamente 
+\begin_inset Formula $n$
+\end_inset
+
+ modelos de cardinal menor o igual a 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+una teoria 
+\begin_inset Formula $T$
+\end_inset
+
+ tenga,
+ modulo isomorfismo,
+ exactamente 
+\begin_inset Formula $n$
+\end_inset
+
+ modelos con universo igual al conjunto de numeros naturales 
+\begin_inset Formula $\{1,2,3\}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 24:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{c\},\emptyset,\{\leq^{2},r^{1}\},a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ el conjunto formado por los axiomas que dicen que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es un orden parcial junto con los siguientes axiomas
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall x\ (r(x)\rightarrow\exists z\ x\leq z\wedge\lnot(x\equiv z))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\exists z\forall x\ (\lnot(x\equiv z)\rightarrow(\lnot(x\leq z)\wedge\lnot(z\leq x)))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x,y,z,w\ \ (x\equiv y\vee x\equiv z\vee x\equiv w\vee y\equiv z\vee y\equiv w\vee z\equiv w)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diga cuantos modelos modulo isomorfismo tiene la teoria 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 25:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1,\mathrm{me}\},\{\mathsf{s}^{2},\mathsf{i}^{2}\},\{\leq^{2}\},a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ formado por los axiomas de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ junto con los axiomas:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall x\;x\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\;0\leq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lnot(\mathrm{me}\equiv0)\wedge\lnot(\mathrm{me}\equiv1)\wedge\forall z((\mathrm{me}\leq z)\vee(z\leq\mathrm{me})))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diga en forma hablada o mediante un grafico que son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ los modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diga,
+ modulo isomorfismo,
+ cuantos modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ hay,
+ con universo de exactamente 5 elementos.
+ Justifique cuando afirme que dos modelos no son isomorfos.
+\end_layout
+
+\begin_layout Enumerate
+De una prueba formal que atestigue que
+\begin_inset Formula 
+\[
+(\Sigma,\tau)\vdash\forall x\ (\exists z(x\ \mathsf{i}\ z\equiv0\wedge x\ \mathsf{s}\ z\equiv1)\rightarrow(x\equiv0\vee x\equiv1))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 26:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $\tau=(\{0,1,\mathrm{mono}\},\{\mathsf{s}^{2},\mathsf{i}^{2}\},\{\leq^{2}\},a)$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ formado por los axiomas de 
+\begin_inset Formula $RetCua$
+\end_inset
+
+ junto con los axiomas:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\forall x\;x\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\;0\leq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lnot(\mathrm{mono}\equiv0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall x\;(\lnot(x\equiv0)\rightarrow\mathrm{mono}\leq x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diga en forma hablada o mediante un grafico que son 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+esencialmente
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ los modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Diga,
+ modulo isomorfismo,
+ cuantos modelos de 
+\begin_inset Formula $(\Sigma,\tau)$
+\end_inset
+
+ hay,
+ con universo de exactamente 5 elementos.
+ Justifique cuando afirme que dos modelos no son isomorfos.
+\end_layout
+
+\begin_layout Enumerate
+De una prueba formal que atestigue que
+\begin_inset Formula 
+\[
+(\Sigma,\tau)\vdash\forall x\ (\exists z(x\ \mathsf{i}\ z\equiv0\wedge x\ \mathsf{s}\ z\equiv1)\rightarrow(x\equiv0\vee x\equiv1))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

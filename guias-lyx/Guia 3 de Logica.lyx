@@ -1,0 +1,2610 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+%TCIDATA{Created=Thursday, March 08, 2007 06:44:18}
+%TCIDATA{LastRevised=Sunday, August 11, 2024 19:39:24}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{ComputeDefs=
+%$\varepsilon$
+%$F_{V(\mathbf{A})}(x_{1},...,x_{n})=\{t_{1},...,t_{k}\}$
+%}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}\newtheorem{acknowledgement}[theorem]{Acknowledgement}\newtheorem{algorithm}[theorem]{Algorithm}\newtheorem{axiom}[theorem]{Axiom}\newtheorem{case}[theorem]{Case}\newtheorem{claim}[theorem]{Claim}\newtheorem{conclusion}[theorem]{Conclusion}\newtheorem{condition}[theorem]{Condition}\newtheorem{conjecture}[theorem]{Conjecture}\newtheorem{corollary}[theorem]{Corollary}\newtheorem{criterion}[theorem]{Criterion}\newtheorem{definition}[theorem]{Definition}\newtheorem{example}[theorem]{Example}\newtheorem{exercise}[theorem]{Exercise}\newtheorem{lemma}[theorem]{Lemma}\newtheorem{notation}[theorem]{Notation}\newtheorem{problem}[theorem]{Problem}\newtheorem{proposition}[theorem]{Proposition}\newtheorem{remark}[theorem]{Remark}\newtheorem{solution}[theorem]{Solution}\newtheorem{summary}[theorem]{Summary}\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Guia 3 de Logica
+\end_layout
+
+\begin_layout Standard
+Nota: Los ejercicios que tienen una S son para una 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+Segunda pasada
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+"
+\end_layout
+
+\end_inset
+
+ es decir ya sea son mas anecdoticos y menos importantes tematicamente,
+ o son de completar pruebas y tienen que ver mas con la parte teorica, o
+ son mas dificiles y conviene encararlos despues de una primera pasada por
+ la guia (asi uno comienza a pensarlos con un poco mas de madurez sobre
+ el tema).
+\end_layout
+
+\begin_layout Subsection*
+Reticulados par
+\end_layout
+
+\begin_layout Standard
+El concepto de reticulado puede ser abordado en dos formas distintas, una
+ geometrica, via posets, la cual daremos ahora y la otra algebraica, via
+ estructuras algebraicas definidas ecuacionalmente, la cual daremos en la
+ Guia 4.
+ Como veremos mas adelante ambas definiciones son equivalentes.
+\end_layout
+
+\begin_layout Standard
+Por un 
+\shape italic
+reticulado par
+\shape default
+ entenderemos un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ el cual cumple que para todo 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+, existen (en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+) 
+\begin_inset Formula $\sup(\{a,b\})$
+\end_inset
+
+ e 
+\begin_inset Formula $\inf(\{a,b\})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 1:
+\end_layout
+
+\end_inset
+
+Dar todos reticulados par cuyo universo es 
+\begin_inset Formula $\{2,3,4\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 2:
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in\mathcal{P}(\omega)^{2}:A\subseteq B\}$
+\end_inset
+
+, es un reticulado par.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 2,5:
+\end_layout
+
+\end_inset
+
+Pruebe que 
+\begin_inset Formula $(\mathbf{N},D)$
+\end_inset
+
+ es un reticulado par, donde 
+\begin_inset Formula $D=\{(x,y)\in\mathbf{N}^{2}:x|y\}$
+\end_inset
+
+.
+ ¿tiene elemento maximo? ¿tiene elemento minimo?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 3:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un poset.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Supongamos 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $\sup(\{a,b\})=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un conjunto totalmente ordenado, entonces 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notese que si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un poset y 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+ es no vacio, entonces 
+\begin_inset Formula $\mathrm{\leq}\cap S^{2}$
+\end_inset
+
+ es un orden parcial sobre 
+\begin_inset Formula $S$
+\end_inset
+
+, por lo cual 
+\begin_inset Formula $(S,\mathrm{\leq}\cap S^{2})$
+\end_inset
+
+ es un poset.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 4:
+\end_layout
+
+\end_inset
+
+V o F o I, justifique
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\{1\},\{(1,1)\})$
+\end_inset
+
+ es un reticulado par
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par, entonces existe 
+\begin_inset Formula $\sup S$
+\end_inset
+
+ para cada 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par y 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+ es no vacio, entonces 
+\begin_inset Formula $(S,\mathrm{\leq}\cap S^{2})$
+\end_inset
+
+ es un reticulado par
+\end_layout
+
+\begin_layout Enumerate
+(S) Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un reticulado par y sea 
+\begin_inset Formula $S\subseteq P$
+\end_inset
+
+ no vacio tal que 
+\begin_inset Formula $(S,\mathrm{\leq}\cap S^{2})$
+\end_inset
+
+ es un reticulado par.
+ Sean 
+\begin_inset Formula $a,b\in S$
+\end_inset
+
+.
+ Entonces el infimo de 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ y el infimo de 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(S,\mathrm{\leq}\cap S^{2})$
+\end_inset
+
+ coinciden
+\end_layout
+
+\begin_layout Enumerate
+(S) Sea 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in(\mathcal{P}(\mathbf{R})-\{\mathbf{N}\})^{2}:A\subseteq B\}$
+\end_inset
+
+.
+ Entonces 
+\begin_inset Formula $(\mathcal{P}(\mathbf{R})-\{\mathbf{N}\},\leq)$
+\end_inset
+
+ es un reticulado par 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto 
+\begin_inset Formula $A$
+\end_inset
+
+, por una 
+\shape italic
+operacion binaria sobre 
+\shape default
+
+\begin_inset Formula $A$
+\end_inset
+
+ entenderemos una funcion cuyo dominio es 
+\begin_inset Formula $A^{2}$
+\end_inset
+
+ y cuya imagen esta contenida en 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ En un reticulado par 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ tenemos dos operaciones binarias naturalmente definidas:
+\begin_inset Formula 
+\[
+\begin{array}{rcl}
+\mathsf{s}:P^{2} & \rightarrow & P\\
+(a,b) & \rightarrow & \sup(\{a,b\})
+\end{array}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \begin{array}{rcl}
+\mathsf{i}:P^{2} & \rightarrow & P\\
+(a,b) & \rightarrow & \inf(\{a,b\})
+\end{array}
+\]
+
+\end_inset
+
+Escribiremos 
+\begin_inset Formula $a\mathsf{\;s\;}b$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $\mathsf{s}(a,b)$
+\end_inset
+
+ y 
+\begin_inset Formula $a\mathsf{\;i\;}b$
+\end_inset
+
+ en lugar de 
+\begin_inset Formula $\mathsf{i}(a,b)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 5:
+\end_layout
+
+\end_inset
+
+Cuales son las operaciones s e i en el reticulado par 
+\begin_inset Formula $(\mathbf{N},|)$
+\end_inset
+
+ (con 
+\begin_inset Formula $\mathrm{|}=\{(x,y)\in\mathbf{N}^{2}:x|y\}$
+\end_inset
+
+)?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 6
+\end_layout
+
+\end_inset
+
+Cuales son las operaciones s e i en el reticulado par 
+\begin_inset Formula $(\mathcal{P}(\omega),\leq)$
+\end_inset
+
+ (con 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in\mathcal{P}(\omega)^{2}:A\subseteq B\}$
+\end_inset
+
+)?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 7:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $n\in\mathbf{N}$
+\end_inset
+
+.
+ Sea 
+\begin_inset Formula $D_{n}=\{x\in\mathbf{N}:x|n\}$
+\end_inset
+
+ y sea 
+\begin_inset Formula $\leq_{n}=\{(x,y)\in D_{n}\times D_{n}:x|y\}$
+\end_inset
+
+.
+ Pruebe que 
+\begin_inset Formula $(D_{n},\leq_{n})$
+\end_inset
+
+ es un reticulado par y describa las operaciones s e i de 
+\begin_inset Formula $(D_{n},\leq_{n})$
+\end_inset
+
+.
+ Haga el diagrama de Hasse de 
+\begin_inset Formula $(D_{60},\leq_{60})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 8:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $P\subseteq\mathcal{P}(\mathbf{N})$
+\end_inset
+
+, y supongamos 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(A,B)\in P^{2}:A\subseteq B\}$
+\end_inset
+
+.
+ Es entonces la operación i de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ igual a la operación intersección de conjuntos restringida a 
+\begin_inset Formula $P^{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+Ejercicio 9:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $P\subseteq\mathbf{N}$
+\end_inset
+
+, y supongamos 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par, donde 
+\begin_inset Formula $\mathrm{\leq}=\{(x,y)\in P^{2}:x|y\}$
+\end_inset
+
+.
+ Es entonces la operación i de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ igual a la operación maximo comun divisor restringida a 
+\begin_inset Formula $P^{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 10:
+\end_layout
+
+\end_inset
+
+(S) Si 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ es un reticulado par y 
+\begin_inset Formula $m$
+\end_inset
+
+ es un elemento maximal de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ entonces 
+\begin_inset Formula $m$
+\end_inset
+
+ es un elemento maximo de 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+.
+ Puede debilitar la hipotesis de que 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ sea un reticulado par de manera que el enunciado siga siendo verdadero?
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 10,5:
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ un reticulado par y supongamos 
+\begin_inset Formula $a,b\in P$
+\end_inset
+
+ son tales que 
+\begin_inset Formula $b$
+\end_inset
+
+ tapa a 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Entonces si 
+\begin_inset Formula $x\nleq a$
+\end_inset
+
+ se tiene que 
+\begin_inset Formula $b\leq a\mathsf{\;s\;}x$
+\end_inset
+
+.
+ (
+\begin_inset Quotes eld
+\end_inset
+
+tapa
+\begin_inset Quotes erd
+\end_inset
+
+ esta definido antes del Ejercicio 5,5 de la Guia 2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A continuacion nos dedicaremos a probar varias propiedades agradables que
+ se cumplen en un reticulado par.
+ Recomendamos al lector que en algunos casos practique encontrando pruebas
+ perfectas.
+ Esto lo entrenara en su capacidad de ser un matematico maduro, la cual
+ sera crucial a la hora de hacer logica ya que la logica estudia (modeliza)
+ matematicamente el funcionar de un matematico y sera muy practico que cada
+ uno cuente con un matematico maduro en su propia mente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dado un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+, se cumplen las siguientes.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq x$
+\end_inset
+
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ 
+\begin_inset Formula $y$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{i\;}y\leq x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s}\;x=x$
+\end_inset
+
+, cualesquiera sea 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}x=x$
+\end_inset
+
+, cualesquiera sea 
+\begin_inset Formula $x\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s}\;y=y\;\mathsf{s}\;x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(6)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}y=y\mathsf{\;i\;}x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Prueba perfecta de (1).
+ Sean 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+, fijos.
+ Por definicion de 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ 
+\begin_inset Formula $b=\sup(\{a,b\})$
+\end_inset
+
+.
+ O sea que por definicion de supremo de un conjunto tenemos que 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ es cota superior del conjunto 
+\begin_inset Formula $\{a,b\}$
+\end_inset
+
+ en 
+\begin_inset Formula $(L\leq)$
+\end_inset
+
+.
+ O sea que 
+\begin_inset Formula $a\leq a$
+\end_inset
+
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $a,b$
+\end_inset
+
+ eran arbitrarios, hemos probado que vale (1).
+\end_layout
+
+\begin_layout Standard
+Prueba perfecta de (3).
+ Sea 
+\begin_inset Formula $a\in L$
+\end_inset
+
+, fijo.
+ Por definicion de 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ tenemos que 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ 
+\begin_inset Formula $a=\sup(\{a,a\})=\sup(\{a\})$
+\end_inset
+
+.
+ O sea que debemos probar que 
+\begin_inset Formula $a=\sup(\{a\})$
+\end_inset
+
+.
+ Es claro que 
+\begin_inset Formula $a$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\{a\}$
+\end_inset
+
+.
+ Ademas es claro que si 
+\begin_inset Formula $z$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\{a\}$
+\end_inset
+
+, entonces 
+\begin_inset Formula $z\geq a$
+\end_inset
+
+.
+ O sea que por definicion de supremo de un conjunto tenemos que 
+\begin_inset Formula $a=\sup(\{a\})$
+\end_inset
+
+.
+ O sea que hemos probado que 
+\begin_inset Formula $a\mathsf{\;s\;}a=a$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $a$
+\end_inset
+
+ era arbitrario, hemos probado que vale (3).
+\end_layout
+
+\begin_layout Standard
+Dejamos al lector completar la prueba.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 11:
+\end_layout
+
+\end_inset
+
+Complete la prueba del lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dado un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $x\;\mathsf{s}\;y=y$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ si y solo si 
+\begin_inset Formula $x\;\mathsf{i}\;y=x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 12:
+\end_layout
+
+\end_inset
+
+Demuestre el lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las siguientes dos propiedades son conocidas como leyes de absorcion (por
+ que?)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dado un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+, se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\;\mathsf{s}\;(x\mathsf{\;i\;}y)=x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\mathsf{\;i\;}(x\;\mathsf{s}\;y)=x$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (1).
+ Sean 
+\begin_inset Formula $a,b\in L$
+\end_inset
+
+, fijos.
+ Por definicion de 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+ debemos probar que 
+\begin_inset Formula $\sup(\{a,a\mathsf{\;i\;}b\})=a$
+\end_inset
+
+.
+ O sea debemos probar que 
+\begin_inset Formula $a$
+\end_inset
+
+ es la menor cota superior de 
+\begin_inset Formula $\{a,a\mathsf{\;i\;}b\}$
+\end_inset
+
+.
+ Por un lema anterior tenemos que 
+\begin_inset Formula $a\mathsf{\;i\;}b\leq a$
+\end_inset
+
+ y obviamente se da 
+\begin_inset Formula $a\leq a$
+\end_inset
+
+, lo cual nos dice que 
+\begin_inset Formula $a$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\{a,a\mathsf{\;i\;}b\}$
+\end_inset
+
+.
+ Es claro que es menor o igual que cualquier otra cota superior.
+ O sea que hemos probado que 
+\begin_inset Formula $a\;\mathsf{s}\;(a\mathsf{\;i\;}b)=a$
+\end_inset
+
+, lo cual ya que 
+\begin_inset Formula $a,b$
+\end_inset
+
+ eran elementos arbitrarios nos dice que vale (1).
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 13:
+\end_layout
+
+\end_inset
+
+Pruebe (2) del lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Antes de seguir dando propiedades basicas de los reticulados par daremos
+ tres reglas que seran de suma utilidad para encontrar pruebas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regla Igualdad en Posets
+\end_layout
+
+\begin_layout Standard
+Si ud esta intentando probar que en un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ dos elementos 
+\begin_inset Formula $x,y$
+\end_inset
+
+ son iguales, desdoble su tarea en las dos tareas siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $y\leq x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regla Superar un Supremo
+\end_layout
+
+\begin_layout Standard
+Si ud esta intentando probar que en un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ se da que 
+\begin_inset Formula $z\geq x\;\mathsf{s}\;y$
+\end_inset
+
+, desdoble su tarea en las dos tareas siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $z\geq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $z\geq y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Regla Ser Menor o Igual que un Infimo
+\end_layout
+
+\begin_layout Standard
+Si ud esta intentando probar que en un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ se da que 
+\begin_inset Formula $z\leq x\;\mathsf{i}\;y$
+\end_inset
+
+, desdoble su tarea en las dos tareas siguientes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $z\leq x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+Probar que 
+\begin_inset Formula $z\leq y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 14:
+\end_layout
+
+\end_inset
+
+Justifique matematicamente la validez de las reglas anteriores 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ambas operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+son asociativas, es decir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dado un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+, se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\;\mathsf{s}\;y)\;\mathsf{s}\;z=x\;\mathsf{s}\;(y\;\mathsf{s}\;z)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\mathsf{\;i\;}y)\mathsf{\;i\;}z=x\mathsf{\;i\;}(y\mathsf{\;i\;}z)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (1) Sean 
+\begin_inset Formula $a,b,c\in L$
+\end_inset
+
+, fijos.
+ Usaremos la regla Igualdad en Posets.
+ Primero probaremos 
+\begin_inset Formula $(a\;\mathsf{s}\;b)\;\mathsf{s}\;c\leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)$
+\end_inset
+
+.
+ Para esto usaremos la regla Superar un Supremo.
+ Es decir que debemos probar que
+\begin_inset Formula 
+\begin{align*}
+(a\;\mathsf{s}\;b) & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)\\
+c & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)
+\end{align*}
+
+\end_inset
+
+Para la primer desigualdad usaremos tambien la regla Superar un Supremo,
+ por lo cual deberemos probar
+\begin_inset Formula 
+\begin{align*}
+a & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)\\
+b & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)
+\end{align*}
+
+\end_inset
+
+O sea que en suma debemos probar las siguientes desigualdades
+\begin_inset Formula 
+\begin{align*}
+a & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)\\
+b & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)\\
+c & \leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)
+\end{align*}
+
+\end_inset
+
+La primera es directa de un lema anterior, y para la segunda notese que
+ el mismo lema nos dice que
+\begin_inset Formula 
+\[
+b\leq(b\;\mathsf{s}\;c)\text{ y }(b\;\mathsf{s}\;c)\leq a\;\mathsf{s}\;(b\;\mathsf{s}\;c)
+\]
+
+\end_inset
+
+por lo cual solo resta usar que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es transitiva.
+ La tercera es completamente analoga a la segunda.
+\end_layout
+
+\begin_layout Standard
+En forma similar se prueba que 
+\begin_inset Formula $a\;\mathsf{s}\;(b\;\mathsf{s}\;c)\leq(a\;\mathsf{s}\;b)\;\mathsf{s}\;c$
+\end_inset
+
+.
+ Es decir que por la regla Igualdad en Posets tenemos que 
+\begin_inset Formula $a\;\mathsf{s}\;(b\;\mathsf{s}\;c)=(a\;\mathsf{s}\;b)\;\mathsf{s}\;c$
+\end_inset
+
+.
+ Ya que 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ eran elementos arbitrarios hemos probado que vale (1).
+\end_layout
+
+\begin_layout Standard
+(2) es dejada como ejercicio.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 14,5:
+\end_layout
+
+\end_inset
+
+Complete la prueba de (1) en la demostracion anterior, probando que 
+\begin_inset Formula $a\;\mathsf{s}\;(b\;\mathsf{s}\;c)\leq(a\;\mathsf{s}\;b)\;\mathsf{s}\;c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El siguiente lema prueba que en un reticulado par las operaciones 
+\begin_inset Formula $\mathsf{s}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+e 
+\begin_inset Formula $\mathsf{i}$
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+preservan el orden
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dado un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+, se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq z$
+\end_inset
+
+ e 
+\begin_inset Formula $y\leq w$
+\end_inset
+
+ implica 
+\begin_inset Formula $x\;\mathsf{s}\ y\leq z\;\mathsf{s}\ w$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z,w\in L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq z$
+\end_inset
+
+ e 
+\begin_inset Formula $y\leq w$
+\end_inset
+
+ implica 
+\begin_inset Formula $x\mathsf{\;i\;}y\leq z\mathsf{\;i\;}w$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z,w\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ (1) Sean 
+\begin_inset Formula $a,b,c,d\in L$
+\end_inset
+
+, elementos fijos.
+ Supongamos que 
+\begin_inset Formula $a\leq c$
+\end_inset
+
+ e 
+\begin_inset Formula $b\leq d$
+\end_inset
+
+.
+ Probaremos que entonces 
+\begin_inset Formula $a\;\mathsf{s}\ b\leq c\;\mathsf{s}\ d$
+\end_inset
+
+.
+ Por la regla Superar un Supremo basta con probar que
+\begin_inset Formula 
+\begin{align*}
+a & \leq c\;\mathsf{s}\;d\\
+b & \leq c\;\mathsf{s}\;d
+\end{align*}
+
+\end_inset
+
+Para ver que 
+\begin_inset Formula $a\leq c\;\mathsf{s}\;d$
+\end_inset
+
+ notese que 
+\begin_inset Formula $a\leq c$
+\end_inset
+
+ (por hipotesis) y 
+\begin_inset Formula $c\leq c\;\mathsf{s}\;d$
+\end_inset
+
+, por lo cual podemos usar que 
+\begin_inset Formula $\leq$
+\end_inset
+
+ es transitiva.
+ La desigualdad 
+\begin_inset Formula $b\leq c\;\mathsf{s}\;d$
+\end_inset
+
+ se prueba en forma similar.
+ O sea que hemos probado que
+\begin_inset Formula 
+\[
+a\leq c\text{ y }b\leq d\text{ implican }a\;\mathsf{s}\ b\leq c\;\mathsf{s}\ d
+\]
+
+\end_inset
+
+Ya que 
+\begin_inset Formula $a,b,c,d$
+\end_inset
+
+ eran elementos arbitrarios hemos probado que vale (1).
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 15:
+\end_layout
+
+\end_inset
+
+Haga la prueba de (2) del lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Dado un reticulado par 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+, se tiene que:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(x\mathsf{\;i\;}y)\;\mathsf{s}\;(x\mathsf{\;i\;}z)\leq x\mathsf{\;i\;}(y\;\mathsf{s}\;z)$
+\end_inset
+
+, cualesquiera sean 
+\begin_inset Formula $x,y,z\in L$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Sean 
+\begin_inset Formula $a,b,c\in L$
+\end_inset
+
+, elementos fijos.
+ Por la regla Superar un Supremo, basta con probar que
+\begin_inset Formula 
+\begin{align*}
+a\mathsf{\;i\;}b & \leq a\mathsf{\;i\;}(b\;\mathsf{s}\;c)\\
+a\mathsf{\;i\;}c & \leq a\mathsf{\;i\;}(b\;\mathsf{s}\;c)
+\end{align*}
+
+\end_inset
+
+Pero estas dos desigualdades pueden ser facilmente probadas aplicando (2)
+ del lema anterior.
+ O sea que 
+\begin_inset Formula $(a\mathsf{\;i\;}b)\;\mathsf{s}\;(a\mathsf{\;i\;}c)\leq a\mathsf{\;i\;}(b\;\mathsf{s}\;c)$
+\end_inset
+
+, de lo cual se deduce nuestro lema ya que 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ eran elementos arbitrarios.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 16:
+\end_layout
+
+\end_inset
+
+Complete la prueba del lema anterior 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Iterar supremos (resp.
+ infimos) da supremos (resp.
+ infimos), es decir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{lemma}
+\end_layout
+
+\end_inset
+
+ Sea 
+\begin_inset Formula $(L,\leq)$
+\end_inset
+
+ un reticulado par.
+ Se tiene que
+\begin_inset Formula 
+\begin{align*}
+(...(x_{1}\;\mathsf{s\;}x_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}x_{n} & =\sup(\{x_{1},...,x_{n}\})\\
+(...(x_{1}\mathsf{\;i\;}x_{2})\mathsf{\;i\;}...)\mathsf{\;i\;}x_{n} & =\inf(\{x_{1},...,x_{n}\})
+\end{align*}
+
+\end_inset
+
+cualesquiera sean los elementos 
+\begin_inset Formula $x_{1},...,x_{n}\in L$
+\end_inset
+
+, con 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{lemma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{proof}
+\end_layout
+
+\end_inset
+
+ Por induccion en 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Claramente el resultado vale para 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ Supongamos vale para 
+\begin_inset Formula $n$
+\end_inset
+
+ y veamos entonces que vale para 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+ Sean 
+\begin_inset Formula $a_{1},...,a_{n+1}\in L$
+\end_inset
+
+, fijos.
+ Por hipotesis inductiva tenemos que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(...(a_{1}\;\mathsf{s}\;a_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}a_{n}=\sup(\{a_{1},...,a_{n}\})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Veamos entonces que
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $((...(a_{1}\;\mathsf{s\;}a_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}a_{n})\;\mathsf{s\;}a_{n+1}=\sup(\{a_{1},...,a_{n+1}\})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Usando (1), es facil ver que 
+\begin_inset Formula $((...(a_{1}\;\mathsf{s\;}a_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}a_{n})\;\mathsf{s\;}a_{n+1}$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\{a_{1},...,a_{n+1}\}$
+\end_inset
+
+.
+ Supongamos que 
+\begin_inset Formula $z$
+\end_inset
+
+ es otra cota superior.
+ Ya que 
+\begin_inset Formula $z$
+\end_inset
+
+ es tambien cota superior del conjunto 
+\begin_inset Formula $\{a_{1},...,a_{n}\}$
+\end_inset
+
+, por (1) tenemos que
+\begin_inset Formula 
+\[
+(...(a_{1}\;\mathsf{s\;}a_{2})\;\mathsf{s}\;...)\;\mathsf{s\;}a_{n}\leq z
+\]
+
+\end_inset
+
+Pero entonces ya que 
+\begin_inset Formula $a_{n+1}\leq z$
+\end_inset
+
+, tenemos que
+\begin_inset Formula 
+\[
+((...(a_{1}\;\mathsf{s\;}a_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}a_{n})\;\mathsf{s\;}a_{n+1}\leq z
+\]
+
+\end_inset
+
+con lo cual hemos probado (2).
+ Ya que 
+\begin_inset Formula $a_{1},...,a_{n+1}\in L$
+\end_inset
+
+ eran elementos arbitrarios, hemos probado que vale el enunciado del lema
+ para 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{proof}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 17:
+\end_layout
+
+\end_inset
+
+Complete la prueba del lema anterior justificando por que 
+\begin_inset Formula $((...(a_{1}\;\mathsf{s\;}a_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}a_{n})\;\mathsf{s\;}a_{n+1}$
+\end_inset
+
+ es cota superior de 
+\begin_inset Formula $\{a_{1},...,a_{n+1}\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dado que la distribucion de parentesis en una expresion de la forma
+\begin_inset Formula 
+\[
+(...(x_{1}\;\mathsf{s\;}x_{2})\;\mathsf{s\;}...)\;\mathsf{s\;}x_{n}
+\]
+
+\end_inset
+
+es irrelevante (ya que
+\begin_inset Formula $\;\mathsf{s\;}$
+\end_inset
+
+es asociativa), en general suprimiremos los parentesis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 18:
+\end_layout
+
+\end_inset
+
+Complete el enunciado de la siguiente regla, la cual hemos usado constantemente
+ a lo largo de la guia:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Igualar un Supremo
+\end_layout
+
+\begin_layout Standard
+Si ud esta intentando probar que en un poset 
+\begin_inset Formula $(P,\leq)$
+\end_inset
+
+ se da que 
+\begin_inset Formula $x=\sup(S)$
+\end_inset
+
+, desdoble su tarea en las dos tareas siguientes:
+\end_layout
+
+\begin_layout Enumerate
+....
+\end_layout
+
+\begin_layout Enumerate
+....
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Ejercicio 19:
+\end_layout
+
+\end_inset
+
+(S) Que relacion tienen las cinco reglas consideradas en la guia con el
+ concepto de inteligencia artificial? 
+\end_layout
+
+\end_body
+\end_document
